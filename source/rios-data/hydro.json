@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "title": "Guadalajara water regions and the Lerma-Chapala-Santiago system to the Pacific",
+    "compiled": "2026-11-23",
+    "coordinate_order": "lat, lon (WGS84) unless a GeoJSON file is referenced (GeoJSON uses lon, lat)",
+    "approx_flag": "Fields named *_approx or with \"approx\": true are estimates (derived from OSM geometry, nearest-channel snapping, or town locations), not official survey values.",
+    "files": {
+      "cuencas_rha8_conagua_dof2020.geojson": "All 100 surface-water basins (cuencas) of RHA VIII Lerma-Santiago-Pacifico with official CONAGUA id, name, DOF 21-Sep-2020 availability class and volume (hm3). Downloaded from the CONAFOR IDEFOR GeoServer layer geonode:cuencas_disp2020_ll (source: CONAGUA/SINA). EPSG:4326.",
+      "barrancas_santiago_verde_osm.geojson": "OSM relation 21027911 'Area de Proteccion Estatal Barrancas de los Rios Santiago y Verde' (OSM-mapped, approx 92 km2 - smaller than the official ~214 km2 decree, so treat as PARTIAL; covers El Salto to ~20.84N only).",
+      "rio_santiago_osm.geojson": "Main channel of the Rio Grande de Santiago from the Ocotlan outlet to the Pacific, chained from 42 OSM ways (every 5th vertex kept). OSM-measured length 545.8 km.",
+      "streams_tributaries_osm.geojson": "OSM lines for urban streams (Atemajac, San Juan de Dios, Rio Blanco, Arroyo de Osorio, El Ahogado, Canal Las Pintas, Arroyo Seco) and tributaries (Verde, Zula, Juchipila, Bolanos, Lerma segments). Includes tunnel/culvert tags.",
+      "raw/": "Raw downloads (FNE technical study PDF+text, DOF 2023 aquifer acuerdo HTML, IIEG aquifer sheet, UNAM Aguamilpa thesis, OSM extracts). Data only."
+    },
+    "geometry_sources": [
+      "https://idefor.cnf.gob.mx/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=geonode:cuencas_disp2020_ll&outputFormat=application/json&CQL_FILTER=id_rha=8",
+      "https://idefor.cnf.gob.mx/layers/geonode%3Acuencas_disp2020_ll",
+      "https://api.openstreetmap.org/api/0.6/relation/21027911/full",
+      "https://overpass-api.de/api/interpreter"
+    ]
+  },
+
+  "regions": {
+    "region_hidrologico_administrativa": {
+      "id": "VIII",
+      "name": "Lerma-Santiago-Pacifico",
+      "organismo_de_cuenca": "Organismo de Cuenca Lerma-Santiago-Pacifico (CONAGUA), seat Guadalajara",
+      "note": "The DOF 2020 basin layer lists 100 cuencas with id_rha=8 (nom_rha 'Lerma Santiago Pacifico'), spanning RH12 (Lerma-Santiago) plus Pacific coastal regions RH13-RH17.",
+      "polygon": "Union of features in cuencas_rha8_conagua_dof2020.geojson (approximation of the RHA boundary; RHA limits follow municipal lines, so edges may differ).",
+      "source": "https://idefor.cnf.gob.mx/layers/geonode%3Acuencas_disp2020_ll"
+    },
+    "region_hidrologica": {
+      "id": "RH12",
+      "name": "Lerma-Santiago",
+      "note": "Cuenca IDs 1201-1258 belong to RH12. Sub-region Lerma-Chapala = 1201-1219; Santiago = 1220-1252; closed basins/lagoons south of Guadalajara = 1253-1258.",
+      "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"
+    },
+    "availability_publication": {
+      "surface_water": "ACUERDO ... disponibilidad media anual de las aguas nacionales superficiales de las 757 cuencas hidrologicas, DOF 21 Sep 2020 (REPDA cut-off 4 Feb 2020). No newer (2023) surface-water acuerdo was found; the 2023 DOF update (9 Nov 2023) covers aquifers only.",
+      "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849",
+      "units": "vol_disp = volumen disponible a la salida, hm3/yr (millones de m3); negative = deficit"
+    },
+    "cuencas": [
+      {"id": 1238, "name": "Rio Santiago 2", "role": "Contains central Guadalajara, Zapopan north, Huentitan barranca and Tesistan (point-in-polygon test).", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 2.964, "area_km2": 1451, "centroid": [20.8513, -103.3034], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1237, "name": "Rio Santiago 1", "role": "Ocotlan outlet to below El Salto/Juanacatlan (contains El Salto); Guadalajara south-east metro, El Ahogado sub-basin.", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 0.859, "area_km2": 2945, "centroid": [20.545, -103.0968], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1215, "name": "Rio Zula", "role": "Zula joins the Santiago at Ocotlan (Ocotlan point falls in this polygon).", "dof2020_class": "Sin disponibilidad (DEFICIT)", "vol_disp_hm3": -17.448, "area_km2": 1982, "centroid": [20.6172, -102.5661], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1217, "name": "Rio Lerma 7", "role": "Lowest Lerma basin; contains Lake Chapala (no separate 'Lago de Chapala' cuenca exists in the 757-basin list; the lake lies within Rio Lerma 7 by point-in-polygon test).", "dof2020_class": "Sin disponibilidad (DEFICIT)", "vol_disp_hm3": -250.669, "area_km2": 6393, "centroid": [20.2433, -102.6437], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1214, "name": "Rio Lerma 6", "role": "Lerma upstream of Chapala (La Piedad-Yurecuaro reach)", "dof2020_class": "Sin disponibilidad (DEFICIT)", "vol_disp_hm3": -70.593, "area_km2": 2047, "centroid": [20.3222, -101.9558], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1216, "name": "Rio Duero", "role": "Lerma tributary entering just above Chapala", "dof2020_class": "Sin disponibilidad (DEFICIT)", "vol_disp_hm3": -37.512, "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1232, "name": "Rio Verde 2", "role": "Lower Rio Verde (El Zapotillo / Purgatorio reach) to its confluence with the Santiago near Arcediano", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 0.415, "area_km2": 1378, "centroid": [20.8717, -102.936], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1231, "name": "Rio Verde 1", "role": "Upper Rio Verde (Los Altos)", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 0.279, "area_km2": 2129, "centroid": [21.2995, -102.7914], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1239, "name": "Presa Santa Rosa", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 8.759, "area_km2": 1940, "centroid": [21.0612, -103.594], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1240, "name": "Rio Santiago 3", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 10.823, "area_km2": 1852, "centroid": [21.0787, -103.8462], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1250, "name": "Rio Santiago 4", "role": "Contains El Cajon dam", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 32.543, "area_km2": 2240, "centroid": [21.3059, -104.2635], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1251, "name": "Rio Santiago 5", "role": "Contains Aguamilpa reservoir", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 207.144, "area_km2": 2559, "centroid": [21.6482, -104.6023], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1252, "name": "Rio Santiago 6", "role": "Coastal plain to the Pacific mouth", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 1866.338, "area_km2": 2073, "centroid": [21.6662, -104.9676], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1235, "name": "Rio Juchipila 1", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 0.038, "area_km2": 3113, "centroid": [21.8375, -102.8658], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1236, "name": "Rio Juchipila 2", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 0.483, "area_km2": 2564, "centroid": [21.2752, -103.1844], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1244, "name": "Rio Bolanos 1", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 3.239, "area_km2": 4434, "centroid": [22.3183, -103.5809], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1245, "name": "Rio Bolanos 2", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 4.707, "area_km2": 2939, "centroid": [21.5927, -103.7574], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1249, "name": "Rio Huaynamota", "dof2020_class": "Con disponibilidad", "vol_disp_hm3": 23.141, "area_km2": 2036, "centroid": [22.2194, -104.5873], "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"},
+      {"id": 1255, "name": "Laguna San Marcos-Zacoalco", "role": "Closed basin SW of Guadalajara", "dof2020_class": "Sin disponibilidad (DEFICIT)", "vol_disp_hm3": -24.789, "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5600849"}
+    ],
+    "caveats": [
+      "Classification text in the layer is 'Con/Sin disponibilidad'; the DOF text labels them DISPONIBILIDAD / DEFICIT. Values verified identical for 1215, 1217, 1237, 1238, 1232 against the DOF page.",
+      "Centroids and areas computed by me from the downloaded polygons (planar centroid in degrees; area from the layer's Shape_area)."
+    ]
+  },
+
+  "aquifers": {
+    "publication": "ACUERDO por el que se actualiza la disponibilidad media anual de agua subterranea de los 653 acuiferos, DOF 9 Nov 2023 (cut-off 30 Dec 2022). Values in hm3/yr. DMA = R - DNC - VCAS - VEALA - VAPTYR - VAPRH; negative DMA = deficit.",
+    "source_2023": "https://sidof.segob.gob.mx/notas/5708074",
+    "source_2018_table": "https://www.ceajalisco.gob.mx/contenido/acuiferos/",
+    "polygons": "Not obtained (CONAGUA SIGA downloads at sigagis.conagua.gob.mx returned 403/redirect loops). Centroids below are APPROXIMATE, placed from the location of the valley/towns each aquifer is named after, not computed from official limits.",
+    "items": [
+      {"clave": "1401", "name": "Atemajac", "R": 147.3, "DNC": 25.7, "VCAS": 133.368504, "VAPTYR": 0.910906, "DMA_2023": -12.679410, "status": "Sin disponibilidad (deficit)", "deficit_2018": -11.50884, "covers": "Atemajac valley: Zapopan, north/west Guadalajara", "centroid_approx": [20.76, -103.42], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1402", "name": "Toluquilla", "R": 49.1, "DNC": 2.4, "VCAS": 122.074955, "VAPTYR": 0.238558, "DMA_2023": -75.613513, "status": "Sin disponibilidad (deficit) - largest deficit in the metro area; described as most overexploited aquifer serving Guadalajara", "deficit_2018": -73.095837, "covers": "South of Guadalajara: Tlaquepaque, Tlajomulco, El Salto, Tonala", "centroid_approx": [20.55, -103.30], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074", "secondary_source": "https://mexiconewsdaily.com/news/water-shortages-guadalajara"},
+      {"clave": "1403", "name": "Cajititlan", "R": 47.6, "DNC": 0.5, "VCAS": 61.838466, "VAPTYR": 2.206771, "DMA_2023": -16.945238, "status": "Sin disponibilidad (deficit)", "deficit_2018": -18.144598, "covers": "Laguna de Cajititlan area, Tlajomulco", "centroid_approx": [20.43, -103.33], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1404", "name": "Poncitlan", "R": 33.8, "DNC": 4.4, "VCAS": 32.918966, "VAPTYR": 0.001715, "DMA_2023": -3.520681, "status": "Sin disponibilidad (deficit)", "covers": "Poncitlan, upper Santiago reach", "centroid_approx": [20.40, -102.95], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1405", "name": "Ocotlan", "R": 85.6, "DNC": 8.3, "VCAS": 89.457769, "VAPTYR": 0.254978, "VAPRH": 1.208925, "DMA_2023": -13.621672, "status": "Sin disponibilidad (deficit)", "covers": "Ocotlan / lower Zula", "centroid_approx": [20.40, -102.72], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1428", "name": "Chapala", "R": 65.6, "DNC": 23.2, "VCAS": 38.488082, "VAPTYR": 0.752837, "VAPRH": 0.296948, "DMA_2023": 2.862133, "status": "Con disponibilidad (small positive)", "covers": "North shore of Lake Chapala", "centroid_approx": [20.30, -103.20], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1436", "name": "Arenal", "R": 22.5, "DNC": 1.9, "VCAS": 29.033274, "VAPTYR": 0.234, "DMA_2023": -8.667274, "status": "Sin disponibilidad (deficit)", "covers": "West of Zapopan (El Arenal / Amatitan corridor)", "centroid_approx": [20.78, -103.68], "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": "1438", "name": "Colomos", "R": 59.9, "DNC": 38.6, "VCAS": 18.063934, "VAPTYR": 0.63, "DMA_2023": 2.606066, "status": "Con disponibilidad (small positive); was -0.28 deficit in 2018", "covers": "Not verified; named after Los Colomos springs (Guadalajara/Zapopan). Location of official limits not confirmed.", "centroid_approx": null, "approx": true, "source": "https://sidof.segob.gob.mx/notas/5708074"},
+      {"clave": null, "name": "Tesistan", "status": "NOT an official aquifer. No 'Tesistan' entry among the 59 Jalisco aquifers (CEA Jalisco 2018 table) or the DOF 2023 list. The Tesistan valley (Zapopan) is generally considered part of Atemajac (1401) - not verified against official polygons.", "source": "https://www.ceajalisco.gob.mx/contenido/acuiferos/"}
+    ],
+    "context": {
+      "jalisco_total": "Jalisco overlies 59 aquifers; recharge approx 2,352.6 hm3/yr vs 2,619.2 hm3 concessioned (approx 266.6 hm3/yr deficit), per IIEG using CONAGUA data to 31 Mar 2024.",
+      "source": "https://iieg.gob.mx/ns/wp-content/uploads/2024/06/Ficha_mar24_acu%C3%ADferos.pdf"
+    },
+    "caveat": "'Sobreexplotado' is a separate CONAGUA designation (from extraction/recharge ratio) not given in the DOF availability acuerdo; status here reflects the DOF availability class only."
+  },
+
+  "santiago_course": {
+    "name": "Rio Grande de Santiago",
+    "length": {
+      "official_km": 562,
+      "official_source": "CONAGUA, Estadisticas del Agua en Mexico (SEMARNAT Compendio 2020, table of main rivers): basin 76,277 km2, length 562 km",
+      "official_url": "https://apps1.semarnat.gob.mx:8443/dgeia/compendio_2020/archivos/01_agua/d3_agua01_05.pdf",
+      "osm_measured_km": 545.8,
+      "note": "English Wikipedia gives 433 km and basin 136,628 km2 (inconsistent with CONAGUA; not used)."
+    },
+    "mean_flow_to_pacific": {
+      "conagua_mean_natural_runoff_hm3_yr": 7349,
+      "equivalent_m3_s_approx": 233,
+      "approx": true,
+      "note": "7,349 hm3/yr is CONAGUA's escurrimiento natural medio superficial (2018 data); m3/s conversion is mine. Earlier edition (2016): 7,423 hm3/yr.",
+      "source": "https://apps1.semarnat.gob.mx:8443/dgeia/compendio_2020/archivos/01_agua/d3_agua01_05.pdf",
+      "alt_value": "Wikipedia: average 320 m3/s (max 2,113, min 29.5) at El Capomal gauge (Nayarit) - unverified primary source",
+      "alt_source": "https://en.wikipedia.org/wiki/R%C3%ADo_Grande_de_Santiago"
+    },
+    "key_points": [
+      {"name": "Outlet from Lake Chapala (Ocotlan)", "lat": 20.3179, "lon": -102.7907, "km_from_outlet": 0, "note": "OSM channel head; Wikipedia ES river coordinate 20.3175,-102.7911. Wikipedia notes the lake has had little/no outflow for decades - flow at the head is largely the Zula plus regulated releases.", "source": "https://es.wikipedia.org/wiki/R%C3%ADo_Grande_de_Santiago"},
+      {"name": "Ocotlan (town)", "lat": 20.3467, "lon": -102.7742, "km_from_outlet_approx": 3.7, "source": "https://es.wikipedia.org/wiki/Ocotl%C3%A1n"},
+      {"name": "Poncitlan (town, river passes nearby)", "lat": 20.3793, "lon": -102.9247, "approx": true, "source": "https://www.openstreetmap.org/node/3627202517"},
+      {"name": "Presa Corona (diversion weir, hamlet)", "lat": 20.3971, "lon": -103.0908, "approx": true, "source": "https://www.openstreetmap.org/node/4686309421"},
+      {"name": "Puente Grande (village / hydro plant)", "lat": 20.5775, "lon": -103.1458, "note": "Central Hidroelectrica Puente Grande (OSM way 558640840); village at 20.5692,-103.1542", "source": "https://www.openstreetmap.org/way/558640840"},
+      {"name": "El Salto / Salto de Juanacatlan falls", "lat": 20.5167, "lon": -103.1744, "km_from_outlet_approx": 67, "approx": true, "note": "Nearest channel point to El Salto town (falls lie between El Salto and Juanacatlan). Most polluted reach; El Ahogado joins ~3 km upstream at La Azucena.", "source": "https://es.wikipedia.org/wiki/El_Salto_(Jalisco)"},
+      {"name": "Presa de Colimilla (weir) / Arroyo de Osorio confluence", "lat": 20.7049, "lon": -103.2645, "source": "https://www.openstreetmap.org/way/361732784"},
+      {"name": "Las Juntas (abandoned village and old hydro plant)", "lat": 20.7222, "lon": -103.2806, "source": "https://www.openstreetmap.org/way/782808513"},
+      {"name": "Rio Verde confluence / Arcediano", "lat": 20.7304, "lon": -103.2837, "km_from_outlet_approx": 108, "source": "https://www.openstreetmap.org/"},
+      {"name": "Puente de Arcediano (suspension footbridge)", "lat": 20.7414, "lon": -103.2948, "km_from_outlet_approx": 110, "source": "https://es.wikipedia.org/wiki/Puente_de_Arcediano"},
+      {"name": "Huentitan reach (below Mirador Independencia)", "lat": 20.7471, "lon": -103.3060, "approx": true, "source": "https://www.openstreetmap.org/way/159404895"},
+      {"name": "Juchipila confluence", "lat": 21.0425, "lon": -103.4299, "km_from_outlet_approx": 155, "source": "https://www.openstreetmap.org/"},
+      {"name": "Presa Santa Rosa (Manuel M. Dieguez), Amatitan", "lat": 20.9090, "lon": -103.7058, "km_from_outlet_approx": 200, "note": "Built 1964 per es.wikipedia; CFE station 'Presa Santa Rosa' at 20.941944,-103.705556 (FNE technical study).", "source": "https://www.openstreetmap.org/way/1020360544"},
+      {"name": "Bolanos confluence", "lat": 21.1884, "lon": -104.0718, "km_from_outlet_approx": 268, "note": "Just upstream of La Yesca dam", "source": "https://www.openstreetmap.org/"},
+      {"name": "Presa La Yesca (2012)", "lat": 21.1972, "lon": -104.0956, "km_from_outlet_approx": 273, "source": "https://en.wikipedia.org/wiki/La_Yesca_Dam"},
+      {"name": "Presa El Cajon (2007)", "lat": 21.4281, "lon": -104.4519, "km_from_outlet_approx": 336, "source": "https://en.wikipedia.org/wiki/El_Caj%C3%B3n_Dam_(Mexico)"},
+      {"name": "Huaynamota confluence (now inside Aguamilpa reservoir)", "lat": 21.8525, "lon": -104.7175, "approx": true, "source": "https://es.wikipedia.org/wiki/R%C3%ADo_Huaynamota"},
+      {"name": "Presa Aguamilpa (completed 1993)", "lat": 21.8394, "lon": -104.8028, "km_from_outlet_approx": 416, "source": "https://en.wikipedia.org/wiki/Aguamilpa_Dam"},
+      {"name": "Presa San Rafael (regulating dam)", "lat": 21.7803, "lon": -104.8876, "source": "https://www.openstreetmap.org/way/255997962"},
+      {"name": "Santiago Ixcuintla", "lat": 21.8110, "lon": -105.2079, "km_from_outlet_approx": 486, "source": "https://es.wikipedia.org/wiki/Santiago_Ixcuintla"},
+      {"name": "Mouth at the Pacific", "lat": 21.6281, "lon": -105.4478, "km_from_outlet_approx": 546, "note": "About 16 km NW of San Blas per en.wikipedia (es.wikipedia: 21 km). OSM channel end 21.6365,-105.4456.", "source": "https://en.wikipedia.org/wiki/R%C3%ADo_Grande_de_Santiago"}
+    ],
+    "confluences": [
+      {"tributary": "Rio Zula", "bank": "right", "lat": 20.3448, "lon": -102.7789, "where": "Ocotlan", "source": "https://www.openstreetmap.org/"},
+      {"tributary": "El Ahogado (arroyo/canal, urban drainage)", "lat": 20.4963, "lon": -103.1984, "where": "La Azucena, El Salto", "source": "https://www.openstreetmap.org/"},
+      {"tributary": "Rio Verde", "bank": "right", "lat": 20.7304, "lon": -103.2837, "where": "Arcediano, Barranca de Huentitan", "source": "https://www.openstreetmap.org/"},
+      {"tributary": "Rio Juchipila", "bank": "right", "lat": 21.0425, "lon": -103.4299, "source": "https://www.openstreetmap.org/"},
+      {"tributary": "Rio Bolanos", "bank": "right", "lat": 21.1884, "lon": -104.0718, "note": "es.wikipedia gives 21.2017,-104.0547 for the Bolanos mouth", "source": "https://es.wikipedia.org/wiki/R%C3%ADo_Bola%C3%B1os"},
+      {"tributary": "Rio Huaynamota", "bank": "right", "lat": 21.8525, "lon": -104.7175, "approx": true, "source": "https://en.wikipedia.org/wiki/Huaynamota_River"}
+    ],
+    "mouth_ecosystems": [
+      {"name": "Marismas Nacionales (Ramsar site 732)", "designated": "1995-06-22", "area_ha": 200000, "note": "Ramsar description cites the Santiago and San Pedro deltas as connections to the Pacific; the Santiago mouth is at the southern end of this mangrove-lagoon system.", "source": "https://rsis.ramsar.org/ris/732"},
+      {"name": "Reserva de la Biosfera Marismas Nacionales Nayarit", "decree": "DOF 2010-05-12", "area_ha": 133854.39, "municipalities": "Acaponeta, Rosamorada, Santiago Ixcuintla, Tecuala, Tuxpan", "note": "Whether the river mouth itself lies inside the reserve polygon was not verified.", "source": "https://dof.gob.mx/nota_detalle_popup.php?codigo=5294348"},
+      {"name": "La Tovara (Ramsar site 1776), San Blas", "designated": "2008-02-02", "area_ha": "5,733 (ES/FR record) or 7,384.2 (EN record) - conflicting", "centroid": [21.5822, -105.2433], "note": "South of the mouth, near San Blas; separate estuary.", "source": "https://rsis.ramsar.org/ris/1776"}
+    ],
+    "downstream_contamination": {
+      "summary": "Severe contamination is documented in the Jalisco reach (El Salto-Juanacatlan to Arcediano). Evidence that it is detectable at Aguamilpa exists from 1992-1997 monitoring (organic pollution indicators, nitrogen/phosphorus above ecological criteria); no recent peer-reviewed study of the Nayarit estuary/coast was found.",
+      "items": [
+        {"finding": "IMTA found over 1,000 chemical substances in the main channel and tributaries; 2006 study counted 305 pollution sources (271 industrial) in four municipalities.", "source": "https://es.wikipedia.org/wiki/R%C3%ADo_Grande_de_Santiago"},
+        {"finding": "Garcia Cabrera (UNAM PhD thesis, 2006): at Aguamilpa (1992-1997), N and P exceeded ecological water-quality criteria; ammonia nitrogen indicated 'recent and constant' contamination; phytoplankton genera mostly beta-mesosaprobic = moderate organic pollution.", "source": "https://ru.dgb.unam.mx/bitstream/20.500.14330/TES01000613699/3/0613699.pdf"},
+        {"finding": "2022 diagnostic of the Santiago and Zula: heavy metals (e.g. cadmium) and organochlorines notable in dry season (upper basin, Jalisco).", "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"},
+        {"finding": "Metals in surface water of the Santiago-Guadalajara basin (2025, Hydrology, MDPI) - upstream of Nayarit.", "source": "https://www.mdpi.com/2306-5338/12/2/37"},
+        {"finding": "Instituto Tecnologico de Tepic researcher quoted that in Nayarit the bigger problem is the Rio Mololoa (Tepic) tributary.", "source": "https://www.excelsior.com.mx/nacional/contaminacion-recrudece-la-alerta-hidrica-industria-detras-del-problema/1614229"}
+      ]
+    }
+  },
+
+  "huentitan": {
+    "names": "Barranca de Huentitan / Barranca de Oblatos-Huentitan / Barranca del Rio Santiago (Guadalajara-Zapopan-Tonala-Ixtlahuacan del Rio sides)",
+    "protected_areas": [
+      {
+        "name": "Formacion Natural de Interes Estatal 'Barrancas de los Rios Santiago y Verde'",
+        "level": "State (Jalisco, SEMADET)",
+        "published": "Periodico Oficial del Estado de Jalisco, 2016-12-20",
+        "area_ha": 21383.08,
+        "area_note": "21,383.08 ha per Guadalajara municipal document (Guadalajara share 891 ha = 4.17%); FIPRODEFO annex totals 21,379.93 ha; the Dec-2015 technical study (ETJ) proposed 224.51 km2 across 11 municipalities, altitude 893.4-2,128.5 m.",
+        "municipalities": "Acatic, Cuquio, El Salto, Guadalajara, Ixtlahuacan del Rio, Juanacatlan, Tepatitlan de Morelos, Tlajomulco de Zuniga, Tonala, Zapopan, Zapotlanejo (ETJ list)",
+        "sources": ["https://transparencia.info.jalisco.gob.mx/node/13081", "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf", "https://fiprodefo.jalisco.gob.mx/sites/fiprodefo.jalisco.gob.mx/files/anexo_8_tabla_mapa_componente_ii_anps.pdf"],
+        "polygon_file": "barrancas_santiago_verde_osm.geojson (OSM relation 21027911, tagged 'Area de Proteccion Estatal...'; approx 92 km2 = partial)"
+      },
+      {
+        "name": "Area Municipal de Proteccion Hidrologica 'Barranca del Rio Santiago' (Zapopan)",
+        "level": "Municipal (Zapopan)",
+        "decree": "Decree no. 20611, 7 Oct 2004 (secondary sources; official gazette not seen)",
+        "area_ha": 17729.91,
+        "note": "The 2015 ETJ confirms Zapopan has its own municipal protection decree of 2004 for the barranca.",
+        "sources": ["https://es.hispanopedia.com/wiki/Barranca_del_R%C3%ADo_Santiago", "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"],
+        "verified": false
+      },
+      {
+        "name": "Zona Sujeta a Conservacion Ecologica 'Barranca de Oblatos-Huentitan' (Guadalajara)",
+        "decree": "5 June 1997 (Wikipedia; official decree not seen)",
+        "area_ha_approx": 1137,
+        "note": "Listed as Zona Sujeta a Conservacion Ecologica on IIEG protected-area map; tourist sites cite 1,136-1,300 ha.",
+        "sources": ["https://en.wikipedia.org/wiki/Barranca_de_Oblatos"],
+        "verified": false
+      },
+      {"name": "Area Estatal de Proteccion Hidrologica", "note": "No state 'Area de Proteccion Hidrologica' covering the barranca was found; Jalisco's AEPH list (Sierra del Aguila, Cerro Viejo, Sierra Condiro-Canales, Bosque Colomos-La Campana) does not include it. The OSM name 'Area de Proteccion Estatal' is informal.", "source": "https://transparencia.info.jalisco.gob.mx/node/13081"}
+    ],
+    "key_points": [
+      {"name": "Parque Mirador Independencia (Huentitan)", "lat": 20.7403, "lon": -103.3103, "source": "https://www.openstreetmap.org/way/159404895"},
+      {"name": "Parque Mirador Dr. Atl (Zapopan)", "lat": 20.7951, "lon": -103.3442, "note": "with 'Cola de Caballo' waterfall at 20.7949,-103.3430", "source": "https://www.openstreetmap.org/node/2959219186"},
+      {"name": "Puerta de la Barranca de Huentitan (trail access)", "lat": 20.7246, "lon": -103.2921, "source": "https://www.openstreetmap.org/node/13507333117"},
+      {"name": "Cascada de Huentitan", "lat": 20.7391, "lon": -103.2934, "source": "https://www.openstreetmap.org/node/13507421271"},
+      {"name": "Puente de Arcediano", "lat": 20.7414, "lon": -103.2948, "note": "Historic suspension bridge described in the ETJ chronology as the first suspension bridge in Latin America (the ETJ's year column is misaligned, so the construction year is not verified here); dismantled for the Arcediano dam project and, per the ETJ, officially relocated and reopened about 5 years later.", "source": "https://es.wikipedia.org/wiki/Puente_de_Arcediano"},
+      {"name": "Antiguo Pueblo de Arcediano (abandoned)", "lat": 20.7370, "lon": -103.2872, "source": "https://www.openstreetmap.org/node/14005560287"},
+      {"name": "Rio Verde - Santiago confluence", "lat": 20.7304, "lon": -103.2837, "source": "https://www.openstreetmap.org/"},
+      {"name": "CFE climate station Puente Arcediano", "lat": 20.734722, "lon": -103.285833, "elev_m": 1044, "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"},
+      {"name": "PTAR Agua Prieta (Zapopan, 8.5 m3/s design, operating since Nov 2014)", "lat": 20.7713, "lon": -103.3349, "note": "Effluent goes to the Rio Santiago; outfall route not verified.", "source": "https://www.openstreetmap.org/way/431595769"},
+      {"name": "PTAR Rio Blanco (SIAPA)", "lat": 20.7737, "lon": -103.4315, "source": "https://www.openstreetmap.org/way/478177397"}
+    ],
+    "depth": {"value_m_approx": 600, "note": "Average depth ~600 m (Wikipedia). ETJ: river bottom ~900 m asl, rim and peaks to 1,600-2,128 m asl; Huentitan trail ~2,500 m long with >500 m descent.", "sources": ["https://en.wikipedia.org/wiki/Barranca_de_Oblatos", "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"]},
+    "biodiversity": {
+      "summary": "ETJ (2015) compiles 368 wild vertebrate species: 208 birds (37% of Jalisco; 143 resident, 50 winter visitors), 52 mammals, 58 reptiles, 21 amphibians, 29 fish (native fish depleted near Guadalajara/Tonala/El Salto). Vegetation: tropical dry forest and thorn forest 900-1,600 m, oak/pine above 1,500-1,800 m, relict cloud-forest patches in upper creeks, gallery forest. NOM-059 plants include Hymenocallis concinna and Bursera arborea; some plants (e.g. Agave stringens) possibly extinct locally.",
+      "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"
+    },
+    "threats": [
+      {"threat": "River acts as a collector of urban, industrial and agricultural wastewater (ETJ). Historically ~80% of Guadalajara wastewater untreated; collectors discharged into the barranca from >500 m height.", "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"},
+      {"threat": "Urban streams Atemajac/San Juan de Dios, Rio Blanco and Arroyo de Osorio enter the canyon carrying wastewater (see urban_streams).", "source": "https://www.openstreetmap.org/"},
+      {"threat": "Former Matatlan landfill (ETJ lists rehabilitation of 'vertedero de Matatlan'); waste/recycling sites in the buffer.", "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"},
+      {"threat": "Urbanization at the rim, pig farms, agricultural burning, grazing (ETJ management actions).", "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/formacion_natural_estatal_barraca_de_los_rios_santiago_y_verde.pdf"}
+    ],
+    "arcediano_dam": {
+      "summary": "Presa de Arcediano: planned on the Santiago just below the Verde confluence to supply Guadalajara; announced officially in 2003; Arcediano village displaced and suspension bridge dismantled; roughly 700 million pesos spent; suspended/cancelled in late 2009 (cost, and contamination of the source water) - described as discarded by CONAGUA in 2009; state said it could be resumed later.",
+      "status": "Cancelled/suspended 2009 (verified across multiple sources)",
+      "sources": ["https://www.jornada.com.mx/2009/08/31/opinion/018a2pol", "https://www.imezinal.unam.mx/docs/2029.pdf", "https://editorial.iteso.mx/index.php/PI/catalog/download/23/94/4084?inline=1"]
+    }
+  },
+
+  "lake_chapala_context": {
+    "ramsar": {"site_number": 1973, "designated": "2009-02-02", "area_ha": 114659, "states": "Jalisco, Michoacan", "note": "Ramsar no. 1466 is Laguna de Zapotlan, not Chapala.", "source": "https://rsis.ramsar.org/ris/1973"},
+    "surface_area_km2": 1100,
+    "max_length_km": 80,
+    "max_width_km": 18,
+    "mean_depth_m": 7,
+    "max_depth_m": 10.5,
+    "volume_km3": 8.1,
+    "elevation_m": 1524,
+    "centroid": [20.25, -103.0],
+    "physical_source": "https://en.wikipedia.org/wiki/Lake_Chapala",
+    "inflows": "Rio Lerma (main), Rio Duero, Rio Zula, Rio Huaracha; outflow historically Rio Grande de Santiago at Ocotlan.",
+    "surface_basin": "Lies in CONAGUA cuenca 1217 'Rio Lerma 7' (DEFICIT -250.669 hm3/yr, DOF 2020).",
+    "pollution": [
+      {"text": "Municipal, industrial and agricultural wastes, primarily from the Lerma River.", "source": "https://en.wikipedia.org/wiki/Lake_Chapala"},
+      {"text": "Lerma crosses ~800 km and five states with minimally treated industrial discharges; high mercury reported in carp near the Lerma mouth.", "source": "https://www.jornada.com.mx/2019/03/16/cam-chapala.html"}
+    ],
+    "share_of_guadalajara_supply": {
+      "value": "approx 60% (SIAPA figure cited by press); other reports 60.2% (6.6 m3/s) or 67%",
+      "breakdown_alt": "One report: Chapala 67%, groundwater 23%, Presa Calderon 9%, springs 1%. Another: Chapala 60.2% (6.6 m3/s), Calderon 17.2% (1.9 m3/s). El Zapotillo now also feeds the metro (reported operating at ~45% in Oct 2026).",
+      "verified_official": false,
+      "sources": ["https://www.aztecajalisco.com/local/niveles-del-lago-chapala-y-presas-que-abastecen-a-la-zmg-conagua/", "https://www.unotv.com/estados/jalisco/de-donde-llega-el-agua-que-se-usa-en-guadalajara-este-mapa-te-lo-explica/", "https://www.larepublica.co/globoeconomia/crisis-hidrica-de-guadalajara-es-consecuencia-de-decadas-de-desinversion-en-infraestructura-4505981"]
+    },
+    "aqueduct": "Chapala-Guadalajara aqueduct in operation since 1956 to Planta Potabilizadora No. 1 Miravalle; replacement line of 42.6 km planned.",
+    "aqueduct_source": "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0015.pdf"
+  },
+
+  "urban_streams": {
+    "note": "Mouth coordinates come from OSM way endpoints (streams_tributaries_osm.geojson) unless marked approx. OSM 'tunnel=culvert' / layer=-1 segments indicate piped reaches.",
+    "items": [
+      {"name": "Rio San Juan de Dios", "status": "Piped (embovedado) from 1909; runs under Calzada Independencia; open channel in the median of Av. Normalistas; rises at Parque Agua Azul.", "discharge": "North to the Periferico at the Guadalajara/Zapopan limit, then joins the Rio Atemajac (OSM shows it joining Atemajac at ~20.728,-103.331) before entering the barranca.", "junction_with_atemajac": [20.7283, -103.3314], "sources": ["https://www.aztecajalisco.com/arte-y-cultura/cuando-entubaron-rio-san-juan-dios-guadalajara-por-que", "https://www.openstreetmap.org/"]},
+      {"name": "Rio / Arroyo Atemajac", "status": "Partly piped (culvert segments through Zapopan/Colomos); old Presa de Atemajac (Zoquipan) dam at 20.7126,-103.3707.", "discharge": "Into the Rio Santiago in the Barranca de Huentitan. OSM line ends at 20.7434,-103.3273 (1.8 km short of the river); nearest channel point 20.7533,-103.3132.", "mouth_approx": [20.7533, -103.3132], "approx": true, "source": "https://www.openstreetmap.org/"},
+      {"name": "Rio Blanco (Zapopan)", "status": "Partly piped (multiple culverts); SIAPA PTAR Rio Blanco at 20.7737,-103.4315; state sanitation plan includes Rio Blanco.", "discharge": "Rio Santiago, north Zapopan side of the barranca", "mouth": [20.8018, -103.3329], "sources": ["https://www.openstreetmap.org/", "https://agua.org.mx/wp-content/uploads/filespdf/doc_pdf_30108.pdf"]},
+      {"name": "Arroyo de Osorio (Tonala/Guadalajara east)", "status": "Mostly open, short piped reaches.", "discharge": "Rio Santiago near Presa de Colimilla", "mouth": [20.7050, -103.2661], "source": "https://www.openstreetmap.org/"},
+      {"name": "Arroyo El Ahogado", "status": "Open channel; collects SE metro drainage and the El Ahogado WWTP effluent (PTAR El Ahogado at 20.5065,-103.2596); Represa El Ahogado at 20.5248,-103.2701; reports of ~815 L/s raw municipal sewage in the El Ahogado basin (2006).", "discharge": "Rio Santiago at La Azucena, El Salto, just upstream of the Salto de Juanacatlan", "mouth": [20.4963, -103.1984], "sources": ["https://www.eldiario.es/sociedad/vivir-contaminado-mexico-testimonio-enfermos_1_2016098.amp.html", "https://www.jornada.com.mx/2006/09/25/eco-c.html", "https://www.openstreetmap.org/"]},
+      {"name": "Canal de Las Pintas", "status": "Open canal receiving untreated runoff/sewage; a collector project would divert flows to PTAR El Ahogado.", "discharge": "Part of the El Ahogado system (arroyo El Ahogado originates from Presa de Las Pintas per eldiario.es); OSM canal runs 20.501,-103.287 -> 20.579,-103.332 (direction as mapped, not verified).", "sources": ["https://planintegraldelagua.jalisco.gob.mx/pdf/an-0031.pdf", "https://www.eldiario.es/sociedad/vivir-contaminado-mexico-testimonio-enfermos_1_2016098.amp.html"]},
+      {"name": "Arroyo Seco (Zapopan/Tlaquepaque south)", "status": "Canalized (OSM waterway=canal), 20.580,-103.392 -> 20.555,-103.354.", "discharge": "Toward the El Ahogado basin (not verified)", "approx": true, "source": "https://www.openstreetmap.org/"},
+      {"name": "Rio Verde (natural tributary, not urban)", "discharge": "Santiago at Arcediano", "mouth": [20.7304, -103.2837], "source": "https://www.openstreetmap.org/"}
+    ],
+    "context": "Guadalajara lies in the Valle de Atemajac sub-basin (rivers Atemajac, San Juan de Dios, Osorio) per UdeG; macro-WWTPs Agua Prieta (8.5 m3/s, since Nov 2014) and El Ahogado now treat much of the metro wastewater, both discharging to the Santiago.",
+    "context_sources": ["https://comsoc.udg.mx/printpdf/87300", "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0033.pdf"]
+  },
+
+  "caveats": [
+    "Surface-water availability is the DOF 21-Sep-2020 acuerdo; no 2023 surface update was located.",
+    "Aquifer centroids are approximate (no official polygons downloaded).",
+    "OSM protected-area polygon for Barrancas Santiago y Verde is partial (~92 of ~214 km2).",
+    "Huentitan 1997 and Zapopan 2004 decree details come from secondary sources; official gazettes not seen.",
+    "Chapala share of Guadalajara supply varies by source (60-67%); no official 2025 SIAPA breakdown found.",
+    "No recent study measuring Guadalajara-origin contamination at the Nayarit coast/estuary was found; Aguamilpa evidence is from 1992-1997 data."
+  ]
+}

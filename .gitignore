@@ -1,0 +1,2 @@
+# Natural Earth downloads (about 56 MB): only needed to rebuild data/, see README
+source/rios-data/ne_10m_*.geojson

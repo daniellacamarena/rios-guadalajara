@@ -1,0 +1,6342 @@
+{
+ "meta": {
+  "title": "Río Santiago / Lerma–Chapala–Santiago pollution around Guadalajara – research dataset",
+  "compiled": "2026-11-23",
+  "notes": [
+   "RETC data: SEMARNAT RETC bulk file RETC_2004-2022.zip (federal-jurisdiction establishments only; state-jurisdiction facilities and non-reporters are absent). \"to_water\" = AGUA column (direct release to water bodies); \"to_sewer\" = ALCANTARILLADO (transfer to municipal sewer). Many RETC metal quantities are self-reported estimates (often flow × NOM limit) and include obvious outliers; treat single-year spikes as unverified.",
+   "Coordinates labelled \"RETC\" are the facility's self-reported lat/lon (degrees-minutes-seconds converted to decimal); some filings are rounded or inconsistent between years — see coord_source_detail.",
+   "Greenpeace \"Ríos tóxicos\" (2012) is a poster/infographic without company names; the company list comes from the companion 2012 Greenpeace/UCCS/Un Salto de Vida study \"Estudio de la contaminación en la cuenca del río Santiago y la salud pública en la región\".",
+   "The CNDH recommendation about the 2008 death of Miguel Ángel López Rocha is No. 12/2010 (issued 2 Mar 2010), not 12/2009. The 2022 CNDH recommendation is 134/2022.",
+   "The IMTA 2011 study (chapter IX on the riosantiago.jalisco.gob.mx site) lists ~26 industrial discharges sampled in 2009-2010 (many are pig farms in Los Altos); it does not give coordinates. The figure of ~280 discharges is CONAGUA's count cited by CNDH 134/2022.",
+   "CONAGUA RENAMECA open data provide DBO5, DQO, SST, coliforms, E. coli, DO and toxicity plus semáforo, but not heavy metals."
+  ],
+  "sources": {
+   "retc": "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip",
+   "retcPortal": "https://sinat.semarnat.gob.mx/retc/index.php",
+   "gp2012": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+   "gp2016": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/alto_a_la_catastrofe_ecologica_del_rio_santiago.pdf",
+   "imta": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+   "cndh134": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+   "cndh134press": "https://www.cndh.org.mx/sites/default/files/documentos/2022-07/COM_2022_218.pdf",
+   "cndh12": "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf",
+   "mc708": "https://www.oas.org/es/cidh/decisiones/pdf/2020/7-20MC708-19-ME.docx",
+   "mc708press": "https://www.oas.org/en/iachr/media_center/PReleases/2020/028.asp",
+   "rrs": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+   "aguaPrieta": "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0033.pdf",
+   "diag": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf",
+   "foam": "https://phys.org/news/2015-12-pollution-hazardous-foam-mexican-river.html",
+   "milenio": "https://www.milenio.com/politica/comunidad/rio-santiago-cedhj-senala-violaciones-ocultar-estudio",
+   "nmas": "https://www.nmas.com.mx/jalisco/medio-ambiente/detectan-103-descargas-de-aguas-residuales-en-el-rio-santiago-en-jalisco/",
+   "wikiFalls": "https://en.wikipedia.org/wiki/Juanacatl%C3%A1n_Falls",
+   "osm": "https://www.openstreetmap.org",
+   "conagua": "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "universal2020": "https://www.eluniversal.com.mx/estados/cierran-empresa-en-jalisco-por-dano-rio-santiago/",
+   "proepa2026": "https://www.publimetro.com.mx/jalisco/2026/04/08/proepa-suma-44-clausuras-por-incumplimientos-ambientales-mantienen-vigilancia-sobre-el-rio-santiago/"
+  }
+ },
+ "facilities": [
+  {
+   "name": "Huntsman International de México (formerly CIBA Especialidades Químicas), Atotonilquillo plant",
+   "municipality": "Chapala (Atotonilquillo)",
+   "sector": "Quimica",
+   "activity": "PRODUCCION DE COLORANTES TEXTILES SECUNDARIOS AUXILIARES BLANQUEADORES OPTICOS",
+   "lat": 20.3975,
+   "lon": -103.10417,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA HIMMB1403011. 2007-2013 RETC filings (and the 2006 CIBA filing) give longitude -103.19083; 2014-2022 filings give -103.10417. The later value is used.",
+   "receiving_water": "Río Santiago (upper reach, near Presa Corona)",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 among the 10 facilities with the highest RETC-reported heavy-metal and cyanide discharges in the upper Santiago (as CIBA Especialidades Químicas, \"hoy Huntsman\"). IMTA 2011 study for CEA Jalisco sampled its effluent (\"Emisor PTAR de CIBA\", discharge DR-134). Reports releases to water every year 2007-2022 in RETC.",
+   "retc": {
+    "nra": [
+     "HIMMB1403011",
+     "CEQ5J1404411"
+    ],
+    "retc_names": [
+     "HUNTSMAN INTERNATIONAL DE MEXICO S. DE R.L. DE C.V",
+     "HUNTSMAN INTERNATIONAL DE MÉXICO S. DE R.L. DE C.V.,, PLANTA ATOTO",
+     "CIBA ESPECIALIDADES QUIMICAS DE MEXICO S.A DE C.V"
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCION DE COLORANTES TEXTILES SECUNDARIOS AUXILIARES BLANQUEADORES OPTICOS",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 4.6
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 1.72
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 2.78
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 89.2,
+     "Níquel": 169,
+     "Mercurio": 3.07,
+     "Cromo": 107,
+     "Cadmio": 25.3,
+     "Cianuro inorgánico/orgánico": 331,
+     "Arsénico": 18
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Grupo Celanese, Poncitlán (Ocotlán–Poncitlán) plant",
+   "municipality": "Poncitlán",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE FIBRAS Y FILAMENTOS SINTÉTICOS Y ARTIFICIALES (SÓLO SI  INVOLUCRA REACCIÓN Q",
+   "lat": 20.35333,
+   "lon": -102.79083,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2021 filing, NRA GCE5S1406611",
+   "receiving_water": "Río Santiago near its source at Ocotlán/Poncitlán",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 among the top-10 RETC heavy-metal/cyanide dischargers. IMTA 2011 sampled its wastewater-plant outfall (\"Emisor PTAR Celanese Mexicana\", DI-103; ~86.8 L/s in IMTA cost table).",
+   "retc": {
+    "nra": [
+     "GCE5S1406611",
+     "GCE5S1406621"
+    ],
+    "retc_names": [
+     "GRUPO CELANESE S.A.",
+     "GRUPO CELANESE, S. DE R.L. DE C.V.",
+     "GRUPO CELANESE, S. DE R.L. DE C.V.,CELANESE",
+     "GRUPO CELANESE S. DE R.L. DE C.V."
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE FIBRAS Y FILAMENTOS SINTÉTICOS Y ARTIFICIALES (SÓLO SI  INVOLUCRA REACCIÓN Q",
+    "industrial_park": "CUITZEO",
+    "years_reporting_releases_to_water": [
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019
+    ],
+    "latest_year_to_water": 2019,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 6.83
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 221,
+     "Cianuro inorgánico/orgánico": 34,
+     "Cadmio": 69.1,
+     "Plomo": 138,
+     "Níquel": 154,
+     "Mercurio": 6.31,
+     "Cromo": 346,
+     "Cloruro de metileno": 30
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Nestlé México, Ocotlán factory",
+   "municipality": "Ocotlán",
+   "sector": "Alimenticio y/o de consumo humano",
+   "activity": "FABRICACION DE LECHE EN POLVO PARA FORMULAS INFANTILES BASE LACTEA.",
+   "lat": 20.35444,
+   "lon": -102.77556,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA NMEML1406311",
+   "receiving_water": "Río Santiago at Ocotlán (CONAGUA stations \"antes de Nestlé\" / \"después de Nestlé\")",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 among top-10 RETC heavy-metal/cyanide dischargers. IMTA 2011 sampled \"Emisor PTAR de Nestlé\" (DR-103). CNDH Rec. 134/2022 notes RENAMECA sites upstream/downstream of Nestlé (SM3/SM4) as \"contaminated\" for DBO5/SST and high Vibrio fischeri toxicity at SM3. RETC 2022 reports 4,305 kg nickel to water (single-year figure; verify).",
+   "retc": {
+    "nra": [
+     "NMEML1406311",
+     "NMEEA1406311"
+    ],
+    "retc_names": [
+     "NESTLE MEXICO SA DE CV PLANTA OCOTLAN JALISCO",
+     "NESTLE MÉXICO S.A. DE C.V.",
+     "NESTLE MEXICO S.A. DE C.V.,NESTLE FÁBRICA OCOTLAN",
+     "NESTLE MEXICO S.A. DE C.V., FABRICA OCOTLAN"
+    ],
+    "sector": "Alimenticio y/o de consumo humano",
+    "activity": "FABRICACION DE LECHE EN POLVO PARA FORMULAS INFANTILES BASE LACTEA.",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2004,
+     2007,
+     2013,
+     2014,
+     2015,
+     2016,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 1.09
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 12.1
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 24.2
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 4305
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 48.3
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cadmio": 12.8,
+     "Arsénico": 3.74,
+     "Cianuro inorgánico/orgánico": 21.2,
+     "Plomo": 52.3,
+     "Níquel": 4347,
+     "Mercurio": 0.00294,
+     "Cromo": 39.9
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Nestlé México, second Ocotlán establishment (RETC NME1406300025)",
+   "municipality": "Ocotlán",
+   "sector": "Alimenticio y/o de consumo humano",
+   "activity": "ELABORACIÓN DE FÓRMULAS INFANTILES",
+   "lat": 20.43111,
+   "lon": -102.7675,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA NME1406300025",
+   "receiving_water": "Unspecified (Ocotlán; Santiago/Zula area)",
+   "alleged_or_reported": "RETC 2021-2022 reports releases to water including ~13,962 kg inorganic cyanide (2021) – a very large single-year value that may be a reporting error; verify before publishing.",
+   "retc": {
+    "nra": [
+     "NME1406300025"
+    ],
+    "retc_names": [
+     "NESTLE MEXICO S.A. DE C.V.,NESTLE MÉXICO S.A. DE C.V"
+    ],
+    "sector": "Alimenticio y/o de consumo humano",
+    "activity": "ELABORACIÓN DE FÓRMULAS INFANTILES",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 1.69
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 15.9
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 31.9
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 61.5
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 63.6
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 4.49,
+     "Níquel": 63.8,
+     "Cianuro inorgánico/orgánico": 13962,
+     "Cadmio": 15.9,
+     "Cromo": 31.9,
+     "Plomo": 63.6
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Cervecería Modelo de Guadalajara",
+   "municipality": "Guadalajara",
+   "sector": "Bebidas y tabaco",
+   "activity": "Elaboración de cerveza",
+   "lat": 20.66278,
+   "lon": -103.37556,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA CMG301403911",
+   "receiving_water": "Municipal sewer (SIAPA) → AMG collectors → Río Santiago via PTARs/untreated outfalls",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 among the 10 facilities with highest RETC metal/cyanide reports in the study zone. In RETC it reports transfers to sewer (alcantarillado), not direct releases to water, 2004-2022.",
+   "retc": {
+    "nra": [
+     "CMG301403911"
+    ],
+    "retc_names": [
+     "Cervecería Modelo de Guadalajara S. A. de C. V.",
+     "CERVECERÍA MODELO DE GUADALAJARA, S.A. DE C.V.",
+     "CERVECERIA MODELO DE GUADALAJARA, S. DE R.L. DE C.V.",
+     "CERVECERÍA MODELO DE GUADALAJARA, S. DE R. L. DE C. V.,"
+    ],
+    "sector": "Bebidas y tabaco",
+    "activity": "Elaboración de cerveza",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [],
+    "latest_year_to_water": null,
+    "latest_releases_to_water_kg": [],
+    "cumulative_releases_to_water_kg_2004_2022": {},
+    "years_reporting_transfers_to_sewer": [
+     2004,
+     2006,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_sewer": 2022,
+    "latest_transfers_to_sewer_kg": [
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 5.6
+     }
+    ],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {
+     "Arsénico": 15.8,
+     "Cromo": 1164,
+     "Plomo": 499,
+     "Níquel": 538,
+     "Cadmio": 232,
+     "Mercurio": 3.31,
+     "Cianuro inorgánico/orgánico": 33.1
+    }
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Cervecería Cuauhtémoc Moctezuma, Guadalajara plant",
+   "municipality": "Guadalajara",
+   "sector": "Bebidas y tabaco",
+   "activity": "ELABORACIÓN DE CERVEZA",
+   "lat": 20.64444,
+   "lon": -103.35694,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA CCM1403900917",
+   "receiving_water": "Municipal sewer → Río Santiago",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 top-10 RETC metal/cyanide list. RETC shows transfers to sewer (2006, 2010-2013).",
+   "retc": {
+    "nra": [
+     "CCM301403911",
+     "CCM1403900917"
+    ],
+    "retc_names": [
+     "CERVECERÍA CUAUHTEMOC MOCTEZUMA S.A DE C.V."
+    ],
+    "sector": "Bebidas y tabaco",
+    "activity": "ELABORACIÓN DE CERVEZA",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [],
+    "latest_year_to_water": null,
+    "latest_releases_to_water_kg": [],
+    "cumulative_releases_to_water_kg_2004_2022": {},
+    "years_reporting_transfers_to_sewer": [
+     2006,
+     2010,
+     2011,
+     2012,
+     2013
+    ],
+    "latest_year_to_sewer": 2013,
+    "latest_transfers_to_sewer_kg": [
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 0.371
+     }
+    ],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.0164,
+     "Plomo": 0.0439,
+     "Níquel": 20.1,
+     "Mercurio": 1.13,
+     "Cromo": 0.0345,
+     "Cadmio": 0.00815,
+     "Arsénico": 3.19
+    }
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Hilasal Mexicana (textiles), El Salto",
+   "municipality": "El Salto",
+   "sector": "Textiles, fibras e hilos",
+   "activity": "FABRICACIÓN DE TOALLAS DE ALGODÓN",
+   "lat": 20.52167,
+   "lon": -103.24694,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2017 filing, NRA HME3A1407011",
+   "receiving_water": "El Salto industrial corridor → Arroyo El Ahogado / Río Santiago",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 top-10 RETC metal/cyanide list; RETC releases to water 2004-2016.",
+   "retc": {
+    "nra": [
+     "HME3A1407011"
+    ],
+    "retc_names": [
+     "HILASAL MEXICANA S.A. DE C.V.",
+     "Hilasal Mexicana S.A.B. de C.V.",
+     "HILASAL MEXICANA S.A.B. DE C.V.",
+     "HILASAL MEXICANA SAB DE CV,"
+    ],
+    "sector": "Textiles, fibras e hilos",
+    "activity": "FABRICACIÓN DE TOALLAS DE ALGODÓN",
+    "industrial_park": "EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016
+    ],
+    "latest_year_to_water": 2016,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio",
+      "kg": 1.73
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 215,
+     "Níquel": 139,
+     "Cianuro inorgánico/orgánico": 26.3,
+     "Arsénico": 55.9,
+     "Cadmio": 48.5,
+     "Cromo": 234,
+     "Mercurio": 4.68
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Casa Cuervo (Becle), Planta Los Camichines",
+   "municipality": "Zapotlanejo",
+   "sector": "Bebidas y tabaco",
+   "activity": "Elaboración de Tequila",
+   "lat": 20.57722,
+   "lon": -103.12083,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2021 filing, NRA CCU301412411",
+   "receiving_water": "Río Santiago (Zapotlanejo margin, downstream of Puente Grande)",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 top-10 RETC list (as Casa Cuervo). IMTA 2011 sampled \"Tequilera Cuervo Camichines\" (DI-19). RETC releases to water 2005-2021.",
+   "retc": {
+    "nra": [
+     "CCU301412411"
+    ],
+    "retc_names": [
+     "Casa Cuervo S.A. de C.V. Planta Los Camichines",
+     "CASA CUERVO, S.A. DE C.V.",
+     "Casa Cuervo, S.A. de C.V. Planta Los Camichines",
+     "CASA CUERVO S.A. DE C.V.,CASA CUERVO PLANTA LOS CAMICHINES",
+     "CASA CUERVO S.A. DE C.V.,CASA CUERVO"
+    ],
+    "sector": "Bebidas y tabaco",
+    "activity": "Elaboración de Tequila",
+    "industrial_park": "La Laja",
+    "years_reporting_releases_to_water": [
+     2005,
+     2007,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "latest_year_to_water": 2021,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 1.28
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 1.3
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 8.22
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 5.71
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 4.83
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 225,
+     "Plomo": 119,
+     "Níquel": 2046,
+     "Mercurio": 3045,
+     "Cromo": 3583,
+     "Cadmio": 748,
+     "Arsénico": 380
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "IBM de México (El Salto campus)",
+   "municipality": "El Salto",
+   "sector": "Equipos y articulos electronicos, electricos y domesticos",
+   "activity": "Manufactura de componentes electronicos",
+   "lat": 20.56639,
+   "lon": -103.29389,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2014 filing, NRA IMC8S1407011. 2006-2009 RETC coordinates were rounded (20.58333, -103.33333); the 2014 filing (20.56639, -103.29389) is used.",
+   "receiving_water": "El Salto corridor → Río Santiago",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 top-10 RETC metal/cyanide list. RETC releases to water reported 2006, 2008, 2009 (small amounts).",
+   "retc": {
+    "nra": [
+     "IMC8S1407011",
+     "IMM8S1407011"
+    ],
+    "retc_names": [
+     "IBM de Mexico Comercialización y Servicios S. de  R.L. de C.V.",
+     "IBM de Mexico Comercialización y Servicios S. A. de C.V.",
+     "IBM DE MEXICO COMERCIALIZACIÓN Y SERVICIOS S. A. DE C.V."
+    ],
+    "sector": "Equipos y articulos electronicos, electricos y domesticos",
+    "activity": "Manufactura de componentes electronicos",
+    "industrial_park": "Corredor Industrial de El Salto",
+    "years_reporting_releases_to_water": [
+     2006,
+     2008,
+     2009
+    ],
+    "latest_year_to_water": 2009,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.00205
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.000273
+     },
+     {
+      "substance": "Arsénico",
+      "kg": 0.000225
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Níquel": 0.0343,
+     "Mercurio": 0.000343,
+     "Cromo": 0.0857,
+     "Cadmio": 0.0171,
+     "Arsénico": 0.00468,
+     "Cianuro inorgánico/orgánico": 0.00621,
+     "Plomo": 0.0301
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Servicios Estrella Azul de Occidente (dairy), Tlaquepaque",
+   "municipality": "San Pedro Tlaquepaque",
+   "sector": "Otros",
+   "activity": "RENTA DE TEXTILES ESPECIALIZADOS",
+   "lat": 20.58222,
+   "lon": -103.28444,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA SEAB21409811",
+   "receiving_water": "El Salto corridor (Carretera a El Salto) → El Ahogado basin",
+   "alleged_or_reported": "Named by Greenpeace/UNAM 2012 top-10 RETC metal/cyanide list; RETC releases to water 2006, 2012, 2013.",
+   "retc": {
+    "nra": [
+     "SEAB21409811"
+    ],
+    "retc_names": [
+     "Servicios Estrella Azul de Occidente S.A. de C.V.",
+     "SERVICIOS ESTRELLA AZUL DE OCCIDENTE S.A DE C.V",
+     "SERVICIOS ESTRELLA AZUL DE OCCIDENTE S.A. DE C.V."
+    ],
+    "sector": "Otros",
+    "activity": "RENTA DE TEXTILES ESPECIALIZADOS",
+    "industrial_park": "PREDIO SOBRE CARRETERA",
+    "years_reporting_releases_to_water": [
+     2006,
+     2012,
+     2013
+    ],
+    "latest_year_to_water": 2013,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 4.92
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 4.92
+     },
+     {
+      "substance": "Arsénico",
+      "kg": 0.258
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 7.75
+     },
+     {
+      "substance": "Mercurio",
+      "kg": 0.0861
+     },
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.492
+     },
+     {
+      "substance": "Cadmio",
+      "kg": 1.45
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 15.9,
+     "Níquel": 8.7,
+     "Mercurio": 0.217,
+     "Cromo": 8.74,
+     "Cadmio": 3.19,
+     "Arsénico": 0.346,
+     "Cianuro inorgánico/orgánico": 0.931
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "QuimiKao (chemicals), El Salto",
+   "municipality": "El Salto",
+   "sector": "Quimica",
+   "activity": "Fabricación compra y venta de aminas grasas y derivados",
+   "lat": 20.49889,
+   "lon": -103.22333,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA LUG1407000054",
+   "receiving_water": "Arroyo El Ahogado (IMTA site \"Arroyo aguas arriba de puente caído Quimikao\")",
+   "alleged_or_reported": "IMTA 2011 sampled \"Industria Quimikao\" effluent (DI-27) and a creek point upstream of the \"puente caído Quimikao\". RETC: releases to water 2005-2013 (Ni, CN, Cr, Pb); a successor registration (Quimi Kao / R. M. Luna García) reports transfers to sewer 2014-2022.",
+   "retc": {
+    "nra": [
+     "QKA5H1407011",
+     "LUG1407000054"
+    ],
+    "retc_names": [
+     "QuimiKao S.A. de C.V.",
+     "QUIMIKAO S.A. DE C.V.",
+     "RAUL MELITON LUNA GARCIA,QUIMI KAO S. A. DE C. V.",
+     "QUIMI KAO S.A. DE C.V.,QUIMI KAO S. A. DE C. V.",
+     "QUIMI-KAO ,",
+     "QUIMI KAO SA,QUIMI KAO S. A. DE C. V."
+    ],
+    "sector": "Quimica",
+    "activity": "Fabricación compra y venta de aminas grasas y derivados",
+    "industrial_park": "La Azucena",
+    "years_reporting_releases_to_water": [
+     2005,
+     2006,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013
+    ],
+    "latest_year_to_water": 2013,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 41.9
+     },
+     {
+      "substance": "Mercurio",
+      "kg": 0.209
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 16.8
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 19
+     },
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 0.209
+     },
+     {
+      "substance": "Arsénico",
+      "kg": 0.243
+     },
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 0.243
+     },
+     {
+      "substance": "Cadmio",
+      "kg": 4.19
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 8.46
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 4.19
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 33.8,
+     "Arsénico": 2.19,
+     "Cadmio": 19.7,
+     "Níquel": 156,
+     "Cromo": 43.2,
+     "Mercurio": 0.916,
+     "Cianuro inorgánico/orgánico": 129
+    },
+    "years_reporting_transfers_to_sewer": [
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_sewer": 2022,
+    "latest_transfers_to_sewer_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 2.47
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 1.24
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 12.4
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 1.24
+     }
+    ],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {
+     "Arsénico": 22.6,
+     "Cromo": 86.4,
+     "Níquel": 82.2,
+     "Plomo": 106,
+     "Níquel (polvos respirables, humos o vapores)": 141,
+     "Mercurio": 5.89,
+     "Cadmio": 6.64
+    }
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Mexichem Derivados (formerly Pennwalt), El Salto",
+   "municipality": "El Salto",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES INORGÁNICAS.",
+   "lat": 20.49833,
+   "lon": -103.22806,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2016 filing, NRA MDE5I1407011",
+   "receiving_water": "Arroyo El Ahogado (CONAGUA site OCLSP3700M1 \"Arroyo El Ahogado puente camino a Penwalt\")",
+   "alleged_or_reported": "RETC releases to water 2008-2016. The CONAGUA monitoring site named after the plant road was red (semáforo) in 2025 with Vibrio toxicity among failing parameters.",
+   "retc": {
+    "nra": [
+     "MDE5I1407011",
+     "PEN5I1407011"
+    ],
+    "retc_names": [
+     "MEXICHEM DERIVADOS S. A. DE C.V.  ANTES PENNWALT S A DE C V",
+     "MEXICHEM DERIVADOS, S. A. DE C.V.",
+     "MEXICHEM DERIVADOS S.A. DE C.V.,"
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES INORGÁNICAS.",
+    "industrial_park": "ZONA INDUSTRIAL DE EL SALTO",
+    "years_reporting_releases_to_water": [
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016
+    ],
+    "latest_year_to_water": 2016,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 3.08
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 0.465,
+     "Níquel": 15.5,
+     "Cianuro inorgánico/orgánico": 4.39,
+     "Arsénico": 3.48,
+     "Cadmio": 0.00000219,
+     "Cromo": 1.09,
+     "Mercurio": 0.00272
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip",
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Mexichem Soluciones Integrales (PVC/plastics), Poncitlán",
+   "municipality": "Poncitlán",
+   "sector": "Articulos y productos plasticos",
+   "activity": "PRODUCCIÓN DE TUBERÍAS DE PVC",
+   "lat": 20.38056,
+   "lon": -102.95694,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2018 filing, NRA MSI6E1406611",
+   "receiving_water": "Río Santiago (Poncitlán reach)",
+   "alleged_or_reported": "RETC reports mercury compounds to water (≈19 kg in 2018; ≈282 kg cumulative 2012-2018) and cadmium (≈283 kg cumulative).",
+   "retc": {
+    "nra": [
+     "MSI6E1406611"
+    ],
+    "retc_names": [
+     "MEXICHEM SOLUCIONES INTEGRALES S.A. DE C.V.",
+     "MEXICHEM SOLUCIONES INTEGRALES, S. A. DE C. V.,MEXICHEM SOLUCIONES INTEGRALES, S.A. DE C.V."
+    ],
+    "sector": "Articulos y productos plasticos",
+    "activity": "PRODUCCIÓN DE TUBERÍAS DE PVC",
+    "industrial_park": "EJIDO SAN SEBASTIAN",
+    "years_reporting_releases_to_water": [
+     2012,
+     2017,
+     2018
+    ],
+    "latest_year_to_water": 2018,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 19.2
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.0261,
+     "Arsénico": 0.099,
+     "Cromo": 0.0117,
+     "Mercurio": 282,
+     "Níquel": 0.00256,
+     "Cadmio": 283
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Plásticos Rex, Poncitlán",
+   "municipality": "Poncitlán",
+   "sector": "Articulos y productos plasticos",
+   "activity": "PRODUCCION DE TUBERIAS DE PVC",
+   "lat": 20.38056,
+   "lon": -102.95833,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2008 filing, NRA PRE6E1406611",
+   "receiving_water": "Río Santiago (Poncitlán reach)",
+   "alleged_or_reported": "Listed among industrial discharges in the IMTA 2011 study tables (\"Industria Plásticos Rex\"); RETC 2008 water release entry (negligible amounts).",
+   "retc": {
+    "nra": [
+     "PRE6E1406611"
+    ],
+    "retc_names": [
+     "PLASTICOS REX S.A. DE C.V."
+    ],
+    "sector": "Articulos y productos plasticos",
+    "activity": "PRODUCCION DE TUBERIAS DE PVC",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2008
+    ],
+    "latest_year_to_water": 2008,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 0.008
+     },
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 0.000204
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.124
+     },
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.00489
+     },
+     {
+      "substance": "Arsénico",
+      "kg": 0.0594
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 0.008,
+     "Mercurio": 0.000204,
+     "Plomo": 0.124,
+     "Cianuro inorgánico/orgánico": 0.00489,
+     "Arsénico": 0.0594
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Aceites, Grasas y Derivados (AGYDSA), Ixtlahuacán plant",
+   "municipality": "Ixtlahuacán de los Membrillos",
+   "sector": null,
+   "activity": null,
+   "lat": 20.47389,
+   "lon": -103.21833,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2013 filing, NRA AGD1404400004. RETC coordinates are inconsistent: 2013 filing gives 20.47389,-103.21833 (used here, inside \"Zona Industrial El Salto\"); 2014-2017 filings give 20.35944,-103.19333. Treat as approximate.",
+   "receiving_water": "Río Santiago (El Salto corridor south reach)",
+   "alleged_or_reported": "IMTA 2011 sampled \"Descarga de industria aceitera AGyDSA\" (DI-06). Not reporting releases to water in RETC.",
+   "retc": {
+    "nra": [
+     "AGD1404400004"
+    ],
+    "retc_names": [],
+    "sector": "",
+    "activity": "",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [],
+    "latest_year_to_water": null,
+    "latest_releases_to_water_kg": [],
+    "cumulative_releases_to_water_kg_2004_2022": {},
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Zoltek de México (Toray group, carbon fiber)",
+   "municipality": "Tlajomulco de Zúñiga (El Salto corridor)",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE FIBRAS Y FILAMENTOS SINTÉTICOS Y ARTIFICIALES(SOLO SI INVOLUCRA REACCIÓN Q.)",
+   "lat": 20.48278,
+   "lon": -103.22167,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA ZME5S1407011",
+   "receiving_water": "Arroyo El Ahogado / Río Santiago",
+   "alleged_or_reported": "Among the largest non-PTAR RETC reporters of releases to water in the area 2010-2018 (cumulative ≈4.7 t nickel, ≈4.7 t chromium, ≈0.8 t cyanide).",
+   "retc": {
+    "nra": [
+     "ZME5S1407011"
+    ],
+    "retc_names": [
+     "ZOLTEK DE MEXICO, S.A. DE C.V.",
+     "ZOLTEK DE MEXICO, S.A DE C.V.",
+     "ZOLTEK DE MEXICO S.A. DE C.V.,ZOLTEK DE TORAY GROUP",
+     "ZOLTEK DE MEXICO S.A. DE C.V.,ZOLTEK - TORAY GROUP"
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE FIBRAS Y FILAMENTOS SINTÉTICOS Y ARTIFICIALES(SOLO SI INVOLUCRA REACCIÓN Q.)",
+    "industrial_park": "Zona Industrial el Salto",
+    "years_reporting_releases_to_water": [
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018
+    ],
+    "latest_year_to_water": 2018,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 3.18
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 1.59
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 7.94
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 7.94
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 697,
+     "Níquel": 4705,
+     "Mercurio": 93.6,
+     "Cromo": 4683,
+     "Cadmio": 972,
+     "Cianuro inorgánico/orgánico": 808,
+     "Plomo": 4706
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Empaques Modernos de Guadalajara (paper/packaging), El Salto",
+   "municipality": "El Salto",
+   "sector": "Celulosa y papel",
+   "activity": "Fabricación de papel y empaque de cartón a partir de fibra recuperada",
+   "lat": 20.53639,
+   "lon": -103.25778,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA EMG571407011",
+   "receiving_water": "El Salto corridor → El Ahogado / Santiago",
+   "alleged_or_reported": "RETC releases to water every year 2008-2022 (As, Cd, Cr, Hg, Ni, Pb, CN).",
+   "retc": {
+    "nra": [
+     "EMG571407011"
+    ],
+    "retc_names": [
+     "EMPAQUES MODERNOS DE GUADALAJARA S.A DE C.V",
+     "EMPAQUES MODERNOS DE GUADALAJARA, S.A. DE C.V.",
+     "EMPAQUES MODERNOS DE GUADALAJARA, SA DE CV",
+     "EMPAQUES MODERNOS DE GUADALAJARA, S.A. DE C.V.,",
+     "EMPAQUES MODERNOS DE GUADALAJARA, S. DE R. L. DE C.V.,",
+     "EMPAQUES MODERNOS DE GUADALAJARA, S. DE R.L. DE C.V.,"
+    ],
+    "sector": "Celulosa y papel",
+    "activity": "Fabricación de papel y empaque de cartón a partir de fibra recuperada",
+    "industrial_park": "CORREDOR INDUSTRIAL",
+    "years_reporting_releases_to_water": [
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 8.26
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 19.3
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 96.3
+     },
+     {
+      "substance": "Mercurio (Compuestos solubles)",
+      "kg": 1.93
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 96.3
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 96.3
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 171,
+     "Cianuro inorgánico/orgánico": 84.8,
+     "Cadmio": 60.3,
+     "Cromo": 208,
+     "Mercurio": 15.6,
+     "Níquel": 198,
+     "Arsénico": 33.2
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Hershey México, El Salto",
+   "municipality": "El Salto",
+   "sector": "Alimenticio y/o de consumo humano",
+   "activity": "ELABORACIÓN Y MANUFACTURA DE CARAMELOS Y CHOCOLATES",
+   "lat": 20.52917,
+   "lon": -103.25028,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA HME2I1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2006, 2012-2022 (Pb, Ni, Cd, Cr).",
+   "retc": {
+    "nra": [
+     "HME2I1407011"
+    ],
+    "retc_names": [
+     "HERSHEY MEXICO S.A. DE C.V.",
+     "HERSHEY MEXICO S.A. DE C.V.,HERSHEYS",
+     "HERSHEY MEXICO S.A. DE C.V.,"
+    ],
+    "sector": "Alimenticio y/o de consumo humano",
+    "activity": "ELABORACIÓN Y MANUFACTURA DE CARAMELOS Y CHOCOLATES",
+    "industrial_park": "CORREDOR INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2006,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 1.62
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 1.62
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 5.01
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 1.31,
+     "Cadmio": 40.5,
+     "Arsénico": 8.9,
+     "Mercurio": 1.95,
+     "Níquel": 118,
+     "Plomo": 230,
+     "Cromo": 84.7
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Crown Envases México, El Salto",
+   "municipality": "El Salto",
+   "sector": "Articulos y productos metalicos",
+   "activity": "FABRICACIÓN DE ENVASES DE DIVERSOS MATERIALES",
+   "lat": 20.53639,
+   "lon": -103.25361,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA CEM521407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2022 (Cr, Ni, Pb, Cd).",
+   "retc": {
+    "nra": [
+     "CEM521407011"
+    ],
+    "retc_names": [
+     "CROWN ENVASES MEXICO S.A. DE C.V.",
+     "CROWN ENVASES MÉXICO S.A DE C.V,"
+    ],
+    "sector": "Articulos y productos metalicos",
+    "activity": "FABRICACIÓN DE ENVASES DE DIVERSOS MATERIALES",
+    "industrial_park": "CARRETERA",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2008,
+     2009,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 3.1
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 19.4
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 7.75
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 11.6
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Mercurio": 0.0298,
+     "Cianuro inorgánico/orgánico": 0.921,
+     "Níquel": 55.2,
+     "Cromo": 83,
+     "Cadmio": 16.4,
+     "Plomo": 54.7,
+     "Arsénico": 3.7
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "ZF Suspension Technology (formerly ZF Sachs), El Salto",
+   "municipality": "El Salto",
+   "sector": "Automotriz",
+   "activity": "PRODUCCION DE PARTES PARA EL SISTEMA DE SUSPENSION Y DIRECCION",
+   "lat": 20.495,
+   "lon": -103.24361,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2021 filing, NRA ZSS9K1407012",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2005-2021 (Ni, Cr, Pb, As).",
+   "retc": {
+    "nra": [
+     "ZSS9K1407012",
+     "ZSS9K1407011"
+    ],
+    "retc_names": [
+     "ZF SACHS SUSPENSION MEXICO S.A. DE C.V.",
+     "ZF SUSPENSION TECHNOLOGY GUADALAJARA SA DE CV,"
+    ],
+    "sector": "Automotriz",
+    "activity": "PRODUCCION DE PARTES PARA EL SISTEMA DE SUSPENSION Y DIRECCION",
+    "industrial_park": "CORREDOR INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "latest_year_to_water": 2021,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 1.76
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 1.01
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 5.03
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 6.9
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 5.03
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.0095,
+     "Arsénico": 14.8,
+     "Cadmio": 3.62,
+     "Cromo": 47.6,
+     "Mercurio": 0.000119,
+     "Níquel": 127,
+     "Plomo": 30.6
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Urrea Herramientas Profesionales, El Salto",
+   "municipality": "El Salto",
+   "sector": "Metalurgica (incluye la siderurgica)",
+   "activity": "FABRICACIÓN Y COMPRA VENTA DE HERRAMIENTAS",
+   "lat": 20.50472,
+   "lon": -103.23194,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA UHP7Z1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water (Ni, Cr, Pb) in 11 years 2004-2022.",
+   "retc": {
+    "nra": [
+     "UHP7Z1407011"
+    ],
+    "retc_names": [
+     "URREA HERRAMIENTAS PROFESIONALES SA DE CV",
+     "URREA HERRAMIENTAS PROFESIONALES SA DE CV,URREA HERRAMIENTAS PROFESIONALES"
+    ],
+    "sector": "Metalurgica (incluye la siderurgica)",
+    "activity": "FABRICACIÓN Y COMPRA VENTA DE HERRAMIENTAS",
+    "industrial_park": "CORREDOR INDUSTRIAL DE EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2007,
+     2009,
+     2011,
+     2012,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 3.91
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 25
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 1.3
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 0.53,
+     "Cianuro inorgánico/orgánico": 3.29,
+     "Mercurio": 0.109,
+     "Cromo": 18,
+     "Níquel": 135,
+     "Plomo": 13.1,
+     "Cadmio": 1.09
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Envases Universales de México, El Salto",
+   "municipality": "El Salto",
+   "sector": "Articulos y productos metalicos",
+   "activity": "ELABORACIÓN DE ENVASES DE ALUMINIO",
+   "lat": 20.49444,
+   "lon": -103.24083,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA EUM7X1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2007-2022 (Ni, Pb, CN, As, Cd).",
+   "retc": {
+    "nra": [
+     "EUM7X1407011"
+    ],
+    "retc_names": [
+     "Envases Universales de México S.A. de C.V.",
+     "Envses Universales de Mexico S.A.P.I de C.V",
+     "ENVASES UNIVERSALES DE MEXICO SAPI DE CV,ENVASES UNIVERSALES DE MEXICO SA PI DE CV"
+    ],
+    "sector": "Articulos y productos metalicos",
+    "activity": "ELABORACIÓN DE ENVASES DE ALUMINIO",
+    "industrial_park": "Predio La Rosita",
+    "years_reporting_releases_to_water": [
+     2007,
+     2009,
+     2010,
+     2011,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 1.27
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 2.22
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 11.1,
+     "Cianuro inorgánico/orgánico": 22.7,
+     "Mercurio": 1.86e-8,
+     "Níquel": 47.3,
+     "Plomo": 46.1,
+     "Cadmio": 11.3
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Precitubo, El Salto",
+   "municipality": "El Salto",
+   "sector": "Metalurgica (incluye la siderurgica)",
+   "activity": "PRODUCCIÓN DE TUBOS Y POSTES DE HIERRO Y ACERO (SÓLO MEDIANTE PROCESOS TÉRMICOS O DE FUNDI",
+   "lat": 20.5125,
+   "lon": -103.23111,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA PRE1407000055",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2008-2022 (Cr, Ni, Pb).",
+   "retc": {
+    "nra": [
+     "PRE1407000055",
+     "PRE7J1407011"
+    ],
+    "retc_names": [
+     "PRECITUBO S.A. DE C.V.,",
+     "PRECITUBO S.A. DE C.V.",
+     "Precitubo S.A. de C.V."
+    ],
+    "sector": "Metalurgica (incluye la siderurgica)",
+    "activity": "PRODUCCIÓN DE TUBOS Y POSTES DE HIERRO Y ACERO (SÓLO MEDIANTE PROCESOS TÉRMICOS O DE FUNDI",
+    "industrial_park": "CORREDOR INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2008,
+     2009,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 4.62
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 1.85
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 2.77
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 41.2,
+     "Níquel": 40.6,
+     "Plomo": 29.4,
+     "Mercurio": 0.027,
+     "Arsénico": 0.0876,
+     "Cadmio": 8.41,
+     "Cianuro inorgánico/orgánico": 0.27
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Honda de México, El Salto plant",
+   "municipality": "El Salto",
+   "sector": "Automotriz",
+   "activity": "Fabricación de Motocicletas, Autopartes, Motopartes, Tolvas Equipos de Poder",
+   "lat": 20.53333,
+   "lon": -103.25278,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA HME9Q1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2014 (Ni, Cr, Pb, Cd).",
+   "retc": {
+    "nra": [
+     "HME9G1407011",
+     "HME9Q1407011"
+    ],
+    "retc_names": [
+     "HONDA DE MEXICO S.A DE C.V",
+     "HONDA DE MEXICO S.A. DE C.V.,",
+     "HONDA DE MEXICO S.A. DE C.V."
+    ],
+    "sector": "Automotriz",
+    "activity": "Fabricación de Motocicletas, Autopartes, Motopartes, Tolvas Equipos de Poder",
+    "industrial_park": "PARQUE INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014
+    ],
+    "latest_year_to_water": 2014,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 2.46
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 12.3
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 11.4
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 4.91
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 1.73
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 8.64
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 4.22
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 3.28
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 0.0754,
+     "Mercurio": 0.0581,
+     "Níquel": 57.4,
+     "Plomo": 21.9,
+     "Cadmio": 9.82,
+     "Cianuro inorgánico/orgánico": 4.28,
+     "Cromo": 63.1
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "BorgWarner Morse Systems, El Salto",
+   "municipality": "El Salto",
+   "sector": "Automotriz",
+   "activity": "Producción de partes para el sistema de transmisión automotriz",
+   "lat": 20.51194,
+   "lon": -103.24167,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA BMT9J1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2006, 2019-2022 (Pb, Ni, Cr).",
+   "retc": {
+    "nra": [
+     "BMT9J1407011"
+    ],
+    "retc_names": [
+     "BORGWARNER MORSE TEC MEXICO S.A. DE C.V.",
+     "BORGWARNER MORSE SYSTEMS MEXICO S.A. DE C.V.,BORGWARNER"
+    ],
+    "sector": "Automotriz",
+    "activity": "Producción de partes para el sistema de transmisión automotriz",
+    "industrial_park": "PARQUE INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 3.49
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 6.07
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 3.49
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 13,
+     "Níquel": 17.2,
+     "Arsénico": 0.000493,
+     "Cianuro inorgánico/orgánico": 0.00347,
+     "Cromo": 9.47,
+     "Mercurio": 0.000141,
+     "Cadmio": 0.00181
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Sanmina-SCI Systems de México (electronics)",
+   "municipality": "El Salto / Tlajomulco",
+   "sector": "Equipos y articulos electronicos, electricos y domesticos",
+   "activity": "MANUFACTURERA DE ENSAMBLES ELECTRONICOS",
+   "lat": 20.57444,
+   "lon": -103.31306,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA SSM8S1407023",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC: a Tlajomulco registration reported a large one-year release to water in 2013 (≈23.9 t Cr, ≈9.6 t Ni, ≈9.6 t Pb) — anomalously high, likely a reporting/units error; the El Salto plant reports small releases 2013-2021.",
+   "retc": {
+    "nra": [
+     "SSM8S1407023",
+     "SSM8S1409722"
+    ],
+    "retc_names": [
+     "SANMINA-SCI SYSTEMS DE MEXICO S.A. DE C.V.",
+     "SANMINA SCI SYSTEMS DE MEXICO S.A. DE C.V.,SANMINA SCI PLANTA 1"
+    ],
+    "sector": "Equipos y articulos electronicos, electricos y domesticos",
+    "activity": "MANUFACTURERA DE ENSAMBLES ELECTRONICOS",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2013,
+     2014,
+     2015,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "latest_year_to_water": 2021,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 2.57
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 23916,
+     "Níquel": 9574,
+     "Arsénico": 957,
+     "Mercurio": 956,
+     "Plomo": 9577,
+     "Cianuro inorgánico/orgánico": 9.83,
+     "Cadmio": 6.11
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Cytec de México (Solvay), Atequiza",
+   "municipality": "Ixtlahuacán de los Membrillos",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+   "lat": 20.39722,
+   "lon": -103.14167,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA CME5H1404411",
+   "receiving_water": "Río Santiago (Atequiza reach)",
+   "alleged_or_reported": "RETC releases to water 2006-2009, 2017-2021 (Pb, Ni, Cr).",
+   "retc": {
+    "nra": [
+     "CME5H1404411",
+     "CME5H1404421"
+    ],
+    "retc_names": [
+     "Cytec de Mexico S.A de C.V.",
+     "CYTEC DE MEXICO S.A DE C.V.",
+     "CYTEC DE MEXICO S.A. DE C.V.,"
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "latest_year_to_water": 2021,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 4.27
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 4.27
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 4.27
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Plomo": 22.4,
+     "Níquel": 31.9,
+     "Mercurio": 0.0806,
+     "Cromo": 20.4,
+     "Arsénico": 0.523,
+     "Cianuro inorgánico/orgánico": 0.526,
+     "Cadmio": 4.8
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Gatorade / Bebidas Purificadas plant, Ixtlahuacán",
+   "municipality": "Ixtlahuacán de los Membrillos",
+   "sector": "Bebidas y tabaco",
+   "activity": "ELABORACION DE REFRESCOS Y OTRAS BEBIDAS NO ALCOHOLICAS",
+   "lat": 20.43222,
+   "lon": -103.21583,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA PGM1404400011",
+   "receiving_water": "Río Santiago corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2022 (Ni ≈0.67 t cumulative, As, Pb, Cr).",
+   "retc": {
+    "nra": [
+     "PGM1404400011",
+     "PGM2M1403911",
+     "BPU1404400042"
+    ],
+    "retc_names": [
+     "PRODUCTOS GATORADE DE MÉXICO, S. DE R. L. DE C.V.,GATORADE PLANTA JALISCO",
+     "PRODUCTOS GATORADE DE MÉXICO, S. DE R. L. DE C.V.,PLANTA GATORADE JALISCO",
+     "PRODUCTOS GATORADE DE MEXICO S. DE R.L. DE C.V.",
+     "PRODUCTOS GATORADE DE MEXICO S. A. de C. V.",
+     "BEBIDAS PURIFICADAS S DE RL DE CV,PLANTA GATORADE GUADALAJARA"
+    ],
+    "sector": "Bebidas y tabaco",
+    "activity": "ELABORACION DE REFRESCOS Y OTRAS BEBIDAS NO ALCOHOLICAS",
+    "industrial_park": "Corredor Industrial La Capilla",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2009,
+     2010,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 3.13
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 2.54
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 1.27
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 12.7
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 12.7
+     },
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 3.66
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 1.37
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 6.84
+     },
+     {
+      "substance": "Mercurio (Compuestos solubles)",
+      "kg": 1.37
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 6.84
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 6.84
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 72.6,
+     "Cromo": 68,
+     "Mercurio": 1.61,
+     "Níquel": 696,
+     "Plomo": 90.6,
+     "Cianuro inorgánico/orgánico": 3.28,
+     "Formaldehido": 0.24,
+     "Cadmio": 20.2
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Ciclo Combinado Tierra Mojada (gas power plant)",
+   "municipality": "Zapotlanejo",
+   "sector": "Generación de energia electrica",
+   "activity": "Generación de Energia Eléctrica, mediante tecnología de ciclo combinado con gas natural",
+   "lat": 20.55167,
+   "lon": -103.06917,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA CCT1412400094",
+   "receiving_water": "Río Santiago basin (Zapotlanejo)",
+   "alleged_or_reported": "RETC releases to water 2020-2022 (Cr, Pb, Ni, Cd).",
+   "retc": {
+    "nra": [
+     "CCT1412400094"
+    ],
+    "retc_names": [
+     "CICLO COMBINADO TIERRA MOJADA S DE RL DE CV,CICLO COMBINADO TIERRA MOADA"
+    ],
+    "sector": "Generación de energia electrica",
+    "activity": "Generación de Energia Eléctrica, mediante tecnología de ciclo combinado con gas natural",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 8.36
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 53.4
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 21.2
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 31.9
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cadmio": 18.5,
+     "Cromo": 112,
+     "Níquel": 44.7,
+     "Plomo": 63
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Patrón Spirits México, Hacienda Patrón",
+   "municipality": "Atotonilco el Alto",
+   "sector": "Bebidas y tabaco",
+   "activity": "PRODUCCION Y ENVASADO DE TEQUILA 100% Y LICORES",
+   "lat": 20.52528,
+   "lon": -102.54917,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA PSM301401312",
+   "receiving_water": "Upper Zula/Santiago basin (tequila district) – receiving water not stated in RETC",
+   "alleged_or_reported": "RETC releases to water 2011-2022 (Cr, Ni, Pb, Cd). Basin attribution uncertain.",
+   "retc": {
+    "nra": [
+     "PSM301401312"
+    ],
+    "retc_names": [
+     "Patron Spirits Mexico S.A de C.V",
+     "Patron Spirits Mexico SA de CV",
+     "PATRON SPIRITS MEXICO SA DE CV,HACIENDA PATRON",
+     "PATRON SPIRITS MEXICO SA DE CV,HACIENDA PATRÓN"
+    ],
+    "sector": "Bebidas y tabaco",
+    "activity": "PRODUCCION Y ENVASADO DE TEQUILA 100% Y LICORES",
+    "industrial_park": "Zona Agricola",
+    "years_reporting_releases_to_water": [
+     2011,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 7.22
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 45.1
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 18
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 27.1
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 1.6,
+     "Arsénico": 19.4,
+     "Cadmio": 44.4,
+     "Cromo": 262,
+     "Mercurio": 2.02,
+     "Plomo": 127,
+     "Níquel": 177
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "VS Autoacabados, Tlaquepaque",
+   "municipality": "San Pedro Tlaquepaque",
+   "sector": "Quimica",
+   "activity": "GALVANOPLASTIA (EN PIEZAS METÁLICAS; NO INCLUYE JOYERÍA).",
+   "lat": 20.60028,
+   "lon": -103.405,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2008 filing, NRA CCO8A1409811",
+   "receiving_water": "Unspecified",
+   "alleged_or_reported": "RETC 2008: 1,800 kg chromium and 1,800 kg nickel to water (single year).",
+   "retc": {
+    "nra": [
+     "CCO8A1409811"
+    ],
+    "retc_names": [
+     "VS AUTOACABADOS, S.A. DE C.V."
+    ],
+    "sector": "Quimica",
+    "activity": "GALVANOPLASTIA (EN PIEZAS METÁLICAS; NO INCLUYE JOYERÍA).",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2008
+    ],
+    "latest_year_to_water": 2008,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 1800
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 1800
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 1800,
+     "Níquel": 1800
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Laboratorios Cryopharma, Tlajomulco",
+   "municipality": "Tlajomulco de Zúñiga",
+   "sector": "Quimica",
+   "activity": "Fábricación o laboratorio de Fármaco, Medicamentos o Productos Biológicos para uso humano.",
+   "lat": 20.46667,
+   "lon": -103.50278,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA LCR5T1409711",
+   "receiving_water": "Unspecified",
+   "alleged_or_reported": "RETC releases to water 2005-2012 including ≈627 kg trichloroethylene (cumulative) plus pyridine and other solvents.",
+   "retc": {
+    "nra": [
+     "LCR5T1409711"
+    ],
+    "retc_names": [
+     "Laboratorios Cryopharma S.A. de C.V.",
+     "LABORATORIOS CRYOPHARMA S.A. DE C.V."
+    ],
+    "sector": "Quimica",
+    "activity": "Fábricación o laboratorio de Fármaco, Medicamentos o Productos Biológicos para uso humano.",
+    "industrial_park": "Parque Industrial Químico Farmacéutico",
+    "years_reporting_releases_to_water": [
+     2005,
+     2006,
+     2007,
+     2008,
+     2010,
+     2012
+    ],
+    "latest_year_to_water": 2012,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.00187
+     },
+     {
+      "substance": "Cloroformo",
+      "kg": 35
+     },
+     {
+      "substance": "Tricloroetileno",
+      "kg": 116
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.188,
+     "Arsénico": 0.00000453,
+     "Cadmio": 0.0558,
+     "Plomo": 1.02,
+     "Cromo": 0.000121,
+     "Mercurio": 0.00373,
+     "Níquel": 0.000468,
+     "Tricloroetileno": 627,
+     "Piridina": 48,
+     "Cloroformo": 111,
+     "Cloruro de metileno": 154
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Kodak de México, Zapopan (historic)",
+   "municipality": "Zapopan",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE PELÍCULAS, PLACAS Y PAPEL SENSIBLE PARA FOTOGRAFÍA.",
+   "lat": 20.64556,
+   "lon": -103.41194,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2011 filing, NRA KME601412011",
+   "receiving_water": "Unspecified",
+   "alleged_or_reported": "RETC releases to water 2004-2007.",
+   "retc": {
+    "nra": [
+     "KME601412011"
+    ],
+    "retc_names": [
+     "Kodak de México S.A. de C.V.",
+     "KODAK DE MEXICO S.A.de C.V."
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE PELÍCULAS, PLACAS Y PAPEL SENSIBLE PARA FOTOGRAFÍA.",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2007
+    ],
+    "latest_year_to_water": 2007,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico",
+      "kg": 0.000121
+     },
+     {
+      "substance": "Cadmio",
+      "kg": 0.00081
+     },
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.000445
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 0.00198
+     },
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 0.000081
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 0.0021
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.00198
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Arsénico": 0.0004,
+     "Cianuro inorgánico/orgánico": 0.000544,
+     "Mercurio": 0.000201,
+     "Cadmio": 0.00161,
+     "Cromo": 0.00437,
+     "Níquel": 0.00585,
+     "Plomo": 0.00484
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Canamex Químicos, Corredor Industrial El Salto (Tlaquepaque side)",
+   "municipality": "San Pedro Tlaquepaque",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+   "lat": 20.58472,
+   "lon": -103.28611,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2007 filing, NRA CQU5H1409811",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2007.",
+   "retc": {
+    "nra": [
+     "CQU5H1409811"
+    ],
+    "retc_names": [
+     "CANAMEX QUIMICOS S. A. DE C.V."
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+    "industrial_park": "CORREDOR INDUSTRIAL DE EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2007
+    ],
+    "latest_year_to_water": 2007,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico",
+      "kg": 0.0000515
+     },
+     {
+      "substance": "Cadmio",
+      "kg": 0.000343
+     },
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.00024
+     },
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 0.000858
+     },
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 0.0000343
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 0.000807
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.000858
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.00109,
+     "Mercurio": 0.00021,
+     "Arsénico": 0.00075,
+     "Plomo": 0.0135,
+     "Níquel": 0.00261,
+     "Cromo": 0.00292,
+     "Cadmio": 0.000745
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Oxiteno México (surfactants), Tlaquepaque",
+   "municipality": "San Pedro Tlaquepaque",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+   "lat": 20.58167,
+   "lon": -103.28583,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA OME5H1409811",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2008-2016 (small amounts).",
+   "retc": {
+    "nra": [
+     "OME5H1409811",
+     "OMEQB1409811"
+    ],
+    "retc_names": [
+     "OXITENO MÉXICO S. A. de C. V.",
+     "OXITENO MEXICO SA DE CV, (PLANTA GUADALAJARA)",
+     "OXITENO MÉXICO S. A. DE C. V."
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE ÁCIDOS, BASES Y SALES ORGÁNICAS.",
+    "industrial_park": "CORREDOR INDUSTRIAL DEL SALTO",
+    "years_reporting_releases_to_water": [
+     2008,
+     2009,
+     2013,
+     2014,
+     2015,
+     2016
+    ],
+    "latest_year_to_water": 2016,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 0.399
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 0.399
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.399
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 2.85,
+     "Mercurio": 0.0273,
+     "Níquel": 2.85,
+     "Plomo": 2.53,
+     "Cianuro inorgánico/orgánico": 0.377,
+     "Arsénico": 0.0805,
+     "Cadmio": 0.281
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Infineum México (lubricant additives), El Salto",
+   "municipality": "El Salto",
+   "sector": "Quimica",
+   "activity": "PRODUCCIÓN DE GRASAS, ACEITES LUBRICANTES Y ADITIVOS (INCLUYE MEZCLAS).",
+   "lat": 20.49861,
+   "lon": -103.23028,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2017 filing, NRA IME691407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2005-2013 (small amounts).",
+   "retc": {
+    "nra": [
+     "IME691407011"
+    ],
+    "retc_names": [
+     "INFINEUM MEXICO S DE R L DE CV"
+    ],
+    "sector": "Quimica",
+    "activity": "PRODUCCIÓN DE GRASAS, ACEITES LUBRICANTES Y ADITIVOS (INCLUYE MEZCLAS).",
+    "industrial_park": "CORREDOR INDUSTRIAL DE EL SALTO",
+    "years_reporting_releases_to_water": [
+     2005,
+     2006,
+     2007,
+     2009,
+     2010,
+     2012,
+     2013
+    ],
+    "latest_year_to_water": 2013,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (compuestos)",
+      "kg": 0.322
+     },
+     {
+      "substance": "Cadmio (compuestos)",
+      "kg": 0.0644
+     },
+     {
+      "substance": "Plomo (compuestos)",
+      "kg": 0.322
+     },
+     {
+      "substance": "Cianuro inorgánico/orgánico",
+      "kg": 0.322
+     },
+     {
+      "substance": "Níquel (compuestos)",
+      "kg": 0.322
+     },
+     {
+      "substance": "Arsénico (compuestos)",
+      "kg": 0.0322
+     },
+     {
+      "substance": "Mercurio (compuestos)",
+      "kg": 0.00644
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cromo": 1.34,
+     "Cianuro inorgánico/orgánico": 0.619,
+     "Cadmio": 0.269,
+     "Arsénico": 0.11,
+     "Mercurio": 0.0269,
+     "Níquel": 1.09,
+     "Plomo": 1.38
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "DSM Nutritional Products México, El Salto",
+   "municipality": "El Salto",
+   "sector": "Alimenticio y/o de consumo humano",
+   "activity": "FABRICACION DE PREMEZCLAS NUTRICIONALES PARA NUTRICION HUMANA Y ANIMAL",
+   "lat": 20.49722,
+   "lon": -103.2275,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA DNPMB1407011",
+   "receiving_water": "El Salto corridor",
+   "alleged_or_reported": "RETC releases to water 2004-2006, 2012, 2021-2022 (small amounts).",
+   "retc": {
+    "nra": [
+     "DNPMB1407011"
+    ],
+    "retc_names": [
+     "DSM Nutritional Products México S.A. de C.V.",
+     "DSM  Nutritional Products México S.A. de C.V.",
+     "DSM NUTRITIONAL PRODUCTS MEXICO SA DE CV",
+     "DSM NUTRITIONAL PRODUCTS MEXICO SA DE CV,"
+    ],
+    "sector": "Alimenticio y/o de consumo humano",
+    "activity": "FABRICACION DE PREMEZCLAS NUTRICIONALES PARA NUTRICION HUMANA Y ANIMAL",
+    "industrial_park": "CORREDOR INDUSTRIAL EL SALTO",
+    "years_reporting_releases_to_water": [
+     2004,
+     2005,
+     2006,
+     2012,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 1.03
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 1.38
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cianuro inorgánico/orgánico": 0.000414,
+     "Arsénico": 0.0154,
+     "Mercurio": 0.0000125,
+     "Plomo": 2.76,
+     "Níquel": 0.00133,
+     "Cadmio": 0.0000339,
+     "Cromo": 2.07
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Daido Metal México, Tlajomulco",
+   "municipality": "Tlajomulco de Zúñiga",
+   "sector": "Automotriz",
+   "activity": "Fabricación de bujes y rodamientos",
+   "lat": 20.49639,
+   "lon": -103.555,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA DMM1409700037",
+   "receiving_water": "Unspecified (west Tlajomulco; drainage basin not verified)",
+   "alleged_or_reported": "RETC releases to water 2014-2022 (Pb, Ni, Cr, Cd).",
+   "retc": {
+    "nra": [
+     "DMM1409700037"
+    ],
+    "retc_names": [
+     "DAIDO METAL MÉXICO, S.A. DE C.V.,DAIDO METAL MEXITO SA DE CV",
+     "DAIDO METAL MÉXICO, S.A. DE C.V.,DAIDO METAL MÉXICO, S. A. DE C. V.",
+     "DAIDO METAL MÉXICO, S.A. DE C.V.,"
+    ],
+    "sector": "Automotriz",
+    "activity": "Fabricación de bujes y rodamientos",
+    "industrial_park": null,
+    "years_reporting_releases_to_water": [
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 1
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 12.1
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 10
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 9.31
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cadmio": 12.1,
+     "Cromo": 50.9,
+     "Níquel": 68.9,
+     "Plomo": 76,
+     "Arsénico": 5.37
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Laboratorios PiSA, Tlajomulco plant",
+   "municipality": "Tlajomulco de Zúñiga",
+   "sector": "Quimica",
+   "activity": "FABRICACION DE MEDICAMENTOS Y SOLUCIONES",
+   "lat": 20.49139,
+   "lon": -103.56278,
+   "coord_precision": "RETC",
+   "coord_source_detail": "RETC 2022 filing, NRA LPI5T1409712",
+   "receiving_water": "Unspecified (west Tlajomulco; drainage basin not verified)",
+   "alleged_or_reported": "RETC releases to water 2011-2022 (Cr, Ni, Pb, Cd, As, Hg).",
+   "retc": {
+    "nra": [
+     "LPI5T1409712"
+    ],
+    "retc_names": [
+     "LABORATORIOS PISA S.A. de C.V.",
+     "LABORATORIOS PISA S.A. DE C.V.,LABORATORIO PISA",
+     "LABORATORIOS PISA S.A. DE C.V.,LABORATORIOS PISA TLAJOMULCO"
+    ],
+    "sector": "Quimica",
+    "activity": "FABRICACION DE MEDICAMENTOS Y SOLUCIONES",
+    "industrial_park": "SANTA CRUZ DE LAS FLORES",
+    "years_reporting_releases_to_water": [
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2019,
+     2020,
+     2021,
+     2022
+    ],
+    "latest_year_to_water": 2022,
+    "latest_releases_to_water_kg": [
+     {
+      "substance": "Arsénico (Compuestos solubles)",
+      "kg": 6.17
+     },
+     {
+      "substance": "Cadmio (Compuestos solubles)",
+      "kg": 12.2
+     },
+     {
+      "substance": "Cromo (Compuestos solubles)",
+      "kg": 61.1
+     },
+     {
+      "substance": "Mercurio (Compuestos solubles)",
+      "kg": 1.22
+     },
+     {
+      "substance": "Níquel (Compuestos solubles)",
+      "kg": 61.1
+     },
+     {
+      "substance": "Plomo (Compuestos solubles)",
+      "kg": 61.1
+     }
+    ],
+    "cumulative_releases_to_water_kg_2004_2022": {
+     "Cadmio": 53.7,
+     "Cianuro inorgánico/orgánico": 0.285,
+     "Cromo": 226,
+     "Níquel": 205,
+     "Arsénico": 48.5,
+     "Plomo": 181,
+     "Mercurio": 1.22
+    },
+    "years_reporting_transfers_to_sewer": [],
+    "latest_year_to_sewer": null,
+    "latest_transfers_to_sewer_kg": [],
+    "cumulative_transfers_to_sewer_kg_2004_2022": {}
+   },
+   "sources": [
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip"
+   ]
+  },
+  {
+   "name": "Industria Plásticos/Envases y Plásticos Titán",
+   "municipality": "unknown (upper Santiago/Verde basin)",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none – not located",
+   "receiving_water": "unknown",
+   "alleged_or_reported": "Listed among 26 industrial discharges sampled by IMTA (2009-2010 campaigns) for the 2011 CEA Jalisco study (\"Envases y plásticos Titán\", DI-30). Not found in RETC; not mapped.",
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/estudio_calidad_de_agua_del_rio_santiago.pdf"
+   ]
+  },
+  {
+   "name": "Unnamed company closed by Jalisco government in Ixtlahuacán de los Membrillos (Feb 2020)",
+   "municipality": "Ixtlahuacán de los Membrillos",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none – company not named in source",
+   "receiving_water": "Río Santiago",
+   "alleged_or_reported": "State government closed a company for contaminating discharges to the Río Santiago (reported 6 Feb 2020).",
+   "sources": [
+    "https://www.eluniversal.com.mx/estados/cierran-empresa-en-jalisco-por-dano-rio-santiago/"
+   ]
+  }
+ ],
+ "municipal_discharges": [
+  {
+   "name": "PTAR Agua Prieta (Zapopan)",
+   "type": "PTAR (macro-plant, AMG)",
+   "lat": 20.77131,
+   "lon": -103.33485,
+   "coord_precision": "OpenStreetMap polygon centroid (operator RETC coords 20.77056,-103.33694)",
+   "operator": "Concession: Atlatec / Renova Atlatec (RETC 2020-2022); formerly \"Tratadora de Aguas de Zapopan\" (RETC 2014-2019); CEA Jalisco",
+   "design_capacity_L_s": 8500,
+   "reported_flows_L_s": {
+    "rainy_season": 6700,
+    "dry_season": 5000
+   },
+   "receiving_water": "Río Santiago (barranca de Huentitán/Oblatos)",
+   "started": "2014-11",
+   "known_issues": [
+    "Designed for NOM-001-SEMARNAT-1996 (Type B receiving body); Jalisco planning sheet says it requires modernization (≈MXN 678 M) to comply with NOM-001-SEMARNAT-2021; potential annual discharge-fee liability ≈MXN 958.5 M if non-compliant.",
+    "Self-reported RETC releases to water by the operator are the largest in the region (e.g., 2022: ≈17.1 t Ni, ≈11.6 t Cr, ≈12.1 t Pb, ≈1.3 t Cd, ≈130 kg Hg) — these are loads passing through the plant, likely estimated from flow × concentration.",
+    "CEA/FONNOR 2022 diagnostic found cadmium 0.027 mg/L at station E16 (Río Santiago, Ixtlahuacán del Río) and inferred Agua Prieta discharges as the nearest source.",
+    "Northwest AMG discharges (San Andrés, San Gaspar, Osorio) and the Río Blanco PTAR expansion were still pending federal funding as of 2024."
+   ],
+   "retc_operator_nras": [
+    "TAZ1412000251",
+    "ATL1412001285",
+    "RAT1412001465"
+   ],
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0033.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "PTAR El Ahogado (Tlajomulco de Zúñiga, next to Presa El Ahogado)",
+   "type": "PTAR (macro-plant, AMG south)",
+   "lat": 20.50646,
+   "lon": -103.2596,
+   "coord_precision": "OpenStreetMap polygon centroid (operator RETC coords 20.50778,-103.25639)",
+   "operator": "Concession: Aguas Tratadas de Guadalajara (RETC 2014-2021) / Mitsui & Co. Infrastructure Solutions (RETC 2022); CEA Jalisco",
+   "design_capacity_L_s": 2250,
+   "expanded_capacity_L_s": 3250,
+   "capacity_note": "RRS2050 (2024): a 1,000 L/s module was added \"for a total of 3,250 L/s\". The 2,250 L/s original figure is inferred (3,250 − 1,000), not directly quoted.",
+   "receiving_water": "Presa / Arroyo El Ahogado → Río Santiago above El Salto–Juanacatlán",
+   "started": "2012",
+   "known_issues": [
+    "Greenpeace (Jan 2016 sampling) found nonylphenols, octylphenol, phthalates (DBP, DiBP, DEP, DMP), bisphenol-A, triphenyl phosphate and PFOA in the treated effluent, concluding the domestic-sewage plant receives industrial wastewater.",
+    "CNDH Rec. 134/2022: El Salto officials (Sept 2021) said the plant is over capacity and much wastewater bypasses it directly into Canal El Ahogado; CNDH staff observed strong odors at the outfall.",
+    "Operator RETC releases to water 2022: ≈8.8 t Ni, ≈7.6 t Cr, ≈7.6 t Pb, ≈0.76 t Cd, ≈227 kg Hg."
+   ],
+   "retc_operator_nras": [
+    "ATGS71409711",
+    "ATL1409700576"
+   ],
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/alto_a_la_catastrofe_ecologica_del_rio_santiago.pdf",
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+    "http://sinat.semarnat.gob.mx/retc/retc/RETC_2004-2022.zip",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "PTAR Río Blanco (SIAPA, Zapopan)",
+   "type": "PTAR",
+   "lat": 20.77365,
+   "lon": -103.43153,
+   "coord_precision": "OpenStreetMap polygon centroid",
+   "operator": "SIAPA",
+   "design_capacity_L_s": null,
+   "receiving_water": "Río Blanco → Río Santiago",
+   "known_issues": [
+    "Expansion of the Río Blanco PTAR was among works for which CONAGUA did not allocate budget under the 8 Oct 2020 collaboration agreement (RRS2050, 2024). Capacity not found in sources reviewed."
+   ],
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "Untreated northwest AMG discharges: San Andrés, San Gaspar and Osorio (barranca del Río Santiago)",
+   "type": "untreated municipal discharges",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none – exact outfalls not located; they discharge into the Santiago canyon on the NE edge of Guadalajara/Tonalá",
+   "known_issues": [
+    "Listed in RRS2050 (2024) as discharges still to be controlled; CONAGUA had not allocated the agreed budget. The state targets ~98% basin sanitation once these and Río Blanco are addressed."
+   ],
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf"
+   ]
+  },
+  {
+   "name": "El Salto municipality – 7 direct untreated discharges to the Río Santiago",
+   "type": "untreated municipal discharges (aggregate)",
+   "lat": 20.51944,
+   "lon": -103.18167,
+   "coord_precision": "municipal seat (INEGI 20°31'10\"N 103°10'54\"W) – NOT the discharge points",
+   "known_issues": [
+    "CNDH Rec. 134/2022: El Salto officials (1 Sept 2021) reported 7 wastewater discharges directly to the Río Santiago without treatment or CONAGUA permit."
+   ],
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+   ]
+  },
+  {
+   "name": "Poncitlán municipal sanitation systems",
+   "type": "municipal PTARs (aggregate)",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none",
+   "known_issues": [
+    "CNDH Rec. 134/2022: of 6 sanitation systems only 1 operating, another at 20%, rest out of service (Sept 2021); CEA 2019 found abandonment and design defects."
+   ],
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+   ]
+  },
+  {
+   "name": "Juanacatlán municipal PTARs",
+   "type": "municipal PTARs (aggregate)",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none",
+   "known_issues": [
+    "CNDH Rec. 134/2022: 3 PTARs, one out of operation due to cable theft; electricity costs make operation onerous (Sept 2021)."
+   ],
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+   ]
+  },
+  {
+   "name": "Canal / Presa Las Pintas (south AMG sewage canal feeding El Ahogado)",
+   "type": "sewage-laden canal and reservoir",
+   "lat": 20.5772,
+   "lon": -103.33043,
+   "coord_precision": "CONAGUA RENAMECA site OCLSP3681M1 (Presa Las Pintas cortina)",
+   "known_issues": [
+    "RENAMECA 2012-2025 aggregate: red semáforo (DQO, E. coli, fecal coliforms, low bottom DO).",
+    "CEA/FONNOR 2022: water toxicity (Daphnia CE50 48h) positive at Arroyo Las Pintas station E19.",
+    "Oct 2026: CEA reported 103 wastewater/industrial discharges found by CONAGUA inspectors; effluent reached the old Las Pintas system and, before gates closed, the Miravalle drinking-water plant intake."
+   ],
+   "sources": [
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf",
+    "https://www.nmas.com.mx/jalisco/medio-ambiente/detectan-103-descargas-de-aguas-residuales-en-el-rio-santiago-en-jalisco/"
+   ]
+  },
+  {
+   "name": "Cárcamo near PTAR El Ahogado (open sump sampled by Greenpeace, 2016)",
+   "type": "open wastewater sump",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "none – ~300 m from PTAR El Ahogado per Greenpeace",
+   "known_issues": [
+    "Greenpeace MX16001: dissolved Cr 70 µg/L, Ni 47 µg/L; 21 VOCs incl. chloroform and 1,4-dichlorobenzene; PFBS 23 ng/L."
+   ],
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/alto_a_la_catastrofe_ecologica_del_rio_santiago.pdf"
+   ]
+  }
+ ],
+ "water_quality": [
+  {
+   "id": "OCLSP0007",
+   "name": "POBLACIÓN PUENTE CLINICA IMSS AFLUENTE A RÍO SANTIAGO",
+   "water_body": "AFLUENTE RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.38093,
+   "lon": -102.93485,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 9.8,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 70.07,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 31.5,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 769800,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 611500,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3716",
+   "name": "ARROYO EL AHOGADO ANTES DEL RÍO SANTIAGO",
+   "water_body": "ARROYO EL AHOGADO",
+   "municipality": "TLAJOMULCO DE ZUÑIGA",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.49843,
+   "lon": -103.21638,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 49.3,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 139.7,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 29,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 5276000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 5276000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3716M1",
+   "name": "ARROYO EL AHOGADO ANTES DEL RÍO SANTIAGO",
+   "water_body": "ARROYO EL AHOGADO",
+   "municipality": "EL SALTO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.49843,
+   "lon": -103.21638,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 62,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 248.8,
+      "class": "Fuertemente contaminada"
+     },
+     "SST_mg_L": {
+      "value": 53.17,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 15030000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 14760000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 10.75,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 62,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 248.8,
+      "class": "Fuertemente contaminada"
+     },
+     "SST_mg_L": {
+      "value": 53.17,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 15030000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 14760000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 10.75,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3700M1",
+   "name": "ARROYO EL AHOGADO PUENTE CAMINO A PENWALT",
+   "water_body": "ARROYO EL AHOGADO",
+   "municipality": "EL SALTO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.49741,
+   "lon": -103.22776,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 23.69,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 80.53,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 48,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 88010,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 29160,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 36.9,
+      "class": "Aceptable"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 1.217,
+      "class": "Toxicidad baja"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 6.643,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 44.9,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 206.9,
+      "class": "Fuertemente contaminada"
+     },
+     "SST_mg_L": {
+      "value": 53,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 240000000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 240000000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 1.217,
+      "class": "Toxicidad baja"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 6.643,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3701M1",
+   "name": "ARROYO EL AHOGADO PUENTE CARRETERA A CHAPALA",
+   "water_body": "ARROYO EL AHOGADO",
+   "municipality": "EL SALTO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.53794,
+   "lon": -103.29631,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF",
+     "OD_PORC"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 24.75,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 162.2,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 57.6,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 107600,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 58300,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 27.7,
+      "class": "Contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 3.26,
+      "class": "Toxicidad moderada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 27.5,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI"
+    ],
+    "indicators": {
+     "DQO_mg_L": {
+      "value": 286.3,
+      "class": "Fuertemente contaminada"
+     },
+     "SST_mg_L": {
+      "value": 104,
+      "class": "Aceptable"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 24000000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 6.394,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3814M2",
+   "name": "ARROYO LA LAJA ANTES DE POBLACION LA LAJA",
+   "water_body": "ARROYO LA LAJA",
+   "municipality": "ZAPOTLANEJO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.5639,
+   "lon": -103.10089,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF",
+     "OD_PORC"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 110.4,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 245.1,
+      "class": "Fuertemente contaminada"
+     },
+     "SST_mg_L": {
+      "value": 29.23,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 328000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 258100,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 24.85,
+      "class": "Contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 4.24,
+      "class": "Toxicidad moderada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 2.21,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.9,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 97.22,
+      "class": "Contaminada"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 460000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 240000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3815M2",
+   "name": "ARROYO LA LAJA ANTES DEL RÍO SANTIAGO",
+   "water_body": "ARROYO LA LAJA",
+   "municipality": "ZAPOTLANEJO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.58776,
+   "lon": -103.13604,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF",
+     "OD_PORC"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 19.3,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 148,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 64.94,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 183700,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 165200,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 27.65,
+      "class": "Contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 2.54,
+      "class": "Toxicidad moderada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 22.65,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3834M1",
+   "name": "ESTACION LITORAL A",
+   "water_body": "LAGO DE CHAPALA",
+   "municipality": "JAMAY",
+   "state": "JALISCO",
+   "type": "LÉNTICO (HUMEDAL)",
+   "lat": 20.27663,
+   "lon": -102.7272,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.14,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 48.22,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 58.33,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 5365,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 57,
+      "class": "Excelente"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3796M1",
+   "name": "ACUEDUCTO CHAPALA GUADALAJARA",
+   "water_body": "LAGO DE CHAPALA",
+   "municipality": "CHAPALA",
+   "state": "JALISCO",
+   "type": "LÉNTICO",
+   "lat": 20.31339,
+   "lon": -103.14373,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 3.81,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 40.86,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 40.75,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 2786,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 14.01,
+      "class": "Excelente"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0013RNL",
+   "name": "PRESA EL AHOGADO CORTINA",
+   "water_body": "PRESA EL AHOGADO",
+   "municipality": "TONALA",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.56965,
+   "lon": -103.25246,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 27.8,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 115.2,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 41.3,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 840000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 791700,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 42.4,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 142.8,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 48.89,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 4000000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 4000000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3680M1",
+   "name": "PRESA LAS PINTAS CENTRO",
+   "water_body": "PRESA LAS PINTAS",
+   "municipality": "SAN PEDRO TLAQUEPAQUE",
+   "state": "JALISCO",
+   "type": "LÉNTICO (HUMEDAL)",
+   "lat": 20.58021,
+   "lon": -103.32639,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 6.44,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 62.83,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 40,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 5147,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 1765,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3681M1",
+   "name": "PRESA LAS PINTAS  CORTINA",
+   "water_body": "PRESA LAS PINTAS",
+   "municipality": "SAN PEDRO TLAQUEPAQUE",
+   "state": "JALISCO",
+   "type": "LÉNTICO (HUMEDAL)",
+   "lat": 20.5772,
+   "lon": -103.33043,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF",
+     "OD%F"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.555,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 53.4,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 31,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 9636,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 1896,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "DLMIC1594",
+   "name": "RÍO LERMA 50",
+   "water_body": "RÍO LERMA",
+   "municipality": "VISTA HERMOSA",
+   "state": "MICHOACÁN DE OCAMPO",
+   "type": "LÓTICO",
+   "lat": 20.32851,
+   "lon": -102.45735,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 11.57,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 50.74,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 131,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 4921,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 1960,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 68.1,
+      "class": "Buena calidad"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 4.07,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.27,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 67.56,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 95.5,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 75890,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 262.7,
+      "class": "Buena calidad"
+     },
+     "OD_percent": {
+      "value": 60.7,
+      "class": "Buena calidad"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3810M1",
+   "name": "RÍO LERMA EN ZALAMEA",
+   "water_body": "RÍO LERMA",
+   "municipality": "LA BARCA",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.31396,
+   "lon": -102.50697,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 10.38,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 55.67,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 132.4,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 35930,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 15130,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 61.3,
+      "class": "Buena calidad"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF",
+     "SST"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 8.15,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 91.87,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 276,
+      "class": "Contaminada"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 75890,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 75890,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3811M1",
+   "name": "RÍO LERMA PTE, BRISEÑAS",
+   "water_body": "RÍO LERMA",
+   "municipality": "LA BARCA",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.27509,
+   "lon": -102.5597,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 11.88,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 73.3,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 97.95,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 31260,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 19060,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 46.7,
+      "class": "Aceptable"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 1.05,
+      "class": "Toxicidad baja"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 6.15,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF",
+     "SST"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.35,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 98.88,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 303.4,
+      "class": "Contaminada"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 101600,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 101600,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3809M1",
+   "name": "RÍO LERMA DESP. DE LA BARCA",
+   "water_body": "RÍO LERMA",
+   "municipality": "BRISEÑAS",
+   "state": "MICHOACÁN DE OCAMPO",
+   "type": "LÓTICO",
+   "lat": 20.26469,
+   "lon": -102.57797,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 9.67,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 67.14,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 71.4,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 19210,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 5308,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 52,
+      "class": "Buena calidad"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "DLMIC1590",
+   "name": "RÍO LERMA 18",
+   "water_body": "RÍO LERMA",
+   "municipality": "BRISEÑAS",
+   "state": "MICHOACÁN DE OCAMPO",
+   "type": "LÓTICO (HUMEDAL)",
+   "lat": 20.23788,
+   "lon": -102.61965,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "AMARILLO",
+    "failing_parameters": [
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.835,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 38.14,
+      "class": "Aceptable"
+     },
+     "SST_mg_L": {
+      "value": 72.75,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 1291,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 66.97,
+      "class": "Excelente"
+     },
+     "OD_percent": {
+      "value": 55,
+      "class": "Buena calidad"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 41.2,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 77.24,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 33.33,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 11000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 11000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "DLMIC1588",
+   "name": "RÍO LERMA 42",
+   "water_body": "RÍO LERMA",
+   "municipality": "BRISEÑAS",
+   "state": "MICHOACÁN DE OCAMPO",
+   "type": "LÓTICO",
+   "lat": 20.23139,
+   "lon": -102.62581,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 6.265,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 43.09,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 50.93,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 1610,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 121.4,
+      "class": "Excelente"
+     },
+     "OD_percent": {
+      "value": 58.5,
+      "class": "Buena calidad"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 1.42,
+      "class": "Toxicidad moderada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 5.26,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "AMARILLO",
+    "failing_parameters": [
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 10.62,
+      "class": "Aceptable"
+     },
+     "SST_mg_L": {
+      "value": 108,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 2182,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 519.6,
+      "class": "Buena calidad"
+     },
+     "OD_percent": {
+      "value": 49,
+      "class": "Aceptable"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "AMARILLO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "DLMIC1587",
+   "name": "RH12-5 LERMA",
+   "water_body": "RÍO LERMA",
+   "municipality": "BRISEÑAS",
+   "state": "MICHOACÁN DE OCAMPO",
+   "type": "LÓTICO",
+   "lat": 20.23012,
+   "lon": -102.66898,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.58,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 46.73,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 67.14,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 2392,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 216.7,
+      "class": "Buena calidad"
+     },
+     "OD_percent": {
+      "value": 50,
+      "class": "Aceptable"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 6.17,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.2,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 62.45,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 47,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 3535,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 1876,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 41,
+      "class": "Aceptable"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3830M1",
+   "name": "RÍO SANTIAGO ANTES DE NESTLE",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "OCOTLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.34696,
+   "lon": -102.77941,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 12.2,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 91.77,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 52,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 872400,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 817700,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 12.2,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 91.77,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 52,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 872400,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 817700,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3832M1",
+   "name": "RÍO SANTIAGO PUENTE OCOTLAN",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLÁN",
+   "state": "JALISCO",
+   "type": "LOTICO A - TIPO 10",
+   "lat": 20.34696,
+   "lon": -102.77941,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF",
+     "SST"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 39.1,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 81.79,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 222.5,
+      "class": "Contaminada"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 240000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 240000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3833M1",
+   "name": "RÍO SANTIAGO EN CUITZEO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "OCOTLÁN",
+   "state": "JALISCO",
+   "type": "LÓTICO A - TIPO 10",
+   "lat": 20.32358,
+   "lon": -102.78582,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 15.1,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 101.9,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 87.03,
+      "class": "Aceptable"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 114100,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 96380,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 20.7,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 105.9,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 62,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 568600,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 491700,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0004RNL",
+   "name": "RÍO SANTIAGO SAN LUIS DEL AGUA CALIENTE",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.38712,
+   "lon": -102.82253,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 18.2,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 100.1,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 49.3,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 370600,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 370600,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 18.2,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 100.1,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 49.3,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 370600,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 370600,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0005RNL",
+   "name": "POBLACION SANTA CRUZ, AFLUENTE RÍO SANTIAGO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.38035,
+   "lon": -102.86186,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 38.2,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 107,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 46,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 1051000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 5171000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3837M1",
+   "name": "PRESA PONCITLAN",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLÁN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.38517,
+   "lon": -102.92201,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.1,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 83.38,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 43,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 591400,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 534800,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.1,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 83.38,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 43,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 568000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 493400,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0007RNL",
+   "name": "POBLACION PUENTE CLINICA IMSS AFLUENTE RÍO SANTIAGO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.38093,
+   "lon": -102.93485,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 28.05,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 122.6,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 31.5,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 16370000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 7270000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0008RNL",
+   "name": "RÍO SANTIAGO, PUENTE BRECHA LA CONSTANCIA",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.40063,
+   "lon": -102.98379,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 6.8,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 66.25,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 20,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 80280,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 51950,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 4.7,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 76.11,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 22.45,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 115500,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 78200,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0009RNL",
+   "name": "RÍO SANTIAGO PUENTE POBLACION TECUALTITAN",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "PONCITLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.42086,
+   "lon": -103.02968,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.4,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 61.26,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 24,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 15230,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 12250,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 3.6,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 80.29,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 27,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 33610,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 28550,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3840M1",
+   "name": "PRESA DERIVADORA CORONA",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "CHAPALA",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.4001,
+   "lon": -103.09157,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.65,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 62.87,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 9,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 61320,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 59360,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.3,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 65.53,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 9,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 57460,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 57460,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0011RNL",
+   "name": "RÍO SANTIAGO, PUENTE CARRETERO ATEQUIZA MIRAFLORES",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "JUANACATLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.41294,
+   "lon": -103.12865,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.55,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 61.82,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 16,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 103000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 52520,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 4.1,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 62.22,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 12,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 22370,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 19640,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3717M1",
+   "name": "RÍO SANTIAGO PUENTE GRANDE",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "JUANACATLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.56956,
+   "lon": -103.1477,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 12.65,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 88.31,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 13.97,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 1483000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 1568000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 11.4,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 79.9,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 13,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 2080000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2080000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3715",
+   "name": "RÍO SANTIAGO DESPUÉS DEL ARROYO DEL AHOGADO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "EL SALTO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.50837,
+   "lon": -103.17432,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 24.5,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 120.9,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 16.77,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 2941000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2507000,
+      "class": "Fuertemente contaminada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3715M1",
+   "name": "DESPUES DE ARROYO DEL AHOGADO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "JUANACATLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO A - TIPO 10",
+   "lat": 20.50836,
+   "lon": -103.17432,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 44.2,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 162.4,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 19,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 3042000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2868000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 8.51,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 44.2,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 162.4,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 19,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 3042000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2868000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 8.51,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3704M1",
+   "name": "RÍO SANTIAGO PUENTE ARCEDIANO",
+   "water_body": "RÍO SANTIAGO",
+   "municipality": "IXTLAHUACÁN DEL RÍO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.73889,
+   "lon": -103.28928,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 22.29,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 86.15,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 65.5,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 29390,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 28690,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 80.65,
+      "class": "Excelente"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 1.04,
+      "class": "Toxicidad baja"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3705M1",
+   "name": "RÍO VERDE ACATIC",
+   "water_body": "RÍO VERDE",
+   "municipality": "ACATIC",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.8286,
+   "lon": -102.96199,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "AMARILLO",
+    "failing_parameters": [
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 4.61,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 34.34,
+      "class": "Aceptable"
+     },
+     "SST_mg_L": {
+      "value": 54.53,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 6137,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 209,
+      "class": "Buena calidad"
+     },
+     "OD_percent": {
+      "value": 99.4,
+      "class": "Excelente"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 2,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 2.2,
+      "class": "Excelente"
+     },
+     "DQO_mg_L": {
+      "value": 45.38,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 15,
+      "class": "Excelente"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 43,
+      "class": "Excelente"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2,
+      "class": "Excelente"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3706M1",
+   "name": "RÍO VERDE ANTES DE SU CONFLUENCIA CON EL RÍO SANTIAGO",
+   "water_body": "RÍO VERDE",
+   "municipality": "IXTLAHUACÁN DEL RÍO",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.7305,
+   "lon": -103.28278,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "AMARILLO",
+    "failing_parameters": [
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 4.055,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 39.36,
+      "class": "Aceptable"
+     },
+     "SST_mg_L": {
+      "value": 52,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 9307,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 373,
+      "class": "Buena calidad"
+     },
+     "OD_percent": {
+      "value": 102.3,
+      "class": "Excelente"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 2.16,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_year": "2012-2025 (aggregate only)",
+   "semaforo_latest": "AMARILLO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3805M1",
+   "name": "RÍO ZULA EN SAN MARTIN DE ZULA",
+   "water_body": "RÍO ZULA",
+   "municipality": "OCOTLÁN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.41594,
+   "lon": -102.72869,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.96,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 47.58,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 73.38,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 8369,
+      "class": "Contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 2285,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 45.8,
+      "class": "Aceptable"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 2.055,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 5.3,
+      "class": "Buena calidad"
+     },
+     "DQO_mg_L": {
+      "value": 95.96,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 64,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 230000,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 230000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 2.055,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP3829M1",
+   "name": "RÍO ZULA PASO DE LA COMUNIDAD",
+   "water_body": "RÍO ZULA",
+   "municipality": "OCOTLÁN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.36187,
+   "lon": -102.74208,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "TOX_V",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 7.65,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 56.66,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 32.5,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 23680,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 12420,
+      "class": "Fuertemente contaminada"
+     },
+     "OD_percent": {
+      "value": 32.6,
+      "class": "Aceptable"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": 3.05,
+      "class": "Toxicidad moderada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 10.12,
+      "class": "Toxicidad alta"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 19.95,
+      "class": "Aceptable"
+     },
+     "DQO_mg_L": {
+      "value": 93.89,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 25.73,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 472400,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 472400,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Daphnia_48h_UT": {
+      "value": "<1",
+      "class": "No tóxico"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 4.767,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "OCLSP0003RNL",
+   "name": "RÍO ZULA PUENTE POBLACIÓN EL DUQUE",
+   "water_body": "RÍO ZULA",
+   "municipality": "OCOTLAN",
+   "state": "JALISCO",
+   "type": "LÓTICO",
+   "lat": 20.34591,
+   "lon": -102.76432,
+   "network": "CONAGUA RENAMECA",
+   "period_2012_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 35.9,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 117,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 30.88,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 659800,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 378000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 1.77,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_2025": {
+    "semaforo": "ROJO",
+    "failing_parameters": [
+     "DBO",
+     "DQO",
+     "E_COLI",
+     "CF"
+    ],
+    "indicators": {
+     "DBO5_mg_L": {
+      "value": 35.9,
+      "class": "Contaminada"
+     },
+     "DQO_mg_L": {
+      "value": 117,
+      "class": "Contaminada"
+     },
+     "SST_mg_L": {
+      "value": 30.88,
+      "class": "Buena calidad"
+     },
+     "fecal_coliforms_NMP_100mL": {
+      "value": 659800,
+      "class": "Fuertemente contaminada"
+     },
+     "E_coli_NMP_100mL": {
+      "value": 378000,
+      "class": "Fuertemente contaminada"
+     },
+     "toxicity_Vibrio_15min_UT": {
+      "value": 1.77,
+      "class": "Toxicidad moderada"
+     }
+    }
+   },
+   "latest_year": 2025,
+   "semaforo_latest": "ROJO",
+   "source": "CONAGUA, Calidad del Agua Superficial 2025 and 2012-2025 (RENAMECA), https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+   "source_files": [
+    "https://www.gob.mx/cms/uploads/attachment/file/1084132/Calidad_del_Agua_Superficial_a_2025.xlsx",
+    "https://www.gob.mx/cms/uploads/attachment/file/1084133/Calidad_del_Agua_Superficial_p_2012-2025.xlsx"
+   ],
+   "heavy_metals": "not included in CONAGUA RENAMECA open dataset"
+  },
+  {
+   "id": "CEA-FONNOR E9",
+   "name": "La Laja – Arroyo Grande",
+   "lat": 20.57804,
+   "lon": -103.12778,
+   "water_body": "Arroyo Grande (La Laja subbasin)",
+   "priority_points": 26,
+   "notes": "Cadmium above LFD aquatic-life limit (0.004 mg/L).",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E10",
+   "name": "Zapotlanejo – Río Zapotlanejo",
+   "lat": 20.62301,
+   "lon": -103.09545,
+   "water_body": "Río Zapotlanejo (La Laja subbasin)",
+   "priority_points": 30,
+   "notes": "Highest priority stream in the basin; Daphnia 48h toxicity positive.",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E11",
+   "name": "La Azucena – Arroyo El Ahogado",
+   "lat": 20.49743,
+   "lon": -103.2278,
+   "water_body": "Arroyo El Ahogado",
+   "priority_points": 25,
+   "notes": "",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E15",
+   "name": "Presa Corona – Río Santiago",
+   "lat": 20.40014,
+   "lon": -103.09304,
+   "water_body": "Río Santiago",
+   "priority_points": 20,
+   "notes": "",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E16",
+   "name": "Puente Paso a Guadalupe – Río Santiago (Ixtlahuacán del Río)",
+   "lat": 20.839,
+   "lon": -103.32881,
+   "water_body": "Río Santiago (downstream of PTAR Agua Prieta)",
+   "priority_points": 28,
+   "notes": "Cadmium 0.027 mg/L (LFD aquatic-life limit 0.004 mg/L); report infers PTAR Agua Prieta discharges as nearest source.",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E18",
+   "name": "Plan de Oriente – Arroyo El Ahogado",
+   "lat": 20.58856,
+   "lon": -103.28403,
+   "water_body": "Arroyo El Ahogado (upper)",
+   "priority_points": 22,
+   "notes": "",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E19",
+   "name": "Villa Fontana – Arroyo Las Pintas",
+   "lat": 20.56268,
+   "lon": -103.36321,
+   "water_body": "Arroyo Las Pintas",
+   "priority_points": 22,
+   "notes": "Daphnia 48h toxicity positive.",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  },
+  {
+   "id": "CEA-FONNOR E20",
+   "name": "San José del Quince – Arroyo El Ahogado",
+   "lat": 20.53781,
+   "lon": -103.29677,
+   "water_body": "Arroyo El Ahogado",
+   "priority_points": 23,
+   "notes": "Daphnia 48h toxicity positive.",
+   "network": "CEA Jalisco / FONNOR / SEMADET diagnostic (2021-2022 campaigns)",
+   "latest_year": "2021-2022",
+   "semaforo_latest": null,
+   "indicators_note": "Priority points = sum of exceedances of aquatic-life thresholds across physicochemical, microbiological, toxicity, heavy-metal and synthetic-organic groups (report Tabla 16.2). All stations exceeded microbiological thresholds (8 pts each).",
+   "coord_note": "Coordinates parsed from report Tabla 3.2; the PDF table layout is misaligned, rows were matched by station name and cross-checked against place names. Verify before precise use.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+  }
+ ],
+ "facts": [
+  {
+   "year": "late 1970s–1990s",
+   "fact": "Accelerated industrialization of the El Salto industrial corridor (El Salto, Juanacatlán, Poncitlán, Ocotlán), later extending to Tlajomulco and Ixtlahuacán de los Membrillos with NAFTA-era investment: chemical, petrochemical, metal-mechanic, textile, automotive, electronics, pharmaceutical and food plants.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2020-2022",
+   "fact": "PROFEPA registered 159 industries discharging wastewater to the Río Santiago (Ocotlán area and two corridors); CONAGUA counted 280 discharges, 266 of them into the Santiago.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2011",
+   "fact": "IMTA study for CEA Jalisco (sampling Mar 2009–May 2010) detected 1,090 toxic substances, chemicals and metals in discharges and river water; 87–94% of industries failed at least one NOM-001-SEMARNAT-1996 parameter, and industrial discharges were more polluting than municipal ones.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2008",
+   "fact": "Miguel Ángel López Rocha (8–9 years old) fell into the Río Santiago/El Ahogado canal at El Salto on 25 Jan 2008 and died on 13 Feb 2008; hospital notes diagnosed arsenic poisoning. CNDH Recommendation 12/2010 (2 Mar 2010) faulted CONAGUA for failing to enforce environmental norms.",
+   "source": "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf"
+  },
+  {
+   "year": "2008",
+   "fact": "An IMTA June 2008 monitoring report (cited by CNDH 12/2010) concluded the main source of Santiago pollution is water from Arroyo El Ahogado; Puente Grande showed significant acute toxicity attributed to heavy metals.",
+   "source": "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf"
+  },
+  {
+   "year": "2009",
+   "fact": "Jalisco human rights commission (CEDHJ) issued Macro-Recomendación 1/2009 with 100 points addressed to the governor, 14 municipalities, SIAPA and CEA.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf"
+  },
+  {
+   "year": "2012",
+   "fact": "Greenpeace/UCCS/Un Salto de Vida study: >90% of residents of El Salto, Juanacatlán and Ocotlán live within 5 km of the Santiago, El Ahogado or Zula; 51% (El Salto) and 81% (Juanacatlán) live within 1 km. Mortality from hypertensive kidney disease and renal failure rose in El Salto and Juanacatlán in 2007–2010.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf"
+  },
+  {
+   "year": "2012",
+   "fact": "The same study listed the 10 facilities with the highest RETC-reported heavy-metal and cyanide discharges (2004–2009): CIBA (now Huntsman), Grupo Celanese, Cervecería Modelo de Guadalajara, Nestlé México, Hilasal Mexicana, Cervecería Cuauhtémoc Moctezuma, Casa Cuervo, IBM de México, Servicios Estrella Azul de Occidente (only 9 names are printed).",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf"
+  },
+  {
+   "year": "2009-2010 (revealed 2022)",
+   "fact": "A UASLP study commissioned by CEA (2009–2010) of ~300 children found high exposure to lead, arsenic, cadmium, mercury, benzene and POPs in El Salto, Juanacatlán, La Cofradía and Puente Grande; results were kept secret for years. CEDHJ found rights violations by CEA and health authorities (June 2022).",
+   "source": "https://www.milenio.com/politica/comunidad/rio-santiago-cedhj-senala-violaciones-ocultar-estudio"
+  },
+  {
+   "year": "2015",
+   "fact": "At the El Salto–Juanacatlán waterfall the polluted, sulfate-rich water churns into thick foam that wind carries onto the bridge and homes; residents report headaches, nausea and eye irritation.",
+   "source": "https://phys.org/news/2015-12-pollution-hazardous-foam-mexican-river.html"
+  },
+  {
+   "year": "2010 (CNDH 12/2010)",
+   "fact": "All urban drains flow into the El Salto–Juanacatlán diversion dam; foam bubbles 15–50 cm in diameter rise from the falls and drift onto passers-by and neighbours.",
+   "source": "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf"
+  },
+  {
+   "year": "2016",
+   "fact": "UN Working Group on Business and Human Rights members visited the falls in 2016 and called it \"una catástrofe ecológica\"; Greenpeace sampling the same year found nonylphenols, phthalates and bisphenol-A in treated effluent of PTAR El Ahogado.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/alto_a_la_catastrofe_ecologica_del_rio_santiago.pdf"
+  },
+  {
+   "year": "2017",
+   "fact": "PROFEPA Recommendation PFPA/1/2C.5/03/2017 to upstream Lerma states (Durango, Guanajuato, Edomex, Michoacán, Nayarit, Querétaro, Zacatecas): the Lerma–Santiago basin shows arsenic, cyanide, mercury, benzene, vinyl chloride, lead, cadmium, chromium and other contaminants — pollution also arrives from the Lerma via Lake Chapala.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2020",
+   "fact": "IACHR granted precautionary measures MC-708-19 (Resolution 7/2020, 5 Feb 2020) to residents within ~5 km of the Santiago in Juanacatlán and El Salto and four Poncitlán localities on Lake Chapala (San Pedro Itzicán, Agua Caliente, Chalpicote, Mezcala).",
+   "source": "https://www.oas.org/es/cidh/decisiones/pdf/2020/7-20MC708-19-ME.docx"
+  },
+  {
+   "year": "2022",
+   "fact": "CNDH Recommendation 134/2022 (30 Jun 2022) to SEMARNAT, CONAGUA, PROFEPA, the federal Health Ministry, Jalisco's governor and El Salto, Juanacatlán and Poncitlán: violations of rights to a healthy environment, water and sanitation, health and children's best interest.",
+   "source": "https://www.cndh.org.mx/sites/default/files/documentos/2022-07/COM_2022_218.pdf"
+  },
+  {
+   "year": "1990s–2022",
+   "fact": "Chronic kidney disease has been reported since the early 1990s on the Lake Chapala shore, with most cases in San Pedro Itzicán and Agua Caliente (Poncitlán); authorities attribute it to multiple factors and have not established a causal link to water pollution.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2020",
+   "fact": "RENAMECA data reviewed by CNDH: Santiago water was \"strongly contaminated\" for fecal coliforms at all 9 study sites and \"contaminated\" for DQO at almost all; high Vibrio fischeri toxicity at the site before Nestlé (Ocotlán) and after Arroyo El Ahogado.",
+   "source": "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+  },
+  {
+   "year": "2025",
+   "fact": "In CONAGUA's 2025 semáforo, every site with 2025 data on the Santiago from Ocotlán to Puente Grande, on Arroyo El Ahogado and on the Zula is RED (failing DQO and fecal coliforms/E. coli; Vibrio toxicity at El Ahogado sites); on the Lerma near Chapala 5 of 6 sites with 2025 data are red and one yellow.",
+   "source": "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+  },
+  {
+   "year": "2024",
+   "fact": "The Santiago basin in Jalisco (6.29 M people) generates ~13,400 L/s of wastewater; 68 PTARs treat 9,926 L/s (74%), up from 7,764 L/s in 2018. Hydrogen sulfide at the El Salto–Juanacatlán dam fell from 10.82 to 9.10 mg/L after solar recirculators were installed.",
+   "source": "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf"
+  },
+  {
+   "year": "2026",
+   "fact": "CEA reported 103 wastewater and industrial discharges into the Río Santiago found by 40 CONAGUA inspectors; polluted water reached the Las Pintas system and the Miravalle water-treatment plant intake.",
+   "source": "https://www.nmas.com.mx/jalisco/medio-ambiente/detectan-103-descargas-de-aguas-residuales-en-el-rio-santiago-en-jalisco/"
+  }
+ ],
+ "hotspots": [
+  {
+   "name": "Salto de Juanacatlán (El Salto–Juanacatlán falls and diversion dam)",
+   "lat": 20.5132,
+   "lon": -103.1752,
+   "coord_precision": "Wikipedia article coordinates (approximate)",
+   "description": "Once called the \"Niagara of Mexico\"; today the 20 m drop releases hydrogen sulfide and toxic foam over El Salto and Juanacatlán.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Juanacatl%C3%A1n_Falls",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+    "https://phys.org/news/2015-12-pollution-hazardous-foam-mexican-river.html"
+   ]
+  },
+  {
+   "name": "Confluence of Arroyo El Ahogado with the Río Santiago",
+   "lat": 20.49843,
+   "lon": -103.21638,
+   "coord_precision": "CONAGUA station OCLSP3716M1 \"Arroyo El Ahogado antes del Río Santiago\" (approximate confluence)",
+   "description": "Point identified by CEA (Dec 2020) as the largest pollutant input to the Santiago; RENAMECA 2025: red, with Vibrio toxicity.",
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Presa El Ahogado / PTAR El Ahogado / La Alameda",
+   "lat": 20.50646,
+   "lon": -103.2596,
+   "coord_precision": "approximate – PTAR El Ahogado OSM centroid; the dam is adjacent (CONAGUA lists a \"Presa El Ahogado cortina\" site at 20.56965,-103.25246 that could not be verified)",
+   "description": "Reservoir receiving sewage and industrial runoff of south Guadalajara and the El Salto industrial park; worst water quality in the 2012 Greenpeace/UNAM study; new housing (La Alameda) sits beside it.",
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/un_salto_de_vida_greenpeace.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2023/05/alto_a_la_catastrofe_ecologica_del_rio_santiago.pdf",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "Puente camino a Penwalt (Arroyo El Ahogado)",
+   "lat": 20.49741,
+   "lon": -103.22776,
+   "coord_precision": "CONAGUA station OCLSP3700M1",
+   "description": "El Ahogado channel inside the El Salto industrial zone; RENAMECA 2025 red with DBO, DQO, Vibrio toxicity, E. coli failures.",
+   "sources": [
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Puente Grande (Tonalá/Juanacatlán)",
+   "lat": 20.56956,
+   "lon": -103.1477,
+   "coord_precision": "CONAGUA station OCLSP3717M1",
+   "description": "Downstream of the falls; IMTA 2008 found significant acute toxicity attributed to heavy metals; UASLP 2009-2010 found high child exposure to metals here.",
+   "sources": [
+    "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf",
+    "https://www.milenio.com/politica/comunidad/rio-santiago-cedhj-senala-violaciones-ocultar-estudio",
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Arcediano (Barranca de Huentitán)",
+   "lat": 20.73698,
+   "lon": -103.28717,
+   "coord_precision": "OpenStreetMap place node (Antiguo Pueblo de Arcediano)",
+   "description": "Site of the cancelled Arcediano dam meant to supply Guadalajara with Santiago water; the UASLP health study was linked to this project. RENAMECA Puente Arcediano: red.",
+   "sources": [
+    "https://www.milenio.com/politica/comunidad/rio-santiago-cedhj-senala-violaciones-ocultar-estudio",
+    "https://www.openstreetmap.org",
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Río Santiago downstream of PTAR Agua Prieta (Paso de Guadalupe, Ixtlahuacán del Río)",
+   "lat": 20.839,
+   "lon": -103.32881,
+   "coord_precision": "CEA/FONNOR 2022 station E16 (verify)",
+   "description": "Cadmium 0.027 mg/L, ~7× the aquatic-life limit; second-highest priority point in the 2022 diagnostic.",
+   "sources": [
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+   ]
+  },
+  {
+   "name": "Ocotlán – Río Santiago source / Nestlé reach",
+   "lat": 20.34696,
+   "lon": -102.77941,
+   "coord_precision": "CONAGUA station OCLSP3830M1",
+   "description": "Where the Santiago leaves Lake Chapala and receives Ocotlán's industry and the Zula; red semáforo, high Vibrio toxicity reported 2012-2019.",
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Río Zula at El Duque (Ocotlán)",
+   "lat": 20.34591,
+   "lon": -102.76432,
+   "coord_precision": "CONAGUA station OCLSP0003RNL",
+   "description": "Zula tributary carrying Altos/tequila-district wastewater; 2025 fecal coliforms ≈660,000 NMP/100 mL, moderate Vibrio toxicity.",
+   "sources": [
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua"
+   ]
+  },
+  {
+   "name": "Río Lerma mouth at Lake Chapala (La Barca–Jamay)",
+   "lat": 20.27509,
+   "lon": -102.5597,
+   "coord_precision": "CONAGUA station OCLSP3811M1 (Puente Briseñas)",
+   "description": "The Lerma brings wastewater from Edomex, Querétaro, Guanajuato and Michoacán into Chapala, which feeds the Santiago; 2025 red (DQO, coliforms, SST).",
+   "sources": [
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf"
+   ]
+  },
+  {
+   "name": "San Pedro Itzicán (Poncitlán, Lake Chapala shore)",
+   "lat": 20.31569,
+   "lon": -102.95178,
+   "coord_precision": "OpenStreetMap village node",
+   "description": "Community with high chronic kidney disease incidence; covered by IACHR MC-708-19.",
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "https://www.oas.org/es/cidh/decisiones/pdf/2020/7-20MC708-19-ME.docx",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "Agua Caliente (Poncitlán)",
+   "lat": null,
+   "lon": null,
+   "coord_precision": "not located – OSM \"Agua Caliente\" hamlet at 20.29430,-102.74681 is in Ocotlán municipality and may be a different place",
+   "description": "Lakeshore community with high CKD incidence; covered by MC-708-19.",
+   "sources": [
+    "https://cibiogem.secihti.mx/wp-content/uploads/2024/10/Recomendacion_134__2022.pdf",
+    "https://www.oas.org/es/cidh/decisiones/pdf/2020/7-20MC708-19-ME.docx"
+   ]
+  },
+  {
+   "name": "Mezcala (Poncitlán)",
+   "lat": 20.33632,
+   "lon": -103.01996,
+   "coord_precision": "OpenStreetMap town node",
+   "description": "Lakeshore community covered by IACHR MC-708-19.",
+   "sources": [
+    "https://www.oas.org/es/cidh/decisiones/pdf/2020/7-20MC708-19-ME.docx",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "Relleno sanitario Los Laureles (Tonalá)",
+   "lat": 20.54376,
+   "lon": -103.1736,
+   "coord_precision": "OpenStreetMap landfill polygon centroid",
+   "description": "Landfill next to the Santiago; CNDH 12/2010 found leachate pits without liner flowing toward the river; its closure is part of the state strategy.",
+   "sources": [
+    "https://www.cndh.org.mx/sites/default/files/doc/Recomendaciones/2010/REC_2010_012.pdf",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/11/RRS2050_Diagnostico_Informe_y_Ruta_de_Recuperacion_Web.pdf",
+    "https://www.openstreetmap.org"
+   ]
+  },
+  {
+   "name": "Presa Las Pintas (Tlaquepaque/El Salto)",
+   "lat": 20.5772,
+   "lon": -103.33043,
+   "coord_precision": "CONAGUA station OCLSP3681M1",
+   "description": "Sewage-laden reservoir on the Las Pintas canal that drains to El Ahogado; red semáforo, toxicity positive.",
+   "sources": [
+    "https://www.gob.mx/conagua/es/articulos/indicadores-de-calidad-del-agua",
+    "https://riosantiago.jalisco.gob.mx/wp-content/uploads/2024/04/Diagnostico-de-calidad-del-agua-en-los-rios-Santiago-y-Zula-y-sus-afluentes-1.pdf"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5693 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-24T04:33:19Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 134593894,
+  "bounds": {
+    "minlat": 20.5793991,
+    "minlon": -103.3316052,
+    "maxlat": 20.5794256,
+    "maxlon": -103.3311784
+  },
+  "geometry": [
+    { "lat": 20.5794126, "lon": -103.3316052 },
+    { "lat": 20.5794256, "lon": -103.3313433 },
+    { "lat": 20.5793991, "lon": -103.3311784 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 154945119,
+  "bounds": {
+    "minlat": 20.5767245,
+    "minlon": -103.3307946,
+    "maxlat": 20.5769045,
+    "maxlon": -103.3306656
+  },
+  "geometry": [
+    { "lat": 20.5769045, "lon": -103.3306656 },
+    { "lat": 20.5767245, "lon": -103.3307946 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 166895536,
+  "bounds": {
+    "minlat": 20.7510838,
+    "minlon": -103.3670203,
+    "maxlat": 20.7511618,
+    "maxlon": -103.3669850
+  },
+  "geometry": [
+    { "lat": 20.7511618, "lon": -103.3669850 },
+    { "lat": 20.7510838, "lon": -103.3670203 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 166895538,
+  "bounds": {
+    "minlat": 20.7523556,
+    "minlon": -103.3664324,
+    "maxlat": 20.7525514,
+    "maxlon": -103.3662962
+  },
+  "geometry": [
+    { "lat": 20.7525514, "lon": -103.3662962 },
+    { "lat": 20.7523556, "lon": -103.3664324 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 166895539,
+  "bounds": {
+    "minlat": 20.7475820,
+    "minlon": -103.3645398,
+    "maxlat": 20.7476263,
+    "maxlon": -103.3643631
+  },
+  "geometry": [
+    { "lat": 20.7476263, "lon": -103.3645398 },
+    { "lat": 20.7475820, "lon": -103.3643631 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 166898068,
+  "bounds": {
+    "minlat": 20.7441461,
+    "minlon": -103.3665099,
+    "maxlat": 20.7441599,
+    "maxlon": -103.3662385
+  },
+  "geometry": [
+    { "lat": 20.7441599, "lon": -103.3665099 },
+    { "lat": 20.7441461, "lon": -103.3662385 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 167010095,
+  "bounds": {
+    "minlat": 20.7465555,
+    "minlon": -103.3642303,
+    "maxlat": 20.7466615,
+    "maxlon": -103.3641959
+  },
+  "geometry": [
+    { "lat": 20.7466615, "lon": -103.3641959 },
+    { "lat": 20.7465555, "lon": -103.3642303 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 167261347,
+  "bounds": {
+    "minlat": 20.7153752,
+    "minlon": -103.3547440,
+    "maxlat": 20.7154483,
+    "maxlon": -103.3543754
+  },
+  "geometry": [
+    { "lat": 20.7154483, "lon": -103.3547440 },
+    { "lat": 20.7153752, "lon": -103.3543754 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Atemajac",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 167261349,
+  "bounds": {
+    "minlat": 20.7158926,
+    "minlon": -103.3451262,
+    "maxlat": 20.7161176,
+    "maxlon": -103.3441901
+  },
+  "geometry": [
+    { "lat": 20.7158926, "lon": -103.3451262 },
+    { "lat": 20.7159149, "lon": -103.3446758 },
+    { "lat": 20.7160654, "lon": -103.3442254 },
+    { "lat": 20.7161176, "lon": -103.3441901 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Atemajac",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 167412660,
+  "bounds": {
+    "minlat": 20.5552574,
+    "minlon": -103.3539735,
+    "maxlat": 20.5553099,
+    "maxlon": -103.3538317
+  },
+  "geometry": [
+    { "lat": 20.5553099, "lon": -103.3539735 },
+    { "lat": 20.5552574, "lon": -103.3538317 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167412662,
+  "bounds": {
+    "minlat": 20.5828491,
+    "minlon": -103.4020731,
+    "maxlat": 20.5829166,
+    "maxlon": -103.4019552
+  },
+  "geometry": [
+    { "lat": 20.5829166, "lon": -103.4020731 },
+    { "lat": 20.5828491, "lon": -103.4019552 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167412663,
+  "bounds": {
+    "minlat": 20.5796408,
+    "minlon": -103.3923677,
+    "maxlat": 20.5796515,
+    "maxlon": -103.3922303
+  },
+  "geometry": [
+    { "lat": 20.5796408, "lon": -103.3923677 },
+    { "lat": 20.5796515, "lon": -103.3922303 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167549585,
+  "bounds": {
+    "minlat": 20.6192178,
+    "minlon": -103.4322642,
+    "maxlat": 20.6192561,
+    "maxlon": -103.4320922
+  },
+  "geometry": [
+    { "lat": 20.6192561, "lon": -103.4322642 },
+    { "lat": 20.6192178, "lon": -103.4320922 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167549587,
+  "bounds": {
+    "minlat": 20.6185427,
+    "minlon": -103.4303789,
+    "maxlat": 20.6187122,
+    "maxlon": -103.4296623
+  },
+  "geometry": [
+    { "lat": 20.6185427, "lon": -103.4303789 },
+    { "lat": 20.6186163, "lon": -103.4300633 },
+    { "lat": 20.6186765, "lon": -103.4299493 },
+    { "lat": 20.6186965, "lon": -103.4298903 },
+    { "lat": 20.6187122, "lon": -103.4296623 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167549588,
+  "bounds": {
+    "minlat": 20.6200318,
+    "minlon": -103.4343219,
+    "maxlat": 20.6201200,
+    "maxlon": -103.4341963
+  },
+  "geometry": [
+    { "lat": 20.6201200, "lon": -103.4343219 },
+    { "lat": 20.6200318, "lon": -103.4341963 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": ".",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 167549590,
+  "bounds": {
+    "minlat": 20.6172333,
+    "minlon": -103.4273841,
+    "maxlat": 20.6172894,
+    "maxlon": -103.4273169
+  },
+  "geometry": [
+    { "lat": 20.6172894, "lon": -103.4273841 },
+    { "lat": 20.6172333, "lon": -103.4273169 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": ".",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 169055652,
+  "bounds": {
+    "minlat": 20.7264396,
+    "minlon": -103.3293669,
+    "maxlat": 20.7266441,
+    "maxlon": -103.3292798
+  },
+  "geometry": [
+    { "lat": 20.7264396, "lon": -103.3292798 },
+    { "lat": 20.7266441, "lon": -103.3293669 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169055653,
+  "bounds": {
+    "minlat": 20.7249726,
+    "minlon": -103.3288788,
+    "maxlat": 20.7257760,
+    "maxlon": -103.3282108
+  },
+  "geometry": [
+    { "lat": 20.7249726, "lon": -103.3282108 },
+    { "lat": 20.7257760, "lon": -103.3288788 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057087,
+  "bounds": {
+    "minlat": 20.7294445,
+    "minlon": -103.3226082,
+    "maxlat": 20.7294644,
+    "maxlon": -103.3224494
+  },
+  "geometry": [
+    { "lat": 20.7294445, "lon": -103.3224494 },
+    { "lat": 20.7294644, "lon": -103.3226082 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057089,
+  "bounds": {
+    "minlat": 20.7295259,
+    "minlon": -103.3232594,
+    "maxlat": 20.7295459,
+    "maxlon": -103.3230999
+  },
+  "geometry": [
+    { "lat": 20.7295259, "lon": -103.3230999 },
+    { "lat": 20.7295459, "lon": -103.3232594 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057090,
+  "bounds": {
+    "minlat": 20.7296464,
+    "minlon": -103.3242464,
+    "maxlat": 20.7296758,
+    "maxlon": -103.3240627
+  },
+  "geometry": [
+    { "lat": 20.7296464, "lon": -103.3240627 },
+    { "lat": 20.7296758, "lon": -103.3242464 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057092,
+  "bounds": {
+    "minlat": 20.7294522,
+    "minlon": -103.3218304,
+    "maxlat": 20.7294541,
+    "maxlon": -103.3216804
+  },
+  "geometry": [
+    { "lat": 20.7294541, "lon": -103.3216804 },
+    { "lat": 20.7294522, "lon": -103.3218304 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057093,
+  "bounds": {
+    "minlat": 20.7295882,
+    "minlon": -103.3237470,
+    "maxlat": 20.7296069,
+    "maxlon": -103.3235975
+  },
+  "geometry": [
+    { "lat": 20.7295882, "lon": -103.3235975 },
+    { "lat": 20.7296069, "lon": -103.3237470 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 169057095,
+  "bounds": {
+    "minlat": 20.7300676,
+    "minlon": -103.3247822,
+    "maxlat": 20.7301759,
+    "maxlon": -103.3246855
+  },
+  "geometry": [
+    { "lat": 20.7300676, "lon": -103.3246855 },
+    { "lat": 20.7301759, "lon": -103.3247822 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 171714974,
+  "bounds": {
+    "minlat": 20.5757440,
+    "minlon": -103.3316337,
+    "maxlat": 20.5760192,
+    "maxlon": -103.3314071
+  },
+  "geometry": [
+    { "lat": 20.5760192, "lon": -103.3314071 },
+    { "lat": 20.5757440, "lon": -103.3316337 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172243360,
+  "bounds": {
+    "minlat": 20.6182151,
+    "minlon": -103.3492310,
+    "maxlat": 20.6183086,
+    "maxlon": -103.3490823
+  },
+  "geometry": [
+    { "lat": 20.6183086, "lon": -103.3492310 },
+    { "lat": 20.6182151, "lon": -103.3490823 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172243362,
+  "bounds": {
+    "minlat": 20.6177138,
+    "minlon": -103.3513805,
+    "maxlat": 20.6177272,
+    "maxlon": -103.3511278
+  },
+  "geometry": [
+    { "lat": 20.6177138, "lon": -103.3513805 },
+    { "lat": 20.6177272, "lon": -103.3511278 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172243364,
+  "bounds": {
+    "minlat": 20.6173712,
+    "minlon": -103.3477495,
+    "maxlat": 20.6174732,
+    "maxlon": -103.3475534
+  },
+  "geometry": [
+    { "lat": 20.6174732, "lon": -103.3477495 },
+    { "lat": 20.6173712, "lon": -103.3475534 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172243365,
+  "bounds": {
+    "minlat": 20.6180094,
+    "minlon": -103.3508464,
+    "maxlat": 20.6182594,
+    "maxlon": -103.3507028
+  },
+  "geometry": [
+    { "lat": 20.6180094, "lon": -103.3508464 },
+    { "lat": 20.6182594, "lon": -103.3507028 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172243366,
+  "bounds": {
+    "minlat": 20.6171870,
+    "minlon": -103.3460538,
+    "maxlat": 20.6172099,
+    "maxlon": -103.3458213
+  },
+  "geometry": [
+    { "lat": 20.6172099, "lon": -103.3460538 },
+    { "lat": 20.6171870, "lon": -103.3458213 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172243367,
+  "bounds": {
+    "minlat": 20.6177487,
+    "minlon": -103.3483940,
+    "maxlat": 20.6177815,
+    "maxlon": -103.3483410
+  },
+  "geometry": [
+    { "lat": 20.6177815, "lon": -103.3483940 },
+    { "lat": 20.6177487, "lon": -103.3483410 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 172886023,
+  "bounds": {
+    "minlat": 20.5778991,
+    "minlon": -103.3325113,
+    "maxlat": 20.5781137,
+    "maxlon": -103.3324426
+  },
+  "geometry": [
+    { "lat": 20.5781137, "lon": -103.3324426 },
+    { "lat": 20.5778991, "lon": -103.3325113 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886025,
+  "bounds": {
+    "minlat": 20.5741268,
+    "minlon": -103.3325150,
+    "maxlat": 20.5743081,
+    "maxlon": -103.3325109
+  },
+  "geometry": [
+    { "lat": 20.5743081, "lon": -103.3325150 },
+    { "lat": 20.5741268, "lon": -103.3325109 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886029,
+  "bounds": {
+    "minlat": 20.5622592,
+    "minlon": -103.3277033,
+    "maxlat": 20.5624044,
+    "maxlon": -103.3275677
+  },
+  "geometry": [
+    { "lat": 20.5624044, "lon": -103.3277033 },
+    { "lat": 20.5622592, "lon": -103.3275677 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886030,
+  "bounds": {
+    "minlat": 20.5744820,
+    "minlon": -103.3328173,
+    "maxlat": 20.5746014,
+    "maxlon": -103.3326491
+  },
+  "geometry": [
+    { "lat": 20.5746014, "lon": -103.3328173 },
+    { "lat": 20.5744820, "lon": -103.3326491 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886031,
+  "bounds": {
+    "minlat": 20.5532224,
+    "minlon": -103.3227766,
+    "maxlat": 20.5534251,
+    "maxlon": -103.3227492
+  },
+  "geometry": [
+    { "lat": 20.5534251, "lon": -103.3227492 },
+    { "lat": 20.5532224, "lon": -103.3227766 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886032,
+  "bounds": {
+    "minlat": 20.5762105,
+    "minlon": -103.3329353,
+    "maxlat": 20.5764059,
+    "maxlon": -103.3328831
+  },
+  "geometry": [
+    { "lat": 20.5764059, "lon": -103.3328831 },
+    { "lat": 20.5762105, "lon": -103.3329353 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886469,
+  "bounds": {
+    "minlat": 20.5794050,
+    "minlon": -103.3358112,
+    "maxlat": 20.5794126,
+    "maxlon": -103.3356324
+  },
+  "geometry": [
+    { "lat": 20.5794126, "lon": -103.3358112 },
+    { "lat": 20.5794050, "lon": -103.3356324 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 172886470,
+  "bounds": {
+    "minlat": 20.5791877,
+    "minlon": -103.3360102,
+    "maxlat": 20.5793466,
+    "maxlon": -103.3359575
+  },
+  "geometry": [
+    { "lat": 20.5791877, "lon": -103.3360102 },
+    { "lat": 20.5793466, "lon": -103.3359575 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 176986511,
+  "bounds": {
+    "minlat": 20.6170492,
+    "minlon": -103.3784588,
+    "maxlat": 20.6171004,
+    "maxlon": -103.3782662
+  },
+  "geometry": [
+    { "lat": 20.6170492, "lon": -103.3784588 },
+    { "lat": 20.6171004, "lon": -103.3782662 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 176986513,
+  "bounds": {
+    "minlat": 20.6169261,
+    "minlon": -103.3808717,
+    "maxlat": 20.6169440,
+    "maxlon": -103.3806711
+  },
+  "geometry": [
+    { "lat": 20.6169440, "lon": -103.3808717 },
+    { "lat": 20.6169261, "lon": -103.3806711 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 176986514,
+  "bounds": {
+    "minlat": 20.6170216,
+    "minlon": -103.3800793,
+    "maxlat": 20.6170992,
+    "maxlon": -103.3799594
+  },
+  "geometry": [
+    { "lat": 20.6170216, "lon": -103.3800793 },
+    { "lat": 20.6170992, "lon": -103.3799594 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 180399798,
+  "bounds": {
+    "minlat": 20.7104247,
+    "minlon": -103.3726753,
+    "maxlat": 20.7108275,
+    "maxlon": -103.3723944
+  },
+  "geometry": [
+    { "lat": 20.7104247, "lon": -103.3726753 },
+    { "lat": 20.7108275, "lon": -103.3723944 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 183463184,
+  "bounds": {
+    "minlat": 20.6304224,
+    "minlon": -103.4372133,
+    "maxlat": 20.6308270,
+    "maxlon": -103.4371003
+  },
+  "geometry": [
+    { "lat": 20.6304224, "lon": -103.4371003 },
+    { "lat": 20.6308270, "lon": -103.4372133 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 183749480,
+  "bounds": {
+    "minlat": 20.7454391,
+    "minlon": -103.3769515,
+    "maxlat": 20.7454911,
+    "maxlon": -103.3767585
+  },
+  "geometry": [
+    { "lat": 20.7454391, "lon": -103.3769515 },
+    { "lat": 20.7454911, "lon": -103.3767585 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 183749481,
+  "bounds": {
+    "minlat": 20.7448035,
+    "minlon": -103.3761329,
+    "maxlat": 20.7451493,
+    "maxlon": -103.3760452
+  },
+  "geometry": [
+    { "lat": 20.7451493, "lon": -103.3760452 },
+    { "lat": 20.7448035, "lon": -103.3761329 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 184856424,
+  "bounds": {
+    "minlat": 20.6471800,
+    "minlon": -103.2719224,
+    "maxlat": 20.6472268,
+    "maxlon": -103.2717728
+  },
+  "geometry": [
+    { "lat": 20.6471800, "lon": -103.2717728 },
+    { "lat": 20.6472268, "lon": -103.2719224 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 184856425,
+  "bounds": {
+    "minlat": 20.6450708,
+    "minlon": -103.2699532,
+    "maxlat": 20.6452060,
+    "maxlon": -103.2697939
+  },
+  "geometry": [
+    { "lat": 20.6450708, "lon": -103.2697939 },
+    { "lat": 20.6452060, "lon": -103.2699532 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 346766040,
+  "bounds": {
+    "minlat": 20.7555874,
+    "minlon": -103.4004896,
+    "maxlat": 20.7556556,
+    "maxlon": -103.4001631
+  },
+  "geometry": [
+    { "lat": 20.7555874, "lon": -103.4004896 },
+    { "lat": 20.7556556, "lon": -103.4001631 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 346766050,
+  "bounds": {
+    "minlat": 20.7479459,
+    "minlon": -103.3862674,
+    "maxlat": 20.7481687,
+    "maxlon": -103.3853458
+  },
+  "geometry": [
+    { "lat": 20.7481687, "lon": -103.3862674 },
+    { "lat": 20.7479459, "lon": -103.3853458 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 346766918,
+  "bounds": {
+    "minlat": 20.7436538,
+    "minlon": -103.3674891,
+    "maxlat": 20.7438802,
+    "maxlon": -103.3673588
+  },
+  "geometry": [
+    { "lat": 20.7436538, "lon": -103.3674891 },
+    { "lat": 20.7438802, "lon": -103.3673588 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 346769631,
+  "bounds": {
+    "minlat": 20.7469265,
+    "minlon": -103.3493177,
+    "maxlat": 20.7469989,
+    "maxlon": -103.3491716
+  },
+  "geometry": [
+    { "lat": 20.7469989, "lon": -103.3493177 },
+    { "lat": 20.7469265, "lon": -103.3491716 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 465327593,
+  "bounds": {
+    "minlat": 20.7057994,
+    "minlon": -103.4162748,
+    "maxlat": 20.7074343,
+    "maxlon": -103.4129075
+  },
+  "geometry": [
+    { "lat": 20.7074343, "lon": -103.4162748 },
+    { "lat": 20.7074064, "lon": -103.4162043 },
+    { "lat": 20.7073501, "lon": -103.4160932 },
+    { "lat": 20.7072609, "lon": -103.4159855 },
+    { "lat": 20.7066961, "lon": -103.4152804 },
+    { "lat": 20.7064277, "lon": -103.4148778 },
+    { "lat": 20.7061207, "lon": -103.4144139 },
+    { "lat": 20.7058925, "lon": -103.4139191 },
+    { "lat": 20.7058257, "lon": -103.4137422 },
+    { "lat": 20.7058038, "lon": -103.4136604 },
+    { "lat": 20.7057994, "lon": -103.4135716 },
+    { "lat": 20.7058147, "lon": -103.4134840 },
+    { "lat": 20.7060253, "lon": -103.4129075 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Atemajac",
+    "tunnel": "building_passage",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 465327594,
+  "bounds": {
+    "minlat": 20.7093856,
+    "minlon": -103.4070463,
+    "maxlat": 20.7103130,
+    "maxlon": -103.4067254
+  },
+  "geometry": [
+    { "lat": 20.7093856, "lon": -103.4070463 },
+    { "lat": 20.7097691, "lon": -103.4068738 },
+    { "lat": 20.7103130, "lon": -103.4067254 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Atemajac",
+    "tunnel": "building_passage",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 478911157,
+  "bounds": {
+    "minlat": 20.6585013,
+    "minlon": -103.4393426,
+    "maxlat": 20.6597215,
+    "maxlon": -103.4391305
+  },
+  "geometry": [
+    { "lat": 20.6597215, "lon": -103.4391305 },
+    { "lat": 20.6585013, "lon": -103.4393426 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "name": "Canal Tchaikovsky",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 590239403,
+  "bounds": {
+    "minlat": 20.7817354,
+    "minlon": -103.4154403,
+    "maxlat": 20.7830264,
+    "maxlon": -103.4147013
+  },
+  "geometry": [
+    { "lat": 20.7817392, "lon": -103.4154403 },
+    { "lat": 20.7817354, "lon": -103.4151948 },
+    { "lat": 20.7820163, "lon": -103.4149588 },
+    { "lat": 20.7824978, "lon": -103.4147013 },
+    { "lat": 20.7827987, "lon": -103.4147550 },
+    { "lat": 20.7829692, "lon": -103.4149588 },
+    { "lat": 20.7830264, "lon": -103.4150185 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 591419397,
+  "bounds": {
+    "minlat": 20.6278083,
+    "minlon": -103.3488809,
+    "maxlat": 20.6279704,
+    "maxlon": -103.3483638
+  },
+  "geometry": [
+    { "lat": 20.6278083, "lon": -103.3488809 },
+    { "lat": 20.6279704, "lon": -103.3483638 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 591419403,
+  "bounds": {
+    "minlat": 20.6286567,
+    "minlon": -103.3476124,
+    "maxlat": 20.6291601,
+    "maxlon": -103.3475107
+  },
+  "geometry": [
+    { "lat": 20.6286567, "lon": -103.3476124 },
+    { "lat": 20.6291601, "lon": -103.3475107 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 591419408,
+  "bounds": {
+    "minlat": 20.6314948,
+    "minlon": -103.3460745,
+    "maxlat": 20.6318117,
+    "maxlon": -103.3459886
+  },
+  "geometry": [
+    { "lat": 20.6314948, "lon": -103.3460745 },
+    { "lat": 20.6318117, "lon": -103.3459886 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 596649899,
+  "bounds": {
+    "minlat": 20.7112233,
+    "minlon": -103.3818372,
+    "maxlat": 20.7123435,
+    "maxlon": -103.3744766
+  },
+  "geometry": [
+    { "lat": 20.7112233, "lon": -103.3818372 },
+    { "lat": 20.7113992, "lon": -103.3808569 },
+    { "lat": 20.7119124, "lon": -103.3751580 },
+    { "lat": 20.7119451, "lon": -103.3750274 },
+    { "lat": 20.7120005, "lon": -103.3748739 },
+    { "lat": 20.7121329, "lon": -103.3747010 },
+    { "lat": 20.7121705, "lon": -103.3746530 },
+    { "lat": 20.7123435, "lon": -103.3744766 }
+  ],
+  "tags": {
+    "layer": "-2",
+    "name": "Ro Atemajac",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 616218133,
+  "bounds": {
+    "minlat": 20.5658614,
+    "minlon": -103.2935256,
+    "maxlat": 20.5661950,
+    "maxlon": -103.2934422
+  },
+  "geometry": [
+    { "lat": 20.5658614, "lon": -103.2935256 },
+    { "lat": 20.5661950, "lon": -103.2934422 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 628902481,
+  "bounds": {
+    "minlat": 20.7882291,
+    "minlon": -103.4156299,
+    "maxlat": 20.7882377,
+    "maxlon": -103.4155826
+  },
+  "geometry": [
+    { "lat": 20.7882377, "lon": -103.4156299 },
+    { "lat": 20.7882291, "lon": -103.4155826 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 628904762,
+  "bounds": {
+    "minlat": 20.7851327,
+    "minlon": -103.4137063,
+    "maxlat": 20.7854798,
+    "maxlon": -103.4136305
+  },
+  "geometry": [
+    { "lat": 20.7854798, "lon": -103.4137063 },
+    { "lat": 20.7851327, "lon": -103.4136305 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 749636577,
+  "bounds": {
+    "minlat": 20.6992284,
+    "minlon": -103.3360334,
+    "maxlat": 20.6994017,
+    "maxlon": -103.3359898
+  },
+  "geometry": [
+    { "lat": 20.6992284, "lon": -103.3360334 },
+    { "lat": 20.6994017, "lon": -103.3359898 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636580,
+  "bounds": {
+    "minlat": 20.6997667,
+    "minlon": -103.3359148,
+    "maxlat": 20.7000660,
+    "maxlon": -103.3359022
+  },
+  "geometry": [
+    { "lat": 20.6997667, "lon": -103.3359148 },
+    { "lat": 20.7000660, "lon": -103.3359022 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636581,
+  "bounds": {
+    "minlat": 20.7069506,
+    "minlon": -103.3346150,
+    "maxlat": 20.7071214,
+    "maxlon": -103.3345939
+  },
+  "geometry": [
+    { "lat": 20.7069506, "lon": -103.3346150 },
+    { "lat": 20.7071214, "lon": -103.3345939 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636583,
+  "bounds": {
+    "minlat": 20.7092207,
+    "minlon": -103.3349515,
+    "maxlat": 20.7094308,
+    "maxlon": -103.3348562
+  },
+  "geometry": [
+    { "lat": 20.7092207, "lon": -103.3349515 },
+    { "lat": 20.7094308, "lon": -103.3348562 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636585,
+  "bounds": {
+    "minlat": 20.7110922,
+    "minlon": -103.3342823,
+    "maxlat": 20.7112420,
+    "maxlon": -103.3342721
+  },
+  "geometry": [
+    { "lat": 20.7110922, "lon": -103.3342721 },
+    { "lat": 20.7112420, "lon": -103.3342823 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636587,
+  "bounds": {
+    "minlat": 20.7128304,
+    "minlon": -103.3350577,
+    "maxlat": 20.7130320,
+    "maxlon": -103.3349710
+  },
+  "geometry": [
+    { "lat": 20.7128304, "lon": -103.3349710 },
+    { "lat": 20.7130320, "lon": -103.3350577 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 786043710,
+  "bounds": {
+    "minlat": 20.7881384,
+    "minlon": -103.4152484,
+    "maxlat": 20.7881906,
+    "maxlon": -103.4151596
+  },
+  "geometry": [
+    { "lat": 20.7881906, "lon": -103.4152484 },
+    { "lat": 20.7881384, "lon": -103.4151596 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 786043713,
+  "bounds": {
+    "minlat": 20.7881906,
+    "minlon": -103.4155826,
+    "maxlat": 20.7882291,
+    "maxlon": -103.4152484
+  },
+  "geometry": [
+    { "lat": 20.7882291, "lon": -103.4155826 },
+    { "lat": 20.7882199, "lon": -103.4154668 },
+    { "lat": 20.7882022, "lon": -103.4153644 },
+    { "lat": 20.7881906, "lon": -103.4152484 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 806139948,
+  "bounds": {
+    "minlat": 20.6440595,
+    "minlon": -103.2756628,
+    "maxlat": 20.6442123,
+    "maxlon": -103.2752889
+  },
+  "geometry": [
+    { "lat": 20.6440595, "lon": -103.2756628 },
+    { "lat": 20.6442123, "lon": -103.2752889 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 826591777,
+  "bounds": {
+    "minlat": 20.6268731,
+    "minlon": -103.4349797,
+    "maxlat": 20.6272440,
+    "maxlon": -103.4341553
+  },
+  "geometry": [
+    { "lat": 20.6268731, "lon": -103.4341553 },
+    { "lat": 20.6272440, "lon": -103.4349797 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 829786307,
+  "bounds": {
+    "minlat": 20.6159640,
+    "minlon": -103.4260872,
+    "maxlat": 20.6163332,
+    "maxlon": -103.4258536
+  },
+  "geometry": [
+    { "lat": 20.6163332, "lon": -103.4260872 },
+    { "lat": 20.6159640, "lon": -103.4258536 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 831440397,
+  "bounds": {
+    "minlat": 20.7554689,
+    "minlon": -103.3934065,
+    "maxlat": 20.7555138,
+    "maxlon": -103.3929630
+  },
+  "geometry": [
+    { "lat": 20.7555138, "lon": -103.3934065 },
+    { "lat": 20.7554689, "lon": -103.3929630 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442574,
+  "bounds": {
+    "minlat": 20.7564787,
+    "minlon": -103.3944413,
+    "maxlat": 20.7566777,
+    "maxlon": -103.3943247
+  },
+  "geometry": [
+    { "lat": 20.7566777, "lon": -103.3943247 },
+    { "lat": 20.7565796, "lon": -103.3943742 },
+    { "lat": 20.7564787, "lon": -103.3944413 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442575,
+  "bounds": {
+    "minlat": 20.7563752,
+    "minlon": -103.3948727,
+    "maxlat": 20.7565087,
+    "maxlon": -103.3947444
+  },
+  "geometry": [
+    { "lat": 20.7565087, "lon": -103.3948727 },
+    { "lat": 20.7563752, "lon": -103.3947444 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442577,
+  "bounds": {
+    "minlat": 20.7580260,
+    "minlon": -103.3930257,
+    "maxlat": 20.7582296,
+    "maxlon": -103.3929180
+  },
+  "geometry": [
+    { "lat": 20.7582296, "lon": -103.3930257 },
+    { "lat": 20.7580260, "lon": -103.3929180 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442579,
+  "bounds": {
+    "minlat": 20.7630174,
+    "minlon": -103.3958039,
+    "maxlat": 20.7631327,
+    "maxlon": -103.3957492
+  },
+  "geometry": [
+    { "lat": 20.7631327, "lon": -103.3958039 },
+    { "lat": 20.7630174, "lon": -103.3957492 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442581,
+  "bounds": {
+    "minlat": 20.7626385,
+    "minlon": -103.3955847,
+    "maxlat": 20.7627458,
+    "maxlon": -103.3955175
+  },
+  "geometry": [
+    { "lat": 20.7627458, "lon": -103.3955847 },
+    { "lat": 20.7626385, "lon": -103.3955175 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442583,
+  "bounds": {
+    "minlat": 20.7622503,
+    "minlon": -103.3954016,
+    "maxlat": 20.7623638,
+    "maxlon": -103.3953395
+  },
+  "geometry": [
+    { "lat": 20.7623638, "lon": -103.3954016 },
+    { "lat": 20.7622503, "lon": -103.3953395 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831442585,
+  "bounds": {
+    "minlat": 20.7605975,
+    "minlon": -103.3944696,
+    "maxlat": 20.7607713,
+    "maxlon": -103.3944261
+  },
+  "geometry": [
+    { "lat": 20.7607713, "lon": -103.3944261 },
+    { "lat": 20.7605975, "lon": -103.3944696 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831940024,
+  "bounds": {
+    "minlat": 20.7539033,
+    "minlon": -103.3897657,
+    "maxlat": 20.7543488,
+    "maxlon": -103.3893572
+  },
+  "geometry": [
+    { "lat": 20.7543488, "lon": -103.3897657 },
+    { "lat": 20.7542847, "lon": -103.3896572 },
+    { "lat": 20.7542063, "lon": -103.3895600 },
+    { "lat": 20.7541151, "lon": -103.3894765 },
+    { "lat": 20.7540134, "lon": -103.3894083 },
+    { "lat": 20.7539033, "lon": -103.3893572 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831966010,
+  "bounds": {
+    "minlat": 20.7480205,
+    "minlon": -103.3864000,
+    "maxlat": 20.7481687,
+    "maxlon": -103.3862674
+  },
+  "geometry": [
+    { "lat": 20.7480205, "lon": -103.3864000 },
+    { "lat": 20.7481687, "lon": -103.3862674 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 831966011,
+  "bounds": {
+    "minlat": 20.7525507,
+    "minlon": -103.3892691,
+    "maxlat": 20.7527638,
+    "maxlon": -103.3892453
+  },
+  "geometry": [
+    { "lat": 20.7527638, "lon": -103.3892691 },
+    { "lat": 20.7525507, "lon": -103.3892453 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 831966012,
+  "bounds": {
+    "minlat": 20.7486137,
+    "minlon": -103.3868509,
+    "maxlat": 20.7487957,
+    "maxlon": -103.3867872
+  },
+  "geometry": [
+    { "lat": 20.7487957, "lon": -103.3868509 },
+    { "lat": 20.7487070, "lon": -103.3868200 },
+    { "lat": 20.7486137, "lon": -103.3867872 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 832039620,
+  "bounds": {
+    "minlat": 20.7550648,
+    "minlon": -103.3838454,
+    "maxlat": 20.7558682,
+    "maxlon": -103.3835164
+  },
+  "geometry": [
+    { "lat": 20.7558682, "lon": -103.3837231 },
+    { "lat": 20.7552841, "lon": -103.3838454 },
+    { "lat": 20.7550648, "lon": -103.3835164 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 832661108,
+  "bounds": {
+    "minlat": 20.6319670,
+    "minlon": -103.2580459,
+    "maxlat": 20.6322381,
+    "maxlon": -103.2579209
+  },
+  "geometry": [
+    { "lat": 20.6319670, "lon": -103.2579209 },
+    { "lat": 20.6322381, "lon": -103.2580459 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 833677245,
+  "bounds": {
+    "minlat": 20.7809543,
+    "minlon": -103.4172052,
+    "maxlat": 20.7809656,
+    "maxlon": -103.4170348
+  },
+  "geometry": [
+    { "lat": 20.7809543, "lon": -103.4172052 },
+    { "lat": 20.7809656, "lon": -103.4170348 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 833677247,
+  "bounds": {
+    "minlat": 20.7816488,
+    "minlon": -103.4244494,
+    "maxlat": 20.7817078,
+    "maxlon": -103.4242080
+  },
+  "geometry": [
+    { "lat": 20.7817078, "lon": -103.4244494 },
+    { "lat": 20.7816488, "lon": -103.4242080 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 833985214,
+  "bounds": {
+    "minlat": 20.7928965,
+    "minlon": -103.4305336,
+    "maxlat": 20.7933433,
+    "maxlon": -103.4302986
+  },
+  "geometry": [
+    { "lat": 20.7933433, "lon": -103.4302986 },
+    { "lat": 20.7928965, "lon": -103.4305336 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 833985216,
+  "bounds": {
+    "minlat": 20.7831499,
+    "minlon": -103.4317477,
+    "maxlat": 20.7832567,
+    "maxlon": -103.4311716
+  },
+  "geometry": [
+    { "lat": 20.7832567, "lon": -103.4317477 },
+    { "lat": 20.7831499, "lon": -103.4311716 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 834323614,
+  "bounds": {
+    "minlat": 20.7565553,
+    "minlon": -103.3663288,
+    "maxlat": 20.7566944,
+    "maxlon": -103.3661344
+  },
+  "geometry": [
+    { "lat": 20.7566944, "lon": -103.3663288 },
+    { "lat": 20.7565553, "lon": -103.3661344 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 838908121,
+  "bounds": {
+    "minlat": 20.5636731,
+    "minlon": -103.3409133,
+    "maxlat": 20.5637819,
+    "maxlon": -103.3409009
+  },
+  "geometry": [
+    { "lat": 20.5636731, "lon": -103.3409009 },
+    { "lat": 20.5637819, "lon": -103.3409133 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "lock": "no",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 849081669,
+  "bounds": {
+    "minlat": 20.6262675,
+    "minlon": -103.2831194,
+    "maxlat": 20.6277995,
+    "maxlon": -103.2815901
+  },
+  "geometry": [
+    { "lat": 20.6262675, "lon": -103.2815901 },
+    { "lat": 20.6269239, "lon": -103.2831152 },
+    { "lat": 20.6269692, "lon": -103.2831194 },
+    { "lat": 20.6274166, "lon": -103.2828974 },
+    { "lat": 20.6277995, "lon": -103.2827956 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Arroyo de Osorio",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 892538254,
+  "bounds": {
+    "minlat": 20.5884181,
+    "minlon": -103.2840515,
+    "maxlat": 20.5884226,
+    "maxlon": -103.2838547
+  },
+  "geometry": [
+    { "lat": 20.5884226, "lon": -103.2840515 },
+    { "lat": 20.5884181, "lon": -103.2838547 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 892597666,
+  "bounds": {
+    "minlat": 20.6347386,
+    "minlon": -103.2839719,
+    "maxlat": 20.6348719,
+    "maxlon": -103.2839238
+  },
+  "geometry": [
+    { "lat": 20.6347386, "lon": -103.2839719 },
+    { "lat": 20.6348719, "lon": -103.2839238 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 892623732,
+  "bounds": {
+    "minlat": 20.6172785,
+    "minlon": -103.3452556,
+    "maxlat": 20.6172905,
+    "maxlon": -103.3451828
+  },
+  "geometry": [
+    { "lat": 20.6172905, "lon": -103.3452556 },
+    { "lat": 20.6172785, "lon": -103.3451828 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 892645076,
+  "bounds": {
+    "minlat": 20.6178794,
+    "minlon": -103.3485831,
+    "maxlat": 20.6179033,
+    "maxlon": -103.3485442
+  },
+  "geometry": [
+    { "lat": 20.6179033, "lon": -103.3485831 },
+    { "lat": 20.6178794, "lon": -103.3485442 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 892657613,
+  "bounds": {
+    "minlat": 20.6172121,
+    "minlon": -103.3467757,
+    "maxlat": 20.6172150,
+    "maxlon": -103.3466789
+  },
+  "geometry": [
+    { "lat": 20.6172121, "lon": -103.3467757 },
+    { "lat": 20.6172150, "lon": -103.3466789 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 892657615,
+  "bounds": {
+    "minlat": 20.6172330,
+    "minlon": -103.3465286,
+    "maxlat": 20.6172387,
+    "maxlon": -103.3464304
+  },
+  "geometry": [
+    { "lat": 20.6172330, "lon": -103.3465286 },
+    { "lat": 20.6172387, "lon": -103.3464304 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 894569573,
+  "bounds": {
+    "minlat": 20.6682182,
+    "minlon": -103.3854586,
+    "maxlat": 20.6682218,
+    "maxlon": -103.3854331
+  },
+  "geometry": [
+    { "lat": 20.6682218, "lon": -103.3854586 },
+    { "lat": 20.6682182, "lon": -103.3854331 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Rio del Bosque",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 894569576,
+  "bounds": {
+    "minlat": 20.6684865,
+    "minlon": -103.3862853,
+    "maxlat": 20.6684891,
+    "maxlon": -103.3862765
+  },
+  "geometry": [
+    { "lat": 20.6684891, "lon": -103.3862853 },
+    { "lat": 20.6684865, "lon": -103.3862765 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Rio del Bosque",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 896559258,
+  "bounds": {
+    "minlat": 20.6327106,
+    "minlon": -103.2582433,
+    "maxlat": 20.6330515,
+    "maxlon": -103.2581039
+  },
+  "geometry": [
+    { "lat": 20.6327106, "lon": -103.2581039 },
+    { "lat": 20.6330515, "lon": -103.2582433 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 897896916,
+  "bounds": {
+    "minlat": 20.7049981,
+    "minlon": -103.2661109,
+    "maxlat": 20.7050717,
+    "maxlon": -103.2660115
+  },
+  "geometry": [
+    { "lat": 20.7049981, "lon": -103.2661109 },
+    { "lat": 20.7050717, "lon": -103.2660115 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 898350046,
+  "bounds": {
+    "minlat": 20.6340843,
+    "minlon": -103.4478538,
+    "maxlat": 20.6341289,
+    "maxlon": -103.4476595
+  },
+  "geometry": [
+    { "lat": 20.6341289, "lon": -103.4478538 },
+    { "lat": 20.6340843, "lon": -103.4476595 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 898350048,
+  "bounds": {
+    "minlat": 20.6340180,
+    "minlon": -103.4453452,
+    "maxlat": 20.6340381,
+    "maxlon": -103.4451762
+  },
+  "geometry": [
+    { "lat": 20.6340381, "lon": -103.4453452 },
+    { "lat": 20.6340180, "lon": -103.4451762 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 898350050,
+  "bounds": {
+    "minlat": 20.6341337,
+    "minlon": -103.4460904,
+    "maxlat": 20.6341510,
+    "maxlon": -103.4458438
+  },
+  "geometry": [
+    { "lat": 20.6341510, "lon": -103.4460904 },
+    { "lat": 20.6341337, "lon": -103.4458438 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 898350051,
+  "bounds": {
+    "minlat": 20.6339979,
+    "minlon": -103.4450751,
+    "maxlat": 20.6340052,
+    "maxlon": -103.4449254
+  },
+  "geometry": [
+    { "lat": 20.6340052, "lon": -103.4450751 },
+    { "lat": 20.6339979, "lon": -103.4449254 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 898361878,
+  "bounds": {
+    "minlat": 20.6571729,
+    "minlon": -103.2688216,
+    "maxlat": 20.6574554,
+    "maxlon": -103.2687765
+  },
+  "geometry": [
+    { "lat": 20.6571729, "lon": -103.2688216 },
+    { "lat": 20.6574554, "lon": -103.2687765 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "name": "Arroyo de Osorio",
+    "tunnel": "culvert",
+    "waterway": "river",
+    "width": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 899070485,
+  "bounds": {
+    "minlat": 20.6297224,
+    "minlon": -103.4371544,
+    "maxlat": 20.6298084,
+    "maxlon": -103.4371329
+  },
+  "geometry": [
+    { "lat": 20.6297224, "lon": -103.4371544 },
+    { "lat": 20.6298084, "lon": -103.4371329 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 899806269,
+  "bounds": {
+    "minlat": 20.6349120,
+    "minlon": -103.2655430,
+    "maxlat": 20.6350158,
+    "maxlon": -103.2654511
+  },
+  "geometry": [
+    { "lat": 20.6349120, "lon": -103.2655430 },
+    { "lat": 20.6350158, "lon": -103.2654511 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 899806271,
+  "bounds": {
+    "minlat": 20.6339931,
+    "minlon": -103.2661971,
+    "maxlat": 20.6341268,
+    "maxlon": -103.2661113
+  },
+  "geometry": [
+    { "lat": 20.6339931, "lon": -103.2661971 },
+    { "lat": 20.6341268, "lon": -103.2661113 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 899806274,
+  "bounds": {
+    "minlat": 20.6287268,
+    "minlon": -103.2692009,
+    "maxlat": 20.6288683,
+    "maxlon": -103.2691468
+  },
+  "geometry": [
+    { "lat": 20.6287268, "lon": -103.2692009 },
+    { "lat": 20.6288683, "lon": -103.2691468 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 901867072,
+  "bounds": {
+    "minlat": 20.7535094,
+    "minlon": -103.3658636,
+    "maxlat": 20.7535834,
+    "maxlon": -103.3657845
+  },
+  "geometry": [
+    { "lat": 20.7535834, "lon": -103.3657845 },
+    { "lat": 20.7535094, "lon": -103.3658636 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 902526531,
+  "bounds": {
+    "minlat": 20.7587850,
+    "minlon": -103.3663551,
+    "maxlat": 20.7588885,
+    "maxlon": -103.3662985
+  },
+  "geometry": [
+    { "lat": 20.7588885, "lon": -103.3662985 },
+    { "lat": 20.7587850, "lon": -103.3663551 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 902526533,
+  "bounds": {
+    "minlat": 20.7593594,
+    "minlon": -103.3660389,
+    "maxlat": 20.7594139,
+    "maxlon": -103.3660014
+  },
+  "geometry": [
+    { "lat": 20.7594139, "lon": -103.3660014 },
+    { "lat": 20.7593594, "lon": -103.3660389 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 902558915,
+  "bounds": {
+    "minlat": 20.7571246,
+    "minlon": -103.3664926,
+    "maxlat": 20.7571820,
+    "maxlon": -103.3664602
+  },
+  "geometry": [
+    { "lat": 20.7571820, "lon": -103.3664926 },
+    { "lat": 20.7571246, "lon": -103.3664602 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 902558917,
+  "bounds": {
+    "minlat": 20.7575786,
+    "minlon": -103.3668157,
+    "maxlat": 20.7577492,
+    "maxlon": -103.3667953
+  },
+  "geometry": [
+    { "lat": 20.7577492, "lon": -103.3667953 },
+    { "lat": 20.7575786, "lon": -103.3668157 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 902900399,
+  "bounds": {
+    "minlat": 20.5938642,
+    "minlon": -103.4111705,
+    "maxlat": 20.5941236,
+    "maxlon": -103.4109272
+  },
+  "geometry": [
+    { "lat": 20.5941236, "lon": -103.4111705 },
+    { "lat": 20.5938642, "lon": -103.4109272 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 902965547,
+  "bounds": {
+    "minlat": 20.7501898,
+    "minlon": -103.3667511,
+    "maxlat": 20.7502366,
+    "maxlon": -103.3666387
+  },
+  "geometry": [
+    { "lat": 20.7502366, "lon": -103.3667511 },
+    { "lat": 20.7501898, "lon": -103.3666387 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 905026126,
+  "bounds": {
+    "minlat": 20.6116129,
+    "minlon": -103.4217622,
+    "maxlat": 20.6120903,
+    "maxlon": -103.4216269
+  },
+  "geometry": [
+    { "lat": 20.6120903, "lon": -103.4216269 },
+    { "lat": 20.6116129, "lon": -103.4217622 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 905298187,
+  "bounds": {
+    "minlat": 20.7875381,
+    "minlon": -103.4330463,
+    "maxlat": 20.7877951,
+    "maxlon": -103.4328692
+  },
+  "geometry": [
+    { "lat": 20.7877951, "lon": -103.4328692 },
+    { "lat": 20.7875381, "lon": -103.4330463 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 905341071,
+  "bounds": {
+    "minlat": 20.6106769,
+    "minlon": -103.4219320,
+    "maxlat": 20.6107768,
+    "maxlon": -103.4219002
+  },
+  "geometry": [
+    { "lat": 20.6107768, "lon": -103.4219320 },
+    { "lat": 20.6106769, "lon": -103.4219002 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 905341073,
+  "bounds": {
+    "minlat": 20.6184822,
+    "minlon": -103.4283261,
+    "maxlat": 20.6186266,
+    "maxlon": -103.4281703
+  },
+  "geometry": [
+    { "lat": 20.6186266, "lon": -103.4283261 },
+    { "lat": 20.6184822, "lon": -103.4281703 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 905731575,
+  "bounds": {
+    "minlat": 20.7831442,
+    "minlon": -103.4151786,
+    "maxlat": 20.7832172,
+    "maxlon": -103.4151232
+  },
+  "geometry": [
+    { "lat": 20.7831442, "lon": -103.4151232 },
+    { "lat": 20.7832172, "lon": -103.4151786 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "yes",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086035,
+  "bounds": {
+    "minlat": 20.7679593,
+    "minlon": -103.2837863,
+    "maxlat": 20.7679900,
+    "maxlon": -103.2837857
+  },
+  "geometry": [
+    { "lat": 20.7679900, "lon": -103.2837857 },
+    { "lat": 20.7679593, "lon": -103.2837863 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086037,
+  "bounds": {
+    "minlat": 20.7685066,
+    "minlon": -103.2821596,
+    "maxlat": 20.7685587,
+    "maxlon": -103.2821415
+  },
+  "geometry": [
+    { "lat": 20.7685587, "lon": -103.2821415 },
+    { "lat": 20.7685066, "lon": -103.2821596 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086039,
+  "bounds": {
+    "minlat": 20.7679511,
+    "minlon": -103.2822568,
+    "maxlat": 20.7680037,
+    "maxlon": -103.2822463
+  },
+  "geometry": [
+    { "lat": 20.7680037, "lon": -103.2822463 },
+    { "lat": 20.7679511, "lon": -103.2822568 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086041,
+  "bounds": {
+    "minlat": 20.7638270,
+    "minlon": -103.2828253,
+    "maxlat": 20.7638750,
+    "maxlon": -103.2828078
+  },
+  "geometry": [
+    { "lat": 20.7638750, "lon": -103.2828253 },
+    { "lat": 20.7638270, "lon": -103.2828078 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086043,
+  "bounds": {
+    "minlat": 20.7640730,
+    "minlon": -103.2758621,
+    "maxlat": 20.7640747,
+    "maxlon": -103.2757504
+  },
+  "geometry": [
+    { "lat": 20.7640747, "lon": -103.2757504 },
+    { "lat": 20.7640730, "lon": -103.2758621 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086045,
+  "bounds": {
+    "minlat": 20.7630711,
+    "minlon": -103.2735673,
+    "maxlat": 20.7630901,
+    "maxlon": -103.2735068
+  },
+  "geometry": [
+    { "lat": 20.7630901, "lon": -103.2735068 },
+    { "lat": 20.7630711, "lon": -103.2735673 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086047,
+  "bounds": {
+    "minlat": 20.7695805,
+    "minlon": -103.2738220,
+    "maxlat": 20.7696655,
+    "maxlon": -103.2737031
+  },
+  "geometry": [
+    { "lat": 20.7696655, "lon": -103.2737031 },
+    { "lat": 20.7695805, "lon": -103.2738220 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086049,
+  "bounds": {
+    "minlat": 20.7696226,
+    "minlon": -103.2752469,
+    "maxlat": 20.7696838,
+    "maxlon": -103.2751246
+  },
+  "geometry": [
+    { "lat": 20.7696838, "lon": -103.2751246 },
+    { "lat": 20.7696226, "lon": -103.2752469 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086051,
+  "bounds": {
+    "minlat": 20.7620041,
+    "minlon": -103.2812067,
+    "maxlat": 20.7620282,
+    "maxlon": -103.2811668
+  },
+  "geometry": [
+    { "lat": 20.7620041, "lon": -103.2811668 },
+    { "lat": 20.7620282, "lon": -103.2812067 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086053,
+  "bounds": {
+    "minlat": 20.7624333,
+    "minlon": -103.2802042,
+    "maxlat": 20.7624359,
+    "maxlon": -103.2801023
+  },
+  "geometry": [
+    { "lat": 20.7624333, "lon": -103.2801023 },
+    { "lat": 20.7624359, "lon": -103.2802042 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086055,
+  "bounds": {
+    "minlat": 20.7621470,
+    "minlon": -103.2808813,
+    "maxlat": 20.7622725,
+    "maxlon": -103.2807145
+  },
+  "geometry": [
+    { "lat": 20.7622725, "lon": -103.2807145 },
+    { "lat": 20.7621470, "lon": -103.2808813 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086057,
+  "bounds": {
+    "minlat": 20.7655864,
+    "minlon": -103.2797010,
+    "maxlat": 20.7655981,
+    "maxlon": -103.2796276
+  },
+  "geometry": [
+    { "lat": 20.7655981, "lon": -103.2796276 },
+    { "lat": 20.7655864, "lon": -103.2797010 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086059,
+  "bounds": {
+    "minlat": 20.7665196,
+    "minlon": -103.2781785,
+    "maxlat": 20.7665735,
+    "maxlon": -103.2781771
+  },
+  "geometry": [
+    { "lat": 20.7665735, "lon": -103.2781785 },
+    { "lat": 20.7665196, "lon": -103.2781771 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086061,
+  "bounds": {
+    "minlat": 20.7681617,
+    "minlon": -103.2773637,
+    "maxlat": 20.7681962,
+    "maxlon": -103.2773008
+  },
+  "geometry": [
+    { "lat": 20.7681962, "lon": -103.2773008 },
+    { "lat": 20.7681617, "lon": -103.2773637 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086063,
+  "bounds": {
+    "minlat": 20.7699536,
+    "minlon": -103.2743369,
+    "maxlat": 20.7700194,
+    "maxlon": -103.2742799
+  },
+  "geometry": [
+    { "lat": 20.7699536, "lon": -103.2742799 },
+    { "lat": 20.7700194, "lon": -103.2743369 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 906086408,
+  "bounds": {
+    "minlat": 20.7640619,
+    "minlon": -103.2836671,
+    "maxlat": 20.7641050,
+    "maxlon": -103.2836583
+  },
+  "geometry": [
+    { "lat": 20.7641050, "lon": -103.2836671 },
+    { "lat": 20.7640619, "lon": -103.2836583 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907326328,
+  "bounds": {
+    "minlat": 20.7475239,
+    "minlon": -103.2659221,
+    "maxlat": 20.7475766,
+    "maxlon": -103.2658873
+  },
+  "geometry": [
+    { "lat": 20.7475239, "lon": -103.2658873 },
+    { "lat": 20.7475766, "lon": -103.2659221 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907326329,
+  "bounds": {
+    "minlat": 20.7482563,
+    "minlon": -103.2655118,
+    "maxlat": 20.7482626,
+    "maxlon": -103.2654246
+  },
+  "geometry": [
+    { "lat": 20.7482563, "lon": -103.2654246 },
+    { "lat": 20.7482626, "lon": -103.2655118 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907326331,
+  "bounds": {
+    "minlat": 20.7557803,
+    "minlon": -103.2687204,
+    "maxlat": 20.7558079,
+    "maxlon": -103.2686614
+  },
+  "geometry": [
+    { "lat": 20.7558079, "lon": -103.2686614 },
+    { "lat": 20.7557803, "lon": -103.2687204 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907326333,
+  "bounds": {
+    "minlat": 20.7610260,
+    "minlon": -103.2719055,
+    "maxlat": 20.7611112,
+    "maxlon": -103.2718706
+  },
+  "geometry": [
+    { "lat": 20.7611112, "lon": -103.2718706 },
+    { "lat": 20.7610260, "lon": -103.2719055 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907540337,
+  "bounds": {
+    "minlat": 20.6317056,
+    "minlon": -103.2676530,
+    "maxlat": 20.6319706,
+    "maxlon": -103.2674846
+  },
+  "geometry": [
+    { "lat": 20.6317056, "lon": -103.2676530 },
+    { "lat": 20.6319706, "lon": -103.2674846 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 907631703,
+  "bounds": {
+    "minlat": 20.7584577,
+    "minlon": -103.2935551,
+    "maxlat": 20.7584835,
+    "maxlon": -103.2934587
+  },
+  "geometry": [
+    { "lat": 20.7584835, "lon": -103.2934587 },
+    { "lat": 20.7584577, "lon": -103.2935551 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907632494,
+  "bounds": {
+    "minlat": 20.7428039,
+    "minlon": -103.2625875,
+    "maxlat": 20.7428992,
+    "maxlon": -103.2624963
+  },
+  "geometry": [
+    { "lat": 20.7428992, "lon": -103.2624963 },
+    { "lat": 20.7428039, "lon": -103.2625875 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907632495,
+  "bounds": {
+    "minlat": 20.7417830,
+    "minlon": -103.2620028,
+    "maxlat": 20.7417918,
+    "maxlon": -103.2618257
+  },
+  "geometry": [
+    { "lat": 20.7417918, "lon": -103.2618257 },
+    { "lat": 20.7417830, "lon": -103.2620028 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 907632497,
+  "bounds": {
+    "minlat": 20.7369819,
+    "minlon": -103.2576066,
+    "maxlat": 20.7370672,
+    "maxlon": -103.2574913
+  },
+  "geometry": [
+    { "lat": 20.7370672, "lon": -103.2574913 },
+    { "lat": 20.7369819, "lon": -103.2576066 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 923569204,
+  "bounds": {
+    "minlat": 20.5792113,
+    "minlon": -103.3318282,
+    "maxlat": 20.5795142,
+    "maxlon": -103.3318275
+  },
+  "geometry": [
+    { "lat": 20.5795142, "lon": -103.3318282 },
+    { "lat": 20.5792113, "lon": -103.3318275 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569206,
+  "bounds": {
+    "minlat": 20.5796354,
+    "minlon": -103.3318654,
+    "maxlat": 20.5797546,
+    "maxlon": -103.3318485
+  },
+  "geometry": [
+    { "lat": 20.5797546, "lon": -103.3318654 },
+    { "lat": 20.5796354, "lon": -103.3318485 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569208,
+  "bounds": {
+    "minlat": 20.5799066,
+    "minlon": -103.3319358,
+    "maxlat": 20.5800030,
+    "maxlon": -103.3319084
+  },
+  "geometry": [
+    { "lat": 20.5800030, "lon": -103.3319358 },
+    { "lat": 20.5799066, "lon": -103.3319084 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569210,
+  "bounds": {
+    "minlat": 20.5840363,
+    "minlon": -103.3328356,
+    "maxlat": 20.5840993,
+    "maxlon": -103.3328223
+  },
+  "geometry": [
+    { "lat": 20.5840993, "lon": -103.3328356 },
+    { "lat": 20.5840363, "lon": -103.3328223 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569211,
+  "bounds": {
+    "minlat": 20.5840993,
+    "minlon": -103.3328605,
+    "maxlat": 20.5842175,
+    "maxlon": -103.3328356
+  },
+  "geometry": [
+    { "lat": 20.5842175, "lon": -103.3328605 },
+    { "lat": 20.5840993, "lon": -103.3328356 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569212,
+  "bounds": {
+    "minlat": 20.5842175,
+    "minlon": -103.3329235,
+    "maxlat": 20.5845162,
+    "maxlon": -103.3328605
+  },
+  "geometry": [
+    { "lat": 20.5845162, "lon": -103.3329235 },
+    { "lat": 20.5842175, "lon": -103.3328605 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 923569213,
+  "bounds": {
+    "minlat": 20.5845162,
+    "minlon": -103.3329549,
+    "maxlat": 20.5846667,
+    "maxlon": -103.3329235
+  },
+  "geometry": [
+    { "lat": 20.5846667, "lon": -103.3329549 },
+    { "lat": 20.5845162, "lon": -103.3329235 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 926742718,
+  "bounds": {
+    "minlat": 20.7981348,
+    "minlon": -103.4364263,
+    "maxlat": 20.7983656,
+    "maxlon": -103.4358853
+  },
+  "geometry": [
+    { "lat": 20.7983656, "lon": -103.4364263 },
+    { "lat": 20.7981348, "lon": -103.4358853 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Blanco",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 933042582,
+  "bounds": {
+    "minlat": 20.7599487,
+    "minlon": -103.2767938,
+    "maxlat": 20.7601036,
+    "maxlon": -103.2767524
+  },
+  "geometry": [
+    { "lat": 20.7601036, "lon": -103.2767938 },
+    { "lat": 20.7599487, "lon": -103.2767524 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 933042585,
+  "bounds": {
+    "minlat": 20.7591401,
+    "minlon": -103.2704074,
+    "maxlat": 20.7591432,
+    "maxlon": -103.2702112
+  },
+  "geometry": [
+    { "lat": 20.7591401, "lon": -103.2702112 },
+    { "lat": 20.7591432, "lon": -103.2704074 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 946833339,
+  "bounds": {
+    "minlat": 20.7301759,
+    "minlon": -103.3250682,
+    "maxlat": 20.7302060,
+    "maxlon": -103.3247822
+  },
+  "geometry": [
+    { "lat": 20.7301759, "lon": -103.3247822 },
+    { "lat": 20.7302060, "lon": -103.3250682 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 946833343,
+  "bounds": {
+    "minlat": 20.7322585,
+    "minlon": -103.3262781,
+    "maxlat": 20.7324002,
+    "maxlon": -103.3262289
+  },
+  "geometry": [
+    { "lat": 20.7322585, "lon": -103.3262289 },
+    { "lat": 20.7324002, "lon": -103.3262781 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 946833344,
+  "bounds": {
+    "minlat": 20.7328004,
+    "minlon": -103.3266189,
+    "maxlat": 20.7328960,
+    "maxlon": -103.3265243
+  },
+  "geometry": [
+    { "lat": 20.7328004, "lon": -103.3265243 },
+    { "lat": 20.7328960, "lon": -103.3266189 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 946833830,
+  "bounds": {
+    "minlat": 20.5779674,
+    "minlon": -103.3729316,
+    "maxlat": 20.5781327,
+    "maxlon": -103.3728437
+  },
+  "geometry": [
+    { "lat": 20.5781327, "lon": -103.3729316 },
+    { "lat": 20.5779674, "lon": -103.3728437 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Toluquilla",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 946833832,
+  "bounds": {
+    "minlat": 20.5766120,
+    "minlon": -103.3721115,
+    "maxlat": 20.5766811,
+    "maxlon": -103.3720732
+  },
+  "geometry": [
+    { "lat": 20.5766811, "lon": -103.3721115 },
+    { "lat": 20.5766120, "lon": -103.3720732 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Toluquilla",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 946833834,
+  "bounds": {
+    "minlat": 20.5757627,
+    "minlon": -103.3716662,
+    "maxlat": 20.5758932,
+    "maxlon": -103.3715710
+  },
+  "geometry": [
+    { "lat": 20.5758932, "lon": -103.3716662 },
+    { "lat": 20.5757627, "lon": -103.3715710 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Toluquilla",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 946833835,
+  "bounds": {
+    "minlat": 20.5741581,
+    "minlon": -103.3680741,
+    "maxlat": 20.5741646,
+    "maxlon": -103.3679280
+  },
+  "geometry": [
+    { "lat": 20.5741581, "lon": -103.3680741 },
+    { "lat": 20.5741646, "lon": -103.3679280 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Toluquilla",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 946833838,
+  "bounds": {
+    "minlat": 20.5741857,
+    "minlon": -103.3691778,
+    "maxlat": 20.5741995,
+    "maxlon": -103.3690846
+  },
+  "geometry": [
+    { "lat": 20.5741995, "lon": -103.3691778 },
+    { "lat": 20.5741857, "lon": -103.3690846 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Toluquilla",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1074884658,
+  "bounds": {
+    "minlat": 20.6230781,
+    "minlon": -103.3160895,
+    "maxlat": 20.6231940,
+    "maxlon": -103.3160758
+  },
+  "geometry": [
+    { "lat": 20.6230781, "lon": -103.3160895 },
+    { "lat": 20.6231940, "lon": -103.3160758 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal",
+    "width": "0.5"
+  }
+},
+{
+  "type": "way",
+  "id": 1074893913,
+  "bounds": {
+    "minlat": 20.6229217,
+    "minlon": -103.3233218,
+    "maxlat": 20.6243746,
+    "maxlon": -103.3210128
+  },
+  "geometry": [
+    { "lat": 20.6229217, "lon": -103.3210128 },
+    { "lat": 20.6230592, "lon": -103.3210687 },
+    { "lat": 20.6233102, "lon": -103.3214657 },
+    { "lat": 20.6235411, "lon": -103.3219056 },
+    { "lat": 20.6241085, "lon": -103.3225332 },
+    { "lat": 20.6243746, "lon": -103.3233218 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Arroyo de El Álamo",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1074894810,
+  "bounds": {
+    "minlat": 20.6176000,
+    "minlon": -103.3197923,
+    "maxlat": 20.6221904,
+    "maxlon": -103.3117459
+  },
+  "geometry": [
+    { "lat": 20.6176000, "lon": -103.3117459 },
+    { "lat": 20.6186761, "lon": -103.3197923 },
+    { "lat": 20.6220728, "lon": -103.3193800 },
+    { "lat": 20.6221904, "lon": -103.3194221 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1074894811,
+  "bounds": {
+    "minlat": 20.6176000,
+    "minlon": -103.3117459,
+    "maxlat": 20.6176058,
+    "maxlon": -103.3115772
+  },
+  "geometry": [
+    { "lat": 20.6176058, "lon": -103.3115772 },
+    { "lat": 20.6176000, "lon": -103.3117459 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1074894812,
+  "bounds": {
+    "minlat": 20.6176058,
+    "minlon": -103.3115772,
+    "maxlat": 20.6176706,
+    "maxlon": -103.3112435
+  },
+  "geometry": [
+    { "lat": 20.6176706, "lon": -103.3112435 },
+    { "lat": 20.6176058, "lon": -103.3115772 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1074894963,
+  "bounds": {
+    "minlat": 20.6174803,
+    "minlon": -103.3114022,
+    "maxlat": 20.6178836,
+    "maxlon": -103.3111061
+  },
+  "geometry": [
+    { "lat": 20.6174803, "lon": -103.3111061 },
+    { "lat": 20.6176706, "lon": -103.3112435 },
+    { "lat": 20.6178836, "lon": -103.3114022 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1093181955,
+  "bounds": {
+    "minlat": 20.6217403,
+    "minlon": -103.3161811,
+    "maxlat": 20.6217758,
+    "maxlon": -103.3161140
+  },
+  "geometry": [
+    { "lat": 20.6217403, "lon": -103.3161811 },
+    { "lat": 20.6217758, "lon": -103.3161140 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1185576795,
+  "bounds": {
+    "minlat": 20.6513536,
+    "minlon": -103.4227771,
+    "maxlat": 20.6568811,
+    "maxlon": -103.4197199
+  },
+  "geometry": [
+    { "lat": 20.6513536, "lon": -103.4227771 },
+    { "lat": 20.6568811, "lon": -103.4197199 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "level": "-2",
+    "tunnel": "culvert",
+    "waterway": "canal",
+    "width": "20"
+  }
+},
+{
+  "type": "way",
+  "id": 1208962078,
+  "bounds": {
+    "minlat": 20.7144124,
+    "minlon": -103.3955760,
+    "maxlat": 20.7145198,
+    "maxlon": -103.3954086
+  },
+  "geometry": [
+    { "lat": 20.7145198, "lon": -103.3955760 },
+    { "lat": 20.7144777, "lon": -103.3955103 },
+    { "lat": 20.7144588, "lon": -103.3954810 },
+    { "lat": 20.7144124, "lon": -103.3954086 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "tidal": "no",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1231789826,
+  "bounds": {
+    "minlat": 20.7095344,
+    "minlon": -103.3891203,
+    "maxlat": 20.7096998,
+    "maxlon": -103.3891096
+  },
+  "geometry": [
+    { "lat": 20.7095344, "lon": -103.3891096 },
+    { "lat": 20.7096298, "lon": -103.3891203 },
+    { "lat": 20.7096998, "lon": -103.3891187 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1248229820,
+  "bounds": {
+    "minlat": 20.6400507,
+    "minlon": -103.4265614,
+    "maxlat": 20.6403585,
+    "maxlon": -103.4264290
+  },
+  "geometry": [
+    { "lat": 20.6400507, "lon": -103.4264290 },
+    { "lat": 20.6403585, "lon": -103.4265614 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "level": "-2",
+    "tunnel": "culvert",
+    "waterway": "canal",
+    "width": "20"
+  }
+},
+{
+  "type": "way",
+  "id": 1248229822,
+  "bounds": {
+    "minlat": 20.6390745,
+    "minlon": -103.4262758,
+    "maxlat": 20.6396940,
+    "maxlon": -103.4260043
+  },
+  "geometry": [
+    { "lat": 20.6390745, "lon": -103.4260043 },
+    { "lat": 20.6396940, "lon": -103.4262758 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "level": "-2",
+    "tunnel": "culvert",
+    "waterway": "canal",
+    "width": "20"
+  }
+},
+{
+  "type": "way",
+  "id": 1248287141,
+  "bounds": {
+    "minlat": 20.5858936,
+    "minlon": -103.3196945,
+    "maxlat": 20.5861476,
+    "maxlon": -103.3191388
+  },
+  "geometry": [
+    { "lat": 20.5858936, "lon": -103.3196945 },
+    { "lat": 20.5861476, "lon": -103.3191388 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1248287142,
+  "bounds": {
+    "minlat": 20.5832461,
+    "minlon": -103.3234476,
+    "maxlat": 20.5833262,
+    "maxlon": -103.3233118
+  },
+  "geometry": [
+    { "lat": 20.5832461, "lon": -103.3234476 },
+    { "lat": 20.5833262, "lon": -103.3233118 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1286144147,
+  "bounds": {
+    "minlat": 20.7203797,
+    "minlon": -103.4166161,
+    "maxlat": 20.7212691,
+    "maxlon": -103.4148509
+  },
+  "geometry": [
+    { "lat": 20.7212691, "lon": -103.4166161 },
+    { "lat": 20.7203797, "lon": -103.4148509 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "name": "Arroyo De La Campana",
+    "tidal": "no",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1286144148,
+  "bounds": {
+    "minlat": 20.7121413,
+    "minlon": -103.3948134,
+    "maxlat": 20.7123676,
+    "maxlon": -103.3947835
+  },
+  "geometry": [
+    { "lat": 20.7123676, "lon": -103.3947864 },
+    { "lat": 20.7123112, "lon": -103.3947835 },
+    { "lat": 20.7122507, "lon": -103.3947878 },
+    { "lat": 20.7121413, "lon": -103.3948134 }
+  ],
+  "tags": {
+    "intermittent": "no",
+    "layer": "-1",
+    "name": "Arroyo De La Campana",
+    "tidal": "no",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1290815232,
+  "bounds": {
+    "minlat": 20.7596948,
+    "minlon": -103.3748259,
+    "maxlat": 20.7597508,
+    "maxlon": -103.3748170
+  },
+  "geometry": [
+    { "lat": 20.7597508, "lon": -103.3748170 },
+    { "lat": 20.7596948, "lon": -103.3748259 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143192,
+  "bounds": {
+    "minlat": 20.5811193,
+    "minlon": -103.3864581,
+    "maxlat": 20.5812148,
+    "maxlon": -103.3863897
+  },
+  "geometry": [
+    { "lat": 20.5812148, "lon": -103.3864581 },
+    { "lat": 20.5811193, "lon": -103.3863897 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143198,
+  "bounds": {
+    "minlat": 20.5823276,
+    "minlon": -103.3869059,
+    "maxlat": 20.5824186,
+    "maxlon": -103.3868636
+  },
+  "geometry": [
+    { "lat": 20.5824186, "lon": -103.3869059 },
+    { "lat": 20.5823276, "lon": -103.3868636 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143200,
+  "bounds": {
+    "minlat": 20.5824838,
+    "minlon": -103.3870437,
+    "maxlat": 20.5827150,
+    "maxlon": -103.3869356
+  },
+  "geometry": [
+    { "lat": 20.5827150, "lon": -103.3870437 },
+    { "lat": 20.5824838, "lon": -103.3869356 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143202,
+  "bounds": {
+    "minlat": 20.5863256,
+    "minlon": -103.3897830,
+    "maxlat": 20.5869378,
+    "maxlon": -103.3891427
+  },
+  "geometry": [
+    { "lat": 20.5869378, "lon": -103.3897830 },
+    { "lat": 20.5865154, "lon": -103.3892484 },
+    { "lat": 20.5863256, "lon": -103.3891427 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143212,
+  "bounds": {
+    "minlat": 20.5927968,
+    "minlon": -103.3947595,
+    "maxlat": 20.5928712,
+    "maxlon": -103.3947194
+  },
+  "geometry": [
+    { "lat": 20.5928712, "lon": -103.3947595 },
+    { "lat": 20.5927968, "lon": -103.3947194 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1297143216,
+  "bounds": {
+    "minlat": 20.5937792,
+    "minlon": -103.3951067,
+    "maxlat": 20.5938782,
+    "maxlon": -103.3950758
+  },
+  "geometry": [
+    { "lat": 20.5938782, "lon": -103.3951067 },
+    { "lat": 20.5937792, "lon": -103.3950758 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1302780475,
+  "bounds": {
+    "minlat": 20.7062710,
+    "minlon": -103.3907363,
+    "maxlat": 20.7064956,
+    "maxlon": -103.3906422
+  },
+  "geometry": [
+    { "lat": 20.7062710, "lon": -103.3906422 },
+    { "lat": 20.7064956, "lon": -103.3907363 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1302780476,
+  "bounds": {
+    "minlat": 20.7047678,
+    "minlon": -103.3908979,
+    "maxlat": 20.7060775,
+    "maxlon": -103.3905899
+  },
+  "geometry": [
+    { "lat": 20.7047678, "lon": -103.3908979 },
+    { "lat": 20.7060775, "lon": -103.3905899 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1302790679,
+  "bounds": {
+    "minlat": 20.7095228,
+    "minlon": -103.3915969,
+    "maxlat": 20.7096898,
+    "maxlon": -103.3915421
+  },
+  "geometry": [
+    { "lat": 20.7095228, "lon": -103.3915969 },
+    { "lat": 20.7096898, "lon": -103.3915421 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1302790683,
+  "bounds": {
+    "minlat": 20.7103473,
+    "minlon": -103.3932382,
+    "maxlat": 20.7104747,
+    "maxlon": -103.3930931
+  },
+  "geometry": [
+    { "lat": 20.7103473, "lon": -103.3932382 },
+    { "lat": 20.7104747, "lon": -103.3930931 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1302792525,
+  "bounds": {
+    "minlat": 20.7108013,
+    "minlon": -103.4007337,
+    "maxlat": 20.7110210,
+    "maxlon": -103.4006934
+  },
+  "geometry": [
+    { "lat": 20.7108013, "lon": -103.4007337 },
+    { "lat": 20.7110210, "lon": -103.4006934 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313072682,
+  "bounds": {
+    "minlat": 20.7279680,
+    "minlon": -103.3067285,
+    "maxlat": 20.7280724,
+    "maxlon": -103.3066966
+  },
+  "geometry": [
+    { "lat": 20.7279680, "lon": -103.3067285 },
+    { "lat": 20.7280724, "lon": -103.3066966 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313072685,
+  "bounds": {
+    "minlat": 20.7293717,
+    "minlon": -103.3061388,
+    "maxlat": 20.7294600,
+    "maxlon": -103.3060746
+  },
+  "geometry": [
+    { "lat": 20.7293717, "lon": -103.3060746 },
+    { "lat": 20.7294600, "lon": -103.3061388 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313089015,
+  "bounds": {
+    "minlat": 20.7476657,
+    "minlon": -103.3481534,
+    "maxlat": 20.7477672,
+    "maxlon": -103.3481308
+  },
+  "geometry": [
+    { "lat": 20.7477672, "lon": -103.3481534 },
+    { "lat": 20.7476657, "lon": -103.3481308 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313089018,
+  "bounds": {
+    "minlat": 20.7567143,
+    "minlon": -103.3433163,
+    "maxlat": 20.7568111,
+    "maxlon": -103.3430441
+  },
+  "geometry": [
+    { "lat": 20.7568111, "lon": -103.3433163 },
+    { "lat": 20.7567143, "lon": -103.3430441 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313089020,
+  "bounds": {
+    "minlat": 20.7587506,
+    "minlon": -103.3464457,
+    "maxlat": 20.7587915,
+    "maxlon": -103.3463363
+  },
+  "geometry": [
+    { "lat": 20.7587915, "lon": -103.3464457 },
+    { "lat": 20.7587506, "lon": -103.3463363 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313089022,
+  "bounds": {
+    "minlat": 20.7595586,
+    "minlon": -103.3528400,
+    "maxlat": 20.7595698,
+    "maxlon": -103.3527338
+  },
+  "geometry": [
+    { "lat": 20.7595698, "lon": -103.3528400 },
+    { "lat": 20.7595586, "lon": -103.3527338 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313091110,
+  "bounds": {
+    "minlat": 20.7444960,
+    "minlon": -103.3642613,
+    "maxlat": 20.7456928,
+    "maxlon": -103.3575126
+  },
+  "geometry": [
+    { "lat": 20.7444960, "lon": -103.3642461 },
+    { "lat": 20.7446032, "lon": -103.3642613 },
+    { "lat": 20.7448896, "lon": -103.3637326 },
+    { "lat": 20.7449776, "lon": -103.3633235 },
+    { "lat": 20.7452405, "lon": -103.3624286 },
+    { "lat": 20.7454272, "lon": -103.3616974 },
+    { "lat": 20.7454384, "lon": -103.3613462 },
+    { "lat": 20.7453574, "lon": -103.3610022 },
+    { "lat": 20.7451752, "lon": -103.3605428 },
+    { "lat": 20.7450897, "lon": -103.3602565 },
+    { "lat": 20.7450762, "lon": -103.3600497 },
+    { "lat": 20.7451347, "lon": -103.3592510 },
+    { "lat": 20.7452315, "lon": -103.3586304 },
+    { "lat": 20.7453349, "lon": -103.3581253 },
+    { "lat": 20.7453920, "lon": -103.3579596 },
+    { "lat": 20.7454879, "lon": -103.3578270 },
+    { "lat": 20.7456928, "lon": -103.3575126 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1313093299,
+  "bounds": {
+    "minlat": 20.7706755,
+    "minlon": -103.3493914,
+    "maxlat": 20.7707267,
+    "maxlon": -103.3493009
+  },
+  "geometry": [
+    { "lat": 20.7707267, "lon": -103.3493914 },
+    { "lat": 20.7706755, "lon": -103.3493009 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1315585260,
+  "bounds": {
+    "minlat": 20.6987232,
+    "minlon": -103.2843048,
+    "maxlat": 20.6990432,
+    "maxlon": -103.2840354
+  },
+  "geometry": [
+    { "lat": 20.6987232, "lon": -103.2840354 },
+    { "lat": 20.6990432, "lon": -103.2843048 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1315585262,
+  "bounds": {
+    "minlat": 20.7023387,
+    "minlon": -103.2844292,
+    "maxlat": 20.7025230,
+    "maxlon": -103.2844028
+  },
+  "geometry": [
+    { "lat": 20.7023387, "lon": -103.2844028 },
+    { "lat": 20.7025230, "lon": -103.2844292 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1315585264,
+  "bounds": {
+    "minlat": 20.7050115,
+    "minlon": -103.2859564,
+    "maxlat": 20.7050953,
+    "maxlon": -103.2856180
+  },
+  "geometry": [
+    { "lat": 20.7050115, "lon": -103.2859564 },
+    { "lat": 20.7050953, "lon": -103.2856180 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1315585277,
+  "bounds": {
+    "minlat": 20.6994172,
+    "minlon": -103.2845712,
+    "maxlat": 20.6995427,
+    "maxlon": -103.2845389
+  },
+  "geometry": [
+    { "lat": 20.6994172, "lon": -103.2845389 },
+    { "lat": 20.6995427, "lon": -103.2845712 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1337845219,
+  "bounds": {
+    "minlat": 20.7111796,
+    "minlon": -103.3987848,
+    "maxlat": 20.7112230,
+    "maxlon": -103.3987160
+  },
+  "geometry": [
+    { "lat": 20.7112230, "lon": -103.3987848 },
+    { "lat": 20.7111796, "lon": -103.3987160 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "name": "Agua Del Manantial Del Barreno",
+    "tunnel": "culvert",
+    "waterway": "stream",
+    "width": "1"
+  }
+},
+{
+  "type": "way",
+  "id": 1342174288,
+  "bounds": {
+    "minlat": 20.7054191,
+    "minlon": -103.3769324,
+    "maxlat": 20.7055515,
+    "maxlon": -103.3766104
+  },
+  "geometry": [
+    { "lat": 20.7054346, "lon": -103.3769324 },
+    { "lat": 20.7054191, "lon": -103.3768861 },
+    { "lat": 20.7054317, "lon": -103.3768129 },
+    { "lat": 20.7055515, "lon": -103.3766104 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1343179759,
+  "bounds": {
+    "minlat": 20.6306432,
+    "minlon": -103.2552623,
+    "maxlat": 20.6306648,
+    "maxlon": -103.2550641
+  },
+  "geometry": [
+    { "lat": 20.6306432, "lon": -103.2550641 },
+    { "lat": 20.6306648, "lon": -103.2552623 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1343179762,
+  "bounds": {
+    "minlat": 20.6297286,
+    "minlon": -103.2519244,
+    "maxlat": 20.6298311,
+    "maxlon": -103.2517651
+  },
+  "geometry": [
+    { "lat": 20.6297286, "lon": -103.2517651 },
+    { "lat": 20.6298311, "lon": -103.2519244 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1343890478,
+  "bounds": {
+    "minlat": 20.6192734,
+    "minlon": -103.3762547,
+    "maxlat": 20.6194771,
+    "maxlon": -103.3759498
+  },
+  "geometry": [
+    { "lat": 20.6192734, "lon": -103.3762547 },
+    { "lat": 20.6194771, "lon": -103.3759498 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1343890480,
+  "bounds": {
+    "minlat": 20.6196640,
+    "minlon": -103.3759548,
+    "maxlat": 20.6198699,
+    "maxlon": -103.3759212
+  },
+  "geometry": [
+    { "lat": 20.6196640, "lon": -103.3759212 },
+    { "lat": 20.6197456, "lon": -103.3759548 },
+    { "lat": 20.6198699, "lon": -103.3759347 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1343890483,
+  "bounds": {
+    "minlat": 20.6200695,
+    "minlon": -103.3755191,
+    "maxlat": 20.6206119,
+    "maxlon": -103.3752426
+  },
+  "geometry": [
+    { "lat": 20.6200798, "lon": -103.3755191 },
+    { "lat": 20.6200695, "lon": -103.3754599 },
+    { "lat": 20.6205761, "lon": -103.3752426 },
+    { "lat": 20.6206119, "lon": -103.3752921 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1373216747,
+  "bounds": {
+    "minlat": 20.5512971,
+    "minlon": -103.4376630,
+    "maxlat": 20.5514238,
+    "maxlon": -103.4368610
+  },
+  "geometry": [
+    { "lat": 20.5512971, "lon": -103.4368610 },
+    { "lat": 20.5513257, "lon": -103.4371456 },
+    { "lat": 20.5514238, "lon": -103.4376068 },
+    { "lat": 20.5514080, "lon": -103.4376630 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1379427553,
+  "bounds": {
+    "minlat": 20.6962470,
+    "minlon": -103.2844720,
+    "maxlat": 20.6986531,
+    "maxlon": -103.2840441
+  },
+  "geometry": [
+    { "lat": 20.6962470, "lon": -103.2844720 },
+    { "lat": 20.6963901, "lon": -103.2843258 },
+    { "lat": 20.6986531, "lon": -103.2840441 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452004,
+  "bounds": {
+    "minlat": 20.7079656,
+    "minlon": -103.4267418,
+    "maxlat": 20.7080421,
+    "maxlon": -103.4261563
+  },
+  "geometry": [
+    { "lat": 20.7080421, "lon": -103.4267418 },
+    { "lat": 20.7079656, "lon": -103.4261563 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "Río Atemajac",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452007,
+  "bounds": {
+    "minlat": 20.7036714,
+    "minlon": -103.4218861,
+    "maxlat": 20.7037059,
+    "maxlon": -103.4217022
+  },
+  "geometry": [
+    { "lat": 20.7037059, "lon": -103.4218861 },
+    { "lat": 20.7036714, "lon": -103.4217022 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452009,
+  "bounds": {
+    "minlat": 20.7040531,
+    "minlon": -103.4239751,
+    "maxlat": 20.7040885,
+    "maxlon": -103.4237315
+  },
+  "geometry": [
+    { "lat": 20.7040885, "lon": -103.4239751 },
+    { "lat": 20.7040531, "lon": -103.4237315 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452012,
+  "bounds": {
+    "minlat": 20.7016183,
+    "minlon": -103.4244673,
+    "maxlat": 20.7036904,
+    "maxlon": -103.4221946
+  },
+  "geometry": [
+    { "lat": 20.7016660, "lon": -103.4244673 },
+    { "lat": 20.7016278, "lon": -103.4241681 },
+    { "lat": 20.7016183, "lon": -103.4240222 },
+    { "lat": 20.7016584, "lon": -103.4238206 },
+    { "lat": 20.7017713, "lon": -103.4236513 },
+    { "lat": 20.7028177, "lon": -103.4229054 },
+    { "lat": 20.7036904, "lon": -103.4221946 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452014,
+  "bounds": {
+    "minlat": 20.7017484,
+    "minlon": -103.4267427,
+    "maxlat": 20.7017659,
+    "maxlon": -103.4262331
+  },
+  "geometry": [
+    { "lat": 20.7017484, "lon": -103.4267427 },
+    { "lat": 20.7017659, "lon": -103.4262331 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452016,
+  "bounds": {
+    "minlat": 20.6980914,
+    "minlon": -103.4377774,
+    "maxlat": 20.6981629,
+    "maxlon": -103.4376325
+  },
+  "geometry": [
+    { "lat": 20.6980914, "lon": -103.4377774 },
+    { "lat": 20.6981629, "lon": -103.4376325 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1380452025,
+  "bounds": {
+    "minlat": 20.6959977,
+    "minlon": -103.4449588,
+    "maxlat": 20.6960594,
+    "maxlon": -103.4448450
+  },
+  "geometry": [
+    { "lat": 20.6959977, "lon": -103.4449588 },
+    { "lat": 20.6960594, "lon": -103.4448450 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384119779,
+  "bounds": {
+    "minlat": 20.7188326,
+    "minlon": -103.3597929,
+    "maxlat": 20.7188422,
+    "maxlon": -103.3596878
+  },
+  "geometry": [
+    { "lat": 20.7188422, "lon": -103.3597929 },
+    { "lat": 20.7188326, "lon": -103.3596878 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1384119780,
+  "bounds": {
+    "minlat": 20.7154623,
+    "minlon": -103.3554702,
+    "maxlat": 20.7164995,
+    "maxlon": -103.3548336
+  },
+  "geometry": [
+    { "lat": 20.7164995, "lon": -103.3554702 },
+    { "lat": 20.7154623, "lon": -103.3548336 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1384119782,
+  "bounds": {
+    "minlat": 20.7168505,
+    "minlon": -103.3560506,
+    "maxlat": 20.7171760,
+    "maxlon": -103.3556997
+  },
+  "geometry": [
+    { "lat": 20.7171760, "lon": -103.3560506 },
+    { "lat": 20.7170703, "lon": -103.3560269 },
+    { "lat": 20.7169442, "lon": -103.3559267 },
+    { "lat": 20.7168505, "lon": -103.3556997 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164272,
+  "bounds": {
+    "minlat": 20.7698094,
+    "minlon": -103.3362733,
+    "maxlat": 20.7698571,
+    "maxlon": -103.3337681
+  },
+  "geometry": [
+    { "lat": 20.7698571, "lon": -103.3362733 },
+    { "lat": 20.7698094, "lon": -103.3337681 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164274,
+  "bounds": {
+    "minlat": 20.7699264,
+    "minlon": -103.3366950,
+    "maxlat": 20.7699624,
+    "maxlon": -103.3365796
+  },
+  "geometry": [
+    { "lat": 20.7699624, "lon": -103.3366950 },
+    { "lat": 20.7699264, "lon": -103.3365796 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164276,
+  "bounds": {
+    "minlat": 20.7697963,
+    "minlon": -103.3405774,
+    "maxlat": 20.7698819,
+    "maxlon": -103.3403095
+  },
+  "geometry": [
+    { "lat": 20.7697963, "lon": -103.3405774 },
+    { "lat": 20.7698819, "lon": -103.3403095 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164283,
+  "bounds": {
+    "minlat": 20.7669246,
+    "minlon": -103.3250420,
+    "maxlat": 20.7670237,
+    "maxlon": -103.3250136
+  },
+  "geometry": [
+    { "lat": 20.7669246, "lon": -103.3250136 },
+    { "lat": 20.7670237, "lon": -103.3250420 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164285,
+  "bounds": {
+    "minlat": 20.7664186,
+    "minlon": -103.3251282,
+    "maxlat": 20.7665146,
+    "maxlon": -103.3250713
+  },
+  "geometry": [
+    { "lat": 20.7664186, "lon": -103.3251282 },
+    { "lat": 20.7665146, "lon": -103.3250713 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164287,
+  "bounds": {
+    "minlat": 20.7647146,
+    "minlon": -103.3267595,
+    "maxlat": 20.7648148,
+    "maxlon": -103.3267426
+  },
+  "geometry": [
+    { "lat": 20.7647146, "lon": -103.3267595 },
+    { "lat": 20.7648148, "lon": -103.3267426 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164293,
+  "bounds": {
+    "minlat": 20.7783659,
+    "minlon": -103.3252702,
+    "maxlat": 20.7784455,
+    "maxlon": -103.3252077
+  },
+  "geometry": [
+    { "lat": 20.7783659, "lon": -103.3252077 },
+    { "lat": 20.7784455, "lon": -103.3252702 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164295,
+  "bounds": {
+    "minlat": 20.7790747,
+    "minlon": -103.3253434,
+    "maxlat": 20.7791315,
+    "maxlon": -103.3253161
+  },
+  "geometry": [
+    { "lat": 20.7790747, "lon": -103.3253434 },
+    { "lat": 20.7791315, "lon": -103.3253161 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384164298,
+  "bounds": {
+    "minlat": 20.7890444,
+    "minlon": -103.3328052,
+    "maxlat": 20.7891205,
+    "maxlon": -103.3327100
+  },
+  "geometry": [
+    { "lat": 20.7890444, "lon": -103.3328052 },
+    { "lat": 20.7891205, "lon": -103.3327100 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1384393342,
+  "bounds": {
+    "minlat": 20.7289994,
+    "minlon": -103.3198982,
+    "maxlat": 20.7291156,
+    "maxlon": -103.3192512
+  },
+  "geometry": [
+    { "lat": 20.7289994, "lon": -103.3192512 },
+    { "lat": 20.7291156, "lon": -103.3198982 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "drain"
+  }
+},
+{
+  "type": "way",
+  "id": 1387773807,
+  "bounds": {
+    "minlat": 20.6540826,
+    "minlon": -103.2751528,
+    "maxlat": 20.6541077,
+    "maxlon": -103.2751260
+  },
+  "geometry": [
+    { "lat": 20.6541077, "lon": -103.2751528 },
+    { "lat": 20.6540826, "lon": -103.2751260 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387773814,
+  "bounds": {
+    "minlat": 20.6561091,
+    "minlon": -103.2755425,
+    "maxlat": 20.6562132,
+    "maxlon": -103.2755264
+  },
+  "geometry": [
+    { "lat": 20.6562132, "lon": -103.2755264 },
+    { "lat": 20.6561091, "lon": -103.2755425 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776721,
+  "bounds": {
+    "minlat": 20.6567473,
+    "minlon": -103.2759318,
+    "maxlat": 20.6567689,
+    "maxlon": -103.2757777
+  },
+  "geometry": [
+    { "lat": 20.6567689, "lon": -103.2759318 },
+    { "lat": 20.6567473, "lon": -103.2757777 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776723,
+  "bounds": {
+    "minlat": 20.6567812,
+    "minlon": -103.2760657,
+    "maxlat": 20.6567869,
+    "maxlon": -103.2760238
+  },
+  "geometry": [
+    { "lat": 20.6567869, "lon": -103.2760657 },
+    { "lat": 20.6567812, "lon": -103.2760238 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776725,
+  "bounds": {
+    "minlat": 20.6567909,
+    "minlon": -103.2761350,
+    "maxlat": 20.6567955,
+    "maxlon": -103.2760972
+  },
+  "geometry": [
+    { "lat": 20.6567955, "lon": -103.2761350 },
+    { "lat": 20.6567909, "lon": -103.2760972 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776727,
+  "bounds": {
+    "minlat": 20.6568004,
+    "minlon": -103.2762024,
+    "maxlat": 20.6568053,
+    "maxlon": -103.2761660
+  },
+  "geometry": [
+    { "lat": 20.6568053, "lon": -103.2762024 },
+    { "lat": 20.6568004, "lon": -103.2761660 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776729,
+  "bounds": {
+    "minlat": 20.6568523,
+    "minlon": -103.2765718,
+    "maxlat": 20.6568571,
+    "maxlon": -103.2765362
+  },
+  "geometry": [
+    { "lat": 20.6568571, "lon": -103.2765718 },
+    { "lat": 20.6568523, "lon": -103.2765362 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776731,
+  "bounds": {
+    "minlat": 20.6568709,
+    "minlon": -103.2767112,
+    "maxlat": 20.6568756,
+    "maxlon": -103.2766758
+  },
+  "geometry": [
+    { "lat": 20.6568756, "lon": -103.2767112 },
+    { "lat": 20.6568709, "lon": -103.2766758 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776733,
+  "bounds": {
+    "minlat": 20.6568622,
+    "minlon": -103.2766442,
+    "maxlat": 20.6568667,
+    "maxlon": -103.2766107
+  },
+  "geometry": [
+    { "lat": 20.6568667, "lon": -103.2766442 },
+    { "lat": 20.6568622, "lon": -103.2766107 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1387776737,
+  "bounds": {
+    "minlat": 20.6566272,
+    "minlon": -103.2755558,
+    "maxlat": 20.6566742,
+    "maxlon": -103.2755102
+  },
+  "geometry": [
+    { "lat": 20.6566742, "lon": -103.2755558 },
+    { "lat": 20.6566272, "lon": -103.2755102 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1390716814,
+  "bounds": {
+    "minlat": 20.7117259,
+    "minlon": -103.4066554,
+    "maxlat": 20.7117499,
+    "maxlon": -103.4063607
+  },
+  "geometry": [
+    { "lat": 20.7117499, "lon": -103.4066554 },
+    { "lat": 20.7117259, "lon": -103.4063607 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1390717731,
+  "bounds": {
+    "minlat": 20.7101595,
+    "minlon": -103.4091519,
+    "maxlat": 20.7103525,
+    "maxlon": -103.4067714
+  },
+  "geometry": [
+    { "lat": 20.7101780, "lon": -103.4091519 },
+    { "lat": 20.7101595, "lon": -103.4076867 },
+    { "lat": 20.7103525, "lon": -103.4067714 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938010,
+  "bounds": {
+    "minlat": 20.5914967,
+    "minlon": -103.3409376,
+    "maxlat": 20.5935758,
+    "maxlon": -103.3358642
+  },
+  "geometry": [
+    { "lat": 20.5935758, "lon": -103.3409376 },
+    { "lat": 20.5914967, "lon": -103.3358642 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938015,
+  "bounds": {
+    "minlat": 20.5959716,
+    "minlon": -103.3435569,
+    "maxlat": 20.5960228,
+    "maxlon": -103.3433338
+  },
+  "geometry": [
+    { "lat": 20.5960228, "lon": -103.3435569 },
+    { "lat": 20.5959716, "lon": -103.3433338 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938017,
+  "bounds": {
+    "minlat": 20.5866003,
+    "minlon": -103.3333112,
+    "maxlat": 20.5866933,
+    "maxlon": -103.3332292
+  },
+  "geometry": [
+    { "lat": 20.5866933, "lon": -103.3332292 },
+    { "lat": 20.5866003, "lon": -103.3333112 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938019,
+  "bounds": {
+    "minlat": 20.5878943,
+    "minlon": -103.3335664,
+    "maxlat": 20.5879743,
+    "maxlon": -103.3334979
+  },
+  "geometry": [
+    { "lat": 20.5879743, "lon": -103.3335664 },
+    { "lat": 20.5878943, "lon": -103.3334979 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938020,
+  "bounds": {
+    "minlat": 20.5885090,
+    "minlon": -103.3348881,
+    "maxlat": 20.5886339,
+    "maxlon": -103.3347232
+  },
+  "geometry": [
+    { "lat": 20.5886339, "lon": -103.3348881 },
+    { "lat": 20.5885090, "lon": -103.3347232 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938022,
+  "bounds": {
+    "minlat": 20.5911304,
+    "minlon": -103.3355623,
+    "maxlat": 20.5911850,
+    "maxlon": -103.3355375
+  },
+  "geometry": [
+    { "lat": 20.5911850, "lon": -103.3355623 },
+    { "lat": 20.5911304, "lon": -103.3355375 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938024,
+  "bounds": {
+    "minlat": 20.5903965,
+    "minlon": -103.3354030,
+    "maxlat": 20.5906699,
+    "maxlon": -103.3353959
+  },
+  "geometry": [
+    { "lat": 20.5906699, "lon": -103.3353959 },
+    { "lat": 20.5903965, "lon": -103.3354030 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938026,
+  "bounds": {
+    "minlat": 20.5946836,
+    "minlon": -103.3361763,
+    "maxlat": 20.5947998,
+    "maxlon": -103.3360925
+  },
+  "geometry": [
+    { "lat": 20.5947998, "lon": -103.3360925 },
+    { "lat": 20.5946836, "lon": -103.3361763 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938028,
+  "bounds": {
+    "minlat": 20.5935051,
+    "minlon": -103.3363099,
+    "maxlat": 20.5935967,
+    "maxlon": -103.3362514
+  },
+  "geometry": [
+    { "lat": 20.5935967, "lon": -103.3363099 },
+    { "lat": 20.5935051, "lon": -103.3362514 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938030,
+  "bounds": {
+    "minlat": 20.5982164,
+    "minlon": -103.3390345,
+    "maxlat": 20.5982981,
+    "maxlon": -103.3389611
+  },
+  "geometry": [
+    { "lat": 20.5982981, "lon": -103.3390345 },
+    { "lat": 20.5982164, "lon": -103.3389611 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938033,
+  "bounds": {
+    "minlat": 20.5965828,
+    "minlon": -103.3459260,
+    "maxlat": 20.5966094,
+    "maxlon": -103.3456997
+  },
+  "geometry": [
+    { "lat": 20.5966094, "lon": -103.3459260 },
+    { "lat": 20.5965828, "lon": -103.3456997 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938035,
+  "bounds": {
+    "minlat": 20.5963814,
+    "minlon": -103.3484124,
+    "maxlat": 20.5963905,
+    "maxlon": -103.3483026
+  },
+  "geometry": [
+    { "lat": 20.5963814, "lon": -103.3484124 },
+    { "lat": 20.5963905, "lon": -103.3483026 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938037,
+  "bounds": {
+    "minlat": 20.5963070,
+    "minlon": -103.3499112,
+    "maxlat": 20.5963207,
+    "maxlon": -103.3497966
+  },
+  "geometry": [
+    { "lat": 20.5963070, "lon": -103.3499112 },
+    { "lat": 20.5963207, "lon": -103.3497966 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1414938040,
+  "bounds": {
+    "minlat": 20.5917769,
+    "minlon": -103.3472738,
+    "maxlat": 20.5966094,
+    "maxlon": -103.3453252
+  },
+  "geometry": [
+    { "lat": 20.5966094, "lon": -103.3459260 },
+    { "lat": 20.5960960, "lon": -103.3455994 },
+    { "lat": 20.5957442, "lon": -103.3453945 },
+    { "lat": 20.5956245, "lon": -103.3453375 },
+    { "lat": 20.5954298, "lon": -103.3453252 },
+    { "lat": 20.5952423, "lon": -103.3453544 },
+    { "lat": 20.5949611, "lon": -103.3455193 },
+    { "lat": 20.5948357, "lon": -103.3456025 },
+    { "lat": 20.5946597, "lon": -103.3456456 },
+    { "lat": 20.5941449, "lon": -103.3455732 },
+    { "lat": 20.5938853, "lon": -103.3455840 },
+    { "lat": 20.5936503, "lon": -103.3456225 },
+    { "lat": 20.5933301, "lon": -103.3457919 },
+    { "lat": 20.5929739, "lon": -103.3460353 },
+    { "lat": 20.5928485, "lon": -103.3461894 },
+    { "lat": 20.5927144, "lon": -103.3464913 },
+    { "lat": 20.5926077, "lon": -103.3466654 },
+    { "lat": 20.5924231, "lon": -103.3468102 },
+    { "lat": 20.5918664, "lon": -103.3472508 },
+    { "lat": 20.5917769, "lon": -103.3472738 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1415009147,
+  "bounds": {
+    "minlat": 20.6170027,
+    "minlon": -103.3795895,
+    "maxlat": 20.6171071,
+    "maxlon": -103.3786985
+  },
+  "geometry": [
+    { "lat": 20.6170027, "lon": -103.3795895 },
+    { "lat": 20.6171071, "lon": -103.3786985 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1420052083,
+  "bounds": {
+    "minlat": 20.7262958,
+    "minlon": -103.3530605,
+    "maxlat": 20.7265349,
+    "maxlon": -103.3510338
+  },
+  "geometry": [
+    { "lat": 20.7265349, "lon": -103.3530605 },
+    { "lat": 20.7265030, "lon": -103.3527270 },
+    { "lat": 20.7264376, "lon": -103.3521980 },
+    { "lat": 20.7263655, "lon": -103.3515777 },
+    { "lat": 20.7262958, "lon": -103.3510338 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 1436786699,
+  "bounds": {
+    "minlat": 20.7129178,
+    "minlon": -103.3745947,
+    "maxlat": 20.7129857,
+    "maxlon": -103.3743994
+  },
+  "geometry": [
+    { "lat": 20.7129857, "lon": -103.3745947 },
+    { "lat": 20.7129178, "lon": -103.3743994 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1453773325,
+  "bounds": {
+    "minlat": 20.6409665,
+    "minlon": -103.2807486,
+    "maxlat": 20.6411041,
+    "maxlon": -103.2804876
+  },
+  "geometry": [
+    { "lat": 20.6409665, "lon": -103.2807486 },
+    { "lat": 20.6411041, "lon": -103.2804876 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1472056552,
+  "bounds": {
+    "minlat": 20.7204329,
+    "minlon": -103.2808964,
+    "maxlat": 20.7204717,
+    "maxlon": -103.2808222
+  },
+  "geometry": [
+    { "lat": 20.7204717, "lon": -103.2808964 },
+    { "lat": 20.7204329, "lon": -103.2808222 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1514692884,
+  "bounds": {
+    "minlat": 20.6224478,
+    "minlon": -103.3209609,
+    "maxlat": 20.6226163,
+    "maxlon": -103.3207027
+  },
+  "geometry": [
+    { "lat": 20.6224478, "lon": -103.3207027 },
+    { "lat": 20.6224735, "lon": -103.3207862 },
+    { "lat": 20.6225521, "lon": -103.3208971 },
+    { "lat": 20.6226163, "lon": -103.3209609 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "canal"
+  }
+},
+{
+  "type": "way",
+  "id": 1540106987,
+  "bounds": {
+    "minlat": 20.7976748,
+    "minlon": -103.3448207,
+    "maxlat": 20.7976823,
+    "maxlon": -103.3446976
+  },
+  "geometry": [
+    { "lat": 20.7976748, "lon": -103.3448207 },
+    { "lat": 20.7976823, "lon": -103.3446976 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1548976990,
+  "bounds": {
+    "minlat": 20.5871670,
+    "minlon": -103.3650856,
+    "maxlat": 20.5873174,
+    "maxlon": -103.3650419
+  },
+  "geometry": [
+    { "lat": 20.5873174, "lon": -103.3650856 },
+    { "lat": 20.5871670, "lon": -103.3650419 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1548976993,
+  "bounds": {
+    "minlat": 20.5889875,
+    "minlon": -103.3649483,
+    "maxlat": 20.5890734,
+    "maxlon": -103.3649357
+  },
+  "geometry": [
+    { "lat": 20.5890734, "lon": -103.3649357 },
+    { "lat": 20.5889875, "lon": -103.3649483 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1548976994,
+  "bounds": {
+    "minlat": 20.5891279,
+    "minlon": -103.3649278,
+    "maxlat": 20.5891825,
+    "maxlon": -103.3649198
+  },
+  "geometry": [
+    { "lat": 20.5891825, "lon": -103.3649198 },
+    { "lat": 20.5891279, "lon": -103.3649278 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "ditch"
+  }
+},
+{
+  "type": "way",
+  "id": 1551912247,
+  "bounds": {
+    "minlat": 20.7966792,
+    "minlon": -103.4298379,
+    "maxlat": 20.7970433,
+    "maxlon": -103.4296821
+  },
+  "geometry": [
+    { "lat": 20.7970433, "lon": -103.4296821 },
+    { "lat": 20.7966792, "lon": -103.4298379 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103243,
+  "bounds": {
+    "minlat": 20.6149300,
+    "minlon": -103.3099788,
+    "maxlat": 20.6169226,
+    "maxlon": -103.3071993
+  },
+  "geometry": [
+    { "lat": 20.6149300, "lon": -103.3071993 },
+    { "lat": 20.6151104, "lon": -103.3075659 },
+    { "lat": 20.6153480, "lon": -103.3077007 },
+    { "lat": 20.6154280, "lon": -103.3078137 },
+    { "lat": 20.6164289, "lon": -103.3095945 },
+    { "lat": 20.6167002, "lon": -103.3098620 },
+    { "lat": 20.6169226, "lon": -103.3099788 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103245,
+  "bounds": {
+    "minlat": 20.6136738,
+    "minlon": -103.3063207,
+    "maxlat": 20.6140102,
+    "maxlon": -103.3062476
+  },
+  "geometry": [
+    { "lat": 20.6136738, "lon": -103.3063207 },
+    { "lat": 20.6140102, "lon": -103.3062476 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103248,
+  "bounds": {
+    "minlat": 20.6130767,
+    "minlon": -103.3070870,
+    "maxlat": 20.6131699,
+    "maxlon": -103.3070015
+  },
+  "geometry": [
+    { "lat": 20.6130767, "lon": -103.3070870 },
+    { "lat": 20.6131699, "lon": -103.3070015 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103250,
+  "bounds": {
+    "minlat": 20.6118826,
+    "minlon": -103.3073595,
+    "maxlat": 20.6119912,
+    "maxlon": -103.3072963
+  },
+  "geometry": [
+    { "lat": 20.6118826, "lon": -103.3073595 },
+    { "lat": 20.6119912, "lon": -103.3072963 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103252,
+  "bounds": {
+    "minlat": 20.6168908,
+    "minlon": -103.3109710,
+    "maxlat": 20.6172174,
+    "maxlon": -103.3094369
+  },
+  "geometry": [
+    { "lat": 20.6168908, "lon": -103.3094369 },
+    { "lat": 20.6169226, "lon": -103.3099788 },
+    { "lat": 20.6172174, "lon": -103.3109710 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1552103254,
+  "bounds": {
+    "minlat": 20.6181499,
+    "minlon": -103.3075326,
+    "maxlat": 20.6183552,
+    "maxlon": -103.3073283
+  },
+  "geometry": [
+    { "lat": 20.6183552, "lon": -103.3073283 },
+    { "lat": 20.6181499, "lon": -103.3075326 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "name": "Arroyo de El Álamo",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1579503715,
+  "bounds": {
+    "minlat": 20.6745829,
+    "minlon": -103.4394788,
+    "maxlat": 20.6748542,
+    "maxlon": -103.4394374
+  },
+  "geometry": [
+    { "lat": 20.6748542, "lon": -103.4394374 },
+    { "lat": 20.6745829, "lon": -103.4394788 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1579503716,
+  "bounds": {
+    "minlat": 20.6733435,
+    "minlon": -103.4400197,
+    "maxlat": 20.6734344,
+    "maxlon": -103.4399329
+  },
+  "geometry": [
+    { "lat": 20.6734344, "lon": -103.4400197 },
+    { "lat": 20.6733435, "lon": -103.4399329 }
+  ],
+  "tags": {
+    "intermittent": "yes",
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1579534868,
+  "bounds": {
+    "minlat": 20.6775335,
+    "minlon": -103.2706243,
+    "maxlat": 20.6940030,
+    "maxlon": -103.2670785
+  },
+  "geometry": [
+    { "lat": 20.6775335, "lon": -103.2679626 },
+    { "lat": 20.6778109, "lon": -103.2681246 },
+    { "lat": 20.6781984, "lon": -103.2681722 },
+    { "lat": 20.6783709, "lon": -103.2681450 },
+    { "lat": 20.6789071, "lon": -103.2678656 },
+    { "lat": 20.6792732, "lon": -103.2674301 },
+    { "lat": 20.6794662, "lon": -103.2672611 },
+    { "lat": 20.6796369, "lon": -103.2671663 },
+    { "lat": 20.6798805, "lon": -103.2670871 },
+    { "lat": 20.6801870, "lon": -103.2670785 },
+    { "lat": 20.6811798, "lon": -103.2671803 },
+    { "lat": 20.6819532, "lon": -103.2673120 },
+    { "lat": 20.6824086, "lon": -103.2674610 },
+    { "lat": 20.6828836, "lon": -103.2677070 },
+    { "lat": 20.6833837, "lon": -103.2679677 },
+    { "lat": 20.6837014, "lon": -103.2680906 },
+    { "lat": 20.6841830, "lon": -103.2682337 },
+    { "lat": 20.6848400, "lon": -103.2684096 },
+    { "lat": 20.6855523, "lon": -103.2686746 },
+    { "lat": 20.6859798, "lon": -103.2688093 },
+    { "lat": 20.6862645, "lon": -103.2688727 },
+    { "lat": 20.6877114, "lon": -103.2689323 },
+    { "lat": 20.6879889, "lon": -103.2690266 },
+    { "lat": 20.6882403, "lon": -103.2691725 },
+    { "lat": 20.6884022, "lon": -103.2693296 },
+    { "lat": 20.6885049, "lon": -103.2694657 },
+    { "lat": 20.6889560, "lon": -103.2702210 },
+    { "lat": 20.6891782, "lon": -103.2704001 },
+    { "lat": 20.6894712, "lon": -103.2705241 },
+    { "lat": 20.6896988, "lon": -103.2705684 },
+    { "lat": 20.6901719, "lon": -103.2706099 },
+    { "lat": 20.6904356, "lon": -103.2706243 },
+    { "lat": 20.6906982, "lon": -103.2705682 },
+    { "lat": 20.6910199, "lon": -103.2704251 },
+    { "lat": 20.6914474, "lon": -103.2702415 },
+    { "lat": 20.6918165, "lon": -103.2702076 },
+    { "lat": 20.6928404, "lon": -103.2702385 },
+    { "lat": 20.6933682, "lon": -103.2702268 },
+    { "lat": 20.6940030, "lon": -103.2701144 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+},
+{
+  "type": "way",
+  "id": 1583754134,
+  "bounds": {
+    "minlat": 20.6534734,
+    "minlon": -103.2689586,
+    "maxlat": 20.6536092,
+    "maxlon": -103.2687327
+  },
+  "geometry": [
+    { "lat": 20.6534734, "lon": -103.2687327 },
+    { "lat": 20.6536092, "lon": -103.2689586 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "tunnel": "culvert",
+    "waterway": "stream"
+  }
+}
+
+  ]
+}

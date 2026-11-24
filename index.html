@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ríos de Guadalajara</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@400;600;700&display=swap">
+<style>
+/* Full-bleed satellite map with the site's printed black-on-white panel; water colors read on imagery. */
+:root{--paper:#ffffff;--ink:#000000;--soft:#3a3a3a;--space:#05070a;
+  --river:#38c6f4;--santiago:#ff3b2f;--lerma:#ff9a1f;--urban:#ffe14d;--supply:#2f7bff;--wet:#2fd08a;--industry:#ff2bd6;
+  --ok:#1a9850;--warn:#f2b600;--bad:#d7191c;
+  --head:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;--mono:"IBM Plex Mono",Consolas,monospace;}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--space);color:var(--ink);font-family:var(--head)}
+#map{position:fixed;inset:0}
+button{font:inherit;color:inherit;background:var(--paper);border:2px solid var(--ink);cursor:pointer}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 5px var(--ink)}
+a{color:var(--ink)}
+.panel{position:fixed;z-index:2;top:16px;left:16px;bottom:16px;width:400px;background:var(--paper);border:2px solid var(--ink);display:flex;flex-direction:column;overflow:hidden}
+.panel header{padding:14px 18px 10px;border-bottom:2px solid var(--ink)}
+.panel h1{margin:0;font-size:1.65rem;letter-spacing:.03em;text-transform:uppercase;line-height:1.05}
+.panel .sub{font-family:var(--mono);font-size:.74rem;color:var(--soft);margin:6px 0 0}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:2px solid var(--ink)}
+.tabs button{border:0;padding:8px 6px;min-height:48px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:.8rem;line-height:1.1}
+.tabs button+button{border-left:2px solid var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.tabs small{display:block;font-family:var(--mono);font-weight:400;text-transform:none;letter-spacing:0;font-size:.66rem;margin-top:2px}
+.body{flex:1;overflow-y:auto;padding:12px 18px 18px;display:flex;flex-direction:column;gap:14px}
+.body h2{margin:0;font-size:1rem;text-transform:uppercase;letter-spacing:.05em}
+.body h3{margin:0;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;font-family:var(--mono);font-weight:600;color:var(--soft)}
+.body p{margin:0;font-size:.95rem;line-height:1.45}
+.mono{font-family:var(--mono);font-size:.76rem;color:var(--soft)}
+.group{display:flex;flex-direction:column;gap:2px;border-top:2px solid var(--ink);padding-top:8px}
+.layer{display:grid;grid-template-columns:20px 28px 1fr;gap:8px;align-items:center;min-height:34px;cursor:pointer;font-size:.92rem;line-height:1.15}
+.layer input{width:18px;height:18px;margin:0;accent-color:#000}
+.layer small{display:block;font-family:var(--mono);font-size:.68rem;color:var(--soft)}
+.sw{width:28px;height:14px;display:block;position:relative}
+.sw.line{height:0;border-top:4px solid}
+.sw.dash{height:0;border-top:3px dashed}
+.sw.poly{border:2px solid}
+.sw.dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;margin-left:7px;box-shadow:0 0 0 1px #000}
+.sw.ring{width:14px;height:14px;border-radius:50%;border:4px solid;background:#000;margin-left:7px}
+.sw.sq{width:13px;height:13px;border:2px solid #fff;margin-left:7px;box-shadow:0 0 0 1px #000;transform:rotate(45deg)}
+.sw.sat{border:2px solid var(--ink);background:linear-gradient(135deg,#59704a,#2b3d2a 50%,#8a7a5c)}
+.chips{display:flex;flex-wrap:wrap;gap:4px 12px;font-family:var(--mono);font-size:.7rem}
+.chips span{display:inline-flex;gap:5px;align-items:center}
+.chips i{width:11px;height:11px;border-radius:50%;display:inline-block;border:1px solid #000}
+.story{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink)}
+.chap{border-bottom:1px solid var(--ink);padding:10px 0;display:flex;flex-direction:column;gap:6px}
+.chap button{text-align:left;border:0;padding:0;background:none;display:flex;gap:10px;align-items:baseline;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:.95rem}
+.chap button b{font-family:var(--mono);font-size:.75rem;border:2px solid var(--ink);padding:1px 6px;min-width:30px;text-align:center}
+.chap[aria-current="step"] button b{background:var(--ink);color:var(--paper)}
+.chap .txt{font-size:.92rem;line-height:1.45;display:none}
+.chap[aria-current="step"] .txt{display:block}
+.chap .txt p+p{margin-top:6px}
+.chap .pager{margin-bottom:8px}
+.src{font-family:var(--mono);font-size:.68rem;color:var(--soft);word-break:break-word}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stats div{border-top:1px solid var(--ink);padding-top:4px;font-size:.82rem;line-height:1.25}
+.stats b{display:block;font-size:1.3rem;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{font-family:var(--mono);font-size:10px;fill:var(--soft)}
+.facts{display:flex;flex-direction:column;margin:0;padding:0;list-style:none;border-top:2px solid var(--ink)}
+.facts li{border-bottom:1px solid var(--ink)}
+.facts li>button{width:100%;text-align:left;border:0;border-left:4px solid transparent;padding:9px 8px 9px 10px;background:none;display:flex;flex-direction:column;gap:2px}
+.facts li>button:hover{border-left-color:var(--soft)}
+.facts li>button b{font-family:var(--mono);font-size:.7rem;font-weight:400;color:var(--soft)}
+.facts li>button span{font-weight:700;font-size:.92rem;line-height:1.2}
+.facts li[aria-current] > button{border-left-color:var(--santiago);background:#f2f2f2}
+.facts .txt{display:none;padding:0 10px 12px 14px;font-size:.9rem;line-height:1.45;flex-direction:column;gap:8px}
+.facts li[aria-current] .txt{display:flex}
+.facts .place{font-family:var(--mono);font-size:.7rem;color:var(--soft)}
+.facts figure{margin:0}.facts img{width:100%;display:block;border:2px solid var(--ink)}
+.facts figcaption{font-family:var(--mono);font-size:.62rem;color:var(--soft);margin-top:3px}
+.next{align-self:flex-start;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding:8px 12px;min-height:40px}
+.pager{display:flex;gap:8px}.pager button{padding:4px 10px;font-family:var(--mono);font-size:.72rem}
+.fact-pin{width:26px;height:26px;border-radius:50%;border:4px solid var(--santiago);background:rgba(0,0,0,.35);box-shadow:0 0 0 3px #fff}
+.credit{font-family:var(--mono);font-size:.64rem;color:var(--soft);line-height:1.4}
+.stamp{position:fixed;z-index:2;right:16px;bottom:30px;background:var(--paper);border:2px solid var(--ink);padding:6px 10px;font-family:var(--mono);font-size:.72rem;max-width:min(320px,calc(100vw - 32px))}
+/* info card: docked top-right, never over the side panel */
+.info{position:fixed;z-index:3;top:16px;right:56px;width:min(350px,calc(100vw - 500px));min-width:260px;max-height:calc(100vh - 110px);overflow:auto;background:var(--paper);border:2px solid var(--ink);box-shadow:4px 4px 0 rgba(0,0,0,.6);padding:12px 14px 10px}
+.info .x{position:sticky;top:0;float:right;width:40px;height:40px;margin:-6px -8px 0 6px;font-size:1.4rem;line-height:1;font-weight:700;z-index:1}
+.info-ring{width:22px;height:22px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #000,inset 0 0 0 2px #000;pointer-events:none}
+.pop h4{margin:0 0 2px 0;font-size:1rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.1}
+.pop .k{font-family:var(--mono);font-size:.68rem;color:var(--soft);text-transform:uppercase;letter-spacing:.05em}
+.pop p{margin:6px 0;font-size:.86rem;line-height:1.38}
+.pop table{border-collapse:collapse;width:100%;font-size:.76rem;margin:6px 0;font-variant-numeric:tabular-nums}
+.pop td{border-top:1px solid #ccc;padding:3px 4px 3px 0;vertical-align:top}
+.pop td:first-child{font-family:var(--mono);font-size:.68rem;color:var(--soft);width:42%}
+.pop .links{font-family:var(--mono);font-size:.66rem;word-break:break-all;max-height:5.5em;overflow:auto}
+.pop .tag{display:inline-block;font-family:var(--mono);font-size:.66rem;border:1px solid var(--ink);padding:0 5px;margin-right:4px}
+.pop .tag.ROJO{background:var(--bad);color:#fff;border-color:var(--bad)}.pop .tag.AMARILLO{background:var(--warn)}.pop .tag.VERDE{background:var(--ok);color:#fff;border-color:var(--ok)}
+.pop .scroll{max-height:none}
+.maplibregl-ctrl-attrib{font-family:var(--mono);font-size:10px}
+.home-ctrl button{width:auto!important;height:auto!important;min-height:44px;padding:4px 6px!important;display:flex!important;flex-direction:column;align-items:center;font-size:16px;line-height:1;font-weight:700;background:#fff}
+.home-ctrl small{font-family:var(--mono);font-size:9px;font-weight:600;text-transform:uppercase;margin-top:2px}
+.movepad button{font-size:15px;line-height:1;border:0;background:#fff}
+.movepad button+button{border-top:1px solid #ddd}
+/* air pollution: own button + time bar */
+.air-btn{position:fixed;z-index:2;top:16px;left:432px;padding:8px 12px;min-height:40px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:.82rem;box-shadow:3px 3px 0 rgba(0,0,0,.5)}
+.air-btn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.air{position:fixed;z-index:2;top:66px;left:432px;width:min(470px,calc(100vw - 900px));min-width:330px;background:var(--paper);border:2px solid var(--ink);padding:10px 12px;display:flex;flex-direction:column;gap:8px;box-shadow:3px 3px 0 rgba(0,0,0,.5)}
+.air .row{display:flex;gap:8px;align-items:center}
+.air select{font:inherit;font-size:.85rem;border:2px solid var(--ink);padding:4px;flex:1;min-width:0;background:#fff}
+.air input[type=range]{flex:1;accent-color:#000;min-width:0}
+.air .play{width:40px;height:34px;font-size:1rem;flex:none}
+.air .date{font-family:var(--mono);font-size:.85rem;font-weight:600;min-width:84px;text-align:right}
+.air .legend{display:flex;flex-direction:column;gap:2px;font-family:var(--mono);font-size:.66rem;color:var(--soft)}
+.air .ramp{height:10px;border:1px solid var(--ink)}
+.air .ends{display:flex;justify-content:space-between}
+.air p{margin:0;font-size:.8rem;line-height:1.35}
+@media (max-width:760px){
+  .air-btn{top:auto;bottom:calc(55vh + 12px);left:12px}
+  .air{top:auto;bottom:calc(55vh + 62px);left:12px;right:12px;width:auto;min-width:0}
+  .panel{top:auto;left:0;right:0;bottom:0;width:auto;max-height:55vh;border-width:2px 0 0;padding-bottom:env(safe-area-inset-bottom,0px)}
+  .panel header{padding:10px 16px 8px}.panel h1{font-size:1.3rem}.panel .sub{display:none}
+  .body{padding:10px 16px 16px}
+  .stamp{top:12px;bottom:auto;right:56px;left:12px;max-width:none}
+  .info{top:56px;left:12px;right:56px;width:auto;min-width:0;max-height:calc(45vh - 70px)}
+}
+</style>
+</head>
+<body>
+<div id="map" role="img" aria-label="Satellite map of the rivers of Jalisco around Guadalajara with layers for pollution, industry and water infrastructure"></div>
+
+<aside class="panel" aria-label="Map controls and story">
+  <header>
+    <h1>Ríos de Guadalajara</h1>
+    <p class="sub">Lerma · Chapala · Santiago → Pacific. Rivers, water regions, pollution and the city's water system.</p>
+
+  </header>
+  <div class="tabs" role="tablist">
+    <button role="tab" id="t-story" aria-selected="true" aria-controls="p-story">Why polluted<small>6 stops</small></button>
+    <button role="tab" id="t-facts" aria-selected="false" aria-controls="p-facts">Key facts<small>20 facts</small></button>
+    <button role="tab" id="t-layers" aria-selected="false" aria-controls="p-layers">Layers<small>toggle data</small></button>
+    <button role="tab" id="t-chapala" aria-selected="false" aria-controls="p-chapala">Chapala<small>lake level</small></button>
+  </div>
+  <div class="body" id="p-story" role="tabpanel" aria-labelledby="t-story">
+    <p>Guadalajara drinks from Lake Chapala and dumps its wastewater into the Río Santiago, which leaves the same lake. Follow the water from the Lerma to the Pacific.</p>
+    <div class="story" id="story"></div>
+    <button type="button" class="next" id="to-facts">Key facts</button>
+  </div>
+  <div class="body" id="p-facts" role="tabpanel" aria-labelledby="t-facts" hidden>
+    <p>What studies, inspections and human-rights bodies have found. Click a fact to see where it happened.</p>
+    <ul class="facts" id="facts"></ul>
+  </div>
+  <div class="body" id="p-layers" role="tabpanel" aria-labelledby="t-layers" hidden>
+    <div id="layerlist"></div>
+    <p class="credit" id="credits"></p>
+  </div>
+  <div class="body" id="p-chapala" role="tabpanel" aria-labelledby="t-chapala" hidden>
+    <div id="chapala"></div>
+  </div>
+</aside>
+<aside class="info" id="info" aria-label="Details of the selected place" hidden><button type="button" class="x" id="info-x" aria-label="Close details">×</button><div id="info-body"></div></aside>
+<button type="button" class="air-btn" id="air-btn" aria-pressed="false" aria-controls="air">Air pollution over time</button>
+<section class="air" id="air" aria-label="Air pollution over time" hidden>
+  <div class="row"><select id="air-ds" aria-label="Pollutant"></select></div>
+  <div class="row"><button type="button" class="play" id="air-play" aria-label="Play">▶</button><input type="range" id="air-t" aria-label="Date"><span class="date" id="air-date"></span></div>
+  <div class="legend"><div class="ramp" id="air-ramp"></div><div class="ends"><span id="air-lo"></span><span id="air-hi"></span></div></div>
+  <p id="air-note"></p>
+</section>
+<div class="stamp" id="stamp">Click any river, point or area for details and sources.</div>
+
+<script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js" crossorigin="anonymous"></script><script>
+const D = 'data/';
+const COLORS = Object.fromEntries(['river','santiago','lerma','urban','supply','wet','industry','ok','warn','bad'].map(k => [k, getComputedStyle(document.documentElement).getPropertyValue('--' + k).trim()]));
+
+const map = new maplibregl.Map({
+  container: 'map',
+  style: { version: 8, glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+    sources: {
+      sat: { type: 'raster', tileSize: 256, maxzoom: 19, attribution: 'Imagery © Esri, Maxar, Earthstar Geographics',
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'] },
+      // topography: AWS Terrain Tiles (Terrarium encoding, public, no key)
+      dem: { type: 'raster-dem', encoding: 'terrarium', tileSize: 256, maxzoom: 14, attribution: 'Terrain: AWS Terrain Tiles (SRTM, GMTED, INEGI and others)',
+        tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'] },
+      dem3d: { type: 'raster-dem', encoding: 'terrarium', tileSize: 256, maxzoom: 14,
+        tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'] },
+      ref: { type: 'raster', tileSize: 256, maxzoom: 19,
+        tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}'] }
+    },
+    layers: [{ id: 'sat', type: 'raster', source: 'sat', paint: { 'raster-saturation': -0.25, 'raster-brightness-max': 0.85 } },
+             { id: 'hillshade', type: 'hillshade', source: 'dem', paint: { 'hillshade-exaggeration': 0.45, 'hillshade-shadow-color': '#000000', 'hillshade-highlight-color': '#ffffff', 'hillshade-accent-color': '#2b2b2b', 'hillshade-illumination-direction': 315 } },
+             { id: 'ref', type: 'raster', source: 'ref', layout: { visibility: 'none' } }] },
+  center: [-103.35, 20.67], zoom: 7, maxZoom: 18, maxPitch: 85, attributionControl: { compact: true }
+});
+map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
+// 3D movement pad: tilt, rotate and move forward/back/sideways in the direction you are looking
+class MovePad {
+  onAdd(m) {
+    const B = [['tilt-up', '⤒', 'Tilt up (look toward the horizon)', () => m.easeTo({ pitch: Math.min(85, m.getPitch() + 15), duration: 400 })],
+      ['tilt-down', '⤓', 'Tilt down (look straight down)', () => m.easeTo({ pitch: Math.max(0, m.getPitch() - 15), duration: 400 })],
+      ['rot-l', '⟲', 'Rotate left', () => m.easeTo({ bearing: m.getBearing() - 30, duration: 400 })],
+      ['rot-r', '⟳', 'Rotate right', () => m.easeTo({ bearing: m.getBearing() + 30, duration: 400 })],
+      ['fwd', '▲', 'Move forward', () => step(0)], ['back', '▼', 'Move back', () => step(180)],
+      ['left', '◀', 'Move left', () => step(-90)], ['right', '▶', 'Move right', () => step(90)]];
+    // move a quarter of the screen in the direction relative to where the camera faces
+    const step = dir => { const a = (dir) * Math.PI / 180, d = Math.min(m.getCanvas().clientWidth, m.getCanvas().clientHeight) / 4; m.panBy([Math.sin(a) * d, -Math.cos(a) * d], { duration: 400 }); };
+    this.el = document.createElement('div'); this.el.className = 'maplibregl-ctrl maplibregl-ctrl-group movepad';
+    this.el.setAttribute('role', 'group'); this.el.setAttribute('aria-label', '3D movement');
+    for (const [id, t, label, fn] of B) { const b = document.createElement('button'); b.type = 'button'; b.className = 'mp-' + id; b.textContent = t; b.title = label; b.setAttribute('aria-label', label); b.addEventListener('click', fn); this.el.appendChild(b); }
+    return this.el;
+  }
+  onRemove() { this.el.remove(); }
+}
+// one click back out to the whole state
+class HomeBtn {
+  onAdd() {
+    this.el = document.createElement('div'); this.el.className = 'maplibregl-ctrl maplibregl-ctrl-group home-ctrl';
+    const b = document.createElement('button'); b.type = 'button'; b.title = 'Zoom out to all of Jalisco'; b.setAttribute('aria-label', 'Zoom out to all of Jalisco');
+    b.innerHTML = '<span aria-hidden="true">⤢</span><small>Jalisco</small>';
+    b.addEventListener('click', () => { closeInfo(); if (factPin) factPin.remove(); homeView(true); });
+    this.el.appendChild(b); return this.el;
+  }
+  onRemove() { this.el.remove(); }
+}
+map.addControl(new HomeBtn(), 'top-right');
+map.addControl(new MovePad(), 'top-right');
+map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-right');
+
+const get = f => fetch(D + f).then(r => r.ok ? r.json() : null).catch(() => null);
+let INFO = null;
+
+/* ---------- layer catalogue ---------- */
+// each entry: id, group, label, sub, swatch {cls, color}, on, mapLayers (ids to toggle)
+const CAT = [];
+function def(o) { CAT.push(o); }
+
+function addPoints(id, data, color, opts = {}) {
+  map.addSource(id, { type: 'geojson', data });
+  map.addLayer({ id, type: 'circle', source: id, paint: {
+    'circle-radius': opts.radius || ['interpolate', ['linear'], ['zoom'], 7, 3.5, 12, 7],
+    'circle-color': color, 'circle-stroke-color': opts.stroke || '#fff', 'circle-stroke-width': 1.5 } });
+  clickable(id);
+}
+const CLICK = [];
+map.on('click', e => {
+  const layers = CLICK.filter(l => map.getLayer(l) && map.getLayoutProperty(l, 'visibility') !== 'none');
+  const box = [[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]];
+  const f = map.queryRenderedFeatures(box, { layers })[0];
+  if (f) popup(e.lngLat, f.properties); else closeInfo();
+});
+function clickable(id) {
+  CLICK.push(id);
+  map.on('mouseenter', id, () => map.getCanvas().style.cursor = 'pointer');
+  map.on('mouseleave', id, () => map.getCanvas().style.cursor = '');
+}
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const parse = v => { if (typeof v !== 'string') return v; try { return JSON.parse(v); } catch { return v; } };
+function popup(lngLat, p) {
+  const rows = parse(p.rows) || [], src = parse(p.src) || [];
+  const tag = p.semaforo ? `<span class="tag ${esc(p.semaforo)}">${esc(p.semaforo)}</span>` : '';
+  const html = `<div class="pop"><div class="k">${esc(p.kind || '')}</div><h4>${esc(p.name)}</h4>${tag}
+    ${p.desc ? `<p>${esc(p.desc)}</p>` : ''}
+    ${rows.length ? `<div class="scroll"><table>${rows.map(r => `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td></tr>`).join('')}</table></div>` : ''}
+    ${src.length ? `<div class="links">${src.map(u => /^https?:/.test(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 70))}</a>` : esc(u)).join('<br>')}</div>` : ''}</div>`;
+  document.getElementById('info-body').innerHTML = html;
+  const box = document.getElementById('info'); box.hidden = false; box.scrollTop = 0;
+  if (!infoRing) { const el = document.createElement('div'); el.className = 'info-ring'; infoRing = new maplibregl.Marker({ element: el }); }
+  infoRing.setLngLat(lngLat).addTo(map);
+}
+let infoRing = null;
+function closeInfo() { document.getElementById('info').hidden = true; if (infoRing) infoRing.remove(); }
+document.getElementById('info-x').addEventListener('click', closeInfo);
+addEventListener('keydown', e => { if (e.key === 'Escape') closeInfo(); });
+
+// start downloading the data right away, while the base map loads
+const DATA = Promise.all(['municipios.geojson', 'rivers.geojson', 'cuencas.geojson', 'points.geojson', 'lines.geojson', 'polys.geojson', 'info.json', 'states.geojson', 'mx_rivers.geojson', 'buried.geojson'].map(get));
+map.on('load', async () => {
+  const [muni, rivers, cuencas, pts, lines, polys, info, states, mxr, buried] = await DATA;
+  INFO = info || {};
+  const byLayer = (fc, layer) => ({ type: 'FeatureCollection', features: (fc?.features || []).filter(f => f.properties.layer === layer) });
+
+  /* water regions */
+  if (cuencas) {
+    map.addSource('cuencas', { type: 'geojson', data: cuencas });
+    map.addLayer({ id: 'cuencas-fill', type: 'fill', source: 'cuencas', paint: { 'fill-color': ['match', ['get', 'status'], 'deficit', '#d7191c', 'available', '#2c7bb6', '#999'], 'fill-opacity': 0.14 } });
+    map.addLayer({ id: 'cuencas-line', type: 'line', source: 'cuencas', paint: { 'line-color': '#ffffff', 'line-width': 2.2, 'line-dasharray': [3, 2], 'line-opacity': .85 } });
+    map.addLayer({ id: 'cuencas-label', type: 'symbol', source: 'cuencas', minzoom: 7.5, layout: { 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-size': 11, 'text-transform': 'uppercase', 'text-letter-spacing': .05 }, paint: { 'text-color': '#fff', 'text-halo-color': '#000', 'text-halo-width': 1.4 } });
+    clickable('cuencas-fill');
+    def({ id: 'cuencas', group: 'Water regions', label: 'Watersheds (CONAGUA, DOF)', sub: 'red tint = water deficit', sw: ['poly', '#fff'], on: false, layers: ['cuencas-fill', 'cuencas-line', 'cuencas-label'] });
+  }
+  const aqf = byLayer(polys, 'aquifer');
+  if (aqf.features.length) {
+    map.addSource('aquifers', { type: 'geojson', data: aqf });
+    map.addLayer({ id: 'aquifers', type: 'circle', source: 'aquifers', paint: { 'circle-radius': 9, 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': '#9be7ff', 'circle-stroke-width': 2.5 } });
+    clickable('aquifers');
+  }
+
+  /* municipalities */
+  if (muni) {
+    map.addSource('muni', { type: 'geojson', data: muni });
+    map.addLayer({ id: 'muni-fill', type: 'fill', source: 'muni', paint: { 'fill-color': ['case', ['get', 'zmg'], '#ffffff', '#000000'], 'fill-opacity': ['case', ['get', 'zmg'], 0.07, 0.0] } });
+    map.addLayer({ id: 'muni-line', type: 'line', source: 'muni', paint: { 'line-color': '#ffffff', 'line-opacity': ['case', ['get', 'zmg'], 0.95, 0.5], 'line-width': ['case', ['get', 'zmg'], 1.6, 0.8] } });
+    const lab = { type: 'FeatureCollection', features: muni.features.map(f => { const rings = f.geometry.type === 'Polygon' ? [f.geometry.coordinates[0]] : f.geometry.coordinates.map(p => p[0]); const r = rings.sort((a, b) => b.length - a.length)[0]; let sx = 0, sy = 0; r.forEach(p => { sx += p[0]; sy += p[1]; }); return { type: 'Feature', properties: { NOMGEO: f.properties.NOMGEO }, geometry: { type: 'Point', coordinates: [sx / r.length, sy / r.length] } }; }) };
+    map.addSource('muni-lab', { type: 'geojson', data: lab });
+    map.addLayer({ id: 'muni-label', type: 'symbol', source: 'muni-lab', minzoom: 8.6, layout: { 'text-field': ['get', 'NOMGEO'], 'text-font': ['Open Sans Semibold'], 'text-size': ['interpolate', ['linear'], ['zoom'], 9, 10, 12, 13], 'symbol-placement': 'point' }, paint: { 'text-color': '#fff', 'text-halo-color': 'rgba(0,0,0,.85)', 'text-halo-width': 1.3 } });
+    clickable('muni-fill');
+    def({ id: 'muni', group: 'Water regions', label: 'Municipal limits (INEGI 2022)', sub: 'Metro Guadalajara shaded', sw: ['poly', '#ddd'], on: true, layers: ['muni-fill', 'muni-line', 'muni-label'] });
+  }
+  /* states of Mexico, Jalisco highlighted */
+  if (states) {
+    map.addSource('states', { type: 'geojson', data: states });
+    map.addLayer({ id: 'states-line', type: 'line', source: 'states', filter: ['!', ['get', 'jalisco']], paint: { 'line-color': '#ffffff', 'line-opacity': .7, 'line-width': 1.2 } });
+    map.addLayer({ id: 'jalisco-glow', type: 'line', source: 'states', filter: ['get', 'jalisco'], paint: { 'line-color': '#000', 'line-opacity': .5, 'line-width': 7, 'line-blur': 3 } });
+    map.addLayer({ id: 'jalisco-line', type: 'line', source: 'states', filter: ['get', 'jalisco'], paint: { 'line-color': COLORS.urban, 'line-width': 3 } });
+    const lab = { type: 'FeatureCollection', features: states.features.map(f => { const r = (f.geometry.type === 'Polygon' ? [f.geometry.coordinates[0]] : f.geometry.coordinates.map(p => p[0])).sort((a, b) => b.length - a.length)[0];
+      const xs = r.map(p => p[0]), ys = r.map(p => p[1]); return { type: 'Feature', properties: f.properties, geometry: { type: 'Point', coordinates: [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2] } }; }) };
+    lab.features.find(f => f.properties.jalisco).geometry.coordinates = [-103.9, 20.15];
+    map.addSource('states-lab', { type: 'geojson', data: lab });
+    map.addLayer({ id: 'states-label', type: 'symbol', source: 'states-lab', maxzoom: 8.6, layout: { 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-transform': 'uppercase', 'text-letter-spacing': .12,
+      'text-size': ['case', ['get', 'jalisco'], 17, 12] }, paint: { 'text-color': ['case', ['get', 'jalisco'], COLORS.urban, '#ffffff'], 'text-halo-color': '#000', 'text-halo-width': 1.6 } });
+    def({ id: 'states', group: 'Water regions', label: 'States of Mexico', sub: 'Jalisco outlined in yellow · Natural Earth', sw: ['poly', COLORS.urban], on: true, keep: true, layers: ['states-line', 'jalisco-glow', 'jalisco-line', 'states-label'] });
+  }
+  if (aqf.features.length) def({ id: 'aquifers', group: 'Water regions', label: 'Aquifers (centroids)', sub: 'availability per DOF', sw: ['dot', 'transparent'], on: false, layers: ['aquifers'] });
+
+  /* Mexico: national rivers (below the detailed local rivers) */
+  if (mxr) {
+    map.addSource('mxr', { type: 'geojson', data: mxr });
+    const w = (a, b) => ['interpolate', ['linear'], ['get', 'rank'], 4, a, 12, b];
+    map.addLayer({ id: 'mxr', type: 'line', source: 'mxr', filter: ['!', ['has', 'lab']], layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#8fd8ff', 'line-opacity': .9,
+      'line-width': ['interpolate', ['linear'], ['zoom'], 4, w(2.5, 1.1), 9, w(4, 2.2)] } });
+    map.addLayer({ id: 'mxr-label', type: 'symbol', source: 'mxr', minzoom: 5, filter: ['has', 'lab'], layout: { 'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 5, w(12, 10), 10, w(14, 12)], 'symbol-spacing': 260, 'text-max-angle': 60, 'text-padding': 1 }, paint: { 'text-color': '#bfe9ff', 'text-halo-color': '#000', 'text-halo-width': 1.5 } });
+    clickable('mxr');
+    def({ id: 'mxr', group: 'Rivers', label: 'Rivers of Mexico (Natural Earth)', sub: `${mxr.features.filter(f => !f.properties.lab).length} named rivers · labels from zoom 5`, sw: ['line', '#8fd8ff'], on: true, keep: true, layers: ['mxr', 'mxr-label'] });
+  }
+
+  /* rivers */
+  if (rivers) {
+    map.addSource('rivers', { type: 'geojson', data: rivers });
+    const col = ['match', ['get', 'cls'], 'santiago', COLORS.santiago, 'lerma', COLORS.lerma, 'urban', COLORS.urban, COLORS.river];
+    map.addLayer({ id: 'rivers-casing', type: 'line', source: 'rivers', layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': '#000', 'line-opacity': .55, 'line-width': ['interpolate', ['linear'], ['zoom'], 6, ['match', ['get', 'cls'], 'santiago', 4, 2.5], 12, ['match', ['get', 'cls'], 'santiago', 8, 5]] } });
+    map.addLayer({ id: 'rivers', type: 'line', source: 'rivers', filter: ['!=', ['get', 'cls'], 'urban'], layout: { 'line-join': 'round', 'line-cap': 'round' }, paint: { 'line-color': col, 'line-width': ['interpolate', ['linear'], ['zoom'], 6, ['match', ['get', 'cls'], 'santiago', 2.4, 1.3], 12, ['match', ['get', 'cls'], 'santiago', 5, 3]] } });
+    map.addLayer({ id: 'rivers-urban', type: 'line', source: 'rivers', filter: ['==', ['get', 'cls'], 'urban'], paint: { 'line-color': COLORS.urban, 'line-width': ['interpolate', ['linear'], ['zoom'], 8, 1.5, 13, 3.5], 'line-dasharray': [2, 1] } });
+    clickable('rivers-urban');
+    map.addLayer({ id: 'rivers-label', type: 'symbol', source: 'rivers', minzoom: 8, layout: { 'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-size': 12, 'symbol-spacing': 420 }, paint: { 'text-color': col, 'text-halo-color': '#000', 'text-halo-width': 1.6 } });
+    clickable('rivers');
+    def({ id: 'rivers', group: 'Rivers', label: 'Rivers (OpenStreetMap)', sub: 'Santiago · Lerma · tributaries · urban streams (dashed)', sw: ['line', COLORS.santiago], on: true, layers: ['rivers-casing', 'rivers', 'rivers-urban', 'rivers-label'] });
+  }
+  /* buried rivers: dashed, under the city */
+  if (buried?.features.length) {
+    map.addSource('buried', { type: 'geojson', data: buried });
+    map.addLayer({ id: 'buried-casing', type: 'line', source: 'buried', layout: { 'line-cap': 'round' }, paint: { 'line-color': '#000', 'line-opacity': .6, 'line-width': ['interpolate', ['linear'], ['zoom'], 10, 3, 15, 7] } });
+    const bw = ['interpolate', ['linear'], ['zoom'], 10, 1.6, 15, 4];
+    map.addLayer({ id: 'buried', type: 'line', source: 'buried', filter: ['!=', ['get', 'how'], 'approx'], paint: { 'line-color': '#7fe3ff', 'line-width': bw, 'line-dasharray': [2, 1.4] } });
+    map.addLayer({ id: 'buried-approx', type: 'line', source: 'buried', filter: ['==', ['get', 'how'], 'approx'], paint: { 'line-color': '#7fe3ff', 'line-width': bw, 'line-dasharray': [0.6, 2.2], 'line-opacity': 0.75 } });
+    map.addLayer({ id: 'buried-label', type: 'symbol', source: 'buried', minzoom: 12, filter: ['!=', ['get', 'how'], 'osm'], layout: { 'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-size': 12 }, paint: { 'text-color': '#bff1ff', 'text-halo-color': '#000', 'text-halo-width': 1.6 } });
+    clickable('buried'); clickable('buried-approx');
+    def({ id: 'buried', group: 'Rivers', label: 'Buried rivers (piped)', sub: 'San Juan de Dios under Calzada Independencia; culverts from OSM · dotted = route approximate', sw: ['dash', '#7fe3ff'], on: true, layers: ['buried-casing', 'buried', 'buried-approx', 'buried-label'] });
+  }
+  const route = byLayer(pts, 'route');
+  if (route.features.length) {
+    addPoints('route', route, '#ffffff', { stroke: '#000', radius: ['interpolate', ['linear'], ['zoom'], 6, 4, 12, 7] });
+    map.addLayer({ id: 'route-label', type: 'symbol', source: 'route', minzoom: 6.5, layout: { 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-size': 11, 'text-offset': [0.8, 0], 'text-anchor': 'left', 'text-optional': true }, paint: { 'text-color': '#fff', 'text-halo-color': '#000', 'text-halo-width': 1.4 } });
+    def({ id: 'route', group: 'Rivers', label: 'Santiago course to the Pacific', sub: 'dams, confluences, mouth', sw: ['dot', '#fff'], on: true, layers: ['route', 'route-label'] });
+  }
+
+  /* pollution */
+  const wq = byLayer(pts, 'wq');
+  if (wq.features.length) {
+    addPoints('wq', wq, ['match', ['get', 'semaforo'], 'ROJO', COLORS.bad, 'AMARILLO', COLORS.warn, 'VERDE', COLORS.ok, '#888']);
+    def({ id: 'wq', group: 'Pollution', label: 'Water quality stations', sub: 'CONAGUA RENAMECA traffic light; CEA 2022', sw: ['dot', COLORS.bad], on: true, layers: ['wq'], legend: [['Red', COLORS.bad], ['Yellow', COLORS.warn], ['Green', COLORS.ok], ['CEA study', '#888']] });
+  }
+  const ind = byLayer(pts, 'industry');
+  if (ind.features.length) {
+    map.addSource('industry', { type: 'geojson', data: ind });
+    map.addLayer({ id: 'industry', type: 'circle', source: 'industry', paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 7, ['+', 3, ['*', 1.2, ['get', 'size']]], 13, ['+', 6, ['*', 2, ['get', 'size']]]],
+      'circle-color': COLORS.industry, 'circle-opacity': .85, 'circle-stroke-color': '#000', 'circle-stroke-width': 1.5 } });
+    clickable('industry');
+    def({ id: 'industry', group: 'Pollution', label: 'Industry releasing to water', sub: 'SEMARNAT RETC 2004–2022, Greenpeace, IMTA; size = reported kg', sw: ['dot', COLORS.industry], on: true, layers: ['industry'] });
+  }
+  const dis = byLayer(pts, 'discharge');
+  if (dis.features.length) {
+    addPoints('discharge', dis, '#8b4513', { stroke: '#ffe14d' });
+    def({ id: 'discharge', group: 'Pollution', label: 'Wastewater plants & outfalls', sub: 'Agua Prieta, El Ahogado, untreated outfalls', sw: ['dot', '#8b4513'], on: true, layers: ['discharge'] });
+  }
+  const hot = byLayer(pts, 'hotspot');
+  if (hot.features.length) {
+    map.addSource('hotspot', { type: 'geojson', data: hot });
+    map.addLayer({ id: 'hotspot', type: 'circle', source: 'hotspot', paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 7, 5, 13, 10], 'circle-color': '#000', 'circle-stroke-color': COLORS.bad, 'circle-stroke-width': 4 } });
+    map.addLayer({ id: 'hotspot-label', type: 'symbol', source: 'hotspot', minzoom: 9.5, layout: { 'text-field': ['get', 'short'], 'text-font': ['Open Sans Semibold'], 'text-size': 11, 'text-offset': [0, 1.3], 'text-anchor': 'top', 'text-optional': true }, paint: { 'text-color': '#fff', 'text-halo-color': COLORS.bad, 'text-halo-width': 1.6 } });
+    clickable('hotspot');
+    def({ id: 'hotspot', group: 'Pollution', label: 'Pollution hotspots', sub: 'Juanacatlán falls, El Ahogado, landfills…', sw: ['ring', COLORS.bad], on: true, layers: ['hotspot', 'hotspot-label'] });
+  }
+
+  /* SIAPA / water infrastructure */
+  const aq = byLayer(lines, 'aqueduct');
+  if (aq.features.length) {
+    map.addSource('aqueduct', { type: 'geojson', data: aq });
+    map.addLayer({ id: 'aqueduct', type: 'line', source: 'aqueduct', layout: { 'line-join': 'round' }, paint: { 'line-color': COLORS.supply, 'line-width': 3.5, 'line-dasharray': [1.2, 0.8], 'line-opacity': ['case', ['get', 'planned'], 0.45, 1] } });
+    clickable('aqueduct');
+    def({ id: 'aqueduct', group: 'Water supply (SIAPA)', label: 'Aqueducts', sub: 'Chapala–GDL, Calderón, El Zapotillo; faint = planned; most routes sketched', sw: ['dash', COLORS.supply], on: true, layers: ['aqueduct'] });
+  }
+  const SUP = [
+    ['potab', 'Drinking-water plants', 'potabilizadoras', COLORS.supply, true],
+    ['source', 'Sources: dams, lake intake, well fields', 'Chapala, Calderón, El Zapotillo…', '#00e5ff', true],
+    ['ptar_small', 'Other wastewater plants', 'SIAPA / CEA small PTARs', '#b5651d', false],
+    ['tank', 'Tanks & cisterns', 'tanques de almacenamiento', '#9fc5ff', false],
+    ['well', 'Wells', 'pozos', '#c9b6ff', false],
+    ['fountain', 'Drinking fountains', 'bebederos', '#ffffff', false],
+    ['pump', 'Pumping stations', 'cárcamos, rebombeo, water works', '#7fffd4', false]];
+  for (const [id, label, sub, color, on] of SUP) {
+    const fc = byLayer(pts, id); if (!fc.features.length) continue;
+    addPoints(id, fc, color, { stroke: '#000', radius: id === 'potab' || id === 'source' ? ['interpolate', ['linear'], ['zoom'], 7, 5, 12, 9] : undefined });
+    def({ id, group: 'Water supply (SIAPA)', label, sub: `${sub} · ${fc.features.length}`, sw: ['dot', color], on, layers: [id] });
+  }
+  const wet = byLayer(polys, 'wetland'), wetp = byLayer(pts, 'wetland');
+  if (wet.features.length || wetp.features.length) {
+    map.addSource('wetland-poly', { type: 'geojson', data: wet });
+    map.addLayer({ id: 'wetland-fill', type: 'fill', source: 'wetland-poly', paint: { 'fill-color': COLORS.wet, 'fill-opacity': .3 } });
+    map.addLayer({ id: 'wetland-line', type: 'line', source: 'wetland-poly', paint: { 'line-color': COLORS.wet, 'line-width': 2 } });
+    clickable('wetland-fill');
+    addPoints('wetland-pt', wetp, COLORS.wet, { stroke: '#000' });
+    def({ id: 'wetland', group: 'Water supply (SIAPA)', label: 'Wetlands (humedales)', sub: 'Ramsar sites, lagoons, built wetlands', sw: ['poly', COLORS.wet], on: true, layers: ['wetland-fill', 'wetland-line', 'wetland-pt'] });
+  }
+
+  /* Barranca de Huentitán */
+  const hu = byLayer(polys, 'huentitan'), hup = byLayer(pts, 'huentitan');
+  if (hu.features.length || hup.features.length) {
+    map.addSource('hu', { type: 'geojson', data: hu });
+    map.addLayer({ id: 'hu-fill', type: 'fill', source: 'hu', paint: { 'fill-color': '#7cff4f', 'fill-opacity': .16 } });
+    map.addLayer({ id: 'hu-line', type: 'line', source: 'hu', paint: { 'line-color': '#7cff4f', 'line-width': 2.5 } });
+    clickable('hu-fill');
+    addPoints('hu-pt', hup, '#7cff4f', { stroke: '#000' });
+    map.addLayer({ id: 'hu-label', type: 'symbol', source: 'hu-pt', minzoom: 11, layout: { 'text-field': ['get', 'name'], 'text-font': ['Open Sans Semibold'], 'text-size': 11, 'text-offset': [0.8, 0], 'text-anchor': 'left', 'text-optional': true }, paint: { 'text-color': '#fff', 'text-halo-color': '#000', 'text-halo-width': 1.4 } });
+    def({ id: 'hu', group: 'Barranca de Huentitán', label: 'Barranca del Río Santiago', sub: 'protected area, viewpoints, Arcediano', sw: ['poly', '#7cff4f'], on: true, layers: ['hu-fill', 'hu-line', 'hu-pt', 'hu-label'] });
+  }
+  def({ id: 'relief', group: 'Base map', label: 'Topography: relief shading', sub: 'mountains, canyons and valleys shaded from elevation data', sw: ['sat', ''], on: true, keep: true, layers: ['hillshade'] });
+  def({ id: 'terrain3d', group: 'Base map', label: 'Topography: 3D terrain', sub: 'tilts the map; drag with right mouse or two fingers to rotate', sw: ['sat', ''], on: false, keep: true, layers: [],
+    toggle: on => { map.setTerrain(on ? { source: 'dem3d', exaggeration: 1.6 } : null);
+      const tilt = () => map.easeTo({ pitch: on ? Math.max(map.getPitch(), 60) : 0, duration: 1000 });
+      // wait until the terrain tiles have loaded; tilting before that can crash MapLibre 5.6
+      let n = 0; const wait = () => (map.isSourceLoaded('dem3d') || ++n > 30) ? tilt() : setTimeout(wait, 300); wait(); } });
+  def({ id: 'ref', group: 'Base map', label: 'Place names & borders', sub: 'Esri reference overlay', sw: ['sat', ''], on: false, layers: ['ref'] });
+
+  // keep point layers on top of polygons
+  ['mxr', 'rivers-casing', 'rivers', 'rivers-urban', 'buried-casing', 'buried', 'buried-approx', 'mxr-label', 'rivers-label', 'buried-label'].forEach(l => map.getLayer(l) && map.moveLayer(l));
+  ['aqueduct', 'route', 'route-label', 'wq', 'discharge', 'industry', 'hotspot', 'hotspot-label', 'potab', 'source', 'hu-pt', 'hu-label', 'wetland-pt'].forEach(l => map.getLayer(l) && map.moveLayer(l));
+
+  buildLayerList(); buildStory(); buildChapala(); buildFacts(); homeView(false);
+  document.getElementById('credits').textContent = INFO.credits || '';
+});
+
+function setVis(entry, on) { const was = entry.on; entry.on = on; if (entry.toggle && was !== on) entry.toggle(on); entry.layers.forEach(l => map.getLayer(l) && map.setLayoutProperty(l, 'visibility', on ? 'visible' : 'none')); const cb = document.getElementById('cb-' + entry.id); if (cb) cb.checked = on; }
+function buildLayerList() {
+  const box = document.getElementById('layerlist'); const groups = {};
+  for (const e of CAT) (groups[e.group] ||= []).push(e);
+  box.innerHTML = Object.entries(groups).map(([g, es]) => `<div class="group"><h3>${esc(g)}</h3>${es.map(e => `
+    <label class="layer" for="cb-${e.id}"><input type="checkbox" id="cb-${e.id}" ${e.on ? 'checked' : ''}>
+    <span class="sw ${e.sw[0]}" style="${e.sw[0] === 'line' || e.sw[0] === 'dash' ? 'border-top-color' : e.sw[0] === 'poly' || e.sw[0] === 'ring' ? 'border-color' : 'background'}:${e.sw[1]}"></span>
+    <span>${esc(e.label)}<small>${esc(e.sub || '')}</small>${e.legend ? `<span class="chips">${e.legend.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join('')}</span>` : ''}</span></label>`).join('')}</div>`).join('');
+  for (const e of CAT) { setVis(e, e.on); document.getElementById('cb-' + e.id).addEventListener('change', ev => setVis(e, ev.target.checked)); }
+}
+
+/* ---------- story ---------- */
+function buildStory() {
+  const box = document.getElementById('story'); const st = INFO.story || [];
+  box.innerHTML = st.map((c, i) => `<div class="chap" id="chap-${i}"><button type="button" data-i="${i}"><b>${i + 1}/${st.length}</b>${esc(c.title)}</button>
+    <div class="txt"><div class="pager">${i ? `<button type="button" data-i="${i - 1}">← Previous</button>` : ''}${i < st.length - 1 ? `<button type="button" data-i="${i + 1}">Next →</button>` : '<button type="button" data-facts="1">Key facts →</button>'}</div>
+      ${c.text.map(t => `<p>${esc(t)}</p>`).join('')}${c.src ? `<p class="src">${esc(c.src)}</p>` : ''}</div></div>`).join('');
+  box.querySelectorAll('button[data-i]').forEach(b => b.addEventListener('click', () => goChap(+b.dataset.i)));
+  box.querySelectorAll('button[data-facts]').forEach(b => b.addEventListener('click', () => { showTab('t-facts'); goFact(0); }));
+}
+// opening view: all of Jalisco, with Guadalajara in the middle of the visible map
+const JALISCO = [[-105.75, 18.9], [-101.45, 22.8]];
+// bring an item's title to the top of its scrolling panel (without scrolling the page)
+function panelScrollTo(el) { const box = el.closest('.body'); box.scrollTo({ top: box.scrollTop + el.getBoundingClientRect().top - box.getBoundingClientRect().top - 8, behavior: 'smooth' }); }
+function homeView(animate) {
+  const narrow = innerWidth < 760;
+  map.fitBounds(JALISCO, { bearing: 0, pitch: tilted(0), padding: narrow ? { top: 20, left: 20, right: 20, bottom: innerHeight * 0.55 + 20 } : { top: 40, bottom: 40, right: 60, left: 440 }, duration: animate ? 1800 : 0 });
+}
+function goChap(i, first) {
+  const c = INFO.story[i]; closeInfo();
+  document.querySelectorAll('.chap').forEach((el, k) => el.toggleAttribute('aria-current', k === i) || (k === i && el.setAttribute('aria-current', 'step')));
+  document.querySelectorAll('.chap').forEach((el, k) => k === i ? el.setAttribute('aria-current', 'step') : el.removeAttribute('aria-current'));
+  if (!first) panelScrollTo(document.getElementById('chap-' + i));
+  if (c.layers) for (const e of CAT) if (e.id !== 'muni' && e.id !== 'ref' && !e.keep) setVis(e, c.layers.includes(e.id));
+  const narrow = innerWidth < 760;
+  const opts = { center: c.center, zoom: c.zoom - (narrow ? 0.8 : 0), padding: narrow ? { bottom: innerHeight * 0.5 } : { left: 420 }, pitch: tilted(c.pitch), bearing: c.bearing || 0, duration: first ? 0 : 2200, essential: true };
+  first ? map.jumpTo(opts) : map.flyTo(opts);
+  document.getElementById('stamp').textContent = c.stamp || 'Click any river, point or area for details and sources.';
+}
+function buildFacts() {
+  const F = INFO.facts || [];
+  document.querySelector('#t-facts small').textContent = F.length + ' facts';
+  document.getElementById('facts').innerHTML = F.map((f, i) => `<li id="fact-${i}"><button type="button" data-i="${i}"><b>${i + 1}/${F.length} · ${esc(f.year)}</b><span>${esc(f.title || f.fact.slice(0, 60))}</span></button>
+    <div class="txt"><div class="pager">${i ? `<button type="button" data-i="${i - 1}">← Previous</button>` : ''}${i < F.length - 1 ? `<button type="button" data-i="${i + 1}">Next →</button>` : ''}</div>
+      <p class="place">📍 ${esc(f.place || '')}</p>
+      ${f.img ? `<figure><img src="${esc(f.img)}" alt="${esc(f.img_alt || f.title || '')}" loading="lazy"><figcaption>${esc(f.img_credit || '')}${f.img_page ? ` <a href="${esc(f.img_page)}" target="_blank" rel="noopener">Photo page</a>` : ''}</figcaption></figure>` : ''}
+      <p>${esc(f.fact)}</p><a class="src" href="${esc(f.source)}" target="_blank" rel="noopener">Source: ${esc(new URL(f.source).hostname.replace(/^www[.]/, ''))}</a></div></li>`).join('');
+  document.getElementById('facts').querySelectorAll('button[data-i]').forEach(b => b.addEventListener('click', () => goFact(+b.dataset.i)));
+}
+let factPin = null;
+// keep the view tilted while 3D terrain is on
+const tilted = p => map.getTerrain() ? Math.max(p || 0, 55) : (p || 0);
+function goFact(i) {
+  const f = INFO.facts[i]; closeInfo();
+  document.querySelectorAll('.facts li').forEach((el, k) => k === i ? el.setAttribute('aria-current', 'true') : el.removeAttribute('aria-current'));
+  panelScrollTo(document.getElementById('fact-' + i));
+  if (f.layers) for (const e of CAT) if (e.id !== 'muni' && e.id !== 'ref' && !e.keep) setVis(e, f.layers.includes(e.id));
+  if (!f.pt) return;
+  const narrow = innerWidth < 760;
+  map.flyTo({ center: f.pt, zoom: f.zoom - (narrow ? 0.8 : 0), padding: narrow ? { bottom: innerHeight * 0.5 } : { left: 420 }, pitch: tilted(0), bearing: 0, duration: 2000, essential: true });
+  if (!factPin) { const el = document.createElement('div'); el.className = 'fact-pin'; el.setAttribute('aria-hidden', 'true'); factPin = new maplibregl.Marker({ element: el }); }
+  // pin only for facts about one place; wide views (corridor, basin) get none
+  if (f.zoom >= 11.5) factPin.setLngLat(f.pt).addTo(map); else factPin.remove();
+  document.getElementById('stamp').textContent = (f.place || '') + ' · ' + f.year;
+}
+/* ---------- air pollution over time (NASA GIBS satellite / reanalysis tiles) ---------- */
+const AIR = {
+  aot: { label: 'Haze, smoke and dust (aerosols) · monthly 1980–2026', layer: 'MERRA2_Total_Aerosol_Optical_Thickness_550nm_Extinction_Monthly', tms: 'GoogleMapsCompatible_Level6',
+    step: 'month', from: '1980-01', to: '2026-09', start: '2026-04', ramp: ['#ffffe5', '#fec654', '#f88c22', '#d65808', '#662506'], lo: 'clear air', hi: 'thick haze',
+    note: 'How much sunlight is blocked by particles in the air (aerosol optical thickness, 550 nm). Spring peaks are smoke from fires and dry-season dust. NASA MERRA-2 reanalysis, about 50 km per pixel.' },
+  co: { label: 'Carbon monoxide near the ground · monthly 2000–2024', layer: 'MOPITT_CO_Monthly_Surface_Mixing_Ratio_Day', tms: 'GoogleMapsCompatible_Level6',
+    step: 'month', from: '2000-04', to: '2024-11', start: '2024-04', ramp: ['#4040ff', '#a0a0ff', '#ffffff', '#ffa0a0', '#ff2020'], lo: 'less', hi: 'more',
+    note: 'Carbon monoxide from traffic, industry and burning. NASA Terra MOPITT satellite, monthly daytime average, about 100 km per pixel.' },
+  no2: { label: 'Nitrogen dioxide (traffic and industry) · daily 2018–2026', layer: 'TROPOMI_L2_Nitrogen_Dioxide_Tropospheric_Column', tms: 'GoogleMapsCompatible_Level6',
+    step: 'day', from: '2018-05-06', to: '2026-11-13', start: '2026-04-15', ramp: ['#ffffa0', '#ffe080', '#ffc040', '#ff8020', '#800000'], lo: 'less', hi: 'more',
+    note: 'NO₂ from engines and factories, one satellite pass a day (ESA Sentinel-5P TROPOMI via NASA). Clouds leave gaps on some days; the play button jumps a week at a time.' }
+};
+const airDates = ds => {
+  const out = [];
+  if (ds.step === 'month') {
+    let [y, m] = ds.from.split('-').map(Number); const [y1, m1] = ds.to.split('-').map(Number);
+    while (y < y1 || (y === y1 && m <= m1)) { out.push(`${y}-${String(m).padStart(2, '0')}-01`); if (++m > 12) { m = 1; y++; } }
+  } else {
+    for (let d = new Date(ds.from + 'T00:00Z'), e = new Date(ds.to + 'T00:00Z'); d <= e; d.setUTCDate(d.getUTCDate() + 1)) out.push(d.toISOString().slice(0, 10));
+  }
+  return out;
+};
+const airUrl = (ds, t) => `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/${ds.layer}/default/${t}/${ds.tms}/{z}/{y}/{x}.png`;
+let airDs = null, airList = [], airTimer = null;
+function airSet(i) {
+  const t = airList[i]; document.getElementById('air-t').value = i;
+  document.getElementById('air-date').textContent = airDs.step === 'month' ? new Date(t + 'T00:00Z').toLocaleDateString('en', { month: 'short', year: 'numeric', timeZone: 'UTC' }) : t;
+  const src = map.getSource('air');
+  if (src) src.setTiles([airUrl(airDs, t)]);
+  else {
+    map.addSource('air', { type: 'raster', tiles: [airUrl(airDs, t)], tileSize: 256, maxzoom: 6, attribution: 'Air quality: NASA GIBS / Worldview (MERRA-2, MOPITT, Sentinel-5P TROPOMI)' });
+    map.addLayer({ id: 'air', type: 'raster', source: 'air', paint: { 'raster-opacity': 0.7, 'raster-resampling': 'linear', 'raster-fade-duration': 0 } }, 'ref');
+  }
+}
+function airPick(key) {
+  airDs = AIR[key]; airList = airDates(airDs);
+  const r = document.getElementById('air-t'); r.min = 0; r.max = airList.length - 1;
+  document.getElementById('air-ramp').style.background = airDs.ramp ? `linear-gradient(90deg,${airDs.ramp.join(',')})` : 'linear-gradient(90deg,#2b0a57,#3b5fd9,#2fb5c9,#a5e05a,#ffe14d,#ff7f1f,#d7191c)';
+  document.getElementById('air-lo').textContent = airDs.lo; document.getElementById('air-hi').textContent = airDs.hi;
+  document.getElementById('air-note').textContent = airDs.note;
+  const s = airList.findIndex(t => t.startsWith(airDs.start)); airSet(s < 0 ? airList.length - 1 : s);
+}
+function airStop() { clearInterval(airTimer); airTimer = null; const b = document.getElementById('air-play'); b.textContent = '▶'; b.setAttribute('aria-label', 'Play'); }
+(function airInit() {
+  const sel = document.getElementById('air-ds');
+  sel.innerHTML = Object.entries(AIR).map(([k, d]) => `<option value="${k}">${esc(d.label)}</option>`).join('');
+  sel.addEventListener('change', () => { airStop(); airPick(sel.value); });
+  document.getElementById('air-t').addEventListener('input', e => { airStop(); airSet(+e.target.value); });
+  document.getElementById('air-play').addEventListener('click', e => {
+    if (airTimer) return airStop();
+    e.currentTarget.textContent = '❚❚'; e.currentTarget.setAttribute('aria-label', 'Pause');
+    const jump = airDs.step === 'day' ? 7 : 1;
+    airTimer = setInterval(() => { const i = +document.getElementById('air-t').value + jump; airSet(i >= airList.length ? 0 : i); }, 900);
+  });
+  document.getElementById('air-btn').addEventListener('click', e => {
+    if (!map.isStyleLoaded() && !map.getLayer('ref')) return;
+    const on = e.currentTarget.getAttribute('aria-pressed') !== 'true';
+    e.currentTarget.setAttribute('aria-pressed', on); document.getElementById('air').hidden = !on;
+    if (on) { if (!airDs) airPick('aot'); else map.setLayoutProperty('air', 'visibility', 'visible'); if (map.getZoom() > 8) homeView(true); }
+    else { airStop(); if (map.getLayer('air')) map.setLayoutProperty('air', 'visibility', 'none'); }
+  });
+})();
+function showTab(id) { document.getElementById(id).click(); }
+document.getElementById('to-facts').addEventListener('click', () => { showTab('t-facts'); goFact(0); });
+
+/* ---------- Chapala ---------- */
+function buildChapala() {
+  const c = INFO.chapala; const box = document.getElementById('chapala');
+  if (!c) { box.innerHTML = '<p>Chapala data not available.</p>'; return; }
+  const L = c.latest || {};
+  box.innerHTML = `<h2>Lake Chapala</h2><p>${esc(c.intro || '')}</p>
+    <div class="stats">
+      <div><b>${L.cota ?? '–'}</b>gauge level (cota) on ${esc(L.date || '')} · ≈${L.cota ? (L.cota + 1426).toFixed(1) : ''} m a.s.l.</div>
+      <div><b>${L.pct != null ? L.pct + '%' : '–'}</b>of capacity${L.vol != null ? ` · ${L.vol.toLocaleString('en')} hm³` : ''}</div>
+      <div><b>${c.max_cota ?? '–'}</b>maximum ordinary level${c.max_vol ? ` (${c.max_vol.toLocaleString('en')} hm³)` : ''}</div>
+      <div><b>${esc(c.min_label || '–')}</b>${esc(c.min_note || 'historic low')}</div>
+    </div>
+    <div class="chart" id="chap-chart"></div>
+    <p class="mono">${esc(c.series_note || '')}</p>
+    ${(c.notes || []).map(n => `<p>${esc(n)}</p>`).join('')}
+    <p class="src">${(c.sources || []).map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60))}</a>`).join('<br>')}</p>`;
+  drawChart(document.getElementById('chap-chart'), c, L);
+  map.on('click', e => {});
+}
+function drawChart(el, c, L) {
+  const s = c.series || []; if (!s.length) return;
+  const W = 360, H = 220, m = { l: 34, r: 10, t: 14, b: 24 };
+  const all = s.flatMap(d => [d.min, d.max]).filter(v => v != null).concat((c.spots || []).map(d => d.cota), c.max_cota || []);
+  const x0 = s[0].year, x1 = Math.max(s.at(-1).year, 2026.9);
+  const y0 = Math.floor(Math.min(...all) - 0.2), y1 = Math.ceil(Math.max(...all) + 0.1);
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r), Y = v => H - m.b - (v - y0) / (y1 - y0) * (H - m.t - m.b);
+  const line = k => { let p = '', pen = false, prev = null; for (const d of s) { if (d[k] == null || (prev != null && d.year - prev > 1)) pen = false; if (d[k] != null) { p += (pen ? 'L' : 'M') + X(d.year + (k === 'max' ? .8 : .4)).toFixed(1) + ',' + Y(d[k]).toFixed(1); pen = true; prev = d.year; } } return p; };
+  const band = s.filter(d => d.min != null && d.max != null);
+  let g = '';
+  for (let v = y0; v <= y1; v++) g += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="#e3e3e3"/><text x="${m.l - 4}" y="${Y(v) + 3}" text-anchor="end">${v}</text>`;
+  for (let v = Math.ceil(x0 / 20) * 20; v <= x1; v += 20) g += `<text x="${X(v)}" y="${H - 8}" text-anchor="middle">${v}</text>`;
+  const lo = s.filter(d => d.min != null).reduce((a, b) => b.min < a.min ? b : a);
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Lake Chapala yearly minimum and maximum level, 1900 to 2026">${g}
+    <line x1="${m.l}" x2="${W - m.r}" y1="${Y(c.max_cota)}" y2="${Y(c.max_cota)}" stroke="#000" stroke-dasharray="4 3"/><text x="${m.l + 4}" y="${Y(c.max_cota) - 4}">max ordinary ${c.max_cota}</text>
+    <path d="${line('max')}" fill="none" stroke="#2f7bff" stroke-width="1.4"/>
+    <path d="${line('min')}" fill="none" stroke="#000" stroke-width="1.6"/>
+    ${(c.spots || []).map(d => `<circle cx="${X(d.year)}" cy="${Y(d.cota)}" r="2.5" fill="#fff" stroke="#000"/>`).join('')}
+    <circle cx="${X(lo.year)}" cy="${Y(lo.min)}" r="4" fill="#d7191c"/><text x="${X(lo.year) + 6}" y="${Y(lo.min) + 4}">${lo.year} low ${lo.min}</text>
+    ${L.cota ? `<circle cx="${X(2026.9)}" cy="${Y(L.cota)}" r="4" fill="#2f7bff" stroke="#000"/><text x="${X(2026.9) - 6}" y="${Y(L.cota) + 14}" text-anchor="end">now ${L.cota}</text>` : ''}</svg>
+    <div class="chips"><span><i style="background:#000"></i>dry-season minimum</span><span><i style="background:#2f7bff"></i>rainy-season maximum</span><span><i style="background:#fff"></i>spot reading</span></div>`;
+}
+
+/* ---------- tabs ---------- */
+document.querySelectorAll('[role=tab]').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('[role=tab]').forEach(o => { const on = o === t; o.setAttribute('aria-selected', on); document.getElementById(o.getAttribute('aria-controls')).hidden = !on; });
+  if (t.id !== 't-facts' && factPin) factPin.remove();
+  if (t.id === 't-chapala') map.flyTo({ center: [-103.05, 20.24], zoom: 9.4, pitch: tilted(0), bearing: 0, duration: 1800 });
+}));
+</script>
+</body>
+</html>

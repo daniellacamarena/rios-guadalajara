@@ -1,0 +1,4672 @@
+{
+ "meta": {
+  "title": "Guadalajara (ZMG) water system — research dataset",
+  "generated": "2026-11-23",
+  "coordinate_order": "Points use lat/lon fields; routes and polygons use [lon, lat] arrays (GeoJSON order).",
+  "approx_flag": "approx:true marks positions that are locality centroids or schematic straight lines, not surveyed alignments.",
+  "osm_license": "OpenStreetMap data © OpenStreetMap contributors, ODbL 1.0 (Overpass query 2026-11-24T03:05Z).",
+  "unreachable": [
+   "datos.jalisco.gob.mx (connection failed)",
+   "siapa.gob.mx open data (no coordinates found via search)",
+   "CONAGUA SINA presas API (bot wall)"
+  ]
+ },
+ "potabilizadoras": [
+  {
+   "id": "PP1",
+   "name": "Planta Potabilizadora No. 1 \"Ing. Adolfo Guzmán Méndez\" (Miravalle)",
+   "operator": "SIAPA",
+   "municipality": "Guadalajara",
+   "lat": 20.61298,
+   "lon": -103.35391,
+   "location_note": "OSM way 160694053 (man_made=water_works, operator SIAPA) in colonia Miravalle; identified as PP1 by position — OSM name is only \"SIAPA\".",
+   "capacity_ls": 9000,
+   "capacity_note": "CONAGUA Inventario 2021: capacidad instalada 9,000 l/s, caudal potabilizado 9,000 l/s. Plan Integral del Agua (2026): effective capacity being raised to 7.5 m3/s via reconversion; new 2,000 l/s treatment train due ~April 2027.",
+   "water_source": "Lago de Chapala — via Acueducto Chapala–Guadalajara (1991) and Sistema Antiguo (Río Santiago/Canal de Atequiza/Presa Las Pintas, 1956)",
+   "year_opened": 1956,
+   "notes": "Last expansion 1974; serves >45% of AMG population (~2.1 million people) per PIA an-0021.",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0021.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://www.aztecajalisco.com/programas/nueva-planta-potabilizadora-de-miravalle-preve-iniciar-operaciones-en-abril-de-2027/",
+    "https://www.openstreetmap.org/way/160694053"
+   ]
+  },
+  {
+   "id": "PP2",
+   "name": "Planta Potabilizadora No. 2 \"Ing. David Gutiérrez Carvajal\" (Las Huertas)",
+   "operator": "SIAPA",
+   "municipality": "San Pedro Tlaquepaque",
+   "lat": 20.60911,
+   "lon": -103.30302,
+   "location_note": "OSM way 447249759 named \"Planta Potabilizadora No. 2\" (mis-tagged as wastewater_plant in OSM).",
+   "capacity_ls": 2000,
+   "capacity_note": "CONAGUA Inventario 2021: 2,000 l/s instalada / 2,000 l/s potabilizado.",
+   "water_source": "Lago de Chapala via Acueducto Chapala–Guadalajara",
+   "year_opened": null,
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://www.openstreetmap.org/way/447249759"
+   ]
+  },
+  {
+   "id": "PP3",
+   "name": "Planta Potabilizadora No. 3 \"Ing. Luis Basich Leija\" (San Gaspar)",
+   "operator": "SIAPA",
+   "municipality": "Tonalá",
+   "lat": 20.68931,
+   "lon": -103.24043,
+   "capacity_ls": 3000,
+   "capacity_note": "Design 3.0 m3/s (CONAGUA 2021: 3,000 l/s); effective ~2.3 m3/s per PIA an-0024; planned +3 modules of 1.0 m3/s.",
+   "water_source": "Presa Calderón (Elías González Chávez) + El Salto/La Red/El Zapotillo (Río Verde) system via Acueducto Calderón–San Gaspar",
+   "year_opened": 1991,
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0024.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf",
+    "https://www.openstreetmap.org/way/480762900"
+   ]
+  },
+  {
+   "id": "PP4",
+   "name": "Planta Potabilizadora No. 4 (Toluquilla)",
+   "operator": "SIAPA (recovered by the State by court order, Nov 2026; privately operated since 2012)",
+   "municipality": "San Pedro Tlaquepaque",
+   "lat": 20.5793,
+   "lon": -103.36885,
+   "approx": true,
+   "location_note": "Plant footprint not mapped in OSM; point is the \"Toluquilla\" locality/bus stop on Periférico Sur (Nominatim). Treat as area-level only.",
+   "capacity_ls": 1200,
+   "capacity_note": "CONAGUA Inventario 2021: 1,200 l/s; 2026 press: potential ~1,000 l/s, currently ~200–300 l/s; target 600 l/s after well rehab.",
+   "water_source": "Groundwater — Toluquilla well field (27 wells) / acuífero Toluquilla",
+   "year_opened": null,
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://www.publimetro.com.mx/jalisco/2026/10/28/que-es-la-planta-de-toluquilla-y-como-puede-mejorar-el-agua-en-guadalajara/",
+    "https://www.cronica.com.mx/jalisco/2026/11/08/recuperan-planta-potabilizadora-no-4-de-toluquilla-para-fortalecer-el-suministro-de-agua-en-jalisco/",
+    "https://nominatim.openstreetmap.org/"
+   ]
+  },
+  {
+   "id": "PP5",
+   "name": "Planta Potabilizadora No. 5 \"Los Agaves\" (La Rompedora)",
+   "operator": "CEA Jalisco / SIAPA",
+   "municipality": "Tlajomulco de Zúñiga",
+   "lat": null,
+   "lon": null,
+   "location_note": "No published coordinates found; fed from Presa La Calera (see dams_sources).",
+   "capacity_ls": 500,
+   "capacity_note": "Stage 1: 500 l/s (inaugurated Nov 2024); stage 2 to 1,250 l/s (PIA an-0012); design ultimate 2,500 l/s.",
+   "water_source": "Lago de Chapala water stored in Presa La Calera (Sistema Antiguo)",
+   "year_opened": 2024,
+   "sources": [
+    "https://www.cronica.com.mx/estados/2024/11/26/jalisco-inaugura-la-planta-potabilizadora-los-agaves-en-tlajomulco/",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0012.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0014.pdf"
+   ]
+  },
+  {
+   "id": "TESISTAN",
+   "name": "Potabilizadora Tesistán (well-water plant)",
+   "operator": "SIAPA (recovered 2026)",
+   "municipality": "Zapopan",
+   "lat": null,
+   "lon": null,
+   "location_note": "No coordinates found; Tesistán well field area ~20.80,-103.48.",
+   "capacity_ls": null,
+   "capacity_note": "Press (2026): supply doubled after recovery; capacity not published.",
+   "water_source": "Groundwater — Tesistán well field (47 wells, acuífero Atemajac)",
+   "year_opened": null,
+   "sources": [
+    "https://www.aztecajalisco.com/programas/potabilizadora-de-tesistan-duplica-su-suministro-de-agua-tras-recuperacion/",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf"
+   ]
+  },
+  {
+   "id": "TLAJ-SANPABLO",
+   "name": "Potabilizadora San Pablo",
+   "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga (municipal, not SIAPA)",
+   "municipality": "Tlajomulco de Zúñiga",
+   "lat": 20.55339,
+   "lon": -103.41634,
+   "capacity_ls": null,
+   "water_source": "Local wells",
+   "sources": [
+    "https://www.openstreetmap.org/node/13033113624"
+   ]
+  },
+  {
+   "id": "TLAJ-NARANJOS",
+   "name": "Potabilizadora Los Naranjos",
+   "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga (municipal, not SIAPA)",
+   "municipality": "Tlajomulco de Zúñiga",
+   "lat": 20.53785,
+   "lon": -103.4327,
+   "capacity_ls": null,
+   "water_source": "Local wells",
+   "sources": [
+    "https://www.openstreetmap.org/way/1183589157"
+   ]
+  }
+ ],
+ "ptars": [
+  {
+   "name": "PTAR Agua Prieta",
+   "lat": 20.77131,
+   "lon": -103.33485,
+   "capacity_ls": 8500,
+   "treated_ls_2021": 4479,
+   "operator": "ATLATEC (concession; CEA Jalisco)",
+   "municipality": "Zapopan",
+   "status": "operating (since 2014)",
+   "receiving": "Río Santiago",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://www.openstreetmap.org/way/431595769"
+   ]
+  },
+  {
+   "name": "PTAR El Ahogado",
+   "lat": 20.50646,
+   "lon": -103.2596,
+   "capacity_ls": 2250,
+   "treated_ls_2021": 2257,
+   "operator": "ATLATEC (concession; CEA Jalisco)",
+   "municipality": "Tlajomulco de Zúñiga / El Salto",
+   "status": "operating (since 2012)",
+   "receiving": "Río Santiago (via El Ahogado)",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://www.openstreetmap.org/way/171058366"
+   ]
+  },
+  {
+   "name": "PTAR Río Blanco (SIAPA)",
+   "lat": 20.77365,
+   "lon": -103.43154,
+   "capacity_ls": 150,
+   "treated_ls_2021": 150,
+   "operator": "SIAPA",
+   "municipality": "Zapopan",
+   "status": "operating",
+   "receiving": "Río Blanco",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://www.openstreetmap.org/way/478177397"
+   ]
+  },
+  {
+   "name": "PTAR Chapala",
+   "lat": 20.29033,
+   "lon": -103.18418,
+   "capacity_ls": null,
+   "operator": "CEA Jalisco / municipal",
+   "municipality": "Chapala",
+   "status": "mapped in OSM",
+   "receiving": "Lago de Chapala basin",
+   "sources": [
+    "https://www.openstreetmap.org/way/1284161857"
+   ]
+  },
+  {
+   "name": "PTAR San Juan Tecomatlán",
+   "lat": 20.32684,
+   "lon": -103.09826,
+   "capacity_ls": 4,
+   "treated_ls_2021": 4,
+   "operator": "H. Ayuntamiento",
+   "municipality": "Chapala (CONAGUA 2021 row lists it under Poncitlán; capacity match by name only)",
+   "status": "operating",
+   "receiving": "Lago de Chapala",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf",
+    "https://www.openstreetmap.org/way/1442203091"
+   ]
+  },
+  {
+   "name": "PTAR San Antonio Tlayacapan",
+   "lat": 20.29566,
+   "lon": -103.24577,
+   "capacity_ls": null,
+   "municipality": "Chapala",
+   "status": "mapped in OSM",
+   "receiving": "Lago de Chapala",
+   "sources": [
+    "https://www.openstreetmap.org/way/1442681006"
+   ]
+  },
+  {
+   "name": "PTAR Soyatlán",
+   "lat": 20.19703,
+   "lon": -103.30321,
+   "capacity_ls": null,
+   "municipality": "Tuxcueca",
+   "status": "mapped in OSM",
+   "receiving": "Lago de Chapala",
+   "sources": [
+    "https://www.openstreetmap.org/way/1442694076"
+   ]
+  },
+  {
+   "name": "Planta tratadora Parque Metropolitano",
+   "lat": 20.67998,
+   "lon": -103.44123,
+   "capacity_ls": null,
+   "operator": "OPD Parque Metropolitano",
+   "municipality": "Zapopan",
+   "status": "mapped in OSM (park reuse)",
+   "sources": [
+    "https://www.openstreetmap.org/way/479975051"
+   ]
+  },
+  {
+   "name": "Planta de Tratamiento de agua (SIAPA) — as labelled in OSM",
+   "lat": 20.61773,
+   "lon": -103.34301,
+   "capacity_ls": null,
+   "operator": "SIAPA",
+   "municipality": "Guadalajara",
+   "status": "mapped in OSM; adjacent to PP1 Miravalle — may be the potabilizadora sludge/wash-water unit, unverified",
+   "sources": [
+    "https://www.openstreetmap.org/way/126225963"
+   ]
+  },
+  {
+   "name": "PTAR (Dirección de agua potable y alcantarillado, Zapopan norte)",
+   "lat": 20.82143,
+   "lon": -103.43949,
+   "capacity_ls": null,
+   "municipality": "Zapopan",
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/1205637472"
+   ]
+  },
+  {
+   "name": "Planta de Tratamiento de Aguas Residuales (unnamed, OSM)",
+   "lat": 20.60633,
+   "lon": -103.41901,
+   "capacity_ls": null,
+   "municipality": "Zapopan / Tlaquepaque",
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/243445662"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.67075,
+   "lon": -103.46269,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/node/7599308690"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.67065,
+   "lon": -103.46305,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/node/7599309417"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.66703,
+   "lon": -103.20716,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/611308979"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.65584,
+   "lon": -103.20506,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/702265832"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.53112,
+   "lon": -103.29869,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/837973375"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.57233,
+   "lon": -103.48012,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/869774538"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.66238,
+   "lon": -103.18975,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/880720259"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.79304,
+   "lon": -103.42472,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/1210179751"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.73353,
+   "lon": -103.30664,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/1436726989"
+   ]
+  },
+  {
+   "name": "Wastewater plant (unnamed, OSM)",
+   "lat": 20.64932,
+   "lon": -103.27122,
+   "capacity_ls": null,
+   "status": "mapped in OSM",
+   "sources": [
+    "https://www.openstreetmap.org/way/1573505806"
+   ]
+  },
+  {
+   "name": "PTAR Parque Santiago (planned)",
+   "lat": null,
+   "lon": null,
+   "capacity_ls": 2550,
+   "status": "planned (basic engineering; PIA 2026) — subcuencas San Andrés, Osorio, San Gaspar; NE metro",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0010b.pdf"
+   ]
+  },
+  {
+   "name": "PTAR Tlajomulco de Zúñiga (cabecera)",
+   "lat": null,
+   "lon": null,
+   "capacity_ls": 180,
+   "treated_ls_2021": 180,
+   "status": "operating; discharges to Laguna de Cajititlán",
+   "sources": [
+    "https://www.gob.mx/cms/uploads/attachment/file/759492/Inventario_2021.pdf"
+   ]
+  }
+ ],
+ "aqueducts": [
+  {
+   "name": "Acueducto Chapala–Guadalajara",
+   "status": "operating",
+   "year": 1991,
+   "construction": "1984–1991",
+   "capacity_m3s": 7.5,
+   "capacity_note": "Design 7.5 m3/s; concession 240 hm3/yr = 7.61 m3/s; pumping station (6×1.5 m3/s KSB pumps, 138 m head) cannot deliver design flow; actual Chapala extraction 6.65 m3/s in 2025 (incl. Sistema Antiguo).",
+   "length_km": 42.4,
+   "diameter_m": 2.1,
+   "description": "Pumping station on the north shore of Lake Chapala (km 0, 1526 m) → 26 km rising main to Caja Cambio de Régimen (km 25.9, 1608 m) → gravity to Tanque de Entrega Cerro del Cuatro (km 42.3) → Caja Enlace → PP1 Miravalle (km 48.1); also feeds PP2 Las Huertas.",
+   "route_lonlat": [
+    [
+     -103.14586,
+     20.31666
+    ],
+    [
+     -103.36312,
+     20.59955
+    ],
+    [
+     -103.35391,
+     20.61298
+    ]
+   ],
+   "branches": [
+    {
+     "name": "to PP2 Las Huertas (schematic)",
+     "route_lonlat": [
+      [
+       -103.36312,
+       20.59955
+      ],
+      [
+       -103.30302,
+       20.60911
+      ]
+     ],
+     "approx": true
+    }
+   ],
+   "approx": true,
+   "route_note": "Schematic only: straight segments between known endpoints (OSM-mapped pumping station, Cerro del Cuatro summit from OSM/Nominatim, PP1). The real alignment (incl. the km-26 regime-change tank) is not published as coordinates.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0001.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0015.pdf",
+    "https://www.openstreetmap.org/way/1442033507"
+   ]
+  },
+  {
+   "name": "Sistema Antiguo Chapala–Guadalajara (Río Santiago – Canal de Atequiza – Presa Las Pintas)",
+   "status": "operating",
+   "year": 1956,
+   "capacity_m3s": null,
+   "capacity_note": "Open-channel system; share ~20% of AMG supply (PIA an-0011). Chainage 0+000 Ocotlán → 39+000 Presa Corona → 67+332 PB1 → 93+000 PB2 → 97+568 PP1 Miravalle.",
+   "length_km": 97.6,
+   "description": "Lake water enters Río Santiago at Ocotlán (Planta de Bombeo Ocotlán), flows to Presa derivadora Corona (Poncitlán), then Canal de Atequiza → Presa La Calera / Canal Las Pintas → PB1/PB2 → PP1 Miravalle.",
+   "route_lonlat": [
+    [
+     -102.76881,
+     20.35145
+    ],
+    [
+     -102.92469,
+     20.37929
+    ],
+    [
+     -103.09534,
+     20.39945
+    ],
+    [
+     -103.09652,
+     20.39852
+    ],
+    [
+     -103.1044,
+     20.39726
+    ],
+    [
+     -103.11329,
+     20.39686
+    ],
+    [
+     -103.12164,
+     20.39412
+    ],
+    [
+     -103.13106,
+     20.39496
+    ],
+    [
+     -103.13271,
+     20.39393
+    ],
+    [
+     -103.13401,
+     20.39481
+    ],
+    [
+     -103.13452,
+     20.3965
+    ],
+    [
+     -103.14082,
+     20.39781
+    ],
+    [
+     -103.14303,
+     20.39514
+    ],
+    [
+     -103.14758,
+     20.39705
+    ],
+    [
+     -103.14829,
+     20.39898
+    ],
+    [
+     -103.15335,
+     20.40074
+    ],
+    [
+     -103.15509,
+     20.40393
+    ],
+    [
+     -103.15756,
+     20.40573
+    ],
+    [
+     -103.15838,
+     20.40949
+    ],
+    [
+     -103.1613,
+     20.41146
+    ],
+    [
+     -103.16463,
+     20.40957
+    ],
+    [
+     -103.16516,
+     20.40742
+    ],
+    [
+     -103.16651,
+     20.40698
+    ],
+    [
+     -103.16911,
+     20.40809
+    ],
+    [
+     -103.17034,
+     20.40546
+    ],
+    [
+     -103.17498,
+     20.40806
+    ],
+    [
+     -103.17462,
+     20.40984
+    ],
+    [
+     -103.1722,
+     20.41228
+    ],
+    [
+     -103.17456,
+     20.41473
+    ],
+    [
+     -103.1782,
+     20.41624
+    ],
+    [
+     -103.17882,
+     20.41796
+    ],
+    [
+     -103.17801,
+     20.41866
+    ],
+    [
+     -103.17526,
+     20.41828
+    ],
+    [
+     -103.17203,
+     20.42342
+    ],
+    [
+     -103.17104,
+     20.4254
+    ],
+    [
+     -103.172,
+     20.42867
+    ],
+    [
+     -103.17147,
+     20.43108
+    ],
+    [
+     -103.18438,
+     20.43937
+    ],
+    [
+     -103.18527,
+     20.43907
+    ],
+    [
+     -103.18637,
+     20.43711
+    ],
+    [
+     -103.18921,
+     20.43784
+    ],
+    [
+     -103.18973,
+     20.43304
+    ],
+    [
+     -103.19184,
+     20.43393
+    ],
+    [
+     -103.1933,
+     20.43265
+    ],
+    [
+     -103.19833,
+     20.43201
+    ],
+    [
+     -103.19924,
+     20.43285
+    ],
+    [
+     -103.19964,
+     20.43454
+    ],
+    [
+     -103.19681,
+     20.43613
+    ],
+    [
+     -103.19552,
+     20.43762
+    ],
+    [
+     -103.19506,
+     20.43965
+    ],
+    [
+     -103.19272,
+     20.44358
+    ],
+    [
+     -103.19719,
+     20.45006
+    ],
+    [
+     -103.19862,
+     20.45057
+    ],
+    [
+     -103.20062,
+     20.45029
+    ],
+    [
+     -103.20227,
+     20.44788
+    ],
+    [
+     -103.20579,
+     20.44634
+    ],
+    [
+     -103.20554,
+     20.44872
+    ],
+    [
+     -103.20451,
+     20.45006
+    ],
+    [
+     -103.20466,
+     20.45579
+    ],
+    [
+     -103.20693,
+     20.45767
+    ],
+    [
+     -103.20876,
+     20.4605
+    ],
+    [
+     -103.21098,
+     20.46039
+    ],
+    [
+     -103.21236,
+     20.46106
+    ],
+    [
+     -103.21169,
+     20.46315
+    ],
+    [
+     -103.21349,
+     20.46456
+    ],
+    [
+     -103.21368,
+     20.46584
+    ],
+    [
+     -103.21484,
+     20.46713
+    ],
+    [
+     -103.21933,
+     20.4691
+    ],
+    [
+     -103.22297,
+     20.46776
+    ],
+    [
+     -103.22472,
+     20.46818
+    ],
+    [
+     -103.22794,
+     20.46685
+    ],
+    [
+     -103.23243,
+     20.46666
+    ],
+    [
+     -103.23598,
+     20.46355
+    ],
+    [
+     -103.23972,
+     20.4633
+    ],
+    [
+     -103.24135,
+     20.46795
+    ],
+    [
+     -103.25715,
+     20.47775
+    ],
+    [
+     -103.25982,
+     20.47757
+    ],
+    [
+     -103.26439,
+     20.47853
+    ],
+    [
+     -103.26641,
+     20.47784
+    ],
+    [
+     -103.27084,
+     20.47916
+    ],
+    [
+     -103.27295,
+     20.4788
+    ],
+    [
+     -103.27431,
+     20.4844
+    ],
+    [
+     -103.27273,
+     20.48526
+    ],
+    [
+     -103.27232,
+     20.48734
+    ],
+    [
+     -103.27675,
+     20.49451
+    ],
+    [
+     -103.2795,
+     20.49573
+    ],
+    [
+     -103.28088,
+     20.49845
+    ],
+    [
+     -103.28334,
+     20.50111
+    ],
+    [
+     -103.28519,
+     20.50192
+    ],
+    [
+     -103.28722,
+     20.50105
+    ],
+    [
+     -103.28966,
+     20.50189
+    ],
+    [
+     -103.29369,
+     20.50169
+    ],
+    [
+     -103.2955,
+     20.5036
+    ],
+    [
+     -103.29575,
+     20.50478
+    ],
+    [
+     -103.2974,
+     20.50586
+    ],
+    [
+     -103.30119,
+     20.50629
+    ],
+    [
+     -103.31854,
+     20.51322
+    ],
+    [
+     -103.32104,
+     20.51365
+    ],
+    [
+     -103.32561,
+     20.51327
+    ],
+    [
+     -103.3303,
+     20.51544
+    ],
+    [
+     -103.33214,
+     20.51721
+    ],
+    [
+     -103.33637,
+     20.51942
+    ],
+    [
+     -103.33923,
+     20.51928
+    ],
+    [
+     -103.34391,
+     20.52161
+    ],
+    [
+     -103.34476,
+     20.52144
+    ],
+    [
+     -103.3465,
+     20.52296
+    ],
+    [
+     -103.35222,
+     20.52004
+    ],
+    [
+     -103.35449,
+     20.51999
+    ],
+    [
+     -103.35582,
+     20.52067
+    ],
+    [
+     -103.36366,
+     20.53264
+    ],
+    [
+     -103.36374,
+     20.53485
+    ],
+    [
+     -103.34351,
+     20.55483
+    ],
+    [
+     -103.34053,
+     20.56244
+    ],
+    [
+     -103.34012,
+     20.57076
+    ],
+    [
+     -103.33777,
+     20.57306
+    ],
+    [
+     -103.33601,
+     20.57919
+    ],
+    [
+     -103.35391,
+     20.61298
+    ]
+   ],
+   "approx": true,
+   "route_note": "Ocotlán and Poncitlán are town centroids (Nominatim) standing in for the Ocotlán pumping plant and Presa Corona (river segment drawn straight). The middle section is real OSM canal geometry chained from ways w1436987141, w1436987142, w255993116, w1438774776, w1438774775, w185120559, w185120569, w185120560, w173392591, w1531159458, w1531159457, w1531159456, w1531159462, w1531159461, w1414713595, w1414713594, w173392590, w170809683, w891780832, w891825383, w891825384, w891780831, w891780834, w905665286, w905665287, w170809682, w167412659 (Canal de Atequiza → La Calera area → \"Canal Las Pintas\"), simplified (Douglas–Peucker ~40 m), with 2 short unmapped gaps (<1.2 km) bridged by straight lines; drawn length ≈89 km vs official 97.6 km; identification of these canals as the Sistema Antiguo is inferred from route and names. Final hop to PP1 is straight.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0019.pdf",
+    "https://www.openstreetmap.org/way/1436987141",
+    "https://www.openstreetmap.org/way/1436987142",
+    "https://www.openstreetmap.org/way/255993116",
+    "https://www.openstreetmap.org/way/167412659"
+   ]
+  },
+  {
+   "name": "Acueducto Calderón–San Gaspar",
+   "status": "operating",
+   "year": 1991,
+   "capacity_m3s": 2,
+   "capacity_note": "Presa Calderón planned for 2 m3/s in bloc (PIA an-0029); CBA an-0007b gives nominal design 1.5 m3/s and historic mean ~0.94–1.01 m3/s; 1.90 m3/s delivered in 2025.",
+   "length_km": 31,
+   "description": "Gravity line from Presa Calderón (Acatic/Zapotlanejo) to PP3 San Gaspar, crossing the Río Santiago.",
+   "route_lonlat": [
+    [
+     -102.97645,
+     20.68148
+    ],
+    [
+     -103.24043,
+     20.68931
+    ]
+   ],
+   "approx": true,
+   "route_note": "Straight line between dam wall (OSM) and PP3 (OSM); real alignment not published.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://www.openstreetmap.org/way/848178046",
+    "https://www.openstreetmap.org/way/480762900"
+   ]
+  },
+  {
+   "name": "Nuevo Acueducto Calderón–San Gaspar (parallel line)",
+   "status": "planned (PIA 2026)",
+   "year": null,
+   "capacity_m3s": 5,
+   "length_km": 31.3,
+   "diameter_in": 104,
+   "route_lonlat": [
+    [
+     -102.97645,
+     20.68148
+    ],
+    [
+     -103.24043,
+     20.68931
+    ]
+   ],
+   "approx": true,
+   "route_note": "Same schematic as existing line.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf"
+   ]
+  },
+  {
+   "name": "Acueducto El Salto–La Red–Calderón",
+   "status": "operating (tests from 5 Feb 2024; inaugurated 24 Feb 2024)",
+   "year": 2024,
+   "capacity_m3s": 3,
+   "capacity_note": "Design 3 m3/s (initially 1 m3/s); pumping plant at Presa El Salto; 54-inch pipe.",
+   "length_km": 39,
+   "description": "Pumps Río Verde water (incl. El Zapotillo releases) from Presa El Salto (Valle de Guadalupe) to Presa La Red, which spills down the Río Calderón to Presa Calderón.",
+   "route_lonlat": [
+    [
+     -102.61472,
+     21.01133
+    ],
+    [
+     -102.81691,
+     20.71778
+    ],
+    [
+     -102.97645,
+     20.68148
+    ]
+   ],
+   "approx": true,
+   "route_note": "El Salto end uses Valle de Guadalupe town centroid (dam not identifiable in OSM); La Red and Calderón ends are OSM dam walls. La Red→Calderón leg is the Río Calderón (~12 km), not pipe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/El_Salto%E2%80%93La_Red%E2%80%93Calder%C3%B3n_aqueduct",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf",
+    "https://www.telediario.mx/comunidad/jalisco-pruebas-sistema-bombeo-salto-red-calderon-inicia",
+    "https://www.openstreetmap.org/way/848178045"
+   ]
+  },
+  {
+   "name": "El Zapotillo – El Salto conduction (Sistema Río Verde → Guadalajara)",
+   "status": "operating since 2024",
+   "year": 2024,
+   "capacity_m3s": 2,
+   "capacity_note": "Zapotillo–El Salto leg nominally 2 m3/s (Conagua via Crónica 2026); whole Zapotillo–El Salto–La Red–Calderón system: 66 km of aqueducts, 2 pumping plants, +3 m3/s to AMG from 2024, total availability 5 m3/s with Calderón (PIA an-0029). Conagua 2021: 80 m curtain, 3.5 m3/s for AMG.",
+   "length_km": null,
+   "route_lonlat": [
+    [
+     -102.80534,
+     21.13711
+    ],
+    [
+     -102.61472,
+     21.01133
+    ]
+   ],
+   "approx": true,
+   "route_note": "Straight schematic; Zapotillo end is an unnamed OSM dam way adjacent to Ejido El Zapotillo (identification inferred).",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf",
+    "https://www.cronica.com.mx/academia/2026/10/20/el-zapotillo-una-presa-con-ventanas-y-una-solucion-hidrica-incompleta/",
+    "https://www.gob.mx/cms/uploads/attachment/file/661936/Comunicado_de_Prensa_0633-21.pdf",
+    "https://www.openstreetmap.org/way/1172606882"
+   ]
+  },
+  {
+   "name": "Acueducto Sustituto Chapala–Guadalajara",
+   "status": "planned (PIA 2026; CBA year 0 = 2026)",
+   "year": null,
+   "capacity_m3s": 7.5,
+   "length_km": 42,
+   "description": "26 km rising main + 16 km gravity line, new pumping station, surge and regime-change tanks; replaces 1991 line without increasing the 7.5 m3/s concession.",
+   "route_lonlat": [
+    [
+     -103.14586,
+     20.31666
+    ],
+    [
+     -103.36312,
+     20.59955
+    ],
+    [
+     -103.35391,
+     20.61298
+    ]
+   ],
+   "approx": true,
+   "route_note": "Schematic, same endpoints as existing aqueduct.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0015.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf"
+   ]
+  }
+ ],
+ "dams_sources": {
+  "supply_share_summary": {
+   "year": 2025,
+   "scope": "SIAPA service area (Guadalajara, Zapopan, Tlaquepaque, Tonalá); excludes ~1.5 m3/s from other AMG municipalities' own wells",
+   "pct_chapala": 60.2,
+   "pct_calderon_rioverde": 17.2,
+   "pct_groundwater": 22.6,
+   "total_m3s": 11.05,
+   "alt_breakdown_pia_an0011": {
+    "acueducto_chapala_gdl_pct": 40,
+    "sistema_antiguo_chapala_pct": 20,
+    "zapotillo_calderon_pct": 17,
+    "pozos_y_manantiales_pct": 23,
+    "note": "Read from a schematic figure (\"volúmenes asignados\"); label/percentage pairing inferred from text order and consistency with Tabla 11."
+   },
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0011.pdf"
+   ]
+  },
+  "supply_series_m3s": {
+   "data": [
+    {
+     "year": 2001,
+     "chapala_m3s": 5.22,
+     "calderon_rioverde_m3s": 0.32,
+     "groundwater_m3s": 2.88,
+     "total_m3s": 8.42,
+     "pct_chapala": 62,
+     "pct_calderon": 3.8,
+     "pct_groundwater": 34.2
+    },
+    {
+     "year": 2002,
+     "chapala_m3s": 5.2,
+     "calderon_rioverde_m3s": 0.22,
+     "groundwater_m3s": 2.86,
+     "total_m3s": 8.28,
+     "pct_chapala": 62.8,
+     "pct_calderon": 2.7,
+     "pct_groundwater": 34.5
+    },
+    {
+     "year": 2003,
+     "chapala_m3s": 4.93,
+     "calderon_rioverde_m3s": 0.9,
+     "groundwater_m3s": 2.8,
+     "total_m3s": 8.63,
+     "pct_chapala": 57.1,
+     "pct_calderon": 10.4,
+     "pct_groundwater": 32.4
+    },
+    {
+     "year": 2004,
+     "chapala_m3s": 4.96,
+     "calderon_rioverde_m3s": 1.23,
+     "groundwater_m3s": 2.51,
+     "total_m3s": 8.7,
+     "pct_chapala": 57,
+     "pct_calderon": 14.1,
+     "pct_groundwater": 28.9
+    },
+    {
+     "year": 2005,
+     "chapala_m3s": 5.38,
+     "calderon_rioverde_m3s": 1.18,
+     "groundwater_m3s": 2.51,
+     "total_m3s": 9.07,
+     "pct_chapala": 59.3,
+     "pct_calderon": 13,
+     "pct_groundwater": 27.7
+    },
+    {
+     "year": 2006,
+     "chapala_m3s": 5.18,
+     "calderon_rioverde_m3s": 1.21,
+     "groundwater_m3s": 2.82,
+     "total_m3s": 9.21,
+     "pct_chapala": 56.2,
+     "pct_calderon": 13.1,
+     "pct_groundwater": 30.6
+    },
+    {
+     "year": 2007,
+     "chapala_m3s": 5.19,
+     "calderon_rioverde_m3s": 1.08,
+     "groundwater_m3s": 2.9,
+     "total_m3s": 9.17,
+     "pct_chapala": 56.6,
+     "pct_calderon": 11.8,
+     "pct_groundwater": 31.6
+    },
+    {
+     "year": 2008,
+     "chapala_m3s": 5.49,
+     "calderon_rioverde_m3s": 1.07,
+     "groundwater_m3s": 2.78,
+     "total_m3s": 9.34,
+     "pct_chapala": 58.8,
+     "pct_calderon": 11.5,
+     "pct_groundwater": 29.8
+    },
+    {
+     "year": 2009,
+     "chapala_m3s": 5.63,
+     "calderon_rioverde_m3s": 1.01,
+     "groundwater_m3s": 2.69,
+     "total_m3s": 9.33,
+     "pct_chapala": 60.3,
+     "pct_calderon": 10.8,
+     "pct_groundwater": 28.8
+    },
+    {
+     "year": 2010,
+     "chapala_m3s": 5.68,
+     "calderon_rioverde_m3s": 0.94,
+     "groundwater_m3s": 2.82,
+     "total_m3s": 9.44,
+     "pct_chapala": 60.2,
+     "pct_calderon": 10,
+     "pct_groundwater": 29.9
+    },
+    {
+     "year": 2011,
+     "chapala_m3s": 5.71,
+     "calderon_rioverde_m3s": 1.05,
+     "groundwater_m3s": 2.82,
+     "total_m3s": 9.58,
+     "pct_chapala": 59.6,
+     "pct_calderon": 11,
+     "pct_groundwater": 29.4
+    },
+    {
+     "year": 2012,
+     "chapala_m3s": 5.72,
+     "calderon_rioverde_m3s": 0.84,
+     "groundwater_m3s": 2.68,
+     "total_m3s": 9.24,
+     "pct_chapala": 61.9,
+     "pct_calderon": 9.1,
+     "pct_groundwater": 29
+    },
+    {
+     "year": 2013,
+     "chapala_m3s": 6.4,
+     "calderon_rioverde_m3s": 0.36,
+     "groundwater_m3s": 2.76,
+     "total_m3s": 9.52,
+     "pct_chapala": 67.2,
+     "pct_calderon": 3.8,
+     "pct_groundwater": 29
+    },
+    {
+     "year": 2014,
+     "chapala_m3s": 6.54,
+     "calderon_rioverde_m3s": 0.8,
+     "groundwater_m3s": 2.58,
+     "total_m3s": 9.92,
+     "pct_chapala": 65.9,
+     "pct_calderon": 8.1,
+     "pct_groundwater": 26
+    },
+    {
+     "year": 2015,
+     "chapala_m3s": 6.53,
+     "calderon_rioverde_m3s": 0.88,
+     "groundwater_m3s": 2.58,
+     "total_m3s": 9.99,
+     "pct_chapala": 65.4,
+     "pct_calderon": 8.8,
+     "pct_groundwater": 25.8
+    },
+    {
+     "year": 2016,
+     "chapala_m3s": 6.35,
+     "calderon_rioverde_m3s": 1.06,
+     "groundwater_m3s": 2.8,
+     "total_m3s": 10.21,
+     "pct_chapala": 62.2,
+     "pct_calderon": 10.4,
+     "pct_groundwater": 27.4
+    },
+    {
+     "year": 2017,
+     "chapala_m3s": 6.49,
+     "calderon_rioverde_m3s": 1.16,
+     "groundwater_m3s": 2.87,
+     "total_m3s": 10.52,
+     "pct_chapala": 61.7,
+     "pct_calderon": 11,
+     "pct_groundwater": 27.3
+    },
+    {
+     "year": 2018,
+     "chapala_m3s": 6.47,
+     "calderon_rioverde_m3s": 1.16,
+     "groundwater_m3s": 2.93,
+     "total_m3s": 10.56,
+     "pct_chapala": 61.3,
+     "pct_calderon": 11,
+     "pct_groundwater": 27.7
+    },
+    {
+     "year": 2019,
+     "chapala_m3s": 6.5,
+     "calderon_rioverde_m3s": 1.31,
+     "groundwater_m3s": 2.9,
+     "total_m3s": 10.71,
+     "pct_chapala": 60.7,
+     "pct_calderon": 12.2,
+     "pct_groundwater": 27.1
+    },
+    {
+     "year": 2020,
+     "chapala_m3s": 6.95,
+     "calderon_rioverde_m3s": 1.34,
+     "groundwater_m3s": 2.7,
+     "total_m3s": 10.99,
+     "pct_chapala": 63.2,
+     "pct_calderon": 12.2,
+     "pct_groundwater": 24.6
+    },
+    {
+     "year": 2021,
+     "chapala_m3s": 6.91,
+     "calderon_rioverde_m3s": 0.45,
+     "groundwater_m3s": 2.72,
+     "total_m3s": 10.08,
+     "pct_chapala": 68.6,
+     "pct_calderon": 4.5,
+     "pct_groundwater": 27
+    },
+    {
+     "year": 2022,
+     "chapala_m3s": 6.55,
+     "calderon_rioverde_m3s": 1.11,
+     "groundwater_m3s": 2.57,
+     "total_m3s": 10.23,
+     "pct_chapala": 64,
+     "pct_calderon": 10.9,
+     "pct_groundwater": 25.1
+    },
+    {
+     "year": 2023,
+     "chapala_m3s": 6.8,
+     "calderon_rioverde_m3s": 1.3,
+     "groundwater_m3s": 2.46,
+     "total_m3s": 10.56,
+     "pct_chapala": 64.4,
+     "pct_calderon": 12.3,
+     "pct_groundwater": 23.3
+    },
+    {
+     "year": 2024,
+     "chapala_m3s": 6.58,
+     "calderon_rioverde_m3s": 1.47,
+     "groundwater_m3s": 2.45,
+     "total_m3s": 10.5,
+     "pct_chapala": 62.7,
+     "pct_calderon": 14,
+     "pct_groundwater": 23.3
+    },
+    {
+     "year": 2025,
+     "chapala_m3s": 6.65,
+     "calderon_rioverde_m3s": 1.9,
+     "groundwater_m3s": 2.5,
+     "total_m3s": 11.05,
+     "pct_chapala": 60.2,
+     "pct_calderon": 17.2,
+     "pct_groundwater": 22.6
+    }
+   ],
+   "source": "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+   "note": "Tabla 11, \"Gasto promedio anual abastecido por las fuentes del SIAPA (m3/s)\", from SIAPA data; percentages computed here."
+  },
+  "features": [
+   {
+    "name": "Estación/Planta de Bombeo Acueducto Chapala–Guadalajara (Lake Chapala intake)",
+    "type": "lake_intake_pumping_station",
+    "lat": 20.31666,
+    "lon": -103.14586,
+    "details": "6 vertical KSB pumps (5+1), 1.5 m3/s @ 138 m each, 3,500 HP motors; design 7.5 m3/s. Concession 240 hm3/yr.",
+    "share": "Chapala total (aqueduct + Sistema Antiguo) ≈ 60% of SIAPA supply (6.65 m3/s in 2025)",
+    "sources": [
+     "https://www.openstreetmap.org/way/1442033507",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0001.pdf",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf"
+    ]
+   },
+   {
+    "name": "Planta de Bombeo Ocotlán (Sistema Antiguo intake, Río Santiago outlet of the lake)",
+    "type": "lake_intake_pumping_station",
+    "lat": 20.35145,
+    "lon": -102.76881,
+    "approx": true,
+    "location_note": "Ocotlán town centroid (Nominatim); exact plant location not found.",
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0019.pdf",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+     "https://nominatim.openstreetmap.org/"
+    ]
+   },
+   {
+    "name": "Presa derivadora Corona (Río Santiago, Poncitlán)",
+    "type": "diversion_dam",
+    "lat": 20.37929,
+    "lon": -102.92469,
+    "approx": true,
+    "location_note": "Poncitlán town centroid (Nominatim); Presa Corona is downstream on the Río Santiago (chainage km 39 of Sistema Antiguo).",
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+     "https://nominatim.openstreetmap.org/"
+    ]
+   },
+   {
+    "name": "Presa La Calera",
+    "type": "regulating_reservoir",
+    "lat": 20.46459,
+    "lon": -103.24617,
+    "details": "Part of Sistema Antiguo since 1954; source for PP5 Los Agaves (planned pumping 2,500 l/s).",
+    "sources": [
+     "https://www.openstreetmap.org/way/1380139640",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0014.pdf"
+    ]
+   },
+   {
+    "name": "Presa Ing. Elías González Chávez (Calderón) — dam wall",
+    "type": "dam",
+    "lat": 20.68148,
+    "lon": -102.97645,
+    "reservoir_centroid": {
+     "lat": 20.68786,
+     "lon": -102.93583
+    },
+    "capacity_hm3": 80,
+    "elevation_masl": 1625,
+    "year": 1991,
+    "municipality": "Acatic / Zapotlanejo",
+    "details": "Built 1989–1991; ~1,000 ha reservoir; 25-yr mean supply 1.01 m3/s; 1.90 m3/s in 2025 with Río Verde transfers.",
+    "share_pct_2025": 17.2,
+    "sources": [
+     "https://www.openstreetmap.org/way/848178046",
+     "https://www.openstreetmap.org/way/371799218",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf"
+    ]
+   },
+   {
+    "name": "Presa La Red — dam wall",
+    "type": "dam",
+    "lat": 20.71778,
+    "lon": -102.81691,
+    "reservoir_centroid": {
+     "lat": 20.72547,
+     "lon": -102.80418
+    },
+    "year": 1967,
+    "details": "~12 km upstream of Calderón on Río Calderón; receives El Salto aqueduct.",
+    "sources": [
+     "https://www.openstreetmap.org/way/848178045",
+     "https://www.openstreetmap.org/way/371799219",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf"
+    ]
+   },
+   {
+    "name": "Presa El Salto (Valle de Guadalupe)",
+    "type": "dam",
+    "lat": 21.01133,
+    "lon": -102.61472,
+    "approx": true,
+    "location_note": "Town centroid of Valle de Guadalupe (Nominatim); the dam (on the El Salto/Valle de Guadalupe river, ~14 km above its confluence with the Río Verde) is not identifiable in OSM.",
+    "details": "Pumping plant (3,000 l/s) to Presa La Red since 2024.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/El_Salto%E2%80%93La_Red%E2%80%93Calder%C3%B3n_aqueduct",
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0029.pdf",
+     "https://nominatim.openstreetmap.org/"
+    ]
+   },
+   {
+    "name": "Presa El Zapotillo (Río Verde) — dam wall",
+    "type": "dam",
+    "lat": 21.13711,
+    "lon": -102.80534,
+    "approx": true,
+    "location_note": "Unnamed OSM waterway=dam ~1.3 km from Ejido El Zapotillo, Cañadas de Obregón; identification inferred.",
+    "curtain_height_m": 80,
+    "year": 2024,
+    "details": "Curtain limited to 80 m (not 105 m) to spare Temacapulín, Acasico, Palmarejo; water now allocated to Guadalajara only.",
+    "sources": [
+     "https://www.openstreetmap.org/way/1172606882",
+     "https://www.gob.mx/cms/uploads/attachment/file/661936/Comunicado_de_Prensa_0633-21.pdf",
+     "https://www.cronica.com.mx/academia/2026/10/20/el-zapotillo-una-presa-con-ventanas-y-una-solucion-hidrica-incompleta/"
+    ]
+   },
+   {
+    "name": "Presa El Purgatorio / Arcediano (Río Verde, planned)",
+    "type": "dam",
+    "lat": null,
+    "lon": null,
+    "status": "started 2011, unfinished",
+    "sources": [
+     "https://en.wikipedia.org/wiki/R%C3%ADo_Verde_(Jalisco)"
+    ]
+   },
+   {
+    "name": "Tesistán well field (acuífero Atemajac)",
+    "type": "well_field",
+    "lat": 20.79892,
+    "lon": -103.47676,
+    "approx": true,
+    "location_note": "Tesistán town centroid (Nominatim).",
+    "wells": 47,
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+     "https://nominatim.openstreetmap.org/"
+    ]
+   },
+   {
+    "name": "Toluquilla well field (acuífero Toluquilla)",
+    "type": "well_field",
+    "lat": 20.5793,
+    "lon": -103.36885,
+    "approx": true,
+    "location_note": "Toluquilla locality point (Nominatim).",
+    "wells": 27,
+    "details": "Most over-exploited aquifer; heavy metals/minerals; CBA recommends closing wells here first.",
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+     "https://nominatim.openstreetmap.org/"
+    ]
+   },
+   {
+    "name": "Acuífero Atemajac (extent)",
+    "type": "aquifer",
+    "lat": 20.7583,
+    "lon": -103.375,
+    "approx": true,
+    "location_note": "Centre of published bounding box 20°35′–20°56′N, 103°10′–103°35′W; area ~736 km².",
+    "bbox_lonlat": [
+     -103.5833,
+     20.5833,
+     -103.1667,
+     20.9333
+    ],
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf"
+    ]
+   },
+   {
+    "name": "Acuífero Toluquilla (extent)",
+    "type": "aquifer",
+    "lat": 20.5833,
+    "lon": -103.3417,
+    "approx": true,
+    "location_note": "Centre of published bounding box 20°28′–20°42′N, 103°07′–103°34′W; area ~632 km².",
+    "bbox_lonlat": [
+     -103.5667,
+     20.4667,
+     -103.1167,
+     20.7
+    ],
+    "sources": [
+     "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf"
+    ]
+   }
+  ],
+  "groundwater_note": "SIAPA operates 169 wells (2.70 m3/s, CBA an-0007b); groundwater ≈ 23% of SIAPA supply in 2025; aquifers Atemajac, Toluquilla, Cajititlán all over-exploited; sustainable urban extraction estimated at 1.85 m3/s."
+ },
+ "tanks_wells_fountains": {
+  "points": [
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.73265,
+    "lon": -103.36723,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1719728414"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.7437,
+    "lon": -103.3785,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1952942647"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": "Bebedero",
+    "operator": null,
+    "lat": 20.74153,
+    "lon": -103.38216,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1952957594"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74069,
+    "lon": -103.38203,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1953748585"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74102,
+    "lon": -103.38031,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955869707"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74129,
+    "lon": -103.38132,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955869725"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74131,
+    "lon": -103.38088,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955869727"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74161,
+    "lon": -103.3809,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955869733"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74163,
+    "lon": -103.3804,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955869735"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74129,
+    "lon": -103.37984,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/1955924376"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": "SIAPA",
+    "operator": null,
+    "lat": 20.68409,
+    "lon": -103.39167,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2507654317"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "Tanque SIAPA",
+    "operator": null,
+    "lat": 20.74952,
+    "lon": -103.41405,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2603718660"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.70239,
+    "lon": -103.39217,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2786858404"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.72299,
+    "lon": -103.43151,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2789311410"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.72204,
+    "lon": -103.43117,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2789311414"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.7225,
+    "lon": -103.43177,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/2789311421"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.70471,
+    "lon": -103.39149,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/3774371487"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": "Siapa El Sauz",
+    "operator": null,
+    "lat": 20.62605,
+    "lon": -103.38885,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/4348672790"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.70417,
+    "lon": -103.34516,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5003715922"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.67716,
+    "lon": -103.36868,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5003717933"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.67436,
+    "lon": -103.38567,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5003722122"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.70343,
+    "lon": -103.34349,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5003722321"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.67485,
+    "lon": -103.36863,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5015552921"
+   },
+   {
+    "type": "water_point",
+    "name": null,
+    "operator": null,
+    "lat": 20.70212,
+    "lon": -103.34051,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/5043001422"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "SIAPA",
+    "operator": null,
+    "lat": 20.68929,
+    "lon": -103.29933,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/6090458243"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.67483,
+    "lon": -103.3528,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159875357"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.66245,
+    "lon": -103.2983,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159905507"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.66552,
+    "lon": -103.38564,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159912133"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.67476,
+    "lon": -103.35536,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159923823"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.67429,
+    "lon": -103.38498,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159925459"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.67455,
+    "lon": -103.38584,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159927345"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.67474,
+    "lon": -103.35633,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159937142"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.66828,
+    "lon": -103.36854,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/7159947712"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.7345,
+    "lon": -103.45509,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/10048639237"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.73466,
+    "lon": -103.45583,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/10048639241"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.73476,
+    "lon": -103.45678,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/10048639244"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.73476,
+    "lon": -103.45586,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/10048698978"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69262,
+    "lon": -103.42408,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330821"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69113,
+    "lon": -103.42369,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330822"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69105,
+    "lon": -103.42269,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330823"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69111,
+    "lon": -103.42206,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330824"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69154,
+    "lon": -103.42136,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330825"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69161,
+    "lon": -103.42044,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330826"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69144,
+    "lon": -103.41973,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330827"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69132,
+    "lon": -103.41947,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330828"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69118,
+    "lon": -103.41888,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330829"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69107,
+    "lon": -103.4185,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330830"
+   },
+   {
+    "type": "drinking_fountain (bebedero)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69068,
+    "lon": -103.41798,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/11982330831"
+   },
+   {
+    "type": "water_tower",
+    "name": null,
+    "operator": null,
+    "lat": 20.66261,
+    "lon": -103.3741,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/12374501284"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "Pozo de Zapopan",
+    "operator": null,
+    "lat": 20.72095,
+    "lon": -103.39166,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/12425914283"
+   },
+   {
+    "type": "water_tower",
+    "name": "Cisterna Manhattan",
+    "operator": "Municipio de Tlajomulco",
+    "lat": 20.53054,
+    "lon": -103.42139,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13030886394"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_157",
+    "operator": "Municipio de Tlajomulco",
+    "lat": 20.52695,
+    "lon": -103.41398,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13030886400"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_156",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.53666,
+    "lon": -103.42297,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108268"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_176",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.53729,
+    "lon": -103.43287,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108271"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_148",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.52581,
+    "lon": -103.43685,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108272"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_181",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.5298,
+    "lon": -103.43855,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108285"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_075",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.53191,
+    "lon": -103.43832,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108286"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_139",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.53408,
+    "lon": -103.43728,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108295"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_182",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.53151,
+    "lon": -103.42963,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033108300"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_078",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51357,
+    "lon": -103.42487,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113613"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_120",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51305,
+    "lon": -103.4144,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113614"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_068",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51824,
+    "lon": -103.42169,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113621"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna de Jardines de San Sebastián",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51826,
+    "lon": -103.42173,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113622"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "pozag_090",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.55335,
+    "lon": -103.41624,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113623"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "Tanque regulador San Pablo",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.55343,
+    "lon": -103.41622,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/node/13033113625"
+   },
+   {
+    "type": "water_tower",
+    "name": null,
+    "operator": null,
+    "lat": 20.62132,
+    "lon": -103.28974,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/158911158"
+   },
+   {
+    "type": "water_works",
+    "name": "Tanque de Agua",
+    "operator": null,
+    "lat": 20.60237,
+    "lon": -103.31348,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/167703220"
+   },
+   {
+    "type": "water_works",
+    "name": "Pozo de Agua Condominio Amaneceres",
+    "operator": "Sistema de Pozos de Agua de Tlaquepaque",
+    "lat": 20.5764,
+    "lon": -103.3886,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/338076481"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "SIAPA",
+    "operator": "SIAPA",
+    "lat": 20.58231,
+    "lon": -103.38606,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/338076526"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "Bomba del SIAPA",
+    "operator": null,
+    "lat": 20.75061,
+    "lon": -103.43417,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/342456150"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": "Siatema Intermunicipal de Agua Potable y Alcantarillado (Siapa)",
+    "lat": 20.75906,
+    "lon": -103.44043,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/362349738"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "Rebombeo Bobedas",
+    "operator": "Sistema Intermunicipal de Alcantarillado y Agua Potable",
+    "lat": 20.73558,
+    "lon": -103.42415,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/402248086"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "SIAPA",
+    "operator": "SIAPA",
+    "lat": 20.66638,
+    "lon": -103.21016,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/436465890"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.63967,
+    "lon": -103.22994,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/481690404"
+   },
+   {
+    "type": "water_tower",
+    "name": "Torre Agua",
+    "operator": null,
+    "lat": 20.51709,
+    "lon": -103.24165,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/510238961"
+   },
+   {
+    "type": "water_tower",
+    "name": null,
+    "operator": null,
+    "lat": 20.59953,
+    "lon": -103.41066,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/694127518"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": null,
+    "lat": 20.66727,
+    "lon": -103.46232,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/813542455"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.61939,
+    "lon": -103.31649,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/844562071"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": "SIAPA",
+    "lat": 20.65908,
+    "lon": -103.1937,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/854776383"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.57538,
+    "lon": -103.48112,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/869536255"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.58167,
+    "lon": -103.33648,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/899066480"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48567,
+    "lon": -103.47929,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522283"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48555,
+    "lon": -103.47928,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522284"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48542,
+    "lon": -103.47927,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522285"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.4854,
+    "lon": -103.47905,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522286"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48258,
+    "lon": -103.48187,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522307"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48996,
+    "lon": -103.48626,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/961522330"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.72282,
+    "lon": -103.35966,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/971602313"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.72214,
+    "lon": -103.35866,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/971602314"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": "Municipio de Tlajomulco",
+    "lat": 20.53049,
+    "lon": -103.42138,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1052129156"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": "Municipio de Tlajomulco",
+    "lat": 20.53766,
+    "lon": -103.43282,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1183589156"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": "Dirección de agua potable y alcantarillado",
+    "lat": 20.8213,
+    "lon": -103.44384,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1205635041"
+   },
+   {
+    "type": "well (pozo)",
+    "name": "SIAPA Pozo Tepeyac",
+    "operator": null,
+    "lat": 20.65423,
+    "lon": -103.41238,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1247825417"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": "Mega Cisterna Terralta",
+    "lat": 20.60551,
+    "lon": -103.36279,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1253350083"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.71362,
+    "lon": -103.35458,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1343825838"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": "Cárcamo Nodo Colón No. 3 Plan de San Luis",
+    "operator": "SIAPA",
+    "lat": 20.69717,
+    "lon": -103.37115,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1343849557"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Tanque Santa MAría",
+    "operator": "SIAPA",
+    "lat": 20.61644,
+    "lon": -103.38344,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1343890461"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": "SIAPA",
+    "operator": null,
+    "lat": 20.61678,
+    "lon": -103.37272,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1343890470"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69309,
+    "lon": -103.36013,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1377548701"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.69311,
+    "lon": -103.36047,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1377548702"
+   },
+   {
+    "type": "water_tower",
+    "name": null,
+    "operator": null,
+    "lat": 20.64709,
+    "lon": -103.36807,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1380345758"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.68397,
+    "lon": -103.39166,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1381270817"
+   },
+   {
+    "type": "water_tower",
+    "name": "Cisterna del Pozo Domus",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.52004,
+    "lon": -103.43506,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1382414325"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51995,
+    "lon": -103.4347,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1382414326"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.59161,
+    "lon": -103.34721,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1409590715"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.59559,
+    "lon": -103.35806,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1414958718"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": null,
+    "lat": 20.49756,
+    "lon": -103.35484,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1415053489"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": null,
+    "lat": 20.49734,
+    "lon": -103.35396,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1415053490"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna #1 del Pozo La Aguacatera",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.52583,
+    "lon": -103.43671,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1418220771"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna #2 del Pozo La Aguacatera",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.52569,
+    "lon": -103.43675,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1418220772"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna de Jardines de Verano",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.5331,
+    "lon": -103.44226,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1418220774"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna de Arcos de San Sebastián",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.50985,
+    "lon": -103.42578,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1418220778"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna de San Antonio",
+    "operator": "H. Ayuntamiento de Tlajomulco de Zúñiga",
+    "lat": 20.51238,
+    "lon": -103.41459,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1418220779"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.4971,
+    "lon": -103.35454,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1433616538"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.72791,
+    "lon": -103.31178,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1436770625"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.74955,
+    "lon": -103.41408,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1474467966"
+   },
+   {
+    "type": "pumping_station (cárcamo/rebombeo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.73894,
+    "lon": -103.40465,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1490258431"
+   },
+   {
+    "type": "water_tower",
+    "name": null,
+    "operator": null,
+    "lat": 20.62931,
+    "lon": -103.31847,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1491926659"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": null,
+    "operator": null,
+    "lat": 20.47733,
+    "lon": -103.41632,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1500898132"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.48534,
+    "lon": -103.25161,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1533193860"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.6119,
+    "lon": -103.3149,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103233"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.61199,
+    "lon": -103.31429,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103234"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.61205,
+    "lon": -103.31366,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103235"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.61351,
+    "lon": -103.31246,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103236"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "Macrotanque Las Huertas",
+    "operator": "SIAPA",
+    "lat": 20.61237,
+    "lon": -103.31374,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103237"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.62377,
+    "lon": -103.30687,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103255"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": null,
+    "operator": null,
+    "lat": 20.62314,
+    "lon": -103.30662,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103256"
+   },
+   {
+    "type": "storage_tank (tanque)",
+    "name": "Tanque Colonial Tlaquepaque",
+    "operator": "SIAPA",
+    "lat": 20.62349,
+    "lon": -103.30671,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552103258"
+   },
+   {
+    "type": "covered_reservoir (tanque/cisterna)",
+    "name": "Cisterna",
+    "operator": null,
+    "lat": 20.63553,
+    "lon": -103.27949,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1552118887"
+   },
+   {
+    "type": "well (pozo)",
+    "name": null,
+    "operator": null,
+    "lat": 20.61305,
+    "lon": -103.39589,
+    "source": "OpenStreetMap",
+    "source_url": "https://www.openstreetmap.org/way/1557485434"
+   }
+  ],
+  "nidos_de_lluvia": {
+   "description": "Jalisco state rainwater-harvesting program (SCALL household systems; CEA/SIAPA/Gobierno de Jalisco). 600 systems 2021, 3,950 in 2022, 3,226 planned 2025 (80 MDP), target ~18,600 cumulative by end-2026 incl. 141 community + 16 public-space systems. No point-level coordinates are published.",
+   "coordinates_available": false,
+   "sources": [
+    "https://www.cronica.com.mx/jalisco/guadalajara/2026/08/15/jalisco-sera-el-primer-estado-con-sistemas-comunitarios-de-captacion-de-lluvia-en-todos-sus-municipios/",
+    "https://www.razon.com.mx/estados/2025/05/12/arranca-el-gobierno-de-jalisco-el-programa-nidos-de-lluvia-2025/",
+    "https://evalua.jalisco.gob.mx/wp-content/uploads/2024/06/Informe-Ejecutivo-Nidos-de-Lluvia-Resultados.pdf"
+   ]
+  },
+  "note": "Point layer is from OpenStreetMap only (SIAPA does not publish tank/well coordinates as open data that could be found). OSM coverage is uneven — Tlajomulco municipal wells are well mapped; SIAPA's 169 wells and ~100+ tanks are mostly not."
+ },
+ "wetlands": [
+  {
+   "name": "Lago de Chapala (Ramsar site no. 1973)",
+   "lat": 20.2276,
+   "lon": -103.0529,
+   "area_ha": 114659,
+   "ramsar": {
+    "site_number": 1973,
+    "designated": "2009-02-02"
+   },
+   "description": "Mexico's largest lake; supplies ~60% of SIAPA water. Ramsar site 1973 (number, not year) designated 2 Feb 2009, 114,659 ha (86% Jalisco, 14% Michoacán).",
+   "geometry_note": "Point = OSM relation 2031526 centre; full polygon available from OSM relation.",
+   "sources": [
+    "https://rsis.ramsar.org/ris/1973",
+    "https://www.openstreetmap.org/relation/2031526"
+   ]
+  },
+  {
+   "name": "Laguna de Cajititlán",
+   "lat": 20.41954,
+   "lon": -103.33076,
+   "description": "Endorheic lagoon in Tlajomulco (acuífero Cajititlán); receives treated effluent (Tlajomulco PTARs); recurrent fish kills. CEA monitors water quality (LagunaCajititlan.xlsx).",
+   "polygon_lonlat": [
+    [
+     -103.31953,
+     20.43148
+    ],
+    [
+     -103.31953,
+     20.43148
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/24611450",
+    "https://www.ceajalisco.gob.mx/contenido/datos_abiertos/"
+   ]
+  },
+  {
+   "name": "Represa / humedal El Ahogado",
+   "lat": 20.52481,
+   "lon": -103.27008,
+   "description": "Reservoir and wetland at the outlet of the El Ahogado basin (Tlajomulco/El Salto), next to PTAR El Ahogado; flood-control and polluted-runoff hotspot feeding the Río Santiago. CEA runs a dedicated El Ahogado programme.",
+   "sources": [
+    "https://www.openstreetmap.org/relation/2127368",
+    "https://www.ceajalisco.gob.mx/contenido/el_ahogado2023/index.php"
+   ]
+  },
+  {
+   "name": "Presa de aguas residuales Agua Prieta",
+   "lat": 20.77333,
+   "lon": -103.33554,
+   "description": "Wastewater pond adjoining PTAR Agua Prieta (north Zapopan).",
+   "polygon_lonlat": [
+    [
+     -103.33732,
+     20.77574
+    ],
+    [
+     -103.33732,
+     20.77574
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/155303182"
+   ]
+  },
+  {
+   "name": "La Ladrillera",
+   "wetland_type": null,
+   "lat": 20.58754,
+   "lon": -103.31811,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.31953,
+     20.58702
+    ],
+    [
+     -103.31953,
+     20.58702
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/154913543"
+   ]
+  },
+  {
+   "name": "La Ladrillera",
+   "wetland_type": null,
+   "lat": 20.58462,
+   "lon": -103.32173,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.32378,
+     20.58387
+    ],
+    [
+     -103.32378,
+     20.58387
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/154913544"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.58938,
+   "lon": -103.29836,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.30072,
+     20.58801
+    ],
+    [
+     -103.30072,
+     20.58801
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/154913545"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.59062,
+   "lon": -103.29068,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.29396,
+     20.59049
+    ],
+    [
+     -103.29396,
+     20.59049
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/155012284"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "reedbed",
+   "lat": 20.53876,
+   "lon": -103.39066,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.39494,
+     20.53777
+    ],
+    [
+     -103.39494,
+     20.53777
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/473486073"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "Pantano,_nacimiento_de_agua,_lodasal",
+   "lat": 20.62892,
+   "lon": -103.28706,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.28712,
+     20.62917
+    ],
+    [
+     -103.28712,
+     20.62917
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/545749575"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "marsh",
+   "lat": 20.65946,
+   "lon": -103.21303,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.21341,
+     20.66102
+    ],
+    [
+     -103.21341,
+     20.66102
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/867580482"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.17448,
+   "lon": -103.06974,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -103.09299,
+     20.1664
+    ],
+    [
+     -103.09299,
+     20.1664
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880138699"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.17399,
+   "lon": -103.02821,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -103.04233,
+     20.18452
+    ],
+    [
+     -103.04233,
+     20.18452
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880495461"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.16877,
+   "lon": -102.99532,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -103.01221,
+     20.16438
+    ],
+    [
+     -103.01221,
+     20.16438
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880536702"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.22824,
+   "lon": -103.40013,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -103.4121,
+     20.23146
+    ],
+    [
+     -103.4121,
+     20.23146
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880547659"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.22732,
+   "lon": -103.37961,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -103.38383,
+     20.22731
+    ],
+    [
+     -103.38383,
+     20.22731
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880548591"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.17126,
+   "lon": -102.94466,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -102.95124,
+     20.17104
+    ],
+    [
+     -102.95124,
+     20.17104
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880562578"
+   ]
+  },
+  {
+   "name": "Lake Chapala shore wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.16306,
+   "lon": -102.90073,
+   "description": "Littoral wetland (tular/marsh) on the Chapala shore, within/near the Ramsar site.",
+   "polygon_lonlat": [
+    [
+     -102.93311,
+     20.16909
+    ],
+    [
+     -102.93311,
+     20.16909
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/880878752"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "reedbed",
+   "lat": 20.53898,
+   "lon": -103.39725,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.39985,
+     20.53858
+    ],
+    [
+     -103.39985,
+     20.53858
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/1285657773"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "mangrove",
+   "lat": 20.42566,
+   "lon": -103.2516,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.25121,
+     20.42586
+    ],
+    [
+     -103.25121,
+     20.42586
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/1532175610"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.51863,
+   "lon": -103.42968,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.43103,
+     20.52025
+    ],
+    [
+     -103.43103,
+     20.52025
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/1549466842"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": "wet_meadow",
+   "lat": 20.53731,
+   "lon": -103.39643,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.39743,
+     20.53787
+    ],
+    [
+     -103.39743,
+     20.53787
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/1550198280"
+   ]
+  },
+  {
+   "name": "Wetland (unnamed, OSM)",
+   "wetland_type": null,
+   "lat": 20.50492,
+   "lon": -103.39064,
+   "description": "Urban/peri-urban wetland in the AMG mapped in OSM.",
+   "polygon_lonlat": [
+    [
+     -103.39089,
+     20.50621
+    ],
+    [
+     -103.39089,
+     20.50621
+    ]
+   ],
+   "sources": [
+    "https://www.openstreetmap.org/way/1552438024"
+   ]
+  },
+  {
+   "name": "Laguna de Zapotlán (Ramsar 1466) — out of scope",
+   "lat": null,
+   "lon": null,
+   "description": "Too far from ZMG (Zapotlán el Grande); listed only for reference, not mapped.",
+   "sources": []
+  }
+ ],
+ "chapala": {
+  "latest_reading": {
+   "date": "2026-11-22",
+   "cota_m": 95.62,
+   "volume_hm3": 5430.67,
+   "pct_capacity": 68.77,
+   "note": "Most recent value in CEA API as of 2026-11-23 (data lag 1 day). Last 30 days included below.",
+   "source": "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/"
+  },
+  "last_30_days": [
+   {
+    "date": "2026-10-24",
+    "cota_m": 95.73,
+    "volume_hm3": 5553.08,
+    "pct": 70.32
+   },
+   {
+    "date": "2026-10-25",
+    "cota_m": 95.73,
+    "volume_hm3": 5553.08,
+    "pct": 70.32
+   },
+   {
+    "date": "2026-10-26",
+    "cota_m": 95.73,
+    "volume_hm3": 5553.08,
+    "pct": 70.32
+   },
+   {
+    "date": "2026-10-27",
+    "cota_m": 95.72,
+    "volume_hm3": 5541.96,
+    "pct": 70.18
+   },
+   {
+    "date": "2026-10-28",
+    "cota_m": 95.72,
+    "volume_hm3": 5541.96,
+    "pct": 70.18
+   },
+   {
+    "date": "2026-10-29",
+    "cota_m": 95.72,
+    "volume_hm3": 5541.96,
+    "pct": 70.18
+   },
+   {
+    "date": "2026-10-30",
+    "cota_m": 95.71,
+    "volume_hm3": 5530.83,
+    "pct": 70.04
+   },
+   {
+    "date": "2026-10-31",
+    "cota_m": 95.71,
+    "volume_hm3": 5530.83,
+    "pct": 70.04
+   },
+   {
+    "date": "2026-11-01",
+    "cota_m": 95.71,
+    "volume_hm3": 5530.83,
+    "pct": 70.04
+   },
+   {
+    "date": "2026-11-02",
+    "cota_m": 95.71,
+    "volume_hm3": 5530.83,
+    "pct": 70.04
+   },
+   {
+    "date": "2026-11-03",
+    "cota_m": 95.72,
+    "volume_hm3": 5541.96,
+    "pct": 70.18
+   },
+   {
+    "date": "2026-11-04",
+    "cota_m": 95.7,
+    "volume_hm3": 5519.7,
+    "pct": 69.89
+   },
+   {
+    "date": "2026-11-05",
+    "cota_m": 95.7,
+    "volume_hm3": 5519.7,
+    "pct": 69.89
+   },
+   {
+    "date": "2026-11-06",
+    "cota_m": 95.69,
+    "volume_hm3": 5508.57,
+    "pct": 69.75
+   },
+   {
+    "date": "2026-11-07",
+    "cota_m": 95.69,
+    "volume_hm3": 5508.57,
+    "pct": 69.75
+   },
+   {
+    "date": "2026-11-08",
+    "cota_m": 95.68,
+    "volume_hm3": 5497.44,
+    "pct": 69.61
+   },
+   {
+    "date": "2026-11-09",
+    "cota_m": 95.68,
+    "volume_hm3": 5497.44,
+    "pct": 69.61
+   },
+   {
+    "date": "2026-11-10",
+    "cota_m": 95.67,
+    "volume_hm3": 5486.32,
+    "pct": 69.47
+   },
+   {
+    "date": "2026-11-11",
+    "cota_m": 95.67,
+    "volume_hm3": 5486.32,
+    "pct": 69.47
+   },
+   {
+    "date": "2026-11-12",
+    "cota_m": 95.67,
+    "volume_hm3": 5486.32,
+    "pct": 69.47
+   },
+   {
+    "date": "2026-11-13",
+    "cota_m": 95.66,
+    "volume_hm3": 5475.19,
+    "pct": 69.33
+   },
+   {
+    "date": "2026-11-14",
+    "cota_m": 95.65,
+    "volume_hm3": 5464.06,
+    "pct": 69.19
+   },
+   {
+    "date": "2026-11-15",
+    "cota_m": 95.65,
+    "volume_hm3": 5464.06,
+    "pct": 69.19
+   },
+   {
+    "date": "2026-11-16",
+    "cota_m": 95.65,
+    "volume_hm3": 5464.06,
+    "pct": 69.19
+   },
+   {
+    "date": "2026-11-17",
+    "cota_m": 95.65,
+    "volume_hm3": 5464.06,
+    "pct": 69.19
+   },
+   {
+    "date": "2026-11-18",
+    "cota_m": 95.65,
+    "volume_hm3": 5464.06,
+    "pct": 69.19
+   },
+   {
+    "date": "2026-11-19",
+    "cota_m": 95.64,
+    "volume_hm3": 5452.93,
+    "pct": 69.05
+   },
+   {
+    "date": "2026-11-20",
+    "cota_m": 95.64,
+    "volume_hm3": 5452.93,
+    "pct": 69.05
+   },
+   {
+    "date": "2026-11-21",
+    "cota_m": 95.63,
+    "volume_hm3": 5441.8,
+    "pct": 68.91
+   },
+   {
+    "date": "2026-11-22",
+    "cota_m": 95.62,
+    "volume_hm3": 5430.67,
+    "pct": 68.77
+   }
+  ],
+  "datum_note": "CEA \"cota\" is a local gauge scale: cota 97.80 ≈ 1,523.80 m a.s.l. (CEA page also prints 1,423.80 in another section — a typo). Add ~1,426 to convert cota to m a.s.l.",
+  "max_ordinary": {
+   "cota_m": 97.8,
+   "msnm": 1523.8,
+   "volume_hm3": 7897,
+   "volume_hm3_api": 7897.21,
+   "verified": true,
+   "source": "https://www.ceajalisco.gob.mx/contenido/chapala/"
+  },
+  "historic": {
+   "max_since_1900": {
+    "date": "1926-09",
+    "cota_m": 99.33,
+    "volume_hm3": 9663,
+    "source": "https://www.ceajalisco.gob.mx/contenido/chapala/"
+   },
+   "min_absolute": {
+    "date": "1955-07-01",
+    "cota_m": 90.8,
+    "volume_hm3": 954,
+    "source": "https://www.ceajalisco.gob.mx/contenido/chapala/ ; https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/picos/",
+    "note": "CEA page says \"junio 1955\"; picos series dates the trough 1955-07-01."
+   },
+   "min_2002": {
+    "date": "2002-06-28",
+    "cota_m": 91.07,
+    "source": "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/picos/",
+    "note": "Lowest since 1955 (2001: 91.13). Volume not in CEA series; widely reported ~1,100 hm3 (~14–15%) — unverified here."
+   },
+   "mean_period": {
+    "cota_m": 95.65,
+    "volume_hm3": 5463,
+    "source": "https://www.ceajalisco.gob.mx/contenido/chapala/"
+   }
+  },
+  "annual_min_max": [
+   {
+    "year": 1900,
+    "min_cota": 96.56,
+    "min_date": "1900-05-30",
+    "max_cota": 97.22,
+    "max_date": "1900-12-26",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1901,
+    "min_cota": 96.55,
+    "min_date": "1901-06-30",
+    "max_cota": 97.5,
+    "max_date": "1901-12-31",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1902,
+    "min_cota": 96.59,
+    "min_date": "1902-05-30",
+    "max_cota": 96.88,
+    "max_date": "1902-10-31",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1903,
+    "min_cota": 95.9,
+    "min_date": "1903-06-30",
+    "max_cota": 96.5,
+    "max_date": "1903-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1904,
+    "min_cota": 95.59,
+    "min_date": "1904-05-30",
+    "max_cota": 97.62,
+    "max_date": "1904-12-28",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1905,
+    "min_cota": 96.82,
+    "min_date": "1905-05-30",
+    "max_cota": 97.35,
+    "max_date": "1905-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1906,
+    "min_cota": 96.58,
+    "min_date": "1906-06-30",
+    "max_cota": 98.26,
+    "max_date": "1906-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1907,
+    "min_cota": 96.2,
+    "min_date": "1907-06-30",
+    "max_cota": 96.98,
+    "max_date": "1907-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1908,
+    "min_cota": 96.06,
+    "min_date": "1908-05-30",
+    "max_cota": 97.12,
+    "max_date": "1908-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1909,
+    "min_cota": 96.2,
+    "min_date": "1909-05-30",
+    "max_cota": 96.6,
+    "max_date": "1909-08-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1910,
+    "min_cota": 95.21,
+    "min_date": "1910-05-30",
+    "max_cota": 96.66,
+    "max_date": "1910-09-20",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1911,
+    "min_cota": 95.78,
+    "min_date": "1911-06-30",
+    "max_cota": 96.66,
+    "max_date": "1911-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1912,
+    "min_cota": 95.74,
+    "min_date": "1912-05-30",
+    "max_cota": 97.67,
+    "max_date": "1912-10-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1913,
+    "min_cota": 95.86,
+    "min_date": "1913-05-30",
+    "max_cota": 97.8,
+    "max_date": "1913-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1914,
+    "min_cota": 96.1,
+    "min_date": "1914-05-30",
+    "max_cota": 96.3,
+    "max_date": "1914-08-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1915,
+    "min_cota": 95.15,
+    "min_date": "1915-06-30",
+    "max_cota": 95.72,
+    "max_date": "1915-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1916,
+    "min_cota": 94.62,
+    "min_date": "1916-06-30",
+    "max_cota": 97.57,
+    "max_date": "1916-10-12",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1917,
+    "min_cota": 95.94,
+    "min_date": "1917-06-30",
+    "max_cota": 96.58,
+    "max_date": "1917-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1918,
+    "min_cota": 95.47,
+    "min_date": "1918-06-30",
+    "max_cota": 96.16,
+    "max_date": "1918-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1919,
+    "min_cota": 95.16,
+    "min_date": "1919-05-30",
+    "max_cota": 97.41,
+    "max_date": "1919-12-01",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1920,
+    "min_cota": 96.24,
+    "min_date": "1920-05-30",
+    "max_cota": 96.89,
+    "max_date": "1920-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1921,
+    "min_cota": 95.58,
+    "min_date": "1921-05-30",
+    "max_cota": 96.48,
+    "max_date": "1921-11-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1922,
+    "min_cota": 95.45,
+    "min_date": "1922-05-30",
+    "max_cota": 96.25,
+    "max_date": "1922-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1923,
+    "min_cota": 95.27,
+    "min_date": "1923-05-30",
+    "max_cota": 97.14,
+    "max_date": "1923-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1924,
+    "min_cota": 96.13,
+    "min_date": "1924-05-30",
+    "max_cota": 97.24,
+    "max_date": "1924-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1925,
+    "min_cota": 95.92,
+    "min_date": "1925-05-30",
+    "max_cota": 97.34,
+    "max_date": "1925-11-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1926,
+    "min_cota": 96.12,
+    "min_date": "1926-05-30",
+    "max_cota": 99.38,
+    "max_date": "1926-10-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1927,
+    "min_cota": 96.53,
+    "min_date": "1927-06-30",
+    "max_cota": 98.03,
+    "max_date": "1927-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1928,
+    "min_cota": 95.82,
+    "min_date": "1928-06-30",
+    "max_cota": 96.89,
+    "max_date": "1928-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1929,
+    "min_cota": 95.5,
+    "min_date": "1929-06-30",
+    "max_cota": 96.8,
+    "max_date": "1929-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1930,
+    "min_cota": 95.55,
+    "min_date": "1930-06-09",
+    "max_cota": 96.52,
+    "max_date": "1930-12-31",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1931,
+    "min_cota": 95.88,
+    "min_date": "1931-05-30",
+    "max_cota": 97.58,
+    "max_date": "1931-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1932,
+    "min_cota": 95.64,
+    "min_date": "1932-07-01",
+    "max_cota": 96.16,
+    "max_date": "1932-11-01",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1933,
+    "min_cota": 95,
+    "min_date": "1933-06-15",
+    "max_cota": 97.2,
+    "max_date": "1933-10-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1934,
+    "min_cota": 96.12,
+    "min_date": "1934-06-18",
+    "max_cota": 97.86,
+    "max_date": "1934-10-22",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1935,
+    "min_cota": 96.03,
+    "min_date": "1935-06-08",
+    "max_cota": 99.41,
+    "max_date": "1935-10-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1936,
+    "min_cota": 96.04,
+    "min_date": "1936-06-30",
+    "max_cota": 97.62,
+    "max_date": "1936-11-05",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1937,
+    "min_cota": 95.94,
+    "min_date": "1937-06-25",
+    "max_cota": 97.66,
+    "max_date": "1937-10-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1938,
+    "min_cota": 95.84,
+    "min_date": "1938-06-18",
+    "max_cota": 96.54,
+    "max_date": "1938-09-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1939,
+    "min_cota": 95.28,
+    "min_date": "1939-06-12",
+    "max_cota": 96.22,
+    "max_date": "1939-11-03",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1940,
+    "min_cota": 95.08,
+    "min_date": "1940-06-20",
+    "max_cota": 95.98,
+    "max_date": "1940-09-21",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1941,
+    "min_cota": 94.9,
+    "min_date": "1941-06-16",
+    "max_cota": 98.1,
+    "max_date": "1941-11-19",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1942,
+    "min_cota": 96.02,
+    "min_date": "1942-06-17",
+    "max_cota": 96.82,
+    "max_date": "1942-10-08",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1943,
+    "min_cota": 95.52,
+    "min_date": "1943-06-05",
+    "max_cota": 96.9,
+    "max_date": "1943-10-26",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1944,
+    "min_cota": 95.86,
+    "min_date": "1944-06-10",
+    "max_cota": 97.42,
+    "max_date": "1944-10-24",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1945,
+    "min_cota": 96.08,
+    "min_date": "1945-06-22",
+    "max_cota": 96.56,
+    "max_date": "1945-10-18",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1946,
+    "min_cota": 95.22,
+    "min_date": "1946-06-07",
+    "max_cota": 95.64,
+    "max_date": "1946-10-22",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1947,
+    "min_cota": 94.6,
+    "min_date": "1947-06-05",
+    "max_cota": 95.22,
+    "max_date": "1947-10-05",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1948,
+    "min_cota": 94.26,
+    "min_date": "1948-06-09",
+    "max_cota": 95.65,
+    "max_date": "1948-09-20",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1949,
+    "min_cota": 94.15,
+    "min_date": "1949-06-10",
+    "max_cota": 94.68,
+    "max_date": "1949-09-20",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1950,
+    "min_cota": 93.24,
+    "min_date": "1950-06-13",
+    "max_cota": 93.9,
+    "max_date": "1950-10-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1951,
+    "min_cota": 92.58,
+    "min_date": "1951-06-27",
+    "max_cota": 93.1,
+    "max_date": "1951-09-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1952,
+    "min_cota": 91.7,
+    "min_date": "1952-05-31",
+    "max_cota": 92.94,
+    "max_date": "1952-10-17",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1953,
+    "min_cota": 91.88,
+    "min_date": "1953-06-09",
+    "max_cota": 92.58,
+    "max_date": "1953-09-21",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1954,
+    "min_cota": 91.58,
+    "min_date": "1954-06-14",
+    "max_cota": 92.05,
+    "max_date": "1954-09-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1955,
+    "min_cota": 90.8,
+    "min_date": "1955-07-01",
+    "max_cota": 94.22,
+    "max_date": "1955-11-21",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1956,
+    "min_cota": 93.34,
+    "min_date": "1956-06-23",
+    "max_cota": 94.7,
+    "max_date": "1956-09-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1957,
+    "min_cota": 93.11,
+    "min_date": "1957-08-17",
+    "max_cota": 93.28,
+    "max_date": "1957-10-02",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1958,
+    "min_cota": 91.91,
+    "min_date": "1958-05-30",
+    "max_cota": 96.93,
+    "max_date": "1958-12-21",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1959,
+    "min_cota": 96.52,
+    "min_date": "1959-04-14",
+    "max_cota": 97.96,
+    "max_date": "1959-11-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1960,
+    "min_cota": 96.67,
+    "min_date": "1960-06-25",
+    "max_cota": 97.4,
+    "max_date": "1960-09-24",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1961,
+    "min_cota": 96.1,
+    "min_date": "1961-06-01",
+    "max_cota": 96.97,
+    "max_date": "1961-09-25",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1962,
+    "min_cota": 95.35,
+    "min_date": "1962-06-21",
+    "max_cota": 96.62,
+    "max_date": "1962-10-03",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1963,
+    "min_cota": 95.42,
+    "min_date": "1963-06-21",
+    "max_cota": 96.9,
+    "max_date": "1963-10-17",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1964,
+    "min_cota": 95.75,
+    "min_date": "1964-06-13",
+    "max_cota": 96.52,
+    "max_date": "1964-10-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1965,
+    "min_cota": 95.24,
+    "min_date": "1965-06-17",
+    "max_cota": 97.92,
+    "max_date": "1965-10-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1966,
+    "min_cota": 96.57,
+    "min_date": "1966-06-17",
+    "max_cota": 97.62,
+    "max_date": "1966-11-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1967,
+    "min_cota": 96.6,
+    "min_date": "1967-06-04",
+    "max_cota": 99.02,
+    "max_date": "1967-11-04",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1968,
+    "min_cota": 96.59,
+    "min_date": "1968-06-27",
+    "max_cota": 97.92,
+    "max_date": "1968-10-31",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1969,
+    "min_cota": 96.46,
+    "min_date": "1969-06-22",
+    "max_cota": 97.08,
+    "max_date": "1969-10-04",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1970,
+    "min_cota": 95.62,
+    "min_date": "1970-06-21",
+    "max_cota": 97.46,
+    "max_date": "1970-10-19",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1971,
+    "min_cota": 96.04,
+    "min_date": "1971-06-13",
+    "max_cota": 98.81,
+    "max_date": "1971-10-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1972,
+    "min_cota": 97.21,
+    "min_date": "1972-05-27",
+    "max_cota": 97.54,
+    "max_date": "1972-10-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1973,
+    "min_cota": 96.01,
+    "min_date": "1973-06-26",
+    "max_cota": 98.78,
+    "max_date": "1973-09-24",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1974,
+    "min_cota": 97.09,
+    "min_date": "1974-06-12",
+    "max_cota": 97.89,
+    "max_date": "1974-09-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1975,
+    "min_cota": 96.35,
+    "min_date": "1975-06-10",
+    "max_cota": 98.37,
+    "max_date": "1975-09-22",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1976,
+    "min_cota": 96.7,
+    "min_date": "1976-06-15",
+    "max_cota": 98.73,
+    "max_date": "1976-11-22",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1977,
+    "min_cota": 97.46,
+    "min_date": "1977-06-09",
+    "max_cota": 98.37,
+    "max_date": "1977-10-07",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1978,
+    "min_cota": 96.82,
+    "min_date": "1978-06-12",
+    "max_cota": 97.74,
+    "max_date": "1978-10-24",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1979,
+    "min_cota": 96.29,
+    "min_date": "1979-06-24",
+    "max_cota": 96.85,
+    "max_date": "1979-09-22",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1980,
+    "min_cota": 95.13,
+    "min_date": "1980-06-19",
+    "max_cota": 96.25,
+    "max_date": "1980-10-08",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1981,
+    "min_cota": 95.11,
+    "min_date": "1981-06-16",
+    "max_cota": 96.15,
+    "max_date": "1981-09-17",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1982,
+    "min_cota": 94.76,
+    "min_date": "1982-06-23",
+    "max_cota": 94.98,
+    "max_date": "1982-09-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1983,
+    "min_cota": 93.71,
+    "min_date": "1983-06-16",
+    "max_cota": 95.21,
+    "max_date": "1983-10-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1984,
+    "min_cota": 94.07,
+    "min_date": "1984-06-08",
+    "max_cota": 95.46,
+    "max_date": "1984-10-05",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1985,
+    "min_cota": 94.19,
+    "min_date": "1985-06-12",
+    "max_cota": 95.4,
+    "max_date": "1985-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1986,
+    "min_cota": 94.14,
+    "min_date": "1986-06-12",
+    "max_cota": 95.37,
+    "max_date": "1986-10-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1987,
+    "min_cota": 94.29,
+    "min_date": "1987-06-12",
+    "max_cota": 94.9,
+    "max_date": "1987-09-07",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1988,
+    "min_cota": 93.45,
+    "min_date": "1988-06-16",
+    "max_cota": 94.71,
+    "max_date": "1988-09-26",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1989,
+    "min_cota": 93.21,
+    "min_date": "1989-07-01",
+    "max_cota": 93.47,
+    "max_date": "1989-09-23",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1990,
+    "min_cota": 92.2,
+    "min_date": "1990-06-05",
+    "max_cota": 93.11,
+    "max_date": "1990-10-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1991,
+    "min_cota": 91.91,
+    "min_date": "1991-06-17",
+    "max_cota": 94.66,
+    "max_date": "1991-10-24",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1992,
+    "min_cota": 94.41,
+    "min_date": "1992-06-02",
+    "max_cota": 95.56,
+    "max_date": "1992-11-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1993,
+    "min_cota": 94.53,
+    "min_date": "1993-06-15",
+    "max_cota": 95.77,
+    "max_date": "1993-10-10",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1994,
+    "min_cota": 94.55,
+    "min_date": "1994-06-13",
+    "max_cota": 95.19,
+    "max_date": "1994-09-30",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1995,
+    "min_cota": 93.89,
+    "min_date": "1995-06-15",
+    "max_cota": 95.07,
+    "max_date": "1995-10-04",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1996,
+    "min_cota": 93.77,
+    "min_date": "1996-06-18",
+    "max_cota": 94.39,
+    "max_date": "1996-10-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1997,
+    "min_cota": 93.23,
+    "min_date": "1997-06-21",
+    "max_cota": 93.56,
+    "max_date": "1997-09-01",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1998,
+    "min_cota": 92.24,
+    "min_date": "1998-06-18",
+    "max_cota": 93.67,
+    "max_date": "1998-10-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 1999,
+    "min_cota": 92.52,
+    "min_date": "1999-06-24",
+    "max_cota": 93.12,
+    "max_date": "1999-09-21",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2000,
+    "min_cota": 91.98,
+    "min_date": "2000-05-31",
+    "max_cota": 92.35,
+    "max_date": "2000-09-01",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2001,
+    "min_cota": 91.13,
+    "min_date": "2001-06-04",
+    "max_cota": 91.96,
+    "max_date": "2001-10-17",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2002,
+    "min_cota": 91.07,
+    "min_date": "2002-06-28",
+    "max_cota": 92.08,
+    "max_date": "2002-11-18",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2003,
+    "min_cota": 91.3,
+    "min_date": "2003-06-16",
+    "max_cota": 94.53,
+    "max_date": "2003-12-31",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2004,
+    "min_cota": 93.86,
+    "min_date": "2004-06-02",
+    "max_cota": 96.17,
+    "max_date": "2004-11-11",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2005,
+    "min_cota": 95.1,
+    "min_date": "2005-06-30",
+    "max_cota": 95.49,
+    "max_date": "2005-09-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2006,
+    "min_cota": 94.18,
+    "min_date": "2006-06-02",
+    "max_cota": 94.81,
+    "max_date": "2006-11-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2007,
+    "min_cota": 93.9,
+    "min_date": "2007-06-19",
+    "max_cota": 95.68,
+    "max_date": "2007-10-13",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2008,
+    "min_cota": 94.53,
+    "min_date": "2008-06-09",
+    "max_cota": 96.72,
+    "max_date": "2008-09-29",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2009,
+    "min_cota": 95.44,
+    "min_date": "2009-06-26",
+    "max_cota": 95.83,
+    "max_date": "2009-10-07",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2010,
+    "min_cota": 95.06,
+    "min_date": "2010-06-18",
+    "max_cota": 96.62,
+    "max_date": "2010-10-05",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2011,
+    "min_cota": 95.2,
+    "min_date": "2011-06-22",
+    "max_cota": 95.44,
+    "max_date": "2011-08-09",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2012,
+    "min_cota": 94.04,
+    "min_date": "2012-06-17",
+    "max_cota": 94.53,
+    "max_date": "2012-09-18",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2013,
+    "min_cota": 93.08,
+    "min_date": "2013-06-13",
+    "max_cota": 94.05,
+    "max_date": "2013-11-27",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2014,
+    "min_cota": 93.15,
+    "min_date": "2014-06-20",
+    "max_cota": 94.4,
+    "max_date": "2014-11-08",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2015,
+    "min_cota": 93.7,
+    "min_date": "2015-06-12",
+    "max_cota": 95.15,
+    "max_date": "2015-11-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2016,
+    "min_cota": 94.12,
+    "min_date": "2016-06-17",
+    "max_cota": 95.34,
+    "max_date": "2016-10-28",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2017,
+    "min_cota": 94.08,
+    "min_date": "2017-07-01",
+    "max_cota": 95.51,
+    "max_date": "2017-10-16",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2018,
+    "min_cota": 94.32,
+    "min_date": "2018-06-18",
+    "max_cota": 96.76,
+    "max_date": "2018-11-28",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2019,
+    "min_cota": 95.76,
+    "min_date": "2019-06-27",
+    "max_cota": 96.18,
+    "max_date": "2019-09-19",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2020,
+    "min_cota": 94.93,
+    "min_date": "2020-06-20",
+    "max_cota": 95.52,
+    "max_date": "2020-10-01",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2021,
+    "min_cota": 94.07,
+    "min_date": "2021-06-24",
+    "max_cota": 96.11,
+    "max_date": "2021-12-17",
+    "source": "CEA picos"
+   },
+   {
+    "year": 2024,
+    "min_cota": 93.15,
+    "min_date": "2024-06-22",
+    "min_volume_hm3": 2867.65,
+    "min_pct": 36.31,
+    "max_cota": 95.2,
+    "max_date": "2024-10-25",
+    "max_volume_hm3": 4969.56,
+    "max_pct": 62.93,
+    "source": "CEA daily (anios)"
+   },
+   {
+    "year": 2025,
+    "min_cota": 94.05,
+    "min_date": "2025-06-04",
+    "min_volume_hm3": 3750.96,
+    "min_pct": 47.5,
+    "max_cota": 96.24,
+    "max_date": "2025-10-29",
+    "max_volume_hm3": 6123.7,
+    "max_pct": 77.54,
+    "source": "CEA daily (anios)"
+   },
+   {
+    "year": 2026,
+    "min_cota": 95.22,
+    "min_date": "2026-06-01",
+    "min_volume_hm3": 4991.4,
+    "min_pct": 63.2,
+    "max_cota": 96.05,
+    "max_date": "2026-01-01",
+    "max_volume_hm3": 5909.83,
+    "max_pct": 74.83,
+    "source": "CEA daily (anios)",
+    "partial_year": "through 2026-11-22"
+   }
+  ],
+  "annual_min_max_note": "1900–2021 from CEA \"picos\" endpoint (pairs of dry-season minimum and rainy-season maximum per year); 2024–2026 computed from CEA daily series; 2022–2023 missing from CEA open endpoints — see spot_readings_2022_2023.",
+  "spot_readings_2022_2023": [
+   {
+    "date": "2022-09-07",
+    "cota_m": 95.83,
+    "volume_hm3": 5642,
+    "pct": 71.45,
+    "source": "https://comsoc.udg.mx/print/76312",
+    "note": "as relayed by UdeG (search snippet); verify"
+   },
+   {
+    "date": "2023-08-30",
+    "pct": 51.18,
+    "source": "https://comsoc.udg.mx/printpdf/87890"
+   },
+   {
+    "date": "2023-12-13",
+    "cota_m": 94.14,
+    "volume_hm3": 3844,
+    "source": "https://theguadalajarareporter.net/index.php/news/news/lake-chapala/60841-drought-conditions-augur-dramatic-impact-on-lake-chapala"
+   }
+  ],
+  "same_date_nov22": [
+   {
+    "date": "2024-11-22",
+    "cota": 95.17,
+    "volume_hm3": 4936.81,
+    "pct": 62.51
+   },
+   {
+    "date": "2025-11-22",
+    "cota": 96.18,
+    "volume_hm3": 6056.16,
+    "pct": 76.69
+   },
+   {
+    "date": "2026-11-22",
+    "cota": 95.62,
+    "volume_hm3": 5430.67,
+    "pct": 68.77
+   }
+  ],
+  "annual_drawdown_m": [
+   {
+    "year": 2006,
+    "drop_m": 0.91,
+    "drop_hm3": 948.96
+   },
+   {
+    "year": 2007,
+    "drop_m": 1.15,
+    "drop_hm3": 1247.68
+   },
+   {
+    "year": 2008,
+    "drop_m": 1.28,
+    "drop_hm3": 1434.17
+   },
+   {
+    "year": 2009,
+    "drop_m": 0.77,
+    "drop_hm3": 847.67
+   },
+   {
+    "year": 2010,
+    "drop_m": 1.42,
+    "drop_hm3": 1582.86
+   },
+   {
+    "year": 2011,
+    "drop_m": 1.4,
+    "drop_hm3": 1491.03
+   },
+   {
+    "year": 2012,
+    "drop_m": 1.45,
+    "drop_hm3": 1448.82
+   },
+   {
+    "year": 2013,
+    "drop_m": 0.9,
+    "drop_hm3": 883.31
+   },
+   {
+    "year": 2014,
+    "drop_m": 0.7,
+    "drop_hm3": 713.65
+   },
+   {
+    "year": 2015,
+    "drop_m": 1.03,
+    "drop_hm3": 1091.4
+   },
+   {
+    "year": 2016,
+    "drop_m": 1.26,
+    "drop_hm3": 1340.35
+   },
+   {
+    "year": 2017,
+    "drop_m": 1.19,
+    "drop_hm3": 1277.23
+   },
+   {
+    "year": 2018,
+    "drop_m": 1,
+    "drop_hm3": 1124.68
+   },
+   {
+    "year": 2019,
+    "drop_m": 1.25,
+    "drop_hm3": 1379.66
+   },
+   {
+    "year": 2020,
+    "drop_m": 1.45,
+    "drop_hm3": 1547.68
+   }
+  ],
+  "annual_recovery_m": [
+   {
+    "year": 2006,
+    "rise_m": 0.63,
+    "rise_hm3": 662.67
+   },
+   {
+    "year": 2007,
+    "rise_m": 1.78,
+    "rise_hm3": 1897.92
+   },
+   {
+    "year": 2008,
+    "rise_m": 2.19,
+    "rise_hm3": 2416.03
+   },
+   {
+    "year": 2009,
+    "rise_m": 0.39,
+    "rise_hm3": 432.75
+   },
+   {
+    "year": 2010,
+    "rise_m": 1.56,
+    "rise_hm3": 1735.72
+   },
+   {
+    "year": 2011,
+    "rise_m": 0.24,
+    "rise_hm3": 262.06
+   },
+   {
+    "year": 2012,
+    "rise_m": 0.49,
+    "rise_hm3": 509.17
+   },
+   {
+    "year": 2013,
+    "rise_m": 0.97,
+    "rise_hm3": 950.02
+   },
+   {
+    "year": 2014,
+    "rise_m": 1.25,
+    "rise_hm3": 1246.37
+   },
+   {
+    "year": 2015,
+    "rise_m": 1.45,
+    "rise_hm3": 1514.6
+   },
+   {
+    "year": 2016,
+    "rise_m": 1.22,
+    "rise_hm3": 1298.86
+   },
+   {
+    "year": 2017,
+    "rise_m": 1.43,
+    "rise_hm3": 1526.18
+   },
+   {
+    "year": 2018,
+    "rise_m": 2.44,
+    "rise_hm3": 2680.12
+   },
+   {
+    "year": 2019,
+    "rise_m": 0.42,
+    "rise_hm3": 469.69
+   },
+   {
+    "year": 2020,
+    "rise_m": 0.59,
+    "rise_hm3": 642.89
+   },
+   {
+    "year": 2021,
+    "rise_m": 2.04,
+    "rise_hm3": 2205.66
+   }
+  ],
+  "extraction_for_guadalajara": {
+   "concession_hm3_per_year": 240,
+   "concession_m3s": 7.61,
+   "aqueduct_design_m3s": 7.5,
+   "actual_m3s": {
+    "2023": 6.8,
+    "2024": 6.58,
+    "2025": 6.65,
+    "mean_2001_2025": 6
+   },
+   "share_of_siapa_supply_pct_2025": 60.2,
+   "note": "Chapala volumes include both the 1991 aqueduct and the Sistema Antiguo (Ocotlán–Atequiza–Las Pintas). Older studies (2008): mean ~5.0 m3/s; 5.96 m3/s in 1998; 4.71 m3/s in 2004.",
+   "sources": [
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0007b.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0001.pdf",
+    "https://planintegraldelagua.jalisco.gob.mx/pdf/an-0015.pdf"
+   ]
+  },
+  "role": "Lake Chapala is the main source for the Guadalajara metro (≈60% of SIAPA supply; PIA documents say the aqueduct serves >60% of the population). Its level falls ~0.7–1.5 m each dry season (evaporation + extraction) and recovers in the rainy season with Lerma inflows; lows in 1955, 1990–91 and 2001–02 drove the 1991 aqueduct and the search for the Calderón/Zapotillo sources. It is also a Ramsar wetland (site 1973).",
+  "sources": [
+   "https://www.ceajalisco.gob.mx/contenido/chapala/",
+   "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/",
+   "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/anios/",
+   "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/picos/",
+   "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/descenso/",
+   "https://www.ceajalisco.gob.mx/api/chapala/v1/cotas/recuperacion/"
+  ]
+ }
+}

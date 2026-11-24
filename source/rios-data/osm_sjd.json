@@ -1,0 +1,3044 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-24T04:34:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 119407979,
+  "bounds": {
+    "minlat": 20.6603998,
+    "minlon": -103.3501076,
+    "maxlat": 20.6605070,
+    "maxlon": -103.3499380
+  },
+  "geometry": [
+    { "lat": 20.6605070, "lon": -103.3499380 },
+    { "lat": 20.6604436, "lon": -103.3499624 },
+    { "lat": 20.6604169, "lon": -103.3500025 },
+    { "lat": 20.6604040, "lon": -103.3500436 },
+    { "lat": 20.6603998, "lon": -103.3501076 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 120872091,
+  "bounds": {
+    "minlat": 20.6550191,
+    "minlon": -103.3523208,
+    "maxlat": 20.6557665,
+    "maxlon": -103.3516328
+  },
+  "geometry": [
+    { "lat": 20.6550191, "lon": -103.3523208 },
+    { "lat": 20.6557665, "lon": -103.3516328 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "-1",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 157490786,
+  "bounds": {
+    "minlat": 20.6557665,
+    "minlon": -103.3516328,
+    "maxlat": 20.6566659,
+    "maxlon": -103.3512647
+  },
+  "geometry": [
+    { "lat": 20.6557665, "lon": -103.3516328 },
+    { "lat": 20.6561165, "lon": -103.3514452 },
+    { "lat": 20.6563642, "lon": -103.3513628 },
+    { "lat": 20.6566659, "lon": -103.3512647 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 189981511,
+  "bounds": {
+    "minlat": 20.6773207,
+    "minlon": -103.3405955,
+    "maxlat": 20.6775047,
+    "maxlon": -103.3405035
+  },
+  "geometry": [
+    { "lat": 20.6773207, "lon": -103.3405955 },
+    { "lat": 20.6774727, "lon": -103.3405174 },
+    { "lat": 20.6775047, "lon": -103.3405035 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 189981513,
+  "bounds": {
+    "minlat": 20.6714328,
+    "minlon": -103.3437167,
+    "maxlat": 20.6730609,
+    "maxlon": -103.3428777
+  },
+  "geometry": [
+    { "lat": 20.6714328, "lon": -103.3437167 },
+    { "lat": 20.6715678, "lon": -103.3436728 },
+    { "lat": 20.6718776, "lon": -103.3435016 },
+    { "lat": 20.6722924, "lon": -103.3432796 },
+    { "lat": 20.6725041, "lon": -103.3431616 },
+    { "lat": 20.6730609, "lon": -103.3428777 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 298742262,
+  "bounds": {
+    "minlat": 20.6752917,
+    "minlon": -103.3419175,
+    "maxlat": 20.6765708,
+    "maxlon": -103.3412204
+  },
+  "geometry": [
+    { "lat": 20.6765708, "lon": -103.3412204 },
+    { "lat": 20.6755936, "lon": -103.3417595 },
+    { "lat": 20.6755294, "lon": -103.3417943 },
+    { "lat": 20.6752917, "lon": -103.3419175 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 298742263,
+  "bounds": {
+    "minlat": 20.6671968,
+    "minlon": -103.3460660,
+    "maxlat": 20.6705924,
+    "maxlon": -103.3442091
+  },
+  "geometry": [
+    { "lat": 20.6671968, "lon": -103.3460660 },
+    { "lat": 20.6672347, "lon": -103.3460046 },
+    { "lat": 20.6673022, "lon": -103.3459589 },
+    { "lat": 20.6673758, "lon": -103.3459109 },
+    { "lat": 20.6674701, "lon": -103.3458712 },
+    { "lat": 20.6675683, "lon": -103.3458402 },
+    { "lat": 20.6676318, "lon": -103.3458199 },
+    { "lat": 20.6678529, "lon": -103.3457144 },
+    { "lat": 20.6685317, "lon": -103.3453569 },
+    { "lat": 20.6692863, "lon": -103.3449414 },
+    { "lat": 20.6697326, "lon": -103.3447026 },
+    { "lat": 20.6705277, "lon": -103.3442505 },
+    { "lat": 20.6705554, "lon": -103.3442326 },
+    { "lat": 20.6705924, "lon": -103.3442091 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 298742268,
+  "bounds": {
+    "minlat": 20.6675097,
+    "minlon": -103.3461657,
+    "maxlat": 20.6677817,
+    "maxlon": -103.3459977
+  },
+  "geometry": [
+    { "lat": 20.6677817, "lon": -103.3459977 },
+    { "lat": 20.6676403, "lon": -103.3460657 },
+    { "lat": 20.6675799, "lon": -103.3461081 },
+    { "lat": 20.6675097, "lon": -103.3461657 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 304888485,
+  "bounds": {
+    "minlat": 20.6975651,
+    "minlon": -103.3372202,
+    "maxlat": 20.6992284,
+    "maxlon": -103.3360334
+  },
+  "geometry": [
+    { "lat": 20.6975651, "lon": -103.3372202 },
+    { "lat": 20.6976255, "lon": -103.3371851 },
+    { "lat": 20.6976799, "lon": -103.3371469 },
+    { "lat": 20.6989471, "lon": -103.3361881 },
+    { "lat": 20.6991112, "lon": -103.3360856 },
+    { "lat": 20.6992284, "lon": -103.3360334 }
+  ],
+  "tags": {
+    "name": "San Juan de Dios",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 316647548,
+  "bounds": {
+    "minlat": 20.6820497,
+    "minlon": -103.3382646,
+    "maxlat": 20.6839886,
+    "maxlon": -103.3372101
+  },
+  "geometry": [
+    { "lat": 20.6839886, "lon": -103.3372101 },
+    { "lat": 20.6838954, "lon": -103.3372590 },
+    { "lat": 20.6836223, "lon": -103.3374132 },
+    { "lat": 20.6834209, "lon": -103.3375193 },
+    { "lat": 20.6831653, "lon": -103.3376576 },
+    { "lat": 20.6820497, "lon": -103.3382646 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 402385590,
+  "bounds": {
+    "minlat": 20.6550855,
+    "minlon": -103.3524673,
+    "maxlat": 20.6558410,
+    "maxlon": -103.3517930
+  },
+  "geometry": [
+    { "lat": 20.6558410, "lon": -103.3517930 },
+    { "lat": 20.6553238, "lon": -103.3522280 },
+    { "lat": 20.6550855, "lon": -103.3524673 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "-1",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 405706050,
+  "bounds": {
+    "minlat": 20.7380001,
+    "minlon": -103.3120294,
+    "maxlat": 20.7395429,
+    "maxlon": -103.3114000
+  },
+  "geometry": [
+    { "lat": 20.7380001, "lon": -103.3118170 },
+    { "lat": 20.7390681, "lon": -103.3115249 },
+    { "lat": 20.7391641, "lon": -103.3114955 },
+    { "lat": 20.7392295, "lon": -103.3114654 },
+    { "lat": 20.7393104, "lon": -103.3114299 },
+    { "lat": 20.7393631, "lon": -103.3114078 },
+    { "lat": 20.7393981, "lon": -103.3114000 },
+    { "lat": 20.7394342, "lon": -103.3114040 },
+    { "lat": 20.7394728, "lon": -103.3114201 },
+    { "lat": 20.7395095, "lon": -103.3114516 },
+    { "lat": 20.7395423, "lon": -103.3115162 },
+    { "lat": 20.7395429, "lon": -103.3115669 },
+    { "lat": 20.7395240, "lon": -103.3116298 },
+    { "lat": 20.7394754, "lon": -103.3116761 },
+    { "lat": 20.7394148, "lon": -103.3116936 },
+    { "lat": 20.7393344, "lon": -103.3116917 },
+    { "lat": 20.7392495, "lon": -103.3116935 },
+    { "lat": 20.7380686, "lon": -103.3120294 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405706051,
+  "bounds": {
+    "minlat": 20.7315903,
+    "minlon": -103.3139558,
+    "maxlat": 20.7380686,
+    "maxlon": -103.3120294
+  },
+  "geometry": [
+    { "lat": 20.7380686, "lon": -103.3120294 },
+    { "lat": 20.7369286, "lon": -103.3123669 },
+    { "lat": 20.7357723, "lon": -103.3127030 },
+    { "lat": 20.7354855, "lon": -103.3127876 },
+    { "lat": 20.7346130, "lon": -103.3130454 },
+    { "lat": 20.7334535, "lon": -103.3133996 },
+    { "lat": 20.7333828, "lon": -103.3134209 },
+    { "lat": 20.7322861, "lon": -103.3137514 },
+    { "lat": 20.7315903, "lon": -103.3139558 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405706053,
+  "bounds": {
+    "minlat": 20.7315540,
+    "minlon": -103.3137409,
+    "maxlat": 20.7380001,
+    "maxlon": -103.3118170
+  },
+  "geometry": [
+    { "lat": 20.7315540, "lon": -103.3137409 },
+    { "lat": 20.7322570, "lon": -103.3135236 },
+    { "lat": 20.7333299, "lon": -103.3132167 },
+    { "lat": 20.7334087, "lon": -103.3131941 },
+    { "lat": 20.7345641, "lon": -103.3128412 },
+    { "lat": 20.7355537, "lon": -103.3125471 },
+    { "lat": 20.7357057, "lon": -103.3124985 },
+    { "lat": 20.7368795, "lon": -103.3121472 },
+    { "lat": 20.7374937, "lon": -103.3119583 },
+    { "lat": 20.7380001, "lon": -103.3118170 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405706055,
+  "bounds": {
+    "minlat": 20.7295219,
+    "minlon": -103.3145677,
+    "maxlat": 20.7315903,
+    "maxlon": -103.3139558
+  },
+  "geometry": [
+    { "lat": 20.7315903, "lon": -103.3139558 },
+    { "lat": 20.7311086, "lon": -103.3140998 },
+    { "lat": 20.7295219, "lon": -103.3145677 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405706057,
+  "bounds": {
+    "minlat": 20.7294653,
+    "minlon": -103.3143838,
+    "maxlat": 20.7315540,
+    "maxlon": -103.3137409
+  },
+  "geometry": [
+    { "lat": 20.7294653, "lon": -103.3143838 },
+    { "lat": 20.7299737, "lon": -103.3142150 },
+    { "lat": 20.7309652, "lon": -103.3139248 },
+    { "lat": 20.7315540, "lon": -103.3137409 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405708774,
+  "bounds": {
+    "minlat": 20.7273192,
+    "minlon": -103.3150004,
+    "maxlat": 20.7294653,
+    "maxlon": -103.3143838
+  },
+  "geometry": [
+    { "lat": 20.7273192, "lon": -103.3150004 },
+    { "lat": 20.7277666, "lon": -103.3148700 },
+    { "lat": 20.7278957, "lon": -103.3148305 },
+    { "lat": 20.7282163, "lon": -103.3147371 },
+    { "lat": 20.7284605, "lon": -103.3146623 },
+    { "lat": 20.7287689, "lon": -103.3145738 },
+    { "lat": 20.7291991, "lon": -103.3144569 },
+    { "lat": 20.7293862, "lon": -103.3144038 },
+    { "lat": 20.7294653, "lon": -103.3143838 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405708776,
+  "bounds": {
+    "minlat": 20.7255382,
+    "minlon": -103.3157372,
+    "maxlat": 20.7273026,
+    "maxlon": -103.3151938
+  },
+  "geometry": [
+    { "lat": 20.7273026, "lon": -103.3151938 },
+    { "lat": 20.7261787, "lon": -103.3155342 },
+    { "lat": 20.7257714, "lon": -103.3156576 },
+    { "lat": 20.7255382, "lon": -103.3157372 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405708778,
+  "bounds": {
+    "minlat": 20.7233643,
+    "minlon": -103.3161853,
+    "maxlat": 20.7254915,
+    "maxlon": -103.3155570
+  },
+  "geometry": [
+    { "lat": 20.7233643, "lon": -103.3161853 },
+    { "lat": 20.7243636, "lon": -103.3158909 },
+    { "lat": 20.7253811, "lon": -103.3155874 },
+    { "lat": 20.7254915, "lon": -103.3155570 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405708782,
+  "bounds": {
+    "minlat": 20.7211613,
+    "minlon": -103.3168600,
+    "maxlat": 20.7218392,
+    "maxlon": -103.3166351
+  },
+  "geometry": [
+    { "lat": 20.7211613, "lon": -103.3168600 },
+    { "lat": 20.7212794, "lon": -103.3168243 },
+    { "lat": 20.7217346, "lon": -103.3166667 },
+    { "lat": 20.7218392, "lon": -103.3166351 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 405708785,
+  "bounds": {
+    "minlat": 20.7164016,
+    "minlon": -103.3196785,
+    "maxlat": 20.7207946,
+    "maxlon": -103.3173207
+  },
+  "geometry": [
+    { "lat": 20.7207946, "lon": -103.3173207 },
+    { "lat": 20.7206835, "lon": -103.3173870 },
+    { "lat": 20.7206059, "lon": -103.3174274 },
+    { "lat": 20.7205248, "lon": -103.3174711 },
+    { "lat": 20.7199804, "lon": -103.3177582 },
+    { "lat": 20.7197754, "lon": -103.3178479 },
+    { "lat": 20.7192492, "lon": -103.3181323 },
+    { "lat": 20.7191327, "lon": -103.3182033 },
+    { "lat": 20.7184390, "lon": -103.3185737 },
+    { "lat": 20.7182542, "lon": -103.3186752 },
+    { "lat": 20.7170938, "lon": -103.3193087 },
+    { "lat": 20.7166918, "lon": -103.3195206 },
+    { "lat": 20.7164881, "lon": -103.3196297 },
+    { "lat": 20.7164016, "lon": -103.3196785 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406471824,
+  "bounds": {
+    "minlat": 20.6752948,
+    "minlon": -103.3416921,
+    "maxlat": 20.6764972,
+    "maxlon": -103.3410320
+  },
+  "geometry": [
+    { "lat": 20.6752948, "lon": -103.3416921 },
+    { "lat": 20.6754880, "lon": -103.3415733 },
+    { "lat": 20.6755970, "lon": -103.3415063 },
+    { "lat": 20.6757127, "lon": -103.3414433 },
+    { "lat": 20.6760896, "lon": -103.3412437 },
+    { "lat": 20.6761212, "lon": -103.3412272 },
+    { "lat": 20.6764972, "lon": -103.3410320 }
+  ],
+  "tags": {
+    "alt_name": "Calzada Independencia Sur",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406471825,
+  "bounds": {
+    "minlat": 20.6744959,
+    "minlon": -103.3423249,
+    "maxlat": 20.6752917,
+    "maxlon": -103.3419175
+  },
+  "geometry": [
+    { "lat": 20.6752917, "lon": -103.3419175 },
+    { "lat": 20.6749847, "lon": -103.3420694 },
+    { "lat": 20.6749162, "lon": -103.3421051 },
+    { "lat": 20.6744959, "lon": -103.3423249 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406471829,
+  "bounds": {
+    "minlat": 20.6673802,
+    "minlon": -103.3462190,
+    "maxlat": 20.6675097,
+    "maxlon": -103.3461657
+  },
+  "geometry": [
+    { "lat": 20.6675097, "lon": -103.3461657 },
+    { "lat": 20.6673802, "lon": -103.3462190 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406472087,
+  "bounds": {
+    "minlat": 20.6635185,
+    "minlon": -103.3483010,
+    "maxlat": 20.6673802,
+    "maxlon": -103.3462190
+  },
+  "geometry": [
+    { "lat": 20.6673802, "lon": -103.3462190 },
+    { "lat": 20.6672794, "lon": -103.3462568 },
+    { "lat": 20.6660433, "lon": -103.3469346 },
+    { "lat": 20.6651623, "lon": -103.3474145 },
+    { "lat": 20.6647960, "lon": -103.3476124 },
+    { "lat": 20.6641074, "lon": -103.3479757 },
+    { "lat": 20.6635185, "lon": -103.3483010 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406474928,
+  "bounds": {
+    "minlat": 20.7273026,
+    "minlon": -103.3151938,
+    "maxlat": 20.7295219,
+    "maxlon": -103.3145677
+  },
+  "geometry": [
+    { "lat": 20.7295219, "lon": -103.3145677 },
+    { "lat": 20.7282640, "lon": -103.3149192 },
+    { "lat": 20.7273026, "lon": -103.3151938 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406474930,
+  "bounds": {
+    "minlat": 20.7220084,
+    "minlon": -103.3168099,
+    "maxlat": 20.7255382,
+    "maxlon": -103.3157372
+  },
+  "geometry": [
+    { "lat": 20.7255382, "lon": -103.3157372 },
+    { "lat": 20.7245593, "lon": -103.3160440 },
+    { "lat": 20.7244700, "lon": -103.3160707 },
+    { "lat": 20.7239377, "lon": -103.3162270 },
+    { "lat": 20.7234218, "lon": -103.3163748 },
+    { "lat": 20.7226966, "lon": -103.3165882 },
+    { "lat": 20.7226338, "lon": -103.3166086 },
+    { "lat": 20.7222472, "lon": -103.3167346 },
+    { "lat": 20.7220084, "lon": -103.3168099 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406474932,
+  "bounds": {
+    "minlat": 20.7254915,
+    "minlon": -103.3155570,
+    "maxlat": 20.7273192,
+    "maxlon": -103.3150004
+  },
+  "geometry": [
+    { "lat": 20.7254915, "lon": -103.3155570 },
+    { "lat": 20.7265483, "lon": -103.3152352 },
+    { "lat": 20.7271261, "lon": -103.3150592 },
+    { "lat": 20.7273192, "lon": -103.3150004 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406476995,
+  "bounds": {
+    "minlat": 20.7164004,
+    "minlon": -103.3194423,
+    "maxlat": 20.7207030,
+    "maxlon": -103.3171085
+  },
+  "geometry": [
+    { "lat": 20.7164004, "lon": -103.3194423 },
+    { "lat": 20.7172191, "lon": -103.3189984 },
+    { "lat": 20.7179680, "lon": -103.3185893 },
+    { "lat": 20.7190688, "lon": -103.3179932 },
+    { "lat": 20.7194971, "lon": -103.3177672 },
+    { "lat": 20.7205557, "lon": -103.3171860 },
+    { "lat": 20.7207030, "lon": -103.3171085 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487008,
+  "bounds": {
+    "minlat": 20.7130068,
+    "minlon": -103.3215236,
+    "maxlat": 20.7164016,
+    "maxlon": -103.3196785
+  },
+  "geometry": [
+    { "lat": 20.7164016, "lon": -103.3196785 },
+    { "lat": 20.7159015, "lon": -103.3199680 },
+    { "lat": 20.7158687, "lon": -103.3199860 },
+    { "lat": 20.7151278, "lon": -103.3203464 },
+    { "lat": 20.7150888, "lon": -103.3203684 },
+    { "lat": 20.7143620, "lon": -103.3207846 },
+    { "lat": 20.7139586, "lon": -103.3210030 },
+    { "lat": 20.7136859, "lon": -103.3211520 },
+    { "lat": 20.7130068, "lon": -103.3215236 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487012,
+  "bounds": {
+    "minlat": 20.7111364,
+    "minlon": -103.3225327,
+    "maxlat": 20.7130068,
+    "maxlon": -103.3215236
+  },
+  "geometry": [
+    { "lat": 20.7130068, "lon": -103.3215236 },
+    { "lat": 20.7126580, "lon": -103.3217048 },
+    { "lat": 20.7125108, "lon": -103.3217865 },
+    { "lat": 20.7122862, "lon": -103.3219077 },
+    { "lat": 20.7119916, "lon": -103.3220650 },
+    { "lat": 20.7115880, "lon": -103.3222816 },
+    { "lat": 20.7113963, "lon": -103.3223845 },
+    { "lat": 20.7111364, "lon": -103.3225327 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487014,
+  "bounds": {
+    "minlat": 20.7129435,
+    "minlon": -103.3213120,
+    "maxlat": 20.7164004,
+    "maxlon": -103.3194423
+  },
+  "geometry": [
+    { "lat": 20.7129435, "lon": -103.3213120 },
+    { "lat": 20.7139825, "lon": -103.3207520 },
+    { "lat": 20.7142297, "lon": -103.3206211 },
+    { "lat": 20.7144643, "lon": -103.3204961 },
+    { "lat": 20.7146029, "lon": -103.3204222 },
+    { "lat": 20.7150951, "lon": -103.3201464 },
+    { "lat": 20.7160265, "lon": -103.3196430 },
+    { "lat": 20.7163111, "lon": -103.3194892 },
+    { "lat": 20.7164004, "lon": -103.3194423 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487015,
+  "bounds": {
+    "minlat": 20.7066778,
+    "minlon": -103.3249372,
+    "maxlat": 20.7082161,
+    "maxlon": -103.3241028
+  },
+  "geometry": [
+    { "lat": 20.7082161, "lon": -103.3241028 },
+    { "lat": 20.7077431, "lon": -103.3243572 },
+    { "lat": 20.7066778, "lon": -103.3249372 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487019,
+  "bounds": {
+    "minlat": 20.7079785,
+    "minlon": -103.3239992,
+    "maxlat": 20.7081328,
+    "maxlon": -103.3239246
+  },
+  "geometry": [
+    { "lat": 20.7079785, "lon": -103.3239992 },
+    { "lat": 20.7081328, "lon": -103.3239246 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487024,
+  "bounds": {
+    "minlat": 20.7081328,
+    "minlon": -103.3239246,
+    "maxlat": 20.7107011,
+    "maxlon": -103.3225358
+  },
+  "geometry": [
+    { "lat": 20.7081328, "lon": -103.3239246 },
+    { "lat": 20.7086876, "lon": -103.3236158 },
+    { "lat": 20.7097638, "lon": -103.3230524 },
+    { "lat": 20.7107011, "lon": -103.3225358 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487026,
+  "bounds": {
+    "minlat": 20.7060795,
+    "minlon": -103.3250173,
+    "maxlat": 20.7079785,
+    "maxlon": -103.3239992
+  },
+  "geometry": [
+    { "lat": 20.7060795, "lon": -103.3250173 },
+    { "lat": 20.7066185, "lon": -103.3247352 },
+    { "lat": 20.7072940, "lon": -103.3243657 },
+    { "lat": 20.7075890, "lon": -103.3242078 },
+    { "lat": 20.7079785, "lon": -103.3239992 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487029,
+  "bounds": {
+    "minlat": 20.7050020,
+    "minlon": -103.3258394,
+    "maxlat": 20.7060596,
+    "maxlon": -103.3252724
+  },
+  "geometry": [
+    { "lat": 20.7060596, "lon": -103.3252724 },
+    { "lat": 20.7055326, "lon": -103.3255571 },
+    { "lat": 20.7052317, "lon": -103.3257128 },
+    { "lat": 20.7050020, "lon": -103.3258394 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406487031,
+  "bounds": {
+    "minlat": 20.7048963,
+    "minlon": -103.3256026,
+    "maxlat": 20.7060795,
+    "maxlon": -103.3250173
+  },
+  "geometry": [
+    { "lat": 20.7048963, "lon": -103.3256026 },
+    { "lat": 20.7049921, "lon": -103.3255896 },
+    { "lat": 20.7050911, "lon": -103.3255542 },
+    { "lat": 20.7054410, "lon": -103.3253604 },
+    { "lat": 20.7059582, "lon": -103.3250774 },
+    { "lat": 20.7060795, "lon": -103.3250173 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487034,
+  "bounds": {
+    "minlat": 20.7032591,
+    "minlon": -103.3267895,
+    "maxlat": 20.7050020,
+    "maxlon": -103.3258394
+  },
+  "geometry": [
+    { "lat": 20.7050020, "lon": -103.3258394 },
+    { "lat": 20.7044921, "lon": -103.3261186 },
+    { "lat": 20.7038164, "lon": -103.3265061 },
+    { "lat": 20.7032591, "lon": -103.3267895 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487035,
+  "bounds": {
+    "minlat": 20.7003811,
+    "minlon": -103.3283406,
+    "maxlat": 20.7032591,
+    "maxlon": -103.3267895
+  },
+  "geometry": [
+    { "lat": 20.7032591, "lon": -103.3267895 },
+    { "lat": 20.7018714, "lon": -103.3275313 },
+    { "lat": 20.7017761, "lon": -103.3275817 },
+    { "lat": 20.7015185, "lon": -103.3277267 },
+    { "lat": 20.7003811, "lon": -103.3283406 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487040,
+  "bounds": {
+    "minlat": 20.6974185,
+    "minlon": -103.3299446,
+    "maxlat": 20.7003811,
+    "maxlon": -103.3283406
+  },
+  "geometry": [
+    { "lat": 20.7003811, "lon": -103.3283406 },
+    { "lat": 20.6988187, "lon": -103.3291946 },
+    { "lat": 20.6974185, "lon": -103.3299446 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487044,
+  "bounds": {
+    "minlat": 20.7031955,
+    "minlon": -103.3265737,
+    "maxlat": 20.7045789,
+    "maxlon": -103.3255936
+  },
+  "geometry": [
+    { "lat": 20.7031955, "lon": -103.3265737 },
+    { "lat": 20.7034479, "lon": -103.3264358 },
+    { "lat": 20.7039180, "lon": -103.3260055 },
+    { "lat": 20.7041305, "lon": -103.3258265 },
+    { "lat": 20.7043141, "lon": -103.3257026 },
+    { "lat": 20.7043850, "lon": -103.3256596 },
+    { "lat": 20.7044546, "lon": -103.3256218 },
+    { "lat": 20.7045789, "lon": -103.3255936 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487046,
+  "bounds": {
+    "minlat": 20.6970960,
+    "minlon": -103.3298855,
+    "maxlat": 20.7002941,
+    "maxlon": -103.3281541
+  },
+  "geometry": [
+    { "lat": 20.6970960, "lon": -103.3298855 },
+    { "lat": 20.6986036, "lon": -103.3290692 },
+    { "lat": 20.6989086, "lon": -103.3289063 },
+    { "lat": 20.7002941, "lon": -103.3281541 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487050,
+  "bounds": {
+    "minlat": 20.6938952,
+    "minlon": -103.3318588,
+    "maxlat": 20.6970952,
+    "maxlon": -103.3301224
+  },
+  "geometry": [
+    { "lat": 20.6970952, "lon": -103.3301224 },
+    { "lat": 20.6968876, "lon": -103.3302324 },
+    { "lat": 20.6964859, "lon": -103.3304550 },
+    { "lat": 20.6959756, "lon": -103.3307217 },
+    { "lat": 20.6954665, "lon": -103.3309935 },
+    { "lat": 20.6949594, "lon": -103.3312742 },
+    { "lat": 20.6944402, "lon": -103.3315584 },
+    { "lat": 20.6938952, "lon": -103.3318588 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487053,
+  "bounds": {
+    "minlat": 20.6861607,
+    "minlon": -103.3360365,
+    "maxlat": 20.6887975,
+    "maxlon": -103.3346599
+  },
+  "geometry": [
+    { "lat": 20.6887975, "lon": -103.3346599 },
+    { "lat": 20.6887115, "lon": -103.3347489 },
+    { "lat": 20.6885727, "lon": -103.3348361 },
+    { "lat": 20.6884067, "lon": -103.3349124 },
+    { "lat": 20.6882654, "lon": -103.3349482 },
+    { "lat": 20.6881266, "lon": -103.3349816 },
+    { "lat": 20.6879446, "lon": -103.3350709 },
+    { "lat": 20.6871082, "lon": -103.3355263 },
+    { "lat": 20.6864767, "lon": -103.3358675 },
+    { "lat": 20.6861607, "lon": -103.3360365 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406487057,
+  "bounds": {
+    "minlat": 20.6938041,
+    "minlon": -103.3316759,
+    "maxlat": 20.6970072,
+    "maxlon": -103.3299332
+  },
+  "geometry": [
+    { "lat": 20.6938041, "lon": -103.3316759 },
+    { "lat": 20.6952346, "lon": -103.3308924 },
+    { "lat": 20.6955029, "lon": -103.3307422 },
+    { "lat": 20.6961856, "lon": -103.3303670 },
+    { "lat": 20.6970072, "lon": -103.3299332 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494979,
+  "bounds": {
+    "minlat": 20.6906764,
+    "minlon": -103.3333717,
+    "maxlat": 20.6938041,
+    "maxlon": -103.3316759
+  },
+  "geometry": [
+    { "lat": 20.6906764, "lon": -103.3333717 },
+    { "lat": 20.6920913, "lon": -103.3325904 },
+    { "lat": 20.6923642, "lon": -103.3324464 },
+    { "lat": 20.6938041, "lon": -103.3316759 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494981,
+  "bounds": {
+    "minlat": 20.6870201,
+    "minlon": -103.3353421,
+    "maxlat": 20.6886138,
+    "maxlon": -103.3344038
+  },
+  "geometry": [
+    { "lat": 20.6870201, "lon": -103.3353421 },
+    { "lat": 20.6872883, "lon": -103.3351999 },
+    { "lat": 20.6878602, "lon": -103.3348937 },
+    { "lat": 20.6880512, "lon": -103.3347754 },
+    { "lat": 20.6882041, "lon": -103.3346319 },
+    { "lat": 20.6882871, "lon": -103.3345606 },
+    { "lat": 20.6883727, "lon": -103.3345108 },
+    { "lat": 20.6884526, "lon": -103.3344719 },
+    { "lat": 20.6886138, "lon": -103.3344038 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494985,
+  "bounds": {
+    "minlat": 20.6839886,
+    "minlon": -103.3372101,
+    "maxlat": 20.6861607,
+    "maxlon": -103.3360365
+  },
+  "geometry": [
+    { "lat": 20.6861607, "lon": -103.3360365 },
+    { "lat": 20.6861432, "lon": -103.3360459 },
+    { "lat": 20.6859980, "lon": -103.3361257 },
+    { "lat": 20.6854866, "lon": -103.3363890 },
+    { "lat": 20.6849468, "lon": -103.3366898 },
+    { "lat": 20.6839886, "lon": -103.3372101 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494986,
+  "bounds": {
+    "minlat": 20.6849441,
+    "minlon": -103.3364703,
+    "maxlat": 20.6861639,
+    "maxlon": -103.3358034
+  },
+  "geometry": [
+    { "lat": 20.6849441, "lon": -103.3364703 },
+    { "lat": 20.6857089, "lon": -103.3360493 },
+    { "lat": 20.6861639, "lon": -103.3358034 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494988,
+  "bounds": {
+    "minlat": 20.6831751,
+    "minlon": -103.3374381,
+    "maxlat": 20.6849441,
+    "maxlon": -103.3364703
+  },
+  "geometry": [
+    { "lat": 20.6831751, "lon": -103.3374381 },
+    { "lat": 20.6834681, "lon": -103.3372701 },
+    { "lat": 20.6840120, "lon": -103.3369815 },
+    { "lat": 20.6849441, "lon": -103.3364703 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494990,
+  "bounds": {
+    "minlat": 20.6793065,
+    "minlon": -103.3397657,
+    "maxlat": 20.6820497,
+    "maxlon": -103.3382646
+  },
+  "geometry": [
+    { "lat": 20.6820497, "lon": -103.3382646 },
+    { "lat": 20.6817336, "lon": -103.3384407 },
+    { "lat": 20.6811533, "lon": -103.3387450 },
+    { "lat": 20.6810991, "lon": -103.3387902 },
+    { "lat": 20.6796941, "lon": -103.3395802 },
+    { "lat": 20.6793065, "lon": -103.3397657 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494992,
+  "bounds": {
+    "minlat": 20.6811759,
+    "minlon": -103.3385105,
+    "maxlat": 20.6831751,
+    "maxlon": -103.3374381
+  },
+  "geometry": [
+    { "lat": 20.6811759, "lon": -103.3385105 },
+    { "lat": 20.6820512, "lon": -103.3380443 },
+    { "lat": 20.6827785, "lon": -103.3376511 },
+    { "lat": 20.6831751, "lon": -103.3374381 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406494996,
+  "bounds": {
+    "minlat": 20.6775751,
+    "minlon": -103.3407054,
+    "maxlat": 20.6793065,
+    "maxlon": -103.3397657
+  },
+  "geometry": [
+    { "lat": 20.6793065, "lon": -103.3397657 },
+    { "lat": 20.6782889, "lon": -103.3403104 },
+    { "lat": 20.6775751, "lon": -103.3407054 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406495001,
+  "bounds": {
+    "minlat": 20.6782991,
+    "minlon": -103.3400621,
+    "maxlat": 20.6811759,
+    "maxlon": -103.3385105
+  },
+  "geometry": [
+    { "lat": 20.6782991, "lon": -103.3400621 },
+    { "lat": 20.6793147, "lon": -103.3395063 },
+    { "lat": 20.6798865, "lon": -103.3392013 },
+    { "lat": 20.6803750, "lon": -103.3389560 },
+    { "lat": 20.6804215, "lon": -103.3389262 },
+    { "lat": 20.6805956, "lon": -103.3388336 },
+    { "lat": 20.6809791, "lon": -103.3386281 },
+    { "lat": 20.6811204, "lon": -103.3385500 },
+    { "lat": 20.6811759, "lon": -103.3385105 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406495003,
+  "bounds": {
+    "minlat": 20.6774988,
+    "minlon": -103.3407457,
+    "maxlat": 20.6775751,
+    "maxlon": -103.3407054
+  },
+  "geometry": [
+    { "lat": 20.6775751, "lon": -103.3407054 },
+    { "lat": 20.6774988, "lon": -103.3407457 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406495005,
+  "bounds": {
+    "minlat": 20.6773085,
+    "minlon": -103.3408453,
+    "maxlat": 20.6774988,
+    "maxlon": -103.3407457
+  },
+  "geometry": [
+    { "lat": 20.6774988, "lon": -103.3407457 },
+    { "lat": 20.6774650, "lon": -103.3407602 },
+    { "lat": 20.6773085, "lon": -103.3408453 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406495008,
+  "bounds": {
+    "minlat": 20.6775047,
+    "minlon": -103.3405035,
+    "maxlat": 20.6775790,
+    "maxlon": -103.3404640
+  },
+  "geometry": [
+    { "lat": 20.6775047, "lon": -103.3405035 },
+    { "lat": 20.6775790, "lon": -103.3404640 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500081,
+  "bounds": {
+    "minlat": 20.6712729,
+    "minlon": -103.3441172,
+    "maxlat": 20.6723618,
+    "maxlon": -103.3434871
+  },
+  "geometry": [
+    { "lat": 20.6723618, "lon": -103.3434871 },
+    { "lat": 20.6716306, "lon": -103.3438650 },
+    { "lat": 20.6715487, "lon": -103.3439391 },
+    { "lat": 20.6714796, "lon": -103.3440072 },
+    { "lat": 20.6714109, "lon": -103.3440635 },
+    { "lat": 20.6713632, "lon": -103.3440865 },
+    { "lat": 20.6712729, "lon": -103.3441172 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500083,
+  "bounds": {
+    "minlat": 20.6745612,
+    "minlon": -103.3421047,
+    "maxlat": 20.6752948,
+    "maxlon": -103.3416921
+  },
+  "geometry": [
+    { "lat": 20.6745612, "lon": -103.3421047 },
+    { "lat": 20.6748386, "lon": -103.3419600 },
+    { "lat": 20.6749316, "lon": -103.3419056 },
+    { "lat": 20.6752948, "lon": -103.3416921 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500084,
+  "bounds": {
+    "minlat": 20.6677817,
+    "minlon": -103.3459977,
+    "maxlat": 20.6707246,
+    "maxlon": -103.3443477
+  },
+  "geometry": [
+    { "lat": 20.6707246, "lon": -103.3443477 },
+    { "lat": 20.6706816, "lon": -103.3444017 },
+    { "lat": 20.6704563, "lon": -103.3445272 },
+    { "lat": 20.6699662, "lon": -103.3448001 },
+    { "lat": 20.6689207, "lon": -103.3453725 },
+    { "lat": 20.6683650, "lon": -103.3456793 },
+    { "lat": 20.6677817, "lon": -103.3459977 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500086,
+  "bounds": {
+    "minlat": 20.6706988,
+    "minlon": -103.3441434,
+    "maxlat": 20.6714328,
+    "maxlon": -103.3437167
+  },
+  "geometry": [
+    { "lat": 20.6706988, "lon": -103.3441434 },
+    { "lat": 20.6707191, "lon": -103.3441319 },
+    { "lat": 20.6710414, "lon": -103.3439487 },
+    { "lat": 20.6712380, "lon": -103.3437670 },
+    { "lat": 20.6713876, "lon": -103.3437261 },
+    { "lat": 20.6714328, "lon": -103.3437167 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500088,
+  "bounds": {
+    "minlat": 20.6651287,
+    "minlon": -103.3472063,
+    "maxlat": 20.6671968,
+    "maxlon": -103.3460660
+  },
+  "geometry": [
+    { "lat": 20.6651287, "lon": -103.3472063 },
+    { "lat": 20.6657840, "lon": -103.3468753 },
+    { "lat": 20.6664101, "lon": -103.3465130 },
+    { "lat": 20.6668390, "lon": -103.3462636 },
+    { "lat": 20.6669979, "lon": -103.3461586 },
+    { "lat": 20.6671968, "lon": -103.3460660 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500089,
+  "bounds": {
+    "minlat": 20.6625216,
+    "minlon": -103.3488716,
+    "maxlat": 20.6635185,
+    "maxlon": -103.3483010
+  },
+  "geometry": [
+    { "lat": 20.6635185, "lon": -103.3483010 },
+    { "lat": 20.6625216, "lon": -103.3488716 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406500090,
+  "bounds": {
+    "minlat": 20.6640044,
+    "minlon": -103.3478070,
+    "maxlat": 20.6651287,
+    "maxlon": -103.3472063
+  },
+  "geometry": [
+    { "lat": 20.6640044, "lon": -103.3478070 },
+    { "lat": 20.6646143, "lon": -103.3474708 },
+    { "lat": 20.6651287, "lon": -103.3472063 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406500092,
+  "bounds": {
+    "minlat": 20.6623299,
+    "minlon": -103.3487162,
+    "maxlat": 20.6624678,
+    "maxlon": -103.3486358
+  },
+  "geometry": [
+    { "lat": 20.6623299, "lon": -103.3487162 },
+    { "lat": 20.6624678, "lon": -103.3486358 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406505030,
+  "bounds": {
+    "minlat": 20.6558410,
+    "minlon": -103.3517930,
+    "maxlat": 20.6572976,
+    "maxlon": -103.3512926
+  },
+  "geometry": [
+    { "lat": 20.6572976, "lon": -103.3512926 },
+    { "lat": 20.6572288, "lon": -103.3513011 },
+    { "lat": 20.6571915, "lon": -103.3513041 },
+    { "lat": 20.6571252, "lon": -103.3513263 },
+    { "lat": 20.6567014, "lon": -103.3514475 },
+    { "lat": 20.6561763, "lon": -103.3516164 },
+    { "lat": 20.6558410, "lon": -103.3517930 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 406505031,
+  "bounds": {
+    "minlat": 20.6583118,
+    "minlon": -103.3506976,
+    "maxlat": 20.6623299,
+    "maxlon": -103.3487162
+  },
+  "geometry": [
+    { "lat": 20.6583118, "lon": -103.3506976 },
+    { "lat": 20.6583606, "lon": -103.3506813 },
+    { "lat": 20.6588287, "lon": -103.3504792 },
+    { "lat": 20.6601506, "lon": -103.3498952 },
+    { "lat": 20.6602009, "lon": -103.3498706 },
+    { "lat": 20.6602838, "lon": -103.3498281 },
+    { "lat": 20.6623299, "lon": -103.3487162 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 406505034,
+  "bounds": {
+    "minlat": 20.6572249,
+    "minlon": -103.3511045,
+    "maxlat": 20.6573534,
+    "maxlon": -103.3510721
+  },
+  "geometry": [
+    { "lat": 20.6572249, "lon": -103.3511045 },
+    { "lat": 20.6573534, "lon": -103.3510721 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 729768073,
+  "bounds": {
+    "minlat": 20.6705924,
+    "minlon": -103.3442091,
+    "maxlat": 20.6706988,
+    "maxlon": -103.3441434
+  },
+  "geometry": [
+    { "lat": 20.6705924, "lon": -103.3442091 },
+    { "lat": 20.6706988, "lon": -103.3441434 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 729768074,
+  "bounds": {
+    "minlat": 20.7212542,
+    "minlon": -103.3170721,
+    "maxlat": 20.7220084,
+    "maxlon": -103.3168099
+  },
+  "geometry": [
+    { "lat": 20.7220084, "lon": -103.3168099 },
+    { "lat": 20.7219240, "lon": -103.3168353 },
+    { "lat": 20.7216568, "lon": -103.3169149 },
+    { "lat": 20.7212542, "lon": -103.3170721 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 729768075,
+  "bounds": {
+    "minlat": 20.7218392,
+    "minlon": -103.3166351,
+    "maxlat": 20.7233643,
+    "maxlon": -103.3161853
+  },
+  "geometry": [
+    { "lat": 20.7218392, "lon": -103.3166351 },
+    { "lat": 20.7229910, "lon": -103.3162959 },
+    { "lat": 20.7233643, "lon": -103.3161853 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 729981326,
+  "bounds": {
+    "minlat": 20.6707246,
+    "minlon": -103.3443477,
+    "maxlat": 20.6707986,
+    "maxlon": -103.3443103
+  },
+  "geometry": [
+    { "lat": 20.6707986, "lon": -103.3443103 },
+    { "lat": 20.6707246, "lon": -103.3443477 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "left||"
+  }
+},
+{
+  "type": "way",
+  "id": 738367933,
+  "bounds": {
+    "minlat": 20.7207946,
+    "minlon": -103.3173207,
+    "maxlat": 20.7212542,
+    "maxlon": -103.3170721
+  },
+  "geometry": [
+    { "lat": 20.7212542, "lon": -103.3170721 },
+    { "lat": 20.7207946, "lon": -103.3173207 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 749636577,
+  "bounds": {
+    "minlat": 20.6992284,
+    "minlon": -103.3360334,
+    "maxlat": 20.6994017,
+    "maxlon": -103.3359898
+  },
+  "geometry": [
+    { "lat": 20.6992284, "lon": -103.3360334 },
+    { "lat": 20.6994017, "lon": -103.3359898 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636578,
+  "bounds": {
+    "minlat": 20.7000660,
+    "minlon": -103.3359896,
+    "maxlat": 20.7069506,
+    "maxlon": -103.3346150
+  },
+  "geometry": [
+    { "lat": 20.7000660, "lon": -103.3359022 },
+    { "lat": 20.7004324, "lon": -103.3359081 },
+    { "lat": 20.7013370, "lon": -103.3359896 },
+    { "lat": 20.7015680, "lon": -103.3359831 },
+    { "lat": 20.7016754, "lon": -103.3359576 },
+    { "lat": 20.7029259, "lon": -103.3353585 },
+    { "lat": 20.7031376, "lon": -103.3352539 },
+    { "lat": 20.7033128, "lon": -103.3351965 },
+    { "lat": 20.7069256, "lon": -103.3346185 },
+    { "lat": 20.7069506, "lon": -103.3346150 }
+  ],
+  "tags": {
+    "name": "San Juan de Diós",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636579,
+  "bounds": {
+    "minlat": 20.6994017,
+    "minlon": -103.3359898,
+    "maxlat": 20.6997667,
+    "maxlon": -103.3359148
+  },
+  "geometry": [
+    { "lat": 20.6994017, "lon": -103.3359898 },
+    { "lat": 20.6996413, "lon": -103.3359284 },
+    { "lat": 20.6997667, "lon": -103.3359148 }
+  ],
+  "tags": {
+    "name": "San Juan de Diós",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636580,
+  "bounds": {
+    "minlat": 20.6997667,
+    "minlon": -103.3359148,
+    "maxlat": 20.7000660,
+    "maxlon": -103.3359022
+  },
+  "geometry": [
+    { "lat": 20.6997667, "lon": -103.3359148 },
+    { "lat": 20.7000660, "lon": -103.3359022 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636581,
+  "bounds": {
+    "minlat": 20.7069506,
+    "minlon": -103.3346150,
+    "maxlat": 20.7071214,
+    "maxlon": -103.3345939
+  },
+  "geometry": [
+    { "lat": 20.7069506, "lon": -103.3346150 },
+    { "lat": 20.7071214, "lon": -103.3345939 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636582,
+  "bounds": {
+    "minlat": 20.7071214,
+    "minlon": -103.3351051,
+    "maxlat": 20.7092207,
+    "maxlon": -103.3345912
+  },
+  "geometry": [
+    { "lat": 20.7071214, "lon": -103.3345939 },
+    { "lat": 20.7072984, "lon": -103.3345912 },
+    { "lat": 20.7074236, "lon": -103.3346028 },
+    { "lat": 20.7075269, "lon": -103.3346195 },
+    { "lat": 20.7076136, "lon": -103.3346381 },
+    { "lat": 20.7077147, "lon": -103.3346678 },
+    { "lat": 20.7086704, "lon": -103.3350907 },
+    { "lat": 20.7087812, "lon": -103.3351051 },
+    { "lat": 20.7088624, "lon": -103.3350982 },
+    { "lat": 20.7089890, "lon": -103.3350638 },
+    { "lat": 20.7092207, "lon": -103.3349515 }
+  ],
+  "tags": {
+    "name": "San Juan de Diós",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636583,
+  "bounds": {
+    "minlat": 20.7092207,
+    "minlon": -103.3349515,
+    "maxlat": 20.7094308,
+    "maxlon": -103.3348562
+  },
+  "geometry": [
+    { "lat": 20.7092207, "lon": -103.3349515 },
+    { "lat": 20.7094308, "lon": -103.3348562 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636584,
+  "bounds": {
+    "minlat": 20.7094308,
+    "minlon": -103.3348562,
+    "maxlat": 20.7110922,
+    "maxlon": -103.3342710
+  },
+  "geometry": [
+    { "lat": 20.7094308, "lon": -103.3348562 },
+    { "lat": 20.7101742, "lon": -103.3344778 },
+    { "lat": 20.7106800, "lon": -103.3343274 },
+    { "lat": 20.7110703, "lon": -103.3342710 },
+    { "lat": 20.7110922, "lon": -103.3342721 }
+  ],
+  "tags": {
+    "name": "San Juan de Diós",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636585,
+  "bounds": {
+    "minlat": 20.7110922,
+    "minlon": -103.3342823,
+    "maxlat": 20.7112420,
+    "maxlon": -103.3342721
+  },
+  "geometry": [
+    { "lat": 20.7110922, "lon": -103.3342721 },
+    { "lat": 20.7112420, "lon": -103.3342823 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636586,
+  "bounds": {
+    "minlat": 20.7112420,
+    "minlon": -103.3349710,
+    "maxlat": 20.7128304,
+    "maxlon": -103.3342823
+  },
+  "geometry": [
+    { "lat": 20.7112420, "lon": -103.3342823 },
+    { "lat": 20.7112670, "lon": -103.3342874 },
+    { "lat": 20.7128304, "lon": -103.3349710 }
+  ],
+  "tags": {
+    "name": "San Juan de Diós",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636587,
+  "bounds": {
+    "minlat": 20.7128304,
+    "minlon": -103.3350577,
+    "maxlat": 20.7130320,
+    "maxlon": -103.3349710
+  },
+  "geometry": [
+    { "lat": 20.7128304, "lon": -103.3349710 },
+    { "lat": 20.7130320, "lon": -103.3350577 }
+  ],
+  "tags": {
+    "layer": "-1",
+    "name": "San Juan de Diós",
+    "tunnel": "culvert",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 749636588,
+  "bounds": {
+    "minlat": 20.7130320,
+    "minlon": -103.3377359,
+    "maxlat": 20.7283419,
+    "maxlon": -103.3313881
+  },
+  "geometry": [
+    { "lat": 20.7130320, "lon": -103.3350577 },
+    { "lat": 20.7133191, "lon": -103.3351812 },
+    { "lat": 20.7136537, "lon": -103.3353316 },
+    { "lat": 20.7139339, "lon": -103.3353944 },
+    { "lat": 20.7141404, "lon": -103.3354254 },
+    { "lat": 20.7143446, "lon": -103.3354442 },
+    { "lat": 20.7145854, "lon": -103.3354576 },
+    { "lat": 20.7147276, "lon": -103.3354736 },
+    { "lat": 20.7149276, "lon": -103.3354983 },
+    { "lat": 20.7151596, "lon": -103.3355186 },
+    { "lat": 20.7159360, "lon": -103.3355864 },
+    { "lat": 20.7161485, "lon": -103.3356892 },
+    { "lat": 20.7163612, "lon": -103.3359577 },
+    { "lat": 20.7165817, "lon": -103.3361244 },
+    { "lat": 20.7167049, "lon": -103.3361840 },
+    { "lat": 20.7168334, "lon": -103.3361945 },
+    { "lat": 20.7170063, "lon": -103.3361698 },
+    { "lat": 20.7172080, "lon": -103.3361144 },
+    { "lat": 20.7172969, "lon": -103.3361034 },
+    { "lat": 20.7174021, "lon": -103.3361289 },
+    { "lat": 20.7175135, "lon": -103.3362253 },
+    { "lat": 20.7183209, "lon": -103.3371654 },
+    { "lat": 20.7184154, "lon": -103.3372327 },
+    { "lat": 20.7185027, "lon": -103.3372759 },
+    { "lat": 20.7185935, "lon": -103.3373071 },
+    { "lat": 20.7194627, "lon": -103.3373682 },
+    { "lat": 20.7195999, "lon": -103.3373988 },
+    { "lat": 20.7197526, "lon": -103.3374646 },
+    { "lat": 20.7200257, "lon": -103.3376535 },
+    { "lat": 20.7201500, "lon": -103.3377262 },
+    { "lat": 20.7202316, "lon": -103.3377359 },
+    { "lat": 20.7203434, "lon": -103.3377227 },
+    { "lat": 20.7209601, "lon": -103.3373899 },
+    { "lat": 20.7210958, "lon": -103.3372827 },
+    { "lat": 20.7213405, "lon": -103.3370264 },
+    { "lat": 20.7213882, "lon": -103.3369396 },
+    { "lat": 20.7214097, "lon": -103.3368723 },
+    { "lat": 20.7214147, "lon": -103.3367846 },
+    { "lat": 20.7214046, "lon": -103.3367041 },
+    { "lat": 20.7213578, "lon": -103.3364225 },
+    { "lat": 20.7213187, "lon": -103.3361342 },
+    { "lat": 20.7213147, "lon": -103.3360399 },
+    { "lat": 20.7213328, "lon": -103.3359430 },
+    { "lat": 20.7213763, "lon": -103.3358163 },
+    { "lat": 20.7214112, "lon": -103.3357625 },
+    { "lat": 20.7214682, "lon": -103.3357089 },
+    { "lat": 20.7216139, "lon": -103.3356106 },
+    { "lat": 20.7216811, "lon": -103.3355795 },
+    { "lat": 20.7222799, "lon": -103.3353873 },
+    { "lat": 20.7232358, "lon": -103.3352098 },
+    { "lat": 20.7234175, "lon": -103.3351377 },
+    { "lat": 20.7235940, "lon": -103.3350299 },
+    { "lat": 20.7242820, "lon": -103.3342782 },
+    { "lat": 20.7246301, "lon": -103.3340088 },
+    { "lat": 20.7250118, "lon": -103.3334832 },
+    { "lat": 20.7252711, "lon": -103.3330272 },
+    { "lat": 20.7255555, "lon": -103.3325590 },
+    { "lat": 20.7256703, "lon": -103.3323869 },
+    { "lat": 20.7260607, "lon": -103.3319118 },
+    { "lat": 20.7262797, "lon": -103.3317023 },
+    { "lat": 20.7264411, "lon": -103.3316222 },
+    { "lat": 20.7268503, "lon": -103.3316090 },
+    { "lat": 20.7272735, "lon": -103.3315809 },
+    { "lat": 20.7274202, "lon": -103.3315951 },
+    { "lat": 20.7275451, "lon": -103.3315684 },
+    { "lat": 20.7277724, "lon": -103.3314373 },
+    { "lat": 20.7280490, "lon": -103.3313881 },
+    { "lat": 20.7283419, "lon": -103.3314159 }
+  ],
+  "tags": {
+    "name": "San Juan de Dios",
+    "waterway": "river"
+  }
+},
+{
+  "type": "way",
+  "id": 824930010,
+  "bounds": {
+    "minlat": 20.6566659,
+    "minlon": -103.3512647,
+    "maxlat": 20.6572249,
+    "maxlon": -103.3511045
+  },
+  "geometry": [
+    { "lat": 20.6566659, "lon": -103.3512647 },
+    { "lat": 20.6567270, "lon": -103.3512434 },
+    { "lat": 20.6571273, "lon": -103.3511257 },
+    { "lat": 20.6571603, "lon": -103.3511137 },
+    { "lat": 20.6572249, "lon": -103.3511045 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 827085817,
+  "bounds": {
+    "minlat": 20.6970952,
+    "minlon": -103.3301224,
+    "maxlat": 20.6971848,
+    "maxlon": -103.3300762
+  },
+  "geometry": [
+    { "lat": 20.6971848, "lon": -103.3300762 },
+    { "lat": 20.6970952, "lon": -103.3301224 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 827085818,
+  "bounds": {
+    "minlat": 20.6971848,
+    "minlon": -103.3300762,
+    "maxlat": 20.6974185,
+    "maxlon": -103.3299446
+  },
+  "geometry": [
+    { "lat": 20.6974185, "lon": -103.3299446 },
+    { "lat": 20.6971848, "lon": -103.3300762 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 827145571,
+  "bounds": {
+    "minlat": 20.6624678,
+    "minlon": -103.3486358,
+    "maxlat": 20.6634618,
+    "maxlon": -103.3481085
+  },
+  "geometry": [
+    { "lat": 20.6624678, "lon": -103.3486358 },
+    { "lat": 20.6629243, "lon": -103.3483951 },
+    { "lat": 20.6631583, "lon": -103.3482691 },
+    { "lat": 20.6634618, "lon": -103.3481085 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 827145572,
+  "bounds": {
+    "minlat": 20.6624451,
+    "minlon": -103.3489178,
+    "maxlat": 20.6625216,
+    "maxlon": -103.3488716
+  },
+  "geometry": [
+    { "lat": 20.6625216, "lon": -103.3488716 },
+    { "lat": 20.6624451, "lon": -103.3489178 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 829724552,
+  "bounds": {
+    "minlat": 20.7082161,
+    "minlon": -103.3241028,
+    "maxlat": 20.7085316,
+    "maxlon": -103.3239294
+  },
+  "geometry": [
+    { "lat": 20.7085316, "lon": -103.3239294 },
+    { "lat": 20.7082161, "lon": -103.3241028 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 829724553,
+  "bounds": {
+    "minlat": 20.7107011,
+    "minlon": -103.3225358,
+    "maxlat": 20.7108217,
+    "maxlon": -103.3224635
+  },
+  "geometry": [
+    { "lat": 20.7107011, "lon": -103.3225358 },
+    { "lat": 20.7108217, "lon": -103.3224635 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 829724554,
+  "bounds": {
+    "minlat": 20.7108217,
+    "minlon": -103.3224635,
+    "maxlat": 20.7129435,
+    "maxlon": -103.3213120
+  },
+  "geometry": [
+    { "lat": 20.7108217, "lon": -103.3224635 },
+    { "lat": 20.7118594, "lon": -103.3218967 },
+    { "lat": 20.7127217, "lon": -103.3214333 },
+    { "lat": 20.7129435, "lon": -103.3213120 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 829724556,
+  "bounds": {
+    "minlat": 20.7108857,
+    "minlon": -103.3226706,
+    "maxlat": 20.7111364,
+    "maxlon": -103.3225327
+  },
+  "geometry": [
+    { "lat": 20.7111364, "lon": -103.3225327 },
+    { "lat": 20.7108857, "lon": -103.3226706 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "turn:lanes": "through|through"
+  }
+},
+{
+  "type": "way",
+  "id": 829724557,
+  "bounds": {
+    "minlat": 20.7085316,
+    "minlon": -103.3239294,
+    "maxlat": 20.7108857,
+    "maxlon": -103.3226706
+  },
+  "geometry": [
+    { "lat": 20.7108857, "lon": -103.3226706 },
+    { "lat": 20.7101648, "lon": -103.3230573 },
+    { "lat": 20.7094880, "lon": -103.3234209 },
+    { "lat": 20.7085316, "lon": -103.3239294 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 831267482,
+  "bounds": {
+    "minlat": 20.6970072,
+    "minlon": -103.3299332,
+    "maxlat": 20.6970960,
+    "maxlon": -103.3298855
+  },
+  "geometry": [
+    { "lat": 20.6970072, "lon": -103.3299332 },
+    { "lat": 20.6970960, "lon": -103.3298855 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 831356191,
+  "bounds": {
+    "minlat": 20.6775790,
+    "minlon": -103.3404640,
+    "maxlat": 20.6782991,
+    "maxlon": -103.3400621
+  },
+  "geometry": [
+    { "lat": 20.6775790, "lon": -103.3404640 },
+    { "lat": 20.6782991, "lon": -103.3400621 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 832408927,
+  "bounds": {
+    "minlat": 20.6743827,
+    "minlon": -103.3421922,
+    "maxlat": 20.6745612,
+    "maxlon": -103.3421047
+  },
+  "geometry": [
+    { "lat": 20.6743827, "lon": -103.3421922 },
+    { "lat": 20.6745612, "lon": -103.3421047 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 832408928,
+  "bounds": {
+    "minlat": 20.6730609,
+    "minlon": -103.3428777,
+    "maxlat": 20.6738266,
+    "maxlon": -103.3424842
+  },
+  "geometry": [
+    { "lat": 20.6730609, "lon": -103.3428777 },
+    { "lat": 20.6736704, "lon": -103.3425687 },
+    { "lat": 20.6738266, "lon": -103.3424842 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 833585418,
+  "bounds": {
+    "minlat": 20.7045789,
+    "minlon": -103.3256026,
+    "maxlat": 20.7048963,
+    "maxlon": -103.3255936
+  },
+  "geometry": [
+    { "lat": 20.7045789, "lon": -103.3255936 },
+    { "lat": 20.7048482, "lon": -103.3256026 },
+    { "lat": 20.7048963, "lon": -103.3256026 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "through|through"
+  }
+},
+{
+  "type": "way",
+  "id": 833585419,
+  "bounds": {
+    "minlat": 20.7027188,
+    "minlon": -103.3268366,
+    "maxlat": 20.7031955,
+    "maxlon": -103.3265737
+  },
+  "geometry": [
+    { "lat": 20.7027188, "lon": -103.3268366 },
+    { "lat": 20.7031955, "lon": -103.3265737 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 833585420,
+  "bounds": {
+    "minlat": 20.7002941,
+    "minlon": -103.3281541,
+    "maxlat": 20.7027188,
+    "maxlon": -103.3268366
+  },
+  "geometry": [
+    { "lat": 20.7002941, "lon": -103.3281541 },
+    { "lat": 20.7017541, "lon": -103.3273649 },
+    { "lat": 20.7027188, "lon": -103.3268366 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 834012401,
+  "bounds": {
+    "minlat": 20.6707986,
+    "minlon": -103.3443103,
+    "maxlat": 20.6712729,
+    "maxlon": -103.3441172
+  },
+  "geometry": [
+    { "lat": 20.6712729, "lon": -103.3441172 },
+    { "lat": 20.6710356, "lon": -103.3441904 },
+    { "lat": 20.6708179, "lon": -103.3443005 },
+    { "lat": 20.6707986, "lon": -103.3443103 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "turn:lanes": "left||"
+  }
+},
+{
+  "type": "way",
+  "id": 903465487,
+  "bounds": {
+    "minlat": 20.6723618,
+    "minlon": -103.3434871,
+    "maxlat": 20.6725811,
+    "maxlon": -103.3433676
+  },
+  "geometry": [
+    { "lat": 20.6725811, "lon": -103.3433676 },
+    { "lat": 20.6723618, "lon": -103.3434871 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903465488,
+  "bounds": {
+    "minlat": 20.6725811,
+    "minlon": -103.3433676,
+    "maxlat": 20.6744959,
+    "maxlon": -103.3423249
+  },
+  "geometry": [
+    { "lat": 20.6744959, "lon": -103.3423249 },
+    { "lat": 20.6735284, "lon": -103.3428507 },
+    { "lat": 20.6730476, "lon": -103.3431133 },
+    { "lat": 20.6725811, "lon": -103.3433676 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564905,
+  "bounds": {
+    "minlat": 20.6888588,
+    "minlon": -103.3346038,
+    "maxlat": 20.6889914,
+    "maxlon": -103.3345065
+  },
+  "geometry": [
+    { "lat": 20.6889914, "lon": -103.3345065 },
+    { "lat": 20.6888588, "lon": -103.3346038 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564906,
+  "bounds": {
+    "minlat": 20.6887513,
+    "minlon": -103.3343599,
+    "maxlat": 20.6888985,
+    "maxlon": -103.3343055
+  },
+  "geometry": [
+    { "lat": 20.6887513, "lon": -103.3343599 },
+    { "lat": 20.6888985, "lon": -103.3343055 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564907,
+  "bounds": {
+    "minlat": 20.6887975,
+    "minlon": -103.3346599,
+    "maxlat": 20.6888588,
+    "maxlon": -103.3346038
+  },
+  "geometry": [
+    { "lat": 20.6888588, "lon": -103.3346038 },
+    { "lat": 20.6887975, "lon": -103.3346599 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564908,
+  "bounds": {
+    "minlat": 20.6911330,
+    "minlon": -103.3333381,
+    "maxlat": 20.6938952,
+    "maxlon": -103.3318588
+  },
+  "geometry": [
+    { "lat": 20.6938952, "lon": -103.3318588 },
+    { "lat": 20.6935886, "lon": -103.3320169 },
+    { "lat": 20.6931302, "lon": -103.3322741 },
+    { "lat": 20.6928336, "lon": -103.3324273 },
+    { "lat": 20.6917829, "lon": -103.3329933 },
+    { "lat": 20.6911330, "lon": -103.3333381 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564909,
+  "bounds": {
+    "minlat": 20.6888985,
+    "minlon": -103.3343055,
+    "maxlat": 20.6906764,
+    "maxlon": -103.3333717
+  },
+  "geometry": [
+    { "lat": 20.6888985, "lon": -103.3343055 },
+    { "lat": 20.6890080, "lon": -103.3342589 },
+    { "lat": 20.6896559, "lon": -103.3339118 },
+    { "lat": 20.6906764, "lon": -103.3333717 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 903564910,
+  "bounds": {
+    "minlat": 20.6886138,
+    "minlon": -103.3344038,
+    "maxlat": 20.6887513,
+    "maxlon": -103.3343599
+  },
+  "geometry": [
+    { "lat": 20.6886138, "lon": -103.3344038 },
+    { "lat": 20.6887513, "lon": -103.3343599 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 907553190,
+  "bounds": {
+    "minlat": 20.7207030,
+    "minlon": -103.3171085,
+    "maxlat": 20.7211613,
+    "maxlon": -103.3168600
+  },
+  "geometry": [
+    { "lat": 20.7207030, "lon": -103.3171085 },
+    { "lat": 20.7211613, "lon": -103.3168600 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 911042637,
+  "bounds": {
+    "minlat": 20.6861639,
+    "minlon": -103.3358034,
+    "maxlat": 20.6870201,
+    "maxlon": -103.3353421
+  },
+  "geometry": [
+    { "lat": 20.6861639, "lon": -103.3358034 },
+    { "lat": 20.6870201, "lon": -103.3353421 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 911050034,
+  "bounds": {
+    "minlat": 20.6572976,
+    "minlon": -103.3512926,
+    "maxlat": 20.6574329,
+    "maxlon": -103.3512780
+  },
+  "geometry": [
+    { "lat": 20.6574329, "lon": -103.3512780 },
+    { "lat": 20.6572976, "lon": -103.3512926 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 912522733,
+  "bounds": {
+    "minlat": 20.6765708,
+    "minlon": -103.3412204,
+    "maxlat": 20.6773085,
+    "maxlon": -103.3408453
+  },
+  "geometry": [
+    { "lat": 20.6773085, "lon": -103.3408453 },
+    { "lat": 20.6767881, "lon": -103.3411096 },
+    { "lat": 20.6767416, "lon": -103.3411332 },
+    { "lat": 20.6765708, "lon": -103.3412204 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "-1",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 912522737,
+  "bounds": {
+    "minlat": 20.6764972,
+    "minlon": -103.3410320,
+    "maxlat": 20.6773207,
+    "maxlon": -103.3405955
+  },
+  "geometry": [
+    { "lat": 20.6764972, "lon": -103.3410320 },
+    { "lat": 20.6766855, "lon": -103.3409313 },
+    { "lat": 20.6767322, "lon": -103.3409064 },
+    { "lat": 20.6773207, "lon": -103.3405955 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "-1",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 918951451,
+  "bounds": {
+    "minlat": 20.6634618,
+    "minlon": -103.3481085,
+    "maxlat": 20.6640044,
+    "maxlon": -103.3478070
+  },
+  "geometry": [
+    { "lat": 20.6634618, "lon": -103.3481085 },
+    { "lat": 20.6640044, "lon": -103.3478070 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 922154576,
+  "bounds": {
+    "minlat": 20.6573534,
+    "minlon": -103.3510721,
+    "maxlat": 20.6583118,
+    "maxlon": -103.3506976
+  },
+  "geometry": [
+    { "lat": 20.6573534, "lon": -103.3510721 },
+    { "lat": 20.6573966, "lon": -103.3510568 },
+    { "lat": 20.6574363, "lon": -103.3510444 },
+    { "lat": 20.6576458, "lon": -103.3509657 },
+    { "lat": 20.6583118, "lon": -103.3506976 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 939429101,
+  "bounds": {
+    "minlat": 20.6907601,
+    "minlon": -103.3335432,
+    "maxlat": 20.6911330,
+    "maxlon": -103.3333381
+  },
+  "geometry": [
+    { "lat": 20.6911330, "lon": -103.3333381 },
+    { "lat": 20.6907601, "lon": -103.3335432 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 939429102,
+  "bounds": {
+    "minlat": 20.6889914,
+    "minlon": -103.3345065,
+    "maxlat": 20.6907601,
+    "maxlon": -103.3335432
+  },
+  "geometry": [
+    { "lat": 20.6907601, "lon": -103.3335432 },
+    { "lat": 20.6897427, "lon": -103.3340998 },
+    { "lat": 20.6889914, "lon": -103.3345065 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 939447280,
+  "bounds": {
+    "minlat": 20.7060596,
+    "minlon": -103.3252724,
+    "maxlat": 20.7066778,
+    "maxlon": -103.3249372
+  },
+  "geometry": [
+    { "lat": 20.7066778, "lon": -103.3249372 },
+    { "lat": 20.7061666, "lon": -103.3252145 },
+    { "lat": 20.7060596, "lon": -103.3252724 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Calzada Independencia Norte",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 965697533,
+  "bounds": {
+    "minlat": 20.6605070,
+    "minlon": -103.3499380,
+    "maxlat": 20.6624451,
+    "maxlon": -103.3489178
+  },
+  "geometry": [
+    { "lat": 20.6624451, "lon": -103.3489178 },
+    { "lat": 20.6605070, "lon": -103.3499380 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1250034970,
+  "bounds": {
+    "minlat": 20.6738266,
+    "minlon": -103.3424842,
+    "maxlat": 20.6743827,
+    "maxlon": -103.3421922
+  },
+  "geometry": [
+    { "lat": 20.6738266, "lon": -103.3424842 },
+    { "lat": 20.6743827, "lon": -103.3421922 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Calzada Independencia Sur",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+}
+
+  ]
+}
